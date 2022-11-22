@@ -13,16 +13,7 @@ $padding-sp: 20px;
 ////////////////////
 // フォント設定
 ////////////////////
-@font-face{
-  font-family: "Lovelo";
-  src: url('../fonts/lovelo/Lovelo-Black.ttf') format('truetype');
-  src: url('../fonts/lovelo/Lovelo-LineBold.ttf') format('truetype');
-  src: url('../fonts/lovelo/Lovelo-LineLight.ttf') format('truetype');
-}
-
 $base-font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-$title-font-family: "futura-pt", sans-serif;
-$lovelo-font-family: "Lovelo",  sans-serif;
 
 // フォントウェイト
 $regular: 300;
@@ -65,10 +56,13 @@ $mediaquerys: (
   ss: "screen and (max-width: #{map-get($breakpoints,'ss')}px)",
 );
 
-
-@media screen and (max-width: 900px){
-
+body {
+  font-family: $base-font-family;
+  background: $black;
+  color: $white;
 }
+
+
 
 // @include lineHeightSpaceFill(2);
 // ハーフ・レディング
@@ -94,11 +88,10 @@ $mediaquerys: (
   }
 }
 
-// remへの計算式（16pxを基準としている。10pxを基準とする場合は16を10に変更する）
+///remへの計算式
 @function rem($font-size) {
-  @return $font-size / 16 * 1rem;
+  @return math.div($font-size, 16) * 1rem; //修正20221019
 }
-
 ////////////////////
 // 非表示設定
 ////////////////////
@@ -158,13 +151,3 @@ $mediaquerys: (
 }
 
 
-////////////////////
-// body全体への設定
-////////////////////
-body {
-  font-family: $base-font-family;
-  background: $black;
-  color: $white;
-}
-
-// PCカンプ横幅1366px

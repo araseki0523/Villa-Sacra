@@ -1,0 +1,11 @@
+@use 'global' as *;
+
+.reservation {
+
+}
+
+.reservation__inner {
+    max-width: ren(938);
+    width: 100%;
+    margin: 0 auto;
+}

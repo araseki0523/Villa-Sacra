@@ -1,10 +1,10 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Lovelo";
-  src: url("../fonts/lovelo/Lovelo-Black.ttf") format("truetype");
-  src: url("../fonts/lovelo/Lovelo-LineBold.ttf") format("truetype");
-  src: url("../fonts/lovelo/Lovelo-LineLight.ttf") format("truetype");
+body {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  background: #000;
+  color: #fff;
 }
+
 .u-desktop {
   display: none;
 }
@@ -63,12 +63,6 @@
   .br-481 {
     display: none;
   }
-}
-
-body {
-  font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-  background: #000;
-  color: #fff;
 }
 
 /* リキッドレイアウト対応 */
@@ -241,24 +235,26 @@ select::-ms-expand {
   }
 }
 
-.mv__image {
-  width: 1152px;
-  width: 72rem;
-  height: 814px;
-  height: 50.875rem;
-  position: relative;
+.layout-reservation {
+  margin-top: 62px;
+  margin-top: 3.875rem;
 }
 
-.mv__image::before {
-  content: "";
-  display: block;
-  padding-top: 70.6597%;
+.mv__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mv__image {
+  width: 100%;
+  position: relative;
 }
 
 .mv__image img {
   position: absolute;
   top: 50%;
-  right: 50%;
+  right: 0%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
@@ -271,5 +267,15 @@ select::-ms-expand {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.mv__title {
+  color: green;
+}
+
+.reservation__inner {
+  max-width: ren(938);
+  width: 100%;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=styles.css.map */
