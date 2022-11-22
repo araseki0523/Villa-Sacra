@@ -1,0 +1,28 @@
+@use 'global' as *;
+
+.button {
+    text-align: center;
+    padding: rem(10) rem(76);
+    border: 1px solid $white;
+    position: relative;
+}
+.button::before {
+	content: '';
+	position: absolute;
+	top: calc(75% - 2px);
+	right: -2em;
+	transform: translateY(calc(-75% - 2px)) rotate(45deg);
+	width: 10px;
+	height: 1px;
+	background: #27acd9;
+}
+.button::after {
+	content: '';
+	position: absolute;
+	top: 75%;
+	right: -2em;
+	transform: translateY(-75%);
+	width: 100px;
+	height: 1px;
+	background-color: #27acd9;
+}

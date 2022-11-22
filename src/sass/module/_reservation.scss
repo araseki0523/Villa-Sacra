@@ -5,7 +5,38 @@
 }
 
 .reservation__inner {
-    max-width: ren(938);
+    max-width: rem(938);
     width: 100%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reservation__container {
+    background-color: $white;
+    height: rem(176);
+}
+
+.reservation__title-area {
+    padding-top: rem(36);
+    color: $black;
+    text-align: center;
+}
+
+.reservation__title--ja {
+  font-size: rem(34);
+}
+
+.reservation__title--en {
+    margin-top: rem(-6);
+    margin-left: rem(28);
+}
+
+.reservation__icon {
+    // border-bottom: solid 4px $black;
+    // border-right: solid 4px $black;
+    // width: 24px;
+    // height: 24px;
+    // transform: rotate(45deg);
+    // margin-left: auto;
+    // margin-right: auto;
 }
