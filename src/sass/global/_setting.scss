@@ -23,11 +23,6 @@ $padding-sp: 20px;
 $base-font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 $title-font-family: "futura-pt", sans-serif;
 $lovelo-font-family: "Lovelo",  sans-serif;
-$kozuka-font-family: "kozuka-gothic-pro", sans-serif;
-
-body {
-  font-family: $base-font-family;
-}
 
 // フォントウェイト
 $regular: 300;
@@ -40,7 +35,7 @@ $bold: 700;
 // 色の指定
 ////////////////////
 
-$black: #111;
+$black: #000;
 $black-news: #010101;
 $white: #fff;
 
@@ -161,3 +156,15 @@ $mediaquerys: (
     display: none;
   }
 }
+
+
+////////////////////
+// body全体への設定
+////////////////////
+body {
+  font-family: $base-font-family;
+  background: $black;
+  color: $white;
+}
+
+// PCカンプ横幅1366px
