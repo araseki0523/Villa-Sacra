@@ -14,16 +14,6 @@ $service = esc_url(home_url('/service/'));
 <html <?php language_attributes(); ?>>
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6RWT88YRKH"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-6RWT88YRKH');
-    </script>
-
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
@@ -83,66 +73,5 @@ $service = esc_url(home_url('/service/'));
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <header class="header">
-    <div class="header__inner">
-
-      <!-- ハンバーガー -->
-      <button class="header__drawer hamburger js-hamburger">
-        <span class="u-mobile-1440"></span>
-        <span class="u-mobile-1440"></span>
-        <span class="u-mobile-1440"></span>
-      </button>
-
-      <!-- ロゴ -->
-      <h1 class="header__logo">
-        <a href="<?php echo $home ?>" class="header__logo-link">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/common/header-logo.svg" alt="岩守産業株式会社ロゴ">
-        </a>
-      </h1>
-
-      <nav class="header__nav">
-        <ul class="header__items">
-          <li class="header__item header__has-sub u-desktop-1440"><a href="<?php echo $service ?>">事業内容</a>
-            <ul class="header__sub">
-              <li class="header__sub-heading"><a href="<?php echo $service ?>">事業内容</a></li>
-              <li class="header__sub-text"><a href="<?php echo esc_url(home_url('/')); ?>service#service-civil-engineering">-土木工事</a>
-              <li class="header__sub-text"><a href="<?php echo esc_url(home_url('/')); ?>service#service-demolition">-解体工事</a>
-              <li class="header__sub-text"><a href="<?php echo esc_url(home_url('/')); ?>service#service-iwd">-産業廃棄物処理・収集運搬</a>
-              <li class="header__sub-text"><a href="<?php echo esc_url(home_url('/')); ?>service#service-transportation">-貨物自動車運送業</a>
-              <li class="header__sub-text"><a href="<?php echo esc_url(home_url('/')); ?>service#service-facility">-施設管理</a>
-              <li class="header__sub-text"><a href="<?php echo esc_url(home_url('/')); ?>service#service-snow-removal">-除雪業務</a>
-              <li class="header__sub-heading"><a href="<?php echo $iwd ?>">廃棄物処理場のご利用案内</a>
-              </li>
-            </ul>
-          </li>
-          <li class="header__item u-desktop-1440"><a href="<?php echo $company ?>">会社情報</a></li>
-          <li class="header__item u-desktop-1440"><a href="https://en-gage.net/iwamori_saiyo" target="_blank" rel="noreferrer noopener">採用情報</a></li>
-          <li class="header__item u-desktop-1440"><a href="<?php echo $news ?>">お知らせ</a></li>
-          <li class="header__item-access u-desktop-1440"><a href="<?php echo esc_url(home_url('/')); ?>company#company-main">アクセス</a></li>
-          <li class="header__item header__item--green"><a href="<?php echo $contact ?>">お問い合せ</a></li>
-        </ul>
-      </nav>
-
-      <nav class="header__sp-nav u-mobile-1440 js-drawer-menu">
-        <ul class="header__sp-nav__items" id="nav">
-          <li class="header__sp-nav__item"><a class="link" href="<?php echo $service ?>">事業内容</a></li>
-          <li class="header__sp-nav__item"><a class="link" href="<?php echo $company ?>">会社情報</a></li>
-          <li class="header__sp-nav__item"><a href="https://en-gage.net/iwamori_saiyo" target="_blank" rel="noreferrer noopener">採用情報</a></li>
-          <li class="header__sp-nav__item"><a class="link" href="<?php echo $news ?>">お知らせ</a></li>
-          <li class="header__sp-nav__item"><a class="link" href="<?php echo esc_url(home_url('/')); ?>company#company-main">アクセス</a></li>
-          <li class="header__sp-nav__item"><a class="link" href="<?php echo $contact ?>">お問い合せ</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <!-- ローディングスピナー -->
-    <div class="cube-wrapper" id="loader">
-      <div class="cube-folding">
-        <span class="leaf1"></span>
-        <span class="leaf2"></span>
-        <span class="leaf3"></span>
-        <span class="leaf4"></span>
-      </div>
-    </div>
 
   </header>

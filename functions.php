@@ -33,15 +33,6 @@ function my_script_init()
 add_action('wp_enqueue_scripts', 'my_script_init');
 
 
-function es_googlemapsapi() {
-    if(is_page('company')) {
-        wp_enqueue_script('googlemapsapi', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA-jqq_AEiMaA76UVZBRK37He0IAdBPPU4&callback=initMap', array(), '', true);
-    }
-}
-add_action('wp_enqueue_scripts', 'es_googlemapsapi');
-
-
-
 /**
  * アーカイブタイトル書き換え
  *

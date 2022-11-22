@@ -1,0 +1,41 @@
+@use 'global' as *;
+
+.message {
+    background-image: url(../images/top/background-message-top.png);
+    background-position :center;
+    background-size :cover;
+    background-repeat: no-repeat;
+}
+
+.message__inner {
+
+}
+
+.message__container {
+    text-align: center;
+    font-size: rem(24);
+    line-height: 2.4;
+}
+
+.message__text-area {
+
+}
+
+.message__text1 {
+
+}
+
+.message__text2 {
+    margin-top: rem(70);
+}
+
+.message__button-area {
+    margin-top: rem(80);
+    display: flex;
+    justify-content: center;
+}
+
+.message__button {
+
+}
+

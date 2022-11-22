@@ -1,0 +1,48 @@
+@use 'global' as *;
+
+.box {
+    
+}
+
+.box__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-left: rem(144);
+    margin-right: rem(144);
+}
+
+.box__left,
+.box__right {
+    background-color: $white;
+    color: $black;
+    width: 45%;
+    padding: rem(50) rem(80);
+
+}  
+.box__left-title-area,
+.box__right-title-area {
+
+
+}
+.box__left-title-ja,
+.box__right-title-ja {
+
+}
+.box__left-title-en,
+.box__right-title-en {
+
+}
+
+// ボタン
+.box__button-area {
+    margin-top: rem(60);
+    text-align: center;
+}
+.box__button.button {
+    border: 1px solid $black;
+}
+.box__right {
+
+}
+
+

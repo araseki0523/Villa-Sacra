@@ -3,34 +3,17 @@
 ////////////////////
 // インナー幅設定
 ////////////////////
-// コンテンツのインナー幅（最も共通の幅が多い部分）
 $inner: 1100px;
-// ※キャンパス幅ではなくインナーの幅を指す
 
 // 余白
 $padding-pc: 25px;
 $padding-sp: 20px;
-// ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
 
 ////////////////////
 // フォント設定
 ////////////////////
-@font-face{
-  font-family: "Lovelo";
-  src: url('../fonts/lovelo/Lovelo-Black.ttf') format('truetype');
-  src: url('../fonts/lovelo/Lovelo-LineBold.ttf') format('truetype');
-  src: url('../fonts/lovelo/Lovelo-LineLight.ttf') format('truetype');
-}
-
 $base-font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-$title-font-family: "futura-pt", sans-serif;
-$lovelo-font-family: "Lovelo",  sans-serif;
-$kozuka-font-family: "kozuka-gothic-pro", sans-serif;
-
-body {
-  font-family: $base-font-family;
-}
 
 // フォントウェイト
 $regular: 300;
@@ -43,7 +26,7 @@ $bold: 700;
 // 色の指定
 ////////////////////
 
-$black: #111;
+$black: #000;
 $black-news: #010101;
 $white: #fff;
 
@@ -73,10 +56,13 @@ $mediaquerys: (
   ss: "screen and (max-width: #{map-get($breakpoints,'ss')}px)",
 );
 
-
-@media screen and (max-width: 900px){
-
+body {
+  font-family: $base-font-family;
+  background: $black;
+  color: $white;
 }
+
+
 
 // @include lineHeightSpaceFill(2);
 // ハーフ・レディング
@@ -102,11 +88,10 @@ $mediaquerys: (
   }
 }
 
-// remへの計算式（16pxを基準としている。10pxを基準とする場合は16を10に変更する）
+///remへの計算式
 @function rem($font-size) {
-  @return $font-size / 16 * 1rem;
+  @return math.div($font-size, 16) * 1rem; //修正20221019
 }
-
 ////////////////////
 // 非表示設定
 ////////////////////
@@ -164,3 +149,5 @@ $mediaquerys: (
     display: none;
   }
 }
+
+
