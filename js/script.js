@@ -47,18 +47,21 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
     
-});
 
 
-let swipeOption1 = {
+// トップページのスライダー
+let swiperTop = {
   loop: true,
-  effect: 'fade',
+  spaceBetween: 10,
+  slidesPerView: 3.5,
   autoplay: {
       delay: 4000,
       disableOnInteraction: false,
   },
   speed: 2000,
 }
-new Swiper('.mySwiper', swipeOption1);
+new Swiper('.mySwiper-top', swiperTop);
 
+
+});
 

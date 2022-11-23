@@ -381,6 +381,9 @@ select::-ms-expand {
 .gallery__container {
   margin-top: 98px;
   margin-top: 6.125rem;
+  width: 100%;
+  height: 360px;
+  height: 22.5rem;
 }
 
 .gallery__button-area {
@@ -817,7 +820,13 @@ select::-ms-expand {
   font-size: 0.75rem;
 }
 
-.swiper-slide {
-  background-color: red;
+.swiper-wrapper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+  width: 30%;
+}
+
+.swiper-slide,
+.swiper-slide img {
+  width: 360px;
+  width: 22.5rem;
 }
 /*# sourceMappingURL=styles.css.map */

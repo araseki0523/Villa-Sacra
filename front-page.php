@@ -223,7 +223,7 @@
             <p class="gallery__title-en section-title__en">Photo galleries</p>
         </div>
         <div class="gallery__container">
-            <div class="swiper mySwiper">
+            <div class="swiper mySwiper-top">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/gallery1.jpg" alt="ギャラリーの画像1">
