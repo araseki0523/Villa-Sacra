@@ -32,11 +32,11 @@
 }
 
 .reservation__icon {
-    // border-bottom: solid 4px $black;
-    // border-right: solid 4px $black;
-    // width: 24px;
-    // height: 24px;
-    // transform: rotate(45deg);
-    // margin-left: auto;
-    // margin-right: auto;
+    padding-top: rem(70);
+    background-image :url(../images/common/arrow.png);
+    background-position :center;
+    background-repeat :no-repeat;
+    width: rem(50);
+    height: rem(30);
+    margin: auto;
 }
