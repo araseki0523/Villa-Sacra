@@ -35,7 +35,8 @@
 
 .introduction__each-wrapper {
     margin-top: rem(213);
-    // border-bottom: 1px solid $white;
+    padding-bottom: rem(100);
+    border-bottom: 1px solid $white;
 }    
 
 .introduction__image-big {
@@ -139,4 +140,45 @@
 }
 .introduction__button {
 
+}
+
+// 背景
+.introduction__each-wrapper-hana,
+.introduction__each-wrapper-tsuki,
+.introduction__each-wrapper-tora,
+.introduction__each-wrapper-shizuku,
+.introduction__each-wrapper-tsuru,
+.introduction__each-wrapper-nizi {
+    position: relative;
+    z-index: 2;
+}
+.introduction__background1,
+.introduction__background2,
+.introduction__background3,
+.introduction__background4 {
+    background-color: lightblue;
+    z-index: -2;
+    position: absolute;
+
+}
+.introduction__background1,
+.introduction__background3 {
+    right: 0;
+    top: rem(220);
+    width: rem(833);
+    height: rem(1250);
+}
+
+.introduction__background2 {
+    left: 0;
+    top: rem(950);
+    width: rem(958);
+    height: rem(612);
+
+}
+.introduction__background4 {
+    left: 0;
+    top: rem(205);
+    width: rem(958);
+    height: rem(612);
 }

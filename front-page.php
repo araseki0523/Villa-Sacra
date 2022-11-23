@@ -56,7 +56,7 @@
         </div>
     </div>
     <div class="introduction__whole-wrapper">
-        <div class="introduction__each-wrapper">
+        <div class="introduction__each-wrapper introduction__each-wrapper-hana">
             <div class="introduction__container">
                 <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/hana-big-top.jpg" alt="華の間の部屋画像"></div>
                 <h3 class="introduction__room-name">華の間</h3>
@@ -75,9 +75,11 @@
             <div class="introduction__button-area">
                 <a href="" class="introduction__button button">MORE</a>
             </div>
+            <!-- 背景１ -->
+            <div class="introduction__background1"></div>
         </div>
-        <!--introduction__each-wrapper-->
-        <div class="introduction__each-wrapper">
+        <!--introduction__each-wrapper  華の間-->
+        <div class="introduction__each-wrapper introduction__each-wrapper-tsuki">
             <div class="introduction__container introduction__container-even">
                 <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuki-big-top.jpg" alt="月の間の部屋画像"></div>
                 <h3 class="introduction__room-name">月の間</h3>
@@ -96,9 +98,11 @@
             <div class="introduction__button-area">
                 <a href="" class="introduction__button button">MORE</a>
             </div>
+            <!-- 背景２ -->
+            <div class="introduction__background2"></div>
         </div>
-        <!--introduction__each-wrapper-->
-        <div class="introduction__each-wrapper">
+        <!--introduction__each-wrapper  月の間-->
+        <div class="introduction__each-wrapper introduction__each-wrapper-tora">
             <div class="introduction__container">
                 <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tora-big-top.jpg" alt="虎の間の部屋画像"></div>
                 <h3 class="introduction__room-name">虎の間</h3>
@@ -121,8 +125,8 @@
                 <a href="" class="introduction__button button">MORE</a>
             </div>
         </div>
-        <!--introduction__each-wrapper-->
-        <div class="introduction__each-wrapper">
+        <!--introduction__each-wrapper  虎の間-->
+        <div class="introduction__each-wrapper introduction__each-wrapper-shizuku">
             <div class="introduction__container introduction__container-even">
                 <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuki-big-top.jpg" alt="雫の間の部屋画像"></div>
                 <h3 class="introduction__room-name">雫の間</h3>
@@ -144,9 +148,11 @@
             <div class="introduction__button-area">
                 <a href="" class="introduction__button button">MORE</a>
             </div>
+            <!-- 背景３ -->
+            <div class="introduction__background3"></div>
         </div>
-        <!--introduction__each-wrapper-->
-        <div class="introduction__each-wrapper">
+        <!--introduction__each-wrapper  雫の間-->
+        <div class="introduction__each-wrapper introduction__each-wrapper-tsuru">
             <div class="introduction__container">
                 <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuru-big-top.jpg" alt="鶴の間の部屋画像"></div>
                 <h3 class="introduction__room-name">鶴の間</h3>
@@ -166,8 +172,8 @@
                 <a href="" class="introduction__button button">MORE</a>
             </div>
         </div>
-        <!--introduction__each-wrapper-->
-        <div class="introduction__each-wrapper">
+        <!--introduction__each-wrapper  鶴の間-->
+        <div class="introduction__each-wrapper introduction__each-wrapper-nizi">
             <div class="introduction__container introduction__container-even">
                 <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/nizi-big-top.jpg" alt="虹の間の部屋画像"></div>
                 <h3 class="introduction__room-name">虹の間</h3>
@@ -187,8 +193,10 @@
             <div class="introduction__button-area">
                 <a href="" class="introduction__button button">MORE</a>
             </div>
+            <!-- 背景４ -->
+            <div class="introduction__background4"></div>
         </div>
-        <!--introduction__each-wrapper-->
+        <!--introduction__each-wrapper  虹の間-->
     </div>
     <!--introduction__whole-wrapper-->
 </section>
@@ -226,16 +234,16 @@
             <div class="swiper mySwiper-top">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/gallery1.jpg" alt="ギャラリーの画像1">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/gallery1.jpg" alt="ギャラリーの画像1">
                     </div>
                     <div class="swiper-slide">
-                      <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/gallery2.jpg" alt="ギャラリーの画像2">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/gallery2.jpg" alt="ギャラリーの画像2">
                     </div>
                     <div class="swiper-slide">
-                      <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/gallery3.jpg" alt="ギャラリーの画像3">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/gallery3.jpg" alt="ギャラリーの画像3">
                     </div>
                     <div class="swiper-slide">
-                      <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/gallery4.jpg" alt="ギャラリーの画像4">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/gallery4.jpg" alt="ギャラリーの画像4">
                     </div>
                 </div>
             </div>
