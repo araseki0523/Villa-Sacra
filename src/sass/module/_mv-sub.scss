@@ -1,5 +1,33 @@
 @use 'global' as *;
 
 .mv-sub {
+
+}
+.mv-sub__inner {
+
+}
+.mv-sub__image {
+    width: 100%;
+    position: relative;
+}
+.mv-sub__image::before {
+    content:"";
+    display: block;
+    padding-top: 56.25%; 
+}
+.mv-sub__image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.mv-sub__title-ja {
+
+}
+.mv-sub__title-en {
     
 }
