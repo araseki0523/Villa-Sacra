@@ -12,18 +12,8 @@
     </div>
 </section>
 
+<?php get_template_part('template/reservation'); ?>
 
-<div class="reservation layout-reservation">
-    <div class="reservation__inner">
-        <div class="reservation__container">
-            <div class="reservation__title-area section-title">
-                <h2 class="reservation__title--ja section-title__ja">ご予約</h2>
-                <p class="reservation__title--en section-title__en">Booking now</p>
-                <div class="reservation__icon"></div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="message layout-message">
     <div class="message__inner">
@@ -51,8 +41,8 @@
 <section class="introduction layout-introduction">
     <div class="introduction__inner">
         <div class="introduction__title-area section-title">
-            <h2 class="introduction__title--ja section-title__ja">お部屋紹介</h2>
-            <p class="introduction__title--en section-title__en">Room introduction</p>
+            <h2 class="introduction__title-ja section-title__ja">お部屋紹介</h2>
+            <p class="introduction__title-en section-title__en">Room introduction</p>
         </div>
     </div>
     <div class="introduction__whole-wrapper">
@@ -224,35 +214,7 @@
     </div>
 </section>
 
-<section class="gallery layout-gallery">
-    <div class="gallery__inner">
-        <div class="gallery__title-area section-title">
-            <h2 class="gallery__title-ja section-title__ja">写真ギャラリー</h2>
-            <p class="gallery__title-en section-title__en">Photo galleries</p>
-        </div>
-        <div class="gallery__container">
-            <div class="swiper mySwiper-top">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/gallery1.jpg" alt="ギャラリーの画像1">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/gallery2.jpg" alt="ギャラリーの画像2">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/gallery3.jpg" alt="ギャラリーの画像3">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/gallery/gallery4.jpg" alt="ギャラリーの画像4">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="gallery__button-area">
-            <a href="" class="gallery__button button">MORE</a>
-        </div>
-    </div>
-</section>
+<?php get_template_part('template/gallery'); ?>
 
 <section class="blog-top layout-blog-top">
     <div class="blog-top__inner">
@@ -261,46 +223,41 @@
             <p class="blog-top__title-en section-title__en">Blog</p>
         </div>
         <div class="blog-top__container">
-            <div class="blog-top__each-wrapper">
+            <a href="" class="blog-top__each-wrapper">
                 <div class="blog-top__box">
                     <div class="blog-top__new">NEW</div>
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </div>
-            <!--blog-top__each-wrapper-->
-            <div class="blog-top__each-wrapper">
+            </a><!--blog-top__each-wrapper-->
+            <a href="" class="blog-top__each-wrapper">
                 <div class="blog-top__box">
                     <div class="blog-top__new">NEW</div>
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </div>
-            <!--blog-top__each-wrapper-->
-            <div class="blog-top__each-wrapper">
+            </a><!--blog-top__each-wrapper-->
+            <a href="" class="blog-top__each-wrapper">
                 <div class="blog-top__box">
                     <div class="blog-top__new">NEW</div>
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </div>
-            <!--blog-top__each-wrapper-->
-            <div class="blog-top__each-wrapper">
+            </a><!--blog-top__each-wrapper-->
+            <a href="" class="blog-top__each-wrapper">
                 <div class="blog-top__box">
                     <div class="blog-top__new">NEW</div>
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </div>
-            <!--blog-top__each-wrapper-->
-            <div class="blog-top__each-wrapper">
+            </a><!--blog-top__each-wrapper-->
+            <a href="" class="blog-top__each-wrapper">
                 <div class="blog-top__box">
                     <div class="blog-top__new">NEW</div>
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </div>
-            <!--blog-top__each-wrapper-->
+            </a><!--blog-top__each-wrapper-->
             <div class="blog-top__button-area">
                 <a href="" class="blog-top__button button">MORE</a>
             </div>
