@@ -1,10 +1,18 @@
 @use 'global' as *;
 
 .mv-sub {
-
+  padding-top: 58px;
 }
 .mv-sub__inner {
 
+}
+.mv-sub__background {
+    width: rem(646);
+    height: rem(110);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .mv-sub__image {
     width: 100%;
@@ -13,7 +21,7 @@
 .mv-sub__image::before {
     content:"";
     display: block;
-    padding-top: 56.25%; 
+    padding-top: 21%; 
 }
 .mv-sub__image img {
     position: absolute;
@@ -25,9 +33,19 @@
     object-fit: cover;
     object-position: center;
 }
-.mv-sub__title-ja {
-
+.mv-sub__title-ja,
+.mv-sub__title-en {
+    color: $black;
+    position: absolute;
+}
+.mv-sub__title-ja{
+    font-size: rem(36);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .mv-sub__title-en {
-    
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
