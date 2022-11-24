@@ -13,7 +13,11 @@
     </div>
 </section>
 
-<?php get_template_part('template/breadcrumb'); ?>
+<div class="breadcrumb layout-breadcrumb">
+    <div class="breadcrumb__inner">
+        <?php get_template_part('template/breadcrumb'); ?>
+    </div>
+</div>
 
 <div class="privacy-policy-box layout-privacy-policy-box">
     <div class="privacy-policy-box__inner">
