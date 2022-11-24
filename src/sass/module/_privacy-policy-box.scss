@@ -1,0 +1,40 @@
+@use 'global' as *;
+
+.privacy-policy-box {
+
+}
+.privacy-policy-box__inner {
+    margin-left: rem(284);
+    margin-right: rem(268);
+}
+.privacy-policy-box__container {
+    color: $black;
+    font-size: rem(26);
+    font-family: $yumincho;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.privacy-policy-box__left,
+.privacy-policy-box__right {
+    background-color: $white;
+    width: rem(348);
+    height: rem(90);
+    padding-top: rem(18);
+}
+
+.privacy-policy-box__title {
+
+}
+
+.privacy-policy-box__icon {
+    padding-top: rem(26);
+    background-image :url(../images/common/arrow.png);
+    background-position :center;
+    background-repeat :no-repeat;
+    width: rem(24);
+    height: rem(30);
+    margin: auto;
+}
+

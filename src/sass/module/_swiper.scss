@@ -1,0 +1,14 @@
+@use 'global' as *;
+
+.mySwiper-top {
+    
+}
+
+.swiper-wrapper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    width: 30%;
+}
+
+.swiper-slide,
+.swiper-slide img{
+    width: rem(360);
+} 

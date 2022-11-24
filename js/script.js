@@ -46,5 +46,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
+    
+
+
+// トップページのスライダー
+let swiperTop = {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 3.5,
+  autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+  },
+  speed: 2000,
+}
+new Swiper('.mySwiper-top', swiperTop);
+
 
 });
+
