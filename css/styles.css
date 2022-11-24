@@ -510,6 +510,11 @@ select::-ms-expand {
   padding-bottom: 10.625rem;
 }
 
+.layout-recruit {
+  margin-top: 500px;
+  margin-top: 31.25rem;
+}
+
 .layout-reservation {
   margin-top: 62px;
   margin-top: 3.875rem;
@@ -608,6 +613,35 @@ select::-ms-expand {
   width: 13.375rem;
   height: 636px;
   height: 39.75rem;
+}
+
+.recruit__image {
+  width: 100%;
+  position: relative;
+}
+
+.recruit__image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.recruit__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.recruit__message {
+  text-align: center;
 }
 
 .reservation__inner {
