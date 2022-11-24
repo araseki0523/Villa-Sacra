@@ -1,7 +1,25 @@
 @use 'global' as *;
 
 .sub-section-title {
+    position: relative;
 }
+.sub-section-title::before,
+.sub-section-title::after {
+    position: absolute;
+    content: "";
+    top: 35%;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    width: rem(280);
+    height: rem(1);
+}
+.sub-section-title::before {
+    left: 13%;
+}
+.sub-section-title::after {
+    right: -12%;
+}
+
 .sub-section-title__ja {
     font-size: rem(26);
     text-align: center;

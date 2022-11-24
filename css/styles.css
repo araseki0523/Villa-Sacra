@@ -382,6 +382,120 @@ select::-ms-expand {
   background-color: #27acd9;
 }
 
+.convention__inner {
+  max-width: 1060px;
+  max-width: 66.25rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.convention__container {
+  margin-top: 120px;
+  margin-top: 7.5rem;
+}
+
+.convention__index {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+.convention__text1-1,
+.convention__text2-1,
+.convention__text3-1,
+.convention__text4-1,
+.convention__text5-1,
+.convention__text6-1,
+.convention__text7-1,
+.convention__text8-1,
+.convention__text9-1,
+.convention__text10-1,
+.convention__text11-1,
+.convention__text12-1,
+.convention__text13-1,
+.convention__text14-1,
+.convention__text15-1,
+.convention__text16-1,
+.convention__text17-1 {
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+
+.convention__text1-2,
+.convention__text1-3,
+.convention__text2-2,
+.convention__text2-7,
+.convention__text3-2,
+.convention__text3-3,
+.convention__text3-4,
+.convention__text3-5,
+.convention__text4-2,
+.convention__text4-3,
+.convention__text5-2,
+.convention__text6-2,
+.convention__text6-3,
+.convention__text6-4,
+.convention__text7-2,
+.convention__text7-3,
+.convention__text7-12,
+.convention__text8-2,
+.convention__text8-7,
+.convention__text9-2,
+.convention__text9-3,
+.convention__text10-2,
+.convention__text11-2,
+.convention__text12-2,
+.convention__text12-3,
+.convention__text12-4,
+.convention__text13-2,
+.convention__text14-2,
+.convention__text14-3,
+.convention__text15-2,
+.convention__text15-3,
+.convention__text16-2,
+.convention__text16-3,
+.convention__text16-4,
+.convention__text17-2 {
+  padding-top: 20px;
+  padding-top: 1.25rem;
+}
+
+.convention__wrapper2,
+.convention__wrapper3,
+.convention__wrapper4,
+.convention__wrapper5,
+.convention__wrapper6,
+.convention__wrapper7,
+.convention__wrapper8,
+.convention__wrapper9,
+.convention__wrapper10,
+.convention__wrapper11,
+.convention__wrapper12,
+.convention__wrapper13,
+.convention__wrapper14,
+.convention__wrapper15,
+.convention__wrapper16,
+.convention__wrapper17 {
+  margin-top: 70px;
+  margin-top: 4.375rem;
+}
+
+.footer__sns {
+  background-color: #fff;
+  color: #000;
+}
+
+.footer__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .gallery__container {
   margin-top: 98px;
   margin-top: 6.125rem;
@@ -409,6 +523,11 @@ select::-ms-expand {
     padding-right: 25px;
     padding-left: 25px;
   }
+}
+
+.inquiry__text1-2 {
+  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 
 .introduction__container {
@@ -637,9 +756,19 @@ select::-ms-expand {
   margin-top: 0.3125rem;
 }
 
+.layout-convention {
+  margin-top: 489px;
+  margin-top: 30.5625rem;
+}
+
 .layout-gallery {
   margin-top: 500px;
   margin-top: 31.25rem;
+}
+
+.layout-inquiry {
+  margin-top: 162px;
+  margin-top: 10.125rem;
 }
 
 .layout-introduction {
@@ -896,6 +1025,81 @@ select::-ms-expand {
   font-size: 1.5rem;
 }
 
+.privacy-policy__text1-1,
+.privacy-policy__text2-1,
+.privacy-policy__text3-1,
+.privacy-policy__text4-1,
+.privacy-policy__text5-1,
+.privacy-policy__text6-1,
+.privacy-policy__text7-1,
+.privacy-policy__text8-1,
+.privacy-policy__text9-1 {
+  padding-top: 16px;
+  padding-top: 1rem;
+}
+
+.privacy-policy__text1-2,
+.privacy-policy__text1-3,
+.privacy-policy__text1-4,
+.privacy-policy__text2-2,
+.privacy-policy__text3-2,
+.privacy-policy__text7-2,
+.privacy-policy__text7-3,
+.privacy-policy__text7-4,
+.privacy-policy__text8-2,
+.privacy-policy__text8-4,
+.privacy-policy__text8-6 {
+  padding-top: 20px;
+  padding-top: 1.25rem;
+}
+
+.privacy-policy__text-title1-5,
+.privacy-policy__text-title6-2,
+.privacy-policy__text-title6-4 {
+  padding-top: 20px;
+  padding-top: 1.25rem;
+}
+
+.privacy-policy__wrapper2 {
+  margin-top: 70px;
+  margin-top: 4.375rem;
+}
+
+.privacy-policy__wrapper3 {
+  margin-top: 70px;
+  margin-top: 4.375rem;
+}
+
+.privacy-policy__wrapper4 {
+  margin-top: 70px;
+  margin-top: 4.375rem;
+}
+
+.privacy-policy__wrapper5 {
+  margin-top: 70px;
+  margin-top: 4.375rem;
+}
+
+.privacy-policy__wrapper6 {
+  margin-top: 70px;
+  margin-top: 4.375rem;
+}
+
+.privacy-policy__wrapper7 {
+  margin-top: 70px;
+  margin-top: 4.375rem;
+}
+
+.privacy-policy__wrapper8 {
+  margin-top: 70px;
+  margin-top: 4.375rem;
+}
+
+.privacy-policy__wrapper9 {
+  margin-top: 70px;
+  margin-top: 4.375rem;
+}
+
 .recruit__inner {
   max-width: 1078px;
   max-width: 67.375rem;
@@ -1028,6 +1232,32 @@ select::-ms-expand {
   padding-left: 2.375rem;
   font-size: 12px;
   font-size: 0.75rem;
+}
+
+.sub-section-title {
+  position: relative;
+}
+
+.sub-section-title::before,
+.sub-section-title::after {
+  position: absolute;
+  content: "";
+  top: 35%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 280px;
+  width: 17.5rem;
+  height: 1px;
+  height: 0.0625rem;
+}
+
+.sub-section-title::before {
+  left: 13%;
+}
+
+.sub-section-title::after {
+  right: -12%;
 }
 
 .sub-section-title__ja {

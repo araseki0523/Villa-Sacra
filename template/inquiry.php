@@ -1,7 +1,7 @@
-<p class="inquiry__text">
+<p class="inquiry__text1-1">
     お問い合わせ
 </p>
-<p class="inquiry__text">
+<p class="inquiry__text1-2">
     Villa Sacra（ヴィラ・サクラ）
 </p>
 <p class="inquiry__text">
