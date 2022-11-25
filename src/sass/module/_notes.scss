@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.notes__inner {
+    max-width: rem(1076);
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.notes__title-area.sub-section-title::before,
+.notes__title-area.sub-section-title::after {
+    width: rem(400);
+}
+
+.notes__title-area.sub-section-title::before {
+    left: 18%;
+}
+
+.notes__title-area.sub-section-title::after {
+    right: -19%;
+}
+
+
+.notes__title-area {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    // transform: translateY(-50%);
+    z-index: 2;
+}
+
+.notes__title-ja.sub-section-title__ja {
+    font-size: rem(36);
+    font-weight: 500;
+    font-family: $yumincho;
+    line-height: 1.7;
+}
+
+.notes__wrapper {
+    margin-top: rem(106);
+}
+
+.notes__wrapper:last-child {
+    margin-top: rem(108);
+}
+
+.notes__index {
+    font-size: rem(24);
+    font-weight: $bold;
+    font-family: $yugothic;
+    line-height: 1.5;
+}
+
+.notes__text {
+    font-size: rem(16);
+    font-weight: 500;
+    font-family: $yugothic;
+    line-height: 1.75;
+    margin-top: rem(10);
+}
+
+
+
+
+
