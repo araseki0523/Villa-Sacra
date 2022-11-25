@@ -1,0 +1,219 @@
+@use 'global' as *;
+
+.header {
+    background: $black;
+    height: 90px;
+    z-index: 11111;
+    width:100vw;
+    transition: background-color .8s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#header.fixed{
+    position: fixed;
+      z-index: 999;
+      top:0;
+      left:0;
+}
+.header__inner {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 rem(30) 0 rem(20);
+}
+
+.header__logo img{
+    width: 158px;
+}
+
+/*======================================
+pc版のナビメニュー                                 
+======================================*/
+.header__nav {
+    text-transform: uppercase;
+    margin-left: auto;
+}   
+
+.header__nav-items {
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+.header__nav-item {
+    height: inherit;
+    letter-spacing: 0.06em;
+}
+.header__nav-item + .header__nav-item {
+    margin-left: rem(28);
+}
+.header__nav-item a {
+    color: $white;
+    height: inherit;
+    font-size: rem(16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 rem(12);
+    position: relative;
+}
+
+.header__nav-item a::before {
+    position: absolute;
+    content: "";
+    bottom: rem(6);
+    left: 3%;
+    width: 90%;
+    height: rem(1);
+    visibility: hidden;
+}
+
+.header__nav-item a:hover::before {
+    transition: all 0.3s ease 0s;
+    visibility: visible;
+}
+
+.header__nav-item.header__nav-item--white a:hover::before {
+    visibility: hidden;
+}
+
+.header__nav-item.header__nav-item--white {
+    padding: rem(4);
+    margin-left: rem(28);
+    display: flex;
+    border: 1px solid $white;
+}
+.header__nav-item.header__has-sub {
+    padding: rem(7);
+    margin-left: rem(28);
+    border: 1px solid $white;
+    height: inherit;
+}
+
+.header__nav-item.header__nav-item--white a {
+    color: $white;
+    padding: 0 rem(27);
+}
+
+.header__nav-item.nav-item--white a:hover {
+    background: $gray;
+    color: $white;
+    transition: all 0.3s ease 0s;
+} 
+.header__nav-item-icon {
+    background-image :url(../images/common/icon-air.png);
+    background-position :center;
+    background-repeat :no-repeat;
+    width: rem(50);
+    height: rem(30);
+    margin: auto;
+}
+
+
+/*======================================
+Englishのホバー                                        
+======================================*/
+// .header__has-sub {
+//     position: relative;
+// }
+
+// .header__sub {
+//     overflow: hidden;
+//     position: absolute;
+//     left: 0%;
+//     top: 4em;
+//     width: rem(304);
+//     min-height: 0;
+//     height: 0;
+//     z-index: 3;
+//     transition: min-height 0.5s;
+// }
+
+// .header__sub.active {
+//     min-height: 180px;
+// }
+
+// .header__sub-text a {
+//     width: rem(20);
+// }
+
+// .header__sub-text a::before{
+//     display: none;
+// }
+
+// .header__sub-text a :hover {
+//     background-color: $green;
+//     color: $white;
+//     opacity: 1;
+// }
+
+// .header__sub.active {
+//     min-height: 680px;
+// }
+.header__has-sub {
+    position: relative;
+    .header__sub {
+        display: none;
+    }
+}
+.header__has-sub:hover {
+    .header__sub {
+        display: block;
+    }    
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 38%;
+    bottom: rem(-80);
+    transform: translateX(-50%);
+    height: rem(60);
+    width: rem(200);
+}
+.header__sub-text {
+    padding-top: rem(14);
+    background-color: $black;
+    padding-bottom: rem(8);
+}
+.header__sub-text a img{
+    width: rem(50);
+}
+
+/*======================================
+sp                                        
+======================================*/
+.header__sp-nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: $black;
+    width: 100%;
+    height: 100vh;
+    z-index: 8888;
+    @include mq(md) {
+        display: none;
+    }
+}
+
+
+.header__sp-nav-items {
+    padding-top: rem(150);
+    padding-bottom: rem(100);
+    height: 100vh;
+    overflow: scroll;
+}
+
+.header__sp-nav-item a {
+    display: block;
+    width: 100%;
+    padding-top: rem(16);
+    padding-bottom: rem(16);
+    text-align: center;
+    color: $white;
+    font-size: rem(16);
+}

@@ -119,10 +119,10 @@ update_option( 'medium_large_size_w', 0 );
 // パンくずリスト
 function breadcrumb() {
     // $home = '<li><a href="'.get_bloginfo('url').'" >HOME　→</a></li>';
-    $home = '<li><a href="'.home_url('/').'" >HOME　→</a></li>';
+    $home = '<li><a href="'.home_url('/').'" >HOME　></a></li>';
     $news = '<li><a href="'.home_url('/news/').'" >ニュース　→</a></li>';
  
-    echo '<ul class="mv-sub__breadcrumb breadcrumb layout-breadcrumb">';
+    echo '<ul class="breadcrumb layout-breadcrumb">';
     if ( is_front_page() ) {
         // トップページの場合
     }
