@@ -82,21 +82,54 @@ var parent = document.querySelectorAll(".header__has-sub");
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
-    
 
 
-// トップページのスライダー
-let swiperTop = {
-  loop: true,
-  spaceBetween: 10,
-  slidesPerView: 3.5,
-  autoplay: {
+
+  // トップページのスライダー
+  let swiperTop = {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3.5,
+    autoplay: {
       delay: 4000,
       disableOnInteraction: false,
-  },
-  speed: 2000,
-}
-new Swiper('.mySwiper-top', swiperTop);
+    },
+    speed: 2000,
+  }
+  new Swiper('.mySwiper-top', swiperTop);
+
+  // 共有スペースのスライダー
+  let swiperFacility = {
+    loop: true,
+    loopAdditionalSlides: 1,
+    spaceBetween: 25,
+    slidesPerView: 3,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    speed: 2000,
+
+    grabCursor: true, 
+    watchSlidesProgress: true, 
+
+    pagination: {
+      el: '.swiper-pagination', 
+      clickable: true, 
+      type: 'bullets'  
+    },
+
+    navigation: {
+      nextEl: '.swiper-button-next', 
+      prevEl: '.swiper-button-prev', 
+    },
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+
+  }
+  new Swiper('.mySwiper-Facility', swiperFacility);
 
 
 });

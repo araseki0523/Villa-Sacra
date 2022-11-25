@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.shared-space__inner {
+    max-width: rem(979);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.shared-space__title-ja {
+    font-size: rem(36);
+    font-weight: 500;
+    line-height: 1.7;
+    font-family: $yumincho;
+}
+
+.shared-space__title-en {
+    font-size: rem(16);
+    line-height: 1.125;
+}
+
+.shared-space__container {
+    margin-top: rem(40);
+}
+
+.shared-space__text {
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: 1.75;
+    font-family: $yumincho;
+}

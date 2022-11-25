@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body {
+  font-family: "メイリオ", "Meiryo", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+.br-ss {
+  display: block;
+}
+@media screen and (min-width: 376px) {
+  .br-ss {
+    display: none;
+  }
+}
+
+.br-md {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .br-md {
+    display: block;
+  }
+}
+
+.br-sm {
+  display: block;
+}
+@media screen and (min-width: 600px) {
+  .br-sm {
+    display: none;
+  }
+}
+
+.br-sm-pc {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .br-sm-pc {
+    display: block;
+  }
+}
+
+.br-481 {
+  display: block;
+}
+@media screen and (max-width: 481px) {
+  .br-481 {
+    display: none;
+  }
+}
+
+.layout-shared-space {
+  margin-top: 178px;
+  margin-top: 11.125rem;
+}
+/*# sourceMappingURL=layout-shared-space.css.map */
