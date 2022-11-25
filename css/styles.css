@@ -1,9 +1,13 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "SignPainter";
+  src: url("../fonts/signpainter/Sign-Painter-Regular.ttf") format("truetype");
+}
 body {
   font-family: "メイリオ", "Meiryo", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
   background: #000;
   color: #fff;
-  font-family: "Yu Mincho", "YuGothic", sans-serif;
+  font-family: "Yu Mincho", "YuMincho", sans-serif;
 }
 
 .u-desktop {
@@ -563,7 +567,7 @@ select::-ms-expand {
   display: flex;
   font-size: 14px;
   font-size: 0.875rem;
-  font-family: "Yu Gothic", "YuMincho", sans-serif;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -596,6 +600,188 @@ select::-ms-expand {
   margin-top: 94px;
   margin-top: 5.875rem;
   text-align: center;
+}
+
+.header {
+  background: #000;
+  height: 90px;
+  z-index: 11111;
+  width: 100vw;
+  -webkit-transition: background-color 0.8s;
+  transition: background-color 0.8s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#header.fixed {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+  padding: 0 30px 0 20px;
+  padding: 0 1.875rem 0 1.25rem;
+}
+
+.header__logo {
+  width: 158px;
+  width: 9.875rem;
+}
+
+/*======================================
+pc                                        
+======================================*/
+.header__nav {
+  text-transform: uppercase;
+}
+
+.header__nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+.header__nav-item {
+  height: inherit;
+  letter-spacing: 0.06em;
+}
+
+.header__nav-item + .header__nav-item {
+  margin-left: 28px;
+  margin-left: 1.75rem;
+}
+
+.header__nav-item a {
+  color: #fff;
+  height: inherit;
+  font-size: 16px;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 12px;
+  padding: 0 0.75rem;
+  position: relative;
+}
+
+.header__nav-item a::before {
+  position: absolute;
+  content: "";
+  bottom: 6px;
+  bottom: 0.375rem;
+  left: 3%;
+  width: 90%;
+  height: 1px;
+  height: 0.0625rem;
+  visibility: hidden;
+}
+
+.header__nav-item a:hover::before {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  visibility: visible;
+}
+
+.header__nav-item.header__nav-item--white a:hover::before {
+  visibility: hidden;
+}
+
+.header__nav-item.header__nav-item--white {
+  padding: 4px;
+  padding: 0.25rem;
+  margin-left: 28px;
+  margin-left: 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #fff;
+}
+
+.header__nav-item.header__nav-item--white a {
+  color: #fff;
+  padding: 0 27px;
+  padding: 0 1.6875rem;
+}
+
+.header__nav-item.nav-item--white a:hover {
+  background: #272727;
+  color: #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header__nav-item-icon {
+  background-image: url(../images/common/icon-air.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  width: 3.125rem;
+  height: 30px;
+  height: 1.875rem;
+  margin: auto;
+}
+
+/*======================================
+sp                                        
+======================================*/
+.header__sp-nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  width: 100%;
+  height: 100vh;
+  z-index: 8888;
+}
+@media screen and (max-width: 768px) {
+  .header__sp-nav {
+    display: none;
+  }
+}
+
+.header__sp-nav-items {
+  padding-top: 150px;
+  padding-top: 9.375rem;
+  padding-bottom: 100px;
+  padding-bottom: 6.25rem;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.header__sp-nav-item a {
+  display: block;
+  width: 100%;
+  padding-top: 16px;
+  padding-top: 1rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 .inner {
@@ -1018,7 +1204,7 @@ select::-ms-expand {
   left: 58px;
   left: 3.625rem;
   letter-spacing: 0.13em;
-  z-index: 1;
+  z-index: 2;
 }
 
 .mv__wrapper {
@@ -1055,15 +1241,17 @@ select::-ms-expand {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  z-index: 1;
 }
 
 .mv__background {
   margin-top: auto;
-  background-color: blue;
-  width: 214px;
-  width: 13.375rem;
+  background-color: #272727;
+  width: 40%;
   height: 636px;
   height: 39.75rem;
+  z-index: -1;
+  position: relative;
 }
 
 .privacy-policy-box__inner {
@@ -1077,7 +1265,7 @@ select::-ms-expand {
   color: #000;
   font-size: 26px;
   font-size: 1.625rem;
-  font-family: "Yu Mincho", "YuGothic", sans-serif;
+  font-family: "Yu Mincho", "YuMincho", sans-serif;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;

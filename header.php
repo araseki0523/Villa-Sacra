@@ -72,12 +72,12 @@ $contact = esc_url(home_url('/contact/'));
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-<!-- ヘッダー部分（ロゴとハンバーガー） -->
-<header class="header layout-header">
+  <!-- ヘッダー部分（ロゴとハンバーガー） -->
+  <header class="header layout-header" id="header">
     <div class="header__inner">
 
       <h1 class="header__logo">
-        <a href="<?php echo esc_url( home_url('/')); ?>" class="header__logo-link">
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="header__logo-link">
           <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="ヘッダーロゴ">
         </a>
       </h1>
@@ -97,18 +97,32 @@ $contact = esc_url(home_url('/contact/'));
           <li class="header__nav-item"><a href="<?php echo $access ?>">access</a></li>
           <li class="header__nav-item"><a href="<?php echo $blog ?>">blog</a></li>
           <li class="header__nav-item"><a href="<?php echo $qa ?>">q&amp;a</a></li>
-          <li class="header__nav-item header__nav-item--white"><a href="<?php echo $contact ?>">contact</a></li>
+          <li class="header__nav-item header__nav-item--white">
+            <div class="header__nav-item-icon"></div>
+            <a href="<?php echo $contact ?>">contact
+            </a>
+          </li>
+          <li class="header__nav-item header__nav-item--white">
+            <a href="">
+              english</a>
+            <ul class="header__sub">
+              <li class="header__sub-heading"><a href="<?php echo $service ?>">事業内容</a></li>
+              <li class="header__sub-text"><a href="<?php echo esc_url(home_url('/')); ?>service#service-civil-engineering">-土木工事</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
 
       <div class="header__sp-nav js-drawer-menu">
-        <ul class="header__sp-nav__items" id="nav">
-          <li class="header__sp-nav__item"><a class="link" href="<?php echo $news ?>">お知らせ</a></li>
-          <li class="header__sp-nav__item"><a class="link" href="<?php echo $content ?>">事業内容</a></li>
-          <li class="header__sp-nav__item"><a class="link" href="<?php echo $works ?>">制作実績</a></li>
-          <li class="header__sp-nav__item"><a class="link" href="<?php echo $overview ?>">企業概要</a></li>
-          <li class="header__sp-nav__item"><a class="link" href="<?php echo $blog ?>">ブログ</a></li>
-          <li class="header__sp-nav__item"><a class="link" href="<?php echo $contact ?>">お問い合わせ</a></li>
+        <ul class="header__sp-nav-items" id="nav">
+          <li class="header__sp-nav-item"><a href="<?php echo $concept ?>">concept</a></li>
+          <li class="header__sp-nav-item"><a href="<?php echo $room ?>">room</a></li>
+          <li class="header__sp-nav-item"><a href="<?php echo $bb ?>">b&amp;b</a></li>
+          <li class="header__sp-nav-item"><a href="<?php echo $facility ?>">facility</a></li>
+          <li class="header__sp-nav-item"><a href="<?php echo $access ?>">access</a></li>
+          <li class="header__sp-nav-item"><a href="<?php echo $blog ?>">blog</a></li>
+          <li class="header__sp-nav-item"><a href="<?php echo $qa ?>">q&amp;a</a></li>
+          <li class="header__sp-nav-item"><a class="link" href="<?php echo $contact ?>">お問い合わせ</a></li>
         </ul>
       </div>
 
