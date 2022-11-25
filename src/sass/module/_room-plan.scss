@@ -1,0 +1,61 @@
+@use "global" as *;
+
+.room-plan__inner {
+    margin-left: 9.375rem;
+    margin-right: 9.375rem;
+}
+
+.room-plan__container {
+    color: #000;
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-family: "Yu Mincho", "YuGothic", sans-serif;
+    line-height: 1.7;
+    font-weight: 500;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.room-plan__left,
+.room-plan__center,
+.room-plan__right {
+    background-color: #E9E9E9;
+    width: 348px;
+    width: 21.75rem;
+    height: 90px;
+    height: 5.625rem;
+    padding-top: 18px;
+    padding-top: 1.125rem;
+    position: relative;
+}
+
+.room-plan__left::before,
+.room-plan__center::before,
+.room-plan__right::before {
+	content: '';
+	position: absolute;
+	top: calc(48% - 2px);
+	right: 0;
+	transform: translateY(calc(-48% - 2px)) rotate(45deg);
+	width: 10px;    
+	height: 1px;
+	background: $black;
+}
+.room-plan__left::after,
+.room-plan__center::after,
+.room-plan__right::after {
+	content: '';
+	position: absolute;
+	top: 48%;
+	right: -1em;
+	transform: translateY(-48%);
+	width: 100px;
+	height: 1px;
+	background: $black;
+}
+

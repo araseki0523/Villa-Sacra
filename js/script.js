@@ -16,18 +16,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //スクロールすると上部に固定させるための設定を関数でまとめる
-function FixedAnime() {
-  var headerH = $('#header').outerHeight(true);
-  var scroll = $(window).scrollTop();
-  if (scroll >= headerH){//headerの高さ以上になったら
+  function FixedAnime() {
+    var headerH = $('#header').outerHeight(true);
+    var scroll = $(window).scrollTop();
+    if (scroll >= headerH) {//headerの高さ以上になったら
       $('#header').addClass('fixed');//fixedというクラス名を付与
-    }else{//それ以外は
+    } else {//それ以外は
       $('#header').removeClass('fixed');//fixedというクラス名を除去
     }
-}
+  }
 
-// PC headerのenglishモーダル
-var parent = document.querySelectorAll(".header__has-sub");
+  // PC headerのenglishモーダル
+  var parent = document.querySelectorAll(".header__has-sub");
   var node = Array.prototype.slice.call(parent, 0);
   node.forEach(function (element) {
     element.addEventListener(
@@ -46,8 +46,8 @@ var parent = document.querySelectorAll(".header__has-sub");
     );
   });
 
-   // アコーディオン
-   $(function () {
+  // アコーディオン
+  $(function () {
     $('.qa__label').click(function () {
       $(this).next('div').slideToggle('open');
       $(this).find(".icon").toggleClass('open');
@@ -110,18 +110,18 @@ var parent = document.querySelectorAll(".header__has-sub");
     },
     speed: 2000,
 
-    grabCursor: true, 
-    watchSlidesProgress: true, 
+    grabCursor: true,
+    watchSlidesProgress: true,
 
     pagination: {
-      el: '.swiper-pagination', 
-      clickable: true, 
-      type: 'bullets'  
+      el: '.swiper-pagination',
+      clickable: true,
+      type: 'bullets'
     },
 
     navigation: {
-      nextEl: '.swiper-button-next', 
-      prevEl: '.swiper-button-prev', 
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
 
     scrollbar: {
@@ -130,6 +130,21 @@ var parent = document.querySelectorAll(".header__has-sub");
 
   }
   new Swiper('.mySwiper-Facility', swiperFacility);
+
+  // お部屋情報スライダー
+  // サムネイル
+const sliderThumbnail = new Swiper(".slider-thumbnail", {
+  slidesPerView: 3, // サムネイルの枚数
+});
+// スライダー
+const slider = new Swiper(".room-sub-slider", {
+  loop: true,
+  slidesPerView: 5,
+
+  thumbs: {
+    swiper: sliderThumbnail,
+  },
+});
 
 
 });

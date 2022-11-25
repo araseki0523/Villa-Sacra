@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.banners {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    // place-items: center;
+    @include mq(md) {
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 0;
+    }
+}
+
+.banners__img {
+    cursor: pointer;
+    max-width: rem(165);
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.banners__img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: $white, $alpha: 0.7);
+}
+
+.banners_icon{
+    position: absolute;
+    padding-top: rem(10);
+    background-image: url(../images/common/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 43%;
+    width: rem(22);
+    height: rem(50);
+    margin: auto;
+}
+
+.banners__text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: rem(20);
+    font-weight: 500;
+    font-family: $yumincho;
+    color: $black;
+    white-space: nowrap;
+    text-align: center;
+}

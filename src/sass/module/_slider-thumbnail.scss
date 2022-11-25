@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.slider-thumbnail .swiper-slide {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    width: calc(100% / 5);
+}
+.slider-thumbnail .swiper-slide.swiper-slide-thumb-active {
+    opacity: 1;
+}
+/* レイアウトのためのスタイル */
+.swiper {
+    // max-width: 500px;
+    width: 100%;
+}
+.swiper-slide img {
+    height: auto;
+    width: 100%;
+}
+
+.room-slider {
+    width: 100%; 
+}
