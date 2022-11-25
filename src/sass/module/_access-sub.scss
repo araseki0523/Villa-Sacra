@@ -1,0 +1,72 @@
+@use 'global' as *;
+
+.access-sub {
+
+}
+
+.access-sub__inner {
+    max-width: rem(1400);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.access-sub__title {
+    width: 158px;
+    margin: 0 auto;
+}
+
+.access-sub__title img {
+
+}
+
+.access-sub__wrapper {
+    margin-top: rem(50);
+}
+
+.access-sub__map-area {
+    // #wrapperは_access.scss
+}
+
+.access-sub__box {
+    margin-top: rem(64);
+display: flex;
+justify-content: center;
+}
+
+.access-sub__left {
+    border-right: 1px solid $white;
+    padding-right: rem(100);
+}
+
+.access-sub__address {
+}
+
+.access-sub__nav {
+
+}
+.access-sub__list-item {
+    font-family: $yugothic;
+    font-size: rem(21);
+
+}
+.access-sub__right {
+    padding-left: rem(100);
+}
+// SNS
+.access-sub__sns {
+
+}
+.access-sub__container {
+    display: flex;
+    align-items: center;
+    height: rem(60);
+    width: rem(200);
+
+}
+.access-sub__sub-text {
+    width: rem(42);
+}
+
+.access-sub__sub-text + .access-sub__sub-text {
+    margin-left: rem(20);
+}

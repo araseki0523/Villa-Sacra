@@ -5,6 +5,7 @@
     padding: rem(10) rem(76);
     border: 1px solid $white;
     position: relative;
+	font-family: $sub-font-family;
 }
 .button::before {
 	content: '';

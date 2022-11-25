@@ -122,7 +122,6 @@ $contact = esc_url(home_url('/contact/'));
                   </a>
                 </li>
               </div>
-
             </ul>
           </li>
         </ul>

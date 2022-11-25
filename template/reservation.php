@@ -1,3 +1,5 @@
+<!-- リンク未貼付 -->
+
 <div class="reservation layout-reservation">
     <div class="reservation__inner">
         <div class="reservation__container">

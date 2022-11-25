@@ -9,6 +9,7 @@
 }
 .footer__container {
     display: flex;
+    justify-content: center;
     background-color: $gray;
     padding-top: rem(100);
     padding-bottom: rem(106);

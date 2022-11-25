@@ -225,6 +225,74 @@ select::-ms-expand {
   display: none;
 }
 
+.access-sub__inner {
+  max-width: 1400px;
+  max-width: 87.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.access-sub__title {
+  width: 158px;
+  margin: 0 auto;
+}
+
+.access-sub__wrapper {
+  margin-top: 50px;
+  margin-top: 3.125rem;
+}
+
+.access-sub__box {
+  margin-top: 64px;
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.access-sub__left {
+  border-right: 1px solid #fff;
+  padding-right: 100px;
+  padding-right: 6.25rem;
+}
+
+.access-sub__list-item {
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+  font-size: 21px;
+  font-size: 1.3125rem;
+}
+
+.access-sub__right {
+  padding-left: 100px;
+  padding-left: 6.25rem;
+}
+
+.access-sub__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  height: 3.75rem;
+  width: 200px;
+  width: 12.5rem;
+}
+
+.access-sub__sub-text {
+  width: 42px;
+  width: 2.625rem;
+}
+
+.access-sub__sub-text + .access-sub__sub-text {
+  margin-left: 20px;
+  margin-left: 1.25rem;
+}
+
 .access__inner {
   max-width: 1078px;
   max-width: 67.375rem;
@@ -259,6 +327,67 @@ select::-ms-expand {
 .access__button-area {
   margin-top: 88px;
   margin-top: 5.5rem;
+  text-align: center;
+}
+
+.affiliated__inner {
+  max-width: 1260px;
+  max-width: 78.75rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.affiliated__container {
+  margin-top: 64px;
+  margin-top: 4rem;
+}
+
+.affiliated__place {
+  background-color: #fff;
+  color: #000;
+  padding: 40px;
+  padding: 2.5rem;
+}
+
+.affiliated__place-title-ja {
+  font-family: "Sawarabi Mincho", serif;
+  font-size: 36px;
+  font-size: 2.25rem;
+}
+
+.affiliated__place-title-ja {
+  font-family: "SignPainter HouseScript";
+}
+
+.affiliated__place-title-ja,
+.affiliated__place-title-en {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.affiliated__address {
+  border: 1px solid #fff;
+  padding-bottom: 70px;
+  padding-bottom: 4.375rem;
+}
+
+.affiliated__text {
+  margin-top: 50px;
+  margin-top: 3.125rem;
+  text-align: center;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+}
+
+.affiliated__button-area {
+  margin-top: 50px;
+  margin-top: 3.125rem;
   text-align: center;
 }
 
@@ -368,6 +497,7 @@ select::-ms-expand {
   padding: 0.625rem 4.75rem;
   border: 1px solid #fff;
   position: relative;
+  font-family: "SignPainter HouseScript";
 }
 
 .button::before {
@@ -495,6 +625,9 @@ select::-ms-expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #272727;
   padding-top: 100px;
   padding-top: 6.25rem;
@@ -1082,9 +1215,19 @@ sp
   height: 38.25rem;
 }
 
+.layout-access-sub {
+  padding-top: 192px;
+  padding-top: 12rem;
+}
+
 .layout-access {
   margin-top: 500px;
   margin-top: 31.25rem;
+}
+
+.layout-affiliated {
+  margin-top: 246px;
+  margin-top: 15.375rem;
 }
 
 .layout-blog-top {
@@ -1156,6 +1299,11 @@ sp
   margin-top: 9.875rem;
 }
 
+.layout-qa {
+  margin-top: 134px;
+  margin-top: 8.375rem;
+}
+
 .layout-recruit {
   margin-top: 500px;
   margin-top: 31.25rem;
@@ -1179,6 +1327,10 @@ sp
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 2.4;
+}
+
+.message__text-area {
+  font-family: "SignPainter HouseScript";
 }
 
 .message__text2 {
@@ -1247,6 +1399,8 @@ sp
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  font-family: "Noto Serif JP", serif;
+  text-transform: uppercase;
 }
 
 .mv-sub__title-en {
@@ -1254,6 +1408,8 @@ sp
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  font-family: "SignPainter HouseScript";
+  text-transform: capitalize;
 }
 
 .mv {
@@ -1375,6 +1531,10 @@ sp
   margin: 0 auto;
 }
 
+.privacy-policy__title-ja {
+  font-family: "Noto Serif JP", serif;
+}
+
 .privacy-policy__container {
   margin-top: 130px;
   margin-top: 8.125rem;
@@ -1474,6 +1634,7 @@ sp
 
 .qa__content > li {
   list-style: none;
+  border: 2px solid #fff;
 }
 
 .qa__label {
@@ -1487,6 +1648,15 @@ sp
   color: #000;
 }
 
+.qa__label {
+  margin-top: 34px;
+  margin-top: 2.125rem;
+}
+
+.qa__label1 {
+  margin-top: 0;
+}
+
 .qa__label::before {
   content: "";
   background-image: url(../images/qa/Q.png);
@@ -1495,15 +1665,19 @@ sp
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 50%;
+  top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: red;
+  left: 10px;
 }
 
 .qa__label > p {
-  margin-left: 30px;
-  margin-left: 1.875rem;
+  padding-left: 50px;
+  padding-left: 3.125rem;
+  padding-top: 0px;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+  padding-bottom: 0rem;
   font-size: 16px;
   font-size: 1rem;
 }
@@ -1515,12 +1689,12 @@ sp
 .qa__answer > p {
   font-size: 16px;
   font-size: 1rem;
-  padding-left: 30px;
-  padding-left: 1.875rem;
-  padding-top: 14px;
-  padding-top: 0.875rem;
-  padding-bottom: 14px;
-  padding-bottom: 0.875rem;
+  padding-left: 50px;
+  padding-left: 3.125rem;
+  padding-top: 10px;
+  padding-top: 0.625rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
   position: relative;
 }
 
@@ -1532,11 +1706,10 @@ sp
   background-size: contain;
   width: 20px;
   height: 20px;
-  top: 50%;
+  top: 30%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: blue;
-  left: 0;
+  left: 10px;
 }
 
 /*======================================
@@ -1750,16 +1923,14 @@ sp
 }
 
 .sub-section-title__ja {
-  font-size: 26px;
-  font-size: 1.625rem;
+  font-size: 36px;
+  font-size: 2.25rem;
   text-align: center;
 }
 
 .sub-section-title__en {
   font-size: 14px;
   font-size: 0.875rem;
-  padding-left: 76px;
-  padding-left: 4.75rem;
   text-align: center;
 }
 
