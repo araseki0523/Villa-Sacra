@@ -46,6 +46,13 @@ var parent = document.querySelectorAll(".header__has-sub");
     );
   });
 
+   // アコーディオン
+   $(function () {
+    $('.qa__label').click(function () {
+      $(this).next('div').slideToggle('open');
+      $(this).find(".icon").toggleClass('open');
+    });
+  });
 
   // ボタンをクリックしたらスクロールして上に戻る
   topBtn.click(function () {
@@ -66,7 +73,6 @@ var parent = document.querySelectorAll(".header__has-sub");
 
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
-
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
     let header = $('header').innerHeight();
