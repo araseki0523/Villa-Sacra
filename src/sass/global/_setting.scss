@@ -14,8 +14,8 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 $base-font-family: 'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
-$yumincho: 'Yu Mincho', 'YuGothic', sans-serif;
-$yugothic: 'Yu Gothic', 'YuMincho',sans-serif;
+$yumincho: 'Yu Mincho', 'YuMincho', sans-serif;
+$yugothic: 'Yu Gothic', 'YuGothic',sans-serif;
 $sub-font-family: 'SignPainter HouseScript';
 
 // フォントウェイト
@@ -65,6 +65,7 @@ body {
   font-family: $base-font-family;
   background: $black;
   color: $white;
+  font-family: $yumincho;
 }
 
 

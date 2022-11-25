@@ -3,6 +3,7 @@ body {
   font-family: "メイリオ", "Meiryo", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
   background: #000;
   color: #fff;
+  font-family: "Yu Mincho", "YuGothic", sans-serif;
 }
 
 .u-desktop {
@@ -493,6 +494,9 @@ select::-ms-expand {
 .footer__left {
   margin-left: 145px;
   margin-left: 9.0625rem;
+  padding-right: 124px;
+  padding-right: 7.75rem;
+  border-right: 1px solid #fff;
 }
 
 .footer__logo {
@@ -503,6 +507,20 @@ select::-ms-expand {
 .footer__right {
   margin-left: 132px;
   margin-left: 8.25rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.footer__list-item + .footer__list-item {
+  margin-top: 50px;
+  margin-top: 3.125rem;
+}
+
+.footer__list-item span {
+  font-size: 16px;
+  font-size: 1rem;
+  padding-left: 50px;
+  padding-left: 3.125rem;
 }
 
 .footer__sns {
@@ -545,6 +563,7 @@ select::-ms-expand {
   display: flex;
   font-size: 14px;
   font-size: 0.875rem;
+  font-family: "Yu Gothic", "YuMincho", sans-serif;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -663,6 +682,11 @@ select::-ms-expand {
   letter-spacing: 0.5em;
 }
 
+.introduction__container-even > .introduction__room-name {
+  margin-right: 60px;
+  margin-right: 3.75rem;
+}
+
 .introduction__image-wrapper {
   margin-top: -174px;
   margin-top: -10.875rem;
@@ -749,6 +773,11 @@ select::-ms-expand {
   line-height: 1.5;
 }
 
+.introduction__text2 {
+  padding: 0 53px 53px;
+  padding: 0 3.3125rem 3.3125rem;
+}
+
 .introduction__button-area {
   margin-top: 55px;
   margin-top: 3.4375rem;
@@ -769,7 +798,7 @@ select::-ms-expand {
 .introduction__background2,
 .introduction__background3,
 .introduction__background4 {
-  background-color: lightblue;
+  background-color: #272727;
   z-index: -2;
   position: absolute;
 }
