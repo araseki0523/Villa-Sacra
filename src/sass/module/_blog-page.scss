@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.blog-page__inner {
+    max-width: rem(1078);
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.blog-page__item:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.blog-page__items:nth-of-type(n + 4) {
+    margin-top: 4%;
+}
+

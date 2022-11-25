@@ -1,0 +1,64 @@
+@use "global" as *;
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: rem(1076);
+    width: 100%;
+    padding-left: rem(25);
+    padding-right: rem(25);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    margin-right: 7%;
+}
+
+.card__img {
+    padding-top: 100%;
+    position: relative;
+}
+
+.card__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.card__info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.card__info {
+    margin-top: auto;
+}
+
+.card__date {
+    display: block;
+    margin-right: auto;
+    font-size: 12px;
+}
+
+.card__title {
+    font-size: 18px;
+}
+
+.card__text {
+    margin-top: 16px;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}

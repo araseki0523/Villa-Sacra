@@ -322,6 +322,21 @@ select::-ms-expand {
   margin-top: 0.5625rem;
 }
 
+.blog-page__inner {
+  max-width: 1078px;
+  max-width: 67.375rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.blog-page__item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.blog-page__items:nth-of-type(n + 4) {
+  margin-top: 4%;
+}
+
 .blog-top__inner {
   max-width: 1078px;
   max-width: 67.375rem;
@@ -445,6 +460,87 @@ select::-ms-expand {
   width: 100px;
   height: 1px;
   background-color: #27acd9;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1076px;
+  max-width: 67.25rem;
+  width: 100%;
+  padding-left: 25px;
+  padding-left: 1.5625rem;
+  padding-right: 25px;
+  padding-right: 1.5625rem;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 26%;
+  margin-right: 7%;
+}
+
+.card__img {
+  padding-top: 100%;
+  position: relative;
+}
+
+.card__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__info {
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 200px;
+}
+
+.card__info {
+  margin-top: auto;
+}
+
+.card__date {
+  display: block;
+  margin-right: auto;
+  font-size: 12px;
+}
+
+.card__title {
+  font-size: 18px;
+}
+
+.card__text {
+  margin-top: 16px;
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .convention__inner {
@@ -919,6 +1015,11 @@ select::-ms-expand {
 .layout-amenities {
   margin-top: 329px;
   margin-top: 20.5625rem;
+}
+
+.layout-blog-page {
+  margin-top: 124px;
+  margin-top: 7.75rem;
 }
 
 .layout-blog-top {
