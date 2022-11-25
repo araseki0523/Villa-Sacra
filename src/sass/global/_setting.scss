@@ -13,10 +13,19 @@ $padding-sp: 20px;
 ////////////////////
 // フォント設定
 ////////////////////
+@font-face{
+  font-family: "SignPainter";
+  src: url('../fonts/Sign-Painter-Regular.ttf') format('truetype');
+}
+
 $base-font-family: 'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
-$yumincho: 'Yu Mincho', 'YuGothic', sans-serif;
-$yugothic: 'Yu Gothic', 'YuMincho',sans-serif;
+$yumincho: 'Yu Mincho', 'YuMincho', sans-serif;
+$yugothic: 'Yu Gothic', 'YuGothic',sans-serif;
 $sub-font-family: 'SignPainter HouseScript';
+// ヒラギノ明朝ProN
+// 凸版文久明朝
+
+
 
 // フォントウェイト
 $regular: 300;
@@ -30,8 +39,10 @@ $bold: 700;
 ////////////////////
 
 $black: #000;
-$black-news: #010101;
 $white: #fff;
+$gray: #272727;
+$yellow: #EAF058;
+
 
 ////////////////////
 // メディアクエリとブレークポイントの設定
@@ -40,6 +51,7 @@ $white: #fff;
 //ブレイクポイント
 $breakpoints: (
   xl: 1440,
+  comp: 1366,
   ll: 1280,
   lg: 1024,
   mm: 960,
@@ -51,6 +63,7 @@ $breakpoints: (
 //メディアクエリー
 $mediaquerys: (
   xl: "screen and (max-width: #{map-get($breakpoints,'xl')}px)",
+  comp: "screen and (max-width: #{map-get($breakpoints,'comp')}px)",
   ll: "screen and (max-width: #{map-get($breakpoints,'ll')}px)",
   lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
   mm: "screen and (max-width: #{map-get($breakpoints,'mm')}px)",
@@ -63,6 +76,7 @@ body {
   font-family: $base-font-family;
   background: $black;
   color: $white;
+  font-family: $yumincho;
 }
 
 

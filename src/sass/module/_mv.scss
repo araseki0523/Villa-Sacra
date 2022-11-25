@@ -16,7 +16,7 @@
     bottom: rem(144);
     left: rem(58);
     letter-spacing: 0.13em;
-    z-index: 1;
+    z-index: 2;
 }
 
 .mv__wrapper {
@@ -43,11 +43,14 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    z-index: 1;
 }
 
 .mv__background {
     margin-top: auto;
-    background-color: blue;
-    width: rem(214);
+    background-color: $gray;
+    width: 40%;
     height: rem(636);
+    z-index: -1;
+    position: relative;
 }

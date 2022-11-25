@@ -1,13 +1,13 @@
 <?php
 $home = esc_url(home_url('/'));
-$company = esc_url(home_url('/company/'));
-$iwd = esc_url(home_url('/iwd/'));
-$news = esc_url(home_url('/news/'));
-$demolition = esc_url(home_url('/demolition/'));
+$concept = esc_url(home_url('/concept/'));
+$room = esc_url(home_url('/room/'));
+$bb = esc_url(home_url('/bb/'));
+$facility = esc_url(home_url('/facility/'));
+$access = esc_url(home_url('/access/'));
+$blog = esc_url(home_url('/blog/'));
+$qa = esc_url(home_url('/qa/'));
 $contact = esc_url(home_url('/contact/'));
-$privacy_policy = esc_url(home_url('/privacy-policy/'));
-$transportation = esc_url(home_url('/transportation/'));
-$service = esc_url(home_url('/service/'));
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +24,7 @@ $service = esc_url(home_url('/service/'));
     <?php
     global $page, $paged;
     if (is_front_page()) : //トップページ
-      echo '岩守産業 株式会社｜北海道名寄市';
+      echo 'Villa-Sacra';
       bloginfo('name');
     elseif (is_home()) : //ブログページ（ブログサイトの場合はトップページ）
       wp_title('｜', true, 'right');
@@ -38,10 +38,9 @@ $service = esc_url(home_url('/service/'));
     elseif (is_category()) : //カテゴリーページ
       echo 'カテゴリ ：';
       echo single_term_title();
-      echo '｜岩守産業 株式会社';
+      echo '｜Villa-Sacra';
     elseif (is_archive()) : //アーカイブページ
-      echo wp_title('') . '年のお知らせ｜岩守産業 株式会社';
-    // echo'｜岩守産業 株式会社';
+      echo wp_title('') . '年のお知らせ';
     elseif (is_404()) : //404ページ
       echo '404｜';
       bloginfo('name');
@@ -54,16 +53,16 @@ $service = esc_url(home_url('/service/'));
     endif;
     ?>
   </title>
-  <meta name="description" content="上川北部で唯一の安定型最終処分場を自社保有し、産業廃棄物処理や土木工事、解体工事、道路除雪、施設管理、貨物自動車運送と幅広くインフラ・ライフラインの維持管理に努めています。">
-  <meta name="keywords" content="岩守産業,北海道,名寄市,産業廃棄物,土木工事.解体工事,トラック,運送">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
   <meta name="robots" content="all" />
   <!-- OGP -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="岩守産業 株式会社｜北海道名寄市">
-  <meta property="og:description" content="上川北部で唯一の安定型最終処分場を自社保有し、産業廃棄物処理や土木工事、解体工事、道路除雪、施設管理、貨物自動車運送と幅広くインフラ・ライフラインの維持管理に努めています。">
-  <meta property="og:url" content="https://www.iwamori.co.jp/">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
   <meta property="og:image" content="">
-  <meta property="og:site_name" content="岩守産業 株式会社｜北海道名寄市">
+  <meta property="og:site_name" content="">
   <!-- ファビコン -->
   <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/common/favicon.ico" />
 
@@ -73,5 +72,74 @@ $service = esc_url(home_url('/service/'));
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
+  <!-- ヘッダー部分（ロゴとハンバーガー） -->
+  <header class="header layout-header" id="header">
+    <div class="header__inner">
 
+      <h1 class="header__logo">
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="header__logo-link">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="ヘッダーロゴ">
+        </a>
+      </h1>
+
+      <button class="header__drawer hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item"><a href="<?php echo $concept ?>">concept</a></li>
+          <li class="header__nav-item"><a href="<?php echo $room ?>">room</a></li>
+          <li class="header__nav-item"><a href="<?php echo $bb ?>">b&amp;b</a></li>
+          <li class="header__nav-item"><a href="<?php echo $facility ?>">facility</a></li>
+          <li class="header__nav-item"><a href="<?php echo $access ?>">access</a></li>
+          <li class="header__nav-item"><a href="<?php echo $blog ?>">blog</a></li>
+          <li class="header__nav-item"><a href="<?php echo $qa ?>">q&amp;a</a></li>
+          <li class="header__nav-item header__nav-item--white">
+            <div class="header__nav-item-icon"></div>
+            <a href="<?php echo $contact ?>">contact
+            </a>
+          </li>
+          <li class="header__nav-item header__has-sub"><a href="">english</a>
+            <!-- Englishのホバー -->
+            <ul class="header__sub">
+              <div class="header__container">
+                <li class="header__sub-text">
+                  <a href="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-instagram-white.png" alt="インスタグラムのアイコン画像">
+                  </a>
+                </li>
+                <li class="header__sub-text">
+                  <a href="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-facebook-white.png" alt="フェイスブックのアイコン画像">
+                  </a>
+                </li>
+                <li class="header__sub-text">
+                  <a href="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-tiktok-white.png" alt="ティックトックのアイコン画像">
+                  </a>
+                </li>
+              </div>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__sp-nav js-drawer-menu">
+        <ul class="header__sp-nav-items" id="nav">
+          <li class="header__sp-nav-item"><a href="<?php echo $concept ?>">concept</a></li>
+          <li class="header__sp-nav-item"><a href="<?php echo $room ?>">room</a></li>
+          <li class="header__sp-nav-item"><a href="<?php echo $bb ?>">b&amp;b</a></li>
+          <li class="header__sp-nav-item"><a href="<?php echo $facility ?>">facility</a></li>
+          <li class="header__sp-nav-item"><a href="<?php echo $access ?>">access</a></li>
+          <li class="header__sp-nav-item"><a href="<?php echo $blog ?>">blog</a></li>
+          <li class="header__sp-nav-item"><a href="<?php echo $qa ?>">q&amp;a</a></li>
+          <li class="header__sp-nav-item"><a class="link" href="<?php echo $contact ?>">お問い合わせ</a></li>
+        </ul>
+      </div>
+
+    </div>
   </header>
