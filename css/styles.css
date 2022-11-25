@@ -634,16 +634,16 @@ select::-ms-expand {
   padding: 0 1.875rem 0 1.25rem;
 }
 
-.header__logo {
+.header__logo img {
   width: 158px;
-  width: 9.875rem;
 }
 
 /*======================================
-pc                                        
+pc版のナビメニュー                                 
 ======================================*/
 .header__nav {
   text-transform: uppercase;
+  margin-left: auto;
 }
 
 .header__nav-items {
@@ -718,6 +718,15 @@ pc
   border: 1px solid #fff;
 }
 
+.header__nav-item.header__has-sub {
+  padding: 7px;
+  padding: 0.4375rem;
+  margin-left: 28px;
+  margin-left: 1.75rem;
+  border: 1px solid #fff;
+  height: inherit;
+}
+
 .header__nav-item.header__nav-item--white a {
   color: #fff;
   padding: 0 27px;
@@ -740,6 +749,52 @@ pc
   height: 30px;
   height: 1.875rem;
   margin: auto;
+}
+
+/*======================================
+Englishのホバー                                        
+======================================*/
+.header__has-sub {
+  position: relative;
+}
+.header__has-sub .header__sub {
+  display: none;
+}
+
+.header__has-sub:hover .header__sub {
+  display: block;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 38%;
+  bottom: -80px;
+  bottom: -5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 60px;
+  height: 3.75rem;
+  width: 200px;
+  width: 12.5rem;
+}
+
+.header__sub-text {
+  padding-top: 14px;
+  padding-top: 0.875rem;
+  background-color: #000;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+}
+
+.header__sub-text a img {
+  width: 50px;
+  width: 3.125rem;
 }
 
 /*======================================

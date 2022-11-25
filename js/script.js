@@ -26,6 +26,27 @@ function FixedAnime() {
     }
 }
 
+// PC headerのenglishモーダル
+var parent = document.querySelectorAll(".header__has-sub");
+  var node = Array.prototype.slice.call(parent, 0);
+  node.forEach(function (element) {
+    element.addEventListener(
+      "mouseover",
+      function () {
+        element.querySelector(".header__sub").classList.add("active");
+      },
+      false
+    );
+    element.addEventListener(
+      "mouseout",
+      function () {
+        element.querySelector(".header__sub").classList.remove("active");
+      },
+      false
+    );
+  });
+
+
   // ボタンをクリックしたらスクロールして上に戻る
   topBtn.click(function () {
     $('body,html').animate({

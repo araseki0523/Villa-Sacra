@@ -51,6 +51,7 @@ $yellow: #EAF058;
 //ブレイクポイント
 $breakpoints: (
   xl: 1440,
+  comp: 1366,
   ll: 1280,
   lg: 1024,
   mm: 960,
@@ -62,6 +63,7 @@ $breakpoints: (
 //メディアクエリー
 $mediaquerys: (
   xl: "screen and (max-width: #{map-get($breakpoints,'xl')}px)",
+  comp: "screen and (max-width: #{map-get($breakpoints,'comp')}px)",
   ll: "screen and (max-width: #{map-get($breakpoints,'ll')}px)",
   lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
   mm: "screen and (max-width: #{map-get($breakpoints,'mm')}px)",

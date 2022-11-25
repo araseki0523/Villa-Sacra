@@ -16,9 +16,7 @@
       z-index: 999;
       top:0;
       left:0;
-  }
-  
-
+}
 .header__inner {
     display: flex;
     align-items: center;
@@ -26,15 +24,16 @@
     padding: 0 rem(30) 0 rem(20);
 }
 
-.header__logo {
-    width: rem(158);
+.header__logo img{
+    width: 158px;
 }
 
 /*======================================
-pc                                        
+pc版のナビメニュー                                 
 ======================================*/
 .header__nav {
     text-transform: uppercase;
+    margin-left: auto;
 }   
 
 .header__nav-items {
@@ -86,6 +85,12 @@ pc
     display: flex;
     border: 1px solid $white;
 }
+.header__nav-item.header__has-sub {
+    padding: rem(7);
+    margin-left: rem(28);
+    border: 1px solid $white;
+    height: inherit;
+}
 
 .header__nav-item.header__nav-item--white a {
     color: $white;
@@ -104,6 +109,77 @@ pc
     width: rem(50);
     height: rem(30);
     margin: auto;
+}
+
+
+/*======================================
+Englishのホバー                                        
+======================================*/
+// .header__has-sub {
+//     position: relative;
+// }
+
+// .header__sub {
+//     overflow: hidden;
+//     position: absolute;
+//     left: 0%;
+//     top: 4em;
+//     width: rem(304);
+//     min-height: 0;
+//     height: 0;
+//     z-index: 3;
+//     transition: min-height 0.5s;
+// }
+
+// .header__sub.active {
+//     min-height: 180px;
+// }
+
+// .header__sub-text a {
+//     width: rem(20);
+// }
+
+// .header__sub-text a::before{
+//     display: none;
+// }
+
+// .header__sub-text a :hover {
+//     background-color: $green;
+//     color: $white;
+//     opacity: 1;
+// }
+
+// .header__sub.active {
+//     min-height: 680px;
+// }
+.header__has-sub {
+    position: relative;
+    .header__sub {
+        display: none;
+    }
+}
+.header__has-sub:hover {
+    .header__sub {
+        display: block;
+    }    
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 38%;
+    bottom: rem(-80);
+    transform: translateX(-50%);
+    height: rem(60);
+    width: rem(200);
+}
+.header__sub-text {
+    padding-top: rem(14);
+    background-color: $black;
+    padding-bottom: rem(8);
+}
+.header__sub-text a img{
+    width: rem(50);
 }
 
 /*======================================

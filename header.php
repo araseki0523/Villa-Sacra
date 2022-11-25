@@ -102,12 +102,27 @@ $contact = esc_url(home_url('/contact/'));
             <a href="<?php echo $contact ?>">contact
             </a>
           </li>
-          <li class="header__nav-item header__nav-item--white">
-            <a href="">
-              english</a>
+          <li class="header__nav-item header__has-sub"><a href="">english</a>
+            <!-- Englishのホバー -->
             <ul class="header__sub">
-              <li class="header__sub-heading"><a href="<?php echo $service ?>">事業内容</a></li>
-              <li class="header__sub-text"><a href="<?php echo esc_url(home_url('/')); ?>service#service-civil-engineering">-土木工事</a></li>
+              <div class="header__container">
+                <li class="header__sub-text">
+                  <a href="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-instagram-white.png" alt="インスタグラムのアイコン画像">
+                  </a>
+                </li>
+                <li class="header__sub-text">
+                  <a href="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-facebook-white.png" alt="フェイスブックのアイコン画像">
+                  </a>
+                </li>
+                <li class="header__sub-text">
+                  <a href="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-tiktok-white.png" alt="ティックトックのアイコン画像">
+                  </a>
+                </li>
+              </div>
+
             </ul>
           </li>
         </ul>
