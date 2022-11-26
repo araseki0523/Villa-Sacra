@@ -8,6 +8,7 @@ $access = esc_url(home_url('/access/'));
 $blog = esc_url(home_url('/blog/'));
 $qa = esc_url(home_url('/qa/'));
 $contact = esc_url(home_url('/contact/'));
+$privacypolicy = esc_url(home_url('/privacypolicy/'));
 ?>
 
 <!DOCTYPE html>
@@ -78,7 +79,7 @@ $contact = esc_url(home_url('/contact/'));
 
       <h1 class="header__logo">
         <a href="<?php echo esc_url(home_url('/')); ?>" class="header__logo-link">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="ヘッダーロゴ">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.jpg" alt="ヘッダーロゴ">
         </a>
       </h1>
 
@@ -122,7 +123,6 @@ $contact = esc_url(home_url('/contact/'));
                   </a>
                 </li>
               </div>
-
             </ul>
           </li>
         </ul>

@@ -3,12 +3,12 @@
 <section class="mv-sub layout-mv-sub">
     <div class="mv-sub__inner">
         <div class="mv-sub__image">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/privacypolicy/sample.jpg" alt="プライバシーポリシーのメインビュー画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/qa/mv-sub-qa.jpg" alt="qandaのメインビュー画像">
             <div class="mv-sub__background">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/common/mv-sub-mask.png" alt="メインビュータイトル下の背景画像">
             </div>
-            <h2 class="mv-sub__title-ja">プライバシーポリシー / ホテル規約</h2>
-            <p class="mv-sub__title-en">Privacy Policy / Convention</p>
+            <h2 class="mv-sub__title-ja">q&amp;a</h2>
+            <p class="mv-sub__title-en">question</p>
         </div>
     </div>
 </section>
@@ -20,7 +20,7 @@
         <div class="qa__contents animation">
           <ul class="qa__content">
             <li>
-              <div class="qa__label">
+              <div class="qa__label qa__label1">
                 <p>ダウンタイムはどのくらいですか？</p>
                 <div class="icon-wrap"><span class="icon"></span></div>
               </div>
@@ -73,44 +73,11 @@
               </div>
             </li>
           </ul>
-          <ul class="qa__content">
-            <li>
-              <div class="qa__label">
-                <p>コンタクトレンズはいつから可能ですか？</p>
-                <div class="icon-wrap"><span class="icon"></span></div>
-              </div>
-              <div class="qa__answer">
-                <p>施術後3日後から可能です。</p>
-              </div>
-            </li>
-          </ul>
-          <ul class="qa__content">
-            <li>
-              <div class="qa__label">
-                <p>当日の持ち物はありますか？</p>
-                <div class="icon-wrap"><span class="icon"></span></div>
-              </div>
-              <div class="qa__answer">
-                <p>現住所記載の身分証をご持参下さい。また、コンタクトレンズを着用の場合は、コンタクトケースと眼鏡のご持参をお願い致します。</p>
-              </div>
-            </li>
-          </ul>
-          <ul class="qa__content">
-            <li>
-              <div class="qa__label">
-                <p>まつ毛エクステは付いたままでも施術は可能ですか？</p>
-                <div class="icon-wrap"><span class="icon"></span></div>
-              </div>
-              <div class="qa__answer">
-                <p>可能ですが、施術中に数本取れてしまう可能性はございます。</p>
-              </div>
-            </li>
-          </ul>
         </div>
       </div>
     </section>
 
-<section class="sub-gallery layout-sub-gallery">
+<section class="gallery-qa layout-gallery-qa">
    <?php get_template_part('template/gallery'); ?>
 </section>
 

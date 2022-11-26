@@ -1,0 +1,65 @@
+@use 'global' as *;
+
+.concept {
+
+}
+
+.concept__inner {
+    max-width: rem(832);
+    width: 100%;
+    margin: 0 auto;
+}
+.concept__container {
+    font-family: $yugothic;
+    font-size: rem(24);
+    text-align: center;
+}
+.concept__background-image {
+    // text1の上からtext4の下まで
+    background-image: url(../images/concept/background-message-concept.png);
+    background-position :initial;
+    background-size :55% rem(1500);
+    background-repeat: no-repeat;
+    font-family: $sub-font-family;
+}
+.concept__text1,
+.concept__text2,
+.concept__text3
+.concept__text2,
+.concept__text4,
+.concept__text5,
+.concept__text6,
+.concept__text7 {
+    // font-family: $yugothic;
+    // font-size: rem(24);
+    // text-align: center;
+    // max-width: rem(832);
+    // width: 100%;
+    // margin: 0 auto;
+}
+
+.concept__text1 {
+    padding-top: rem(150);
+}
+.concept__text2 {
+    padding-top: rem(162);
+}
+.concept__text3 {
+    padding-top: rem(202);
+}
+.concept__text4 {
+    padding-top: rem(162);
+}
+.concept__text5 {
+    padding-top: rem(50);
+}
+.concept__text6 {
+    padding-top: rem(202);
+}
+.concept__text7 {
+    padding-top: rem(126);
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}

@@ -3,7 +3,6 @@
 <section class="mv-sub layout-mv-sub">
     <div class="mv-sub__inner">
         <div class="mv-sub__image">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/privacypolicy/sample.jpg" alt="プライバシーポリシーのメインビュー画像">
             <div class="mv-sub__background">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/common/mv-sub-mask.png" alt="メインビュータイトル下の背景画像">
             </div>
@@ -541,7 +540,7 @@
     <!--convention__inner-->
 </section>
 
-<section class="sub-gallery layout-sub-gallery">
+<section class="gallery-privacy-policy layout-privacy-policy">
    <?php get_template_part('template/gallery'); ?>
 </section>
 
