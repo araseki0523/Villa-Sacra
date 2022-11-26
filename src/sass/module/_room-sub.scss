@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.room-sub__inner {
+    max-width: rem(1076);
+    width: 100%;
+    margin: auto;
+}
+
+.room-sub__text-area {
+    text-align: center;
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: 1.75;
+    font-family: $yugothic;
+}
+
+.room-sub__text2 {
+    margin-top: rem(40);
+}
+
+

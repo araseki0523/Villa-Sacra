@@ -8,10 +8,19 @@
     padding-bottom: rem(51);
     margin-top: rem(65);
     border-bottom: 1px solid $black;
+    @include mq(md) {
+        flex-wrap: wrap;
+        margin-top: rem(0);
+        padding-bottom: rem(0);
+        border-bottom: none;
+    }
 }
 
 .amenitiesList__item {
     margin-left: rem(25);
+    @include mq(md) {
+        margin-left: rem(0);    
+    }
 }
 
 .amenitiesList__item:nth-child(3n+1) {
@@ -27,6 +36,9 @@
     font-weight: $bold;
     line-height: 1.75;
     font-family: $yugothic;
+    @include mq(md) {
+        margin-top: rem(30);
+    }
 }
 
 .amenitiesList__text {

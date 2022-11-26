@@ -1,10 +1,11 @@
 @use "global" as *;
 
 .facility-box__inner {
-    margin-left: 150px;
-    margin-left: 9.375rem;
-    margin-right: 150px;
-    margin-right: 9.375rem;
+    max-width: rem(1076);
+    width: 100%;
+    margin: 0 auto;
+    padding-left: rem(20);
+    padding-right: rem(20);
 }
 
 .facility-box__container {
@@ -18,21 +19,25 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
 }
 
 .facility-box__left,
 .facility-box__center,
 .facility-box__right {
     background-color: #fff;
-    width: 348px;
-    width: 21.75rem;
-    height: 90px;
-    height: 5.625rem;
+    width: calc(100% / 3 - rem(32));
+    margin-left: rem(16);
+    flex-grow: 1;
+    // width: 348px;
+    // width: 21.75rem;
+    // height: 90px;
+    // height: 5.625rem;
     padding-top: 18px;
     padding-top: 1.125rem;
+}
+
+.facility-box__left {
+    margin-left: rem(0);
 }
 
 .facility-box__icon {

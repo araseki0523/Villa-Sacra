@@ -20,6 +20,12 @@
 
 .shared-space__container {
     margin-top: rem(40);
+    max-width: rem(979);
+    width: 100%;
+    @include mq(md) {
+        padding-left: rem(20);
+        padding-right: rem(20);
+    }
 }
 
 .shared-space__text {

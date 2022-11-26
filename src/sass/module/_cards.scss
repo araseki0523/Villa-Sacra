@@ -13,8 +13,8 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 26%;
-    margin-right: 7%;
+    width: 28%;
+    margin-right: 8%;
 }
 
 .card__img {
@@ -34,29 +34,33 @@
 }
 
 .card__info {
-    padding: 24px;
+    padding-top: rem(15);
     display: flex;
     flex-direction: column;
-    min-height: 200px;
+    min-height: rem(246);
 }
 
 .card__info {
     margin-top: auto;
+    font-family: $yugothic;
 }
 
 .card__date {
     display: block;
     margin-right: auto;
-    font-size: 12px;
+    font-size: rem(12);
 }
 
 .card__title {
-    font-size: 18px;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 1.75;
 }
 
 .card__text {
+    font-size: rem(14);
+    font-weight: 500;
     margin-top: 16px;
-    font-size: 16px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;

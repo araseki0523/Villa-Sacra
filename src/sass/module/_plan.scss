@@ -1,0 +1,35 @@
+@use 'global' as *;
+
+.plan {
+border: 1px solid $white;
+}
+
+.plan__inner {
+    max-width: rem(1076);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.plan__contents {
+    max-width: rem(671);
+    width: 100%;
+    margin: auto;
+    padding: rem(67) 0;
+    font-size: rem(20);
+    font-family: $yumincho;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.plan__items {
+    display: flex;
+}
+
+.plan__item2 {
+    margin-left: rem(100);
+}
+
+.plan__text1 {
+    margin-top: rem(45);
+}
+
