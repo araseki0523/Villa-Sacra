@@ -1,29 +1,63 @@
+// @use 'global' as *;
+
+// .button {
+//     text-align: center;
+//     padding: rem(10) rem(76);
+//     border: 1px solid $white;
+//     position: relative;
+// 	font-family: $sub-font-family;
+// }
+// .button::before {
+// 	content: '';
+// 	position: absolute;
+// 	top: calc(75% - 2px);
+// 	right: -2em;
+// 	transform: translateY(calc(-75% - 2px)) rotate(45deg);
+// 	width: 10px;
+// 	height: 1px;
+// 	background: $yellow;
+// }
+// .button::after {
+// 	content: '';
+// 	position: absolute;
+// 	top: 75%;
+// 	right: -2em;
+// 	transform: translateY(-75%);
+// 	width: 100px;
+// 	height: 1px;
+// 	background: $yellow;
+// }
+
 @use 'global' as *;
 
-.button {
-    text-align: center;
-    padding: rem(10) rem(76);
-    border: 1px solid $white;
+.button2{
+    display:inline-block;
+    background:#d13415;
+    width: 100px;
+    padding:10px 30px 10px 20px;
+    text-align:center;
+    color:#FFF;
+    margin:5px;
+    border:1px solid;
+    cursor:pointer;
     position: relative;
-	font-family: $sub-font-family;
+    text-decoration: none;
 }
-.button::before {
-	content: '';
-	position: absolute;
-	top: calc(75% - 2px);
-	right: -2em;
-	transform: translateY(calc(-75% - 2px)) rotate(45deg);
-	width: 10px;
-	height: 1px;
-	background: $yellow;
+.button2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% - 5px);
+    right: 20px;
+    width: 20px;
+    height: 5px;
+    border: none;
+    border-right: 2px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    transform: skew(45deg);
+    transition: .3s;
 }
-.button::after {
-	content: '';
-	position: absolute;
-	top: 75%;
-	right: -2em;
-	transform: translateY(-75%);
-	width: 100px;
-	height: 1px;
-	background: $yellow;
+.button2:hover::after{
+    right: 10px;
+    width: 30px;
 }

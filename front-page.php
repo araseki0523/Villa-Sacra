@@ -14,11 +14,28 @@
     </div>
 </section>
 
+
+
+
+
+<!-- testarea -->
 <p>
 <span class="slide-in leftAnime">
 <span class="slide-in_inner leftAnimeInner">左から右へテキストが流れます。左から右へテキストが流れます。</span>
 </span>
 </p>
+
+<div>
+<a href="" class="button2">テスト</a>
+<!-- https://csshtml.work/button-hover-yajirushi-nobiru/ -->
+
+
+</div>
+<!-- testarea -->
+
+
+
+
 
 <?php get_template_part('template/reservation'); ?>
 
