@@ -82,7 +82,7 @@
   </div>
 </section>
 
-<section class="sub-gallery layout-sub-gallery">
+<section class="gallery-access layout-gallery-access">
   <?php get_template_part('template/gallery'); ?>
 </section>
 

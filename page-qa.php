@@ -77,7 +77,7 @@
       </div>
     </section>
 
-<section class="sub-gallery layout-sub-gallery">
+<section class="gallery-qa layout-gallery-qa">
    <?php get_template_part('template/gallery'); ?>
 </section>
 
