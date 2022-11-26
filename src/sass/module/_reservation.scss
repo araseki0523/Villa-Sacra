@@ -1,0 +1,42 @@
+@use 'global' as *;
+
+.reservation {
+
+}
+
+.reservation__inner {
+    max-width: rem(938);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reservation__container {
+    background-color: $white;
+    height: rem(176);
+}
+
+.reservation__title-area {
+    padding-top: rem(36);
+    color: $black;
+    text-align: center;
+}
+
+.reservation__title--ja {
+  font-size: rem(34);
+}
+
+.reservation__title--en {
+    margin-top: rem(-6);
+    margin-left: rem(28);
+}
+
+.reservation__icon {
+    padding-top: rem(70);
+    background-image :url(../images/common/arrow.png);
+    background-position :center;
+    background-repeat :no-repeat;
+    width: rem(50);
+    height: rem(30);
+    margin: auto;
+}

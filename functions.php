@@ -26,20 +26,14 @@ function my_script_init()
 {
 
 	wp_enqueue_style( 'my', get_template_directory_uri() . '/css/styles.css');
+	wp_enqueue_style( 'swiper-css', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' );
 	
-	wp_enqueue_script( 'myjquery', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0.1', true );
-		
+    wp_enqueue_script( 'swiper-js', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js');
+	wp_enqueue_script( 'myjquery', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0.1', true );		
+
+
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
-
-
-function es_googlemapsapi() {
-    if(is_page('company')) {
-        wp_enqueue_script('googlemapsapi', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA-jqq_AEiMaA76UVZBRK37He0IAdBPPU4&callback=initMap', array(), '', true);
-    }
-}
-add_action('wp_enqueue_scripts', 'es_googlemapsapi');
-
 
 
 /**
@@ -125,10 +119,10 @@ update_option( 'medium_large_size_w', 0 );
 // パンくずリスト
 function breadcrumb() {
     // $home = '<li><a href="'.get_bloginfo('url').'" >HOME　→</a></li>';
-    $home = '<li><a href="'.home_url('/').'" >HOME　→</a></li>';
+    $home = '<li><a href="'.home_url('/').'" >HOME　></a></li>';
     $news = '<li><a href="'.home_url('/news/').'" >ニュース　→</a></li>';
  
-    echo '<ul class="mv-sub__breadcrumb breadcrumb layout-breadcrumb">';
+    echo '<ul class="breadcrumb layout-breadcrumb">';
     if ( is_front_page() ) {
         // トップページの場合
     }

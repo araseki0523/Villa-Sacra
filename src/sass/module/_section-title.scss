@@ -1,0 +1,14 @@
+@use 'global' as *;
+
+.section-title {
+    text-align: center;
+}
+
+.section-title__ja {
+    font-size: rem(34);
+}
+
+.section-title__en {
+    padding-left: rem(38);
+    font-size: rem(12);
+}

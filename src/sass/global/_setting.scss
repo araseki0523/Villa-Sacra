@@ -3,34 +3,29 @@
 ////////////////////
 // インナー幅設定
 ////////////////////
-// コンテンツのインナー幅（最も共通の幅が多い部分）
 $inner: 1100px;
-// ※キャンパス幅ではなくインナーの幅を指す
 
 // 余白
 $padding-pc: 25px;
 $padding-sp: 20px;
-// ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
 
 ////////////////////
 // フォント設定
 ////////////////////
 @font-face{
-  font-family: "Lovelo";
-  src: url('../fonts/lovelo/Lovelo-Black.ttf') format('truetype');
-  src: url('../fonts/lovelo/Lovelo-LineBold.ttf') format('truetype');
-  src: url('../fonts/lovelo/Lovelo-LineLight.ttf') format('truetype');
+  font-family: "SignPainter";
+  src: url('../fonts/Sign-Painter-Regular.ttf') format('truetype');
 }
 
-$base-font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-$title-font-family: "futura-pt", sans-serif;
-$lovelo-font-family: "Lovelo",  sans-serif;
-$kozuka-font-family: "kozuka-gothic-pro", sans-serif;
+$base-font-family: 'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+$yumincho: 'Yu Mincho', 'YuMincho', sans-serif;
+$yugothic: 'Yu Gothic', 'YuGothic',sans-serif;
+$sub-font-family: 'SignPainter HouseScript';
+// ヒラギノ明朝ProN
+// 凸版文久明朝
 
-body {
-  font-family: $base-font-family;
-}
+
 
 // フォントウェイト
 $regular: 300;
@@ -43,9 +38,11 @@ $bold: 700;
 // 色の指定
 ////////////////////
 
-$black: #111;
-$black-news: #010101;
+$black: #000;
 $white: #fff;
+$gray: #272727;
+$yellow: #EAF058;
+
 
 ////////////////////
 // メディアクエリとブレークポイントの設定
@@ -54,6 +51,7 @@ $white: #fff;
 //ブレイクポイント
 $breakpoints: (
   xl: 1440,
+  comp: 1366,
   ll: 1280,
   lg: 1024,
   mm: 960,
@@ -65,6 +63,7 @@ $breakpoints: (
 //メディアクエリー
 $mediaquerys: (
   xl: "screen and (max-width: #{map-get($breakpoints,'xl')}px)",
+  comp: "screen and (max-width: #{map-get($breakpoints,'comp')}px)",
   ll: "screen and (max-width: #{map-get($breakpoints,'ll')}px)",
   lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
   mm: "screen and (max-width: #{map-get($breakpoints,'mm')}px)",
@@ -73,10 +72,14 @@ $mediaquerys: (
   ss: "screen and (max-width: #{map-get($breakpoints,'ss')}px)",
 );
 
-
-@media screen and (max-width: 900px){
-
+body {
+  font-family: $base-font-family;
+  background: $black;
+  color: $white;
+  font-family: $yumincho;
 }
+
+
 
 // @include lineHeightSpaceFill(2);
 // ハーフ・レディング
@@ -102,11 +105,10 @@ $mediaquerys: (
   }
 }
 
-// remへの計算式（16pxを基準としている。10pxを基準とする場合は16を10に変更する）
+///remへの計算式
 @function rem($font-size) {
-  @return $font-size / 16 * 1rem;
+  @return math.div($font-size, 16) * 1rem; //修正20221019
 }
-
 ////////////////////
 // 非表示設定
 ////////////////////
@@ -164,3 +166,5 @@ $mediaquerys: (
     display: none;
   }
 }
+
+

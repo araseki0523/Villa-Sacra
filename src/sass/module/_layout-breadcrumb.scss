@@ -1,0 +1,8 @@
+@use 'global' as *;
+
+.layout-breadcrumb {
+    margin-top: rem(5);
+    margin-left: rem(145);
+    height: inherit;
+    display: flex;
+}

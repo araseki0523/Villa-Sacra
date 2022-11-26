@@ -1,0 +1,13 @@
+@use 'global' as *;
+
+.breadcrumb {
+    color: $white;
+    height: rem(50);
+}
+
+.breadcrumb__list {
+
+}
+.breadcrumb__item {
+    margin-left: rem(16);
+}
