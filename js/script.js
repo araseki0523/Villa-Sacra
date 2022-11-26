@@ -100,10 +100,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // 共有スペースのスライダー
   let swiperFacility = {
-    // loop: true,
-    // loopAdditionalSlides: 1,
+    loop: true,
+    loopAdditionalSlides: 1,
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 25,
     centeredSlides: true,
     autoplay: {
       delay: 4000,
@@ -132,7 +132,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       768: { // 画面幅768px以上で適用
         slidesPerView: 3,
       },
-      spaceBetween: 25,
+      
       centeredSlides: false,
     },
 

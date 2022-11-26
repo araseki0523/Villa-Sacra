@@ -11,4 +11,7 @@
 .swiper-slide,
 .swiper-slide img{
     width: rem(360);
+    @include mq(md) {
+        width: 100%
+    }
 } 
