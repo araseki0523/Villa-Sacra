@@ -1,7 +1,8 @@
 @use 'global' as *;
 
 .layout-gallery {
-        // 後で変える
-        margin-top: rem(500);
-
+        margin-top: rem(250);
+        @include mq(md) {
+                margin-top: rem(120);
+        }
 }

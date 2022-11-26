@@ -232,9 +232,8 @@
     </a>
 </div>
 
-<section class="facility__gallery layout-sub-facility">
     <?php get_template_part('template/gallery'); ?>
-</section>
+
 
 <section class="sub-gallery layout-sub-gallery">
     <?php get_template_part('template/inquiry'); ?>

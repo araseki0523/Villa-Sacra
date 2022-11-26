@@ -139,7 +139,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   }
   new Swiper('.mySwiper-Facility', swiperFacility);
 
-<<<<<<< HEAD
   // お部屋情報スライダー
   // サムネイル
   const sliderThumbnail = new Swiper(".slider-thumbnail", {
@@ -155,7 +154,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     },
   });
 
-=======
 // トップページMVのアニメーション
 function slideAnime(){
 	//====左に動くアニメーションここから===
@@ -177,7 +175,6 @@ function slideAnime(){
 		});
 		
 	}
->>>>>>> 49ec11638cfe6197a5089ab79016b44ce8b592e6
 
 });
 

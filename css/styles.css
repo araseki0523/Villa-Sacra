@@ -225,9 +225,6 @@ select::-ms-expand {
   display: none;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 .access-sub__inner {
   max-width: 1078px;
   max-width: 67.375rem;
@@ -294,14 +291,8 @@ select::-ms-expand {
 .access-sub__sub-text + .access-sub__sub-text {
   margin-left: 20px;
   margin-left: 1.25rem;
-=======
-.layout-sub-facility {
-  margin-top: 270px;
-  margin-top: 16.875rem;
->>>>>>> 8e4f298a47b8f23660e3a2929403af1de2ef1239
 }
 
->>>>>>> 49ec11638cfe6197a5089ab79016b44ce8b592e6
 .access__inner {
   max-width: 1078px;
   max-width: 67.375rem;
@@ -339,27 +330,13 @@ select::-ms-expand {
   text-align: center;
 }
 
-<<<<<<< HEAD
 .affiliated__inner {
   max-width: 1260px;
   max-width: 78.75rem;
-=======
-.amenities__bg {
-  width: 100%;
-  background-color: #E9E9E9;
-  color: #000;
-  padding: 53px 0 50px 0;
-}
-
-.amenities__inner {
-  max-width: 980px;
-  max-width: 61.25rem;
->>>>>>> 8e4f298a47b8f23660e3a2929403af1de2ef1239
   width: 100%;
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
 .affiliated__container {
   margin-top: 64px;
   margin-top: 4rem;
@@ -412,7 +389,22 @@ select::-ms-expand {
   margin-top: 50px;
   margin-top: 3.125rem;
   text-align: center;
-=======
+}
+
+.amenities__bg {
+  width: 100%;
+  background-color: #E9E9E9;
+  color: #000;
+  padding: 53px 0 50px 0;
+}
+
+.amenities__inner {
+  max-width: 980px;
+  max-width: 61.25rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .amenitiesList__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,10 +419,24 @@ select::-ms-expand {
   margin-top: 4.0625rem;
   border-bottom: 1px solid #000;
 }
+@media screen and (max-width: 768px) {
+  .amenitiesList__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+    border-bottom: none;
+  }
+}
 
 .amenitiesList__item {
   margin-left: 25px;
   margin-left: 1.5625rem;
+}
+@media screen and (max-width: 768px) {
+  .amenitiesList__item {
+    margin-left: 0rem;
+  }
 }
 
 .amenitiesList__item:nth-child(3n+1) {
@@ -447,6 +453,11 @@ select::-ms-expand {
   font-weight: 700;
   line-height: 1.75;
   font-family: "Yu Gothic", "YuGothic", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .amenitiesList__title {
+    margin-top: 1.875rem;
+  }
 }
 
 .amenitiesList__text {
@@ -533,7 +544,6 @@ select::-ms-expand {
 
 .blog-page__items:nth-of-type(n + 4) {
   margin-top: 4%;
->>>>>>> 8e4f298a47b8f23660e3a2929403af1de2ef1239
 }
 
 .blog-top__inner {
@@ -636,40 +646,133 @@ select::-ms-expand {
   margin-left: 1rem;
 }
 
-.button {
+.button2 {
+  display: inline-block;
+  background: #d13415;
+  width: 100px;
+  padding: 10px 30px 10px 20px;
   text-align: center;
-  padding: 10px 76px;
-  padding: 0.625rem 4.75rem;
-  border: 1px solid #fff;
+  color: #FFF;
+  margin: 5px;
+  border: 1px solid;
+  cursor: pointer;
   position: relative;
   font-family: "SignPainter HouseScript";
+  text-decoration: none;
 }
 
-.button::before {
+.button2::after {
   content: "";
+  display: block;
   position: absolute;
-  top: calc(75% - 2px);
-  right: -2em;
-  -webkit-transform: translateY(calc(-75% - 2px)) rotate(45deg);
-          transform: translateY(calc(-75% - 2px)) rotate(45deg);
-  width: 10px;
-  height: 1px;
-  background: #EAF058;
+  top: calc(50% - 5px);
+  right: 20px;
+  width: 20px;
+  height: 5px;
+  border: none;
+  border-right: 2px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.button::after {
-  content: "";
-  position: absolute;
-  top: 75%;
-  right: -2em;
-  -webkit-transform: translateY(-75%);
-          transform: translateY(-75%);
-  width: 100px;
-  height: 1px;
-  background: #EAF058;
+.button2:hover::after {
+  right: 10px;
+  width: 30px;
 }
 
-<<<<<<< HEAD
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1076px;
+  max-width: 67.25rem;
+  width: 100%;
+  padding-left: 25px;
+  padding-left: 1.5625rem;
+  padding-right: 25px;
+  padding-right: 1.5625rem;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 28%;
+  margin-right: 8%;
+}
+
+.card__img {
+  padding-top: 100%;
+  position: relative;
+}
+
+.card__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__info {
+  padding-top: 15px;
+  padding-top: 0.9375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 246px;
+  min-height: 15.375rem;
+}
+
+.card__info {
+  margin-top: auto;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+}
+
+.card__date {
+  display: block;
+  margin-right: auto;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.card__title {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.card__text {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
 .concept__inner {
   max-width: 832px;
   max-width: 52rem;
@@ -800,96 +903,6 @@ select::-ms-expand {
 .contact7__any {
   color: #fff;
   background-color: #272727;
-=======
-.cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 1076px;
-  max-width: 67.25rem;
-  width: 100%;
-  padding-left: 25px;
-  padding-left: 1.5625rem;
-  padding-right: 25px;
-  padding-right: 1.5625rem;
-}
-
-.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 28%;
-  margin-right: 8%;
-}
-
-.card__img {
-  padding-top: 100%;
-  position: relative;
-}
-
-.card__img img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  -o-object-position: center;
-     object-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.card__info {
-  padding-top: 15px;
-  padding-top: 0.9375rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 246px;
-  min-height: 15.375rem;
-}
-
-.card__info {
-  margin-top: auto;
-  font-family: "Yu Gothic", "YuGothic", sans-serif;
-}
-
-.card__date {
-  display: block;
-  margin-right: auto;
-  font-size: 12px;
-  font-size: 0.75rem;
-}
-
-.card__title {
-  font-size: 16px;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.75;
-}
-
-.card__text {
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: 500;
-  margin-top: 16px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
->>>>>>> 8e4f298a47b8f23660e3a2929403af1de2ef1239
 }
 
 .convention__inner {
@@ -989,55 +1002,6 @@ select::-ms-expand {
   margin-top: 4.375rem;
 }
 
-<<<<<<< HEAD
-=======
-
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #272727;
-  padding-top: 100px;
-  padding-top: 6.25rem;
-  padding-bottom: 106px;
-  padding-bottom: 6.625rem;
-}
-
-.footer__left {
-  margin-left: 145px;
-  margin-left: 9.0625rem;
-  padding-right: 124px;
-  padding-right: 7.75rem;
-  border-right: 1px solid #fff;
-}
-
-.footer__logo {
-  width: 160px;
-  width: 10rem;
-}
-
-.footer__right {
-  margin-left: 132px;
-  margin-left: 8.25rem;
-  font-size: 20px;
-  font-size: 1.25rem;
-}
-
-.footer__list-item + .footer__list-item {
-  margin-top: 50px;
-  margin-top: 3.125rem;
-}
-
-.footer__list-item span {
-  font-size: 16px;
-  font-size: 1rem;
-  padding-left: 50px;
-  padding-left: 3.125rem;
-
->>>>>>> 49ec11638cfe6197a5089ab79016b44ce8b592e6
 .facility-box__inner {
   max-width: 1076px;
   max-width: 67.25rem;
@@ -1173,6 +1137,9 @@ select::-ms-expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #272727;
   padding-top: 100px;
   padding-top: 6.25rem;
@@ -1777,25 +1744,19 @@ sp
   margin-top: 31.25rem;
 }
 
-<<<<<<< HEAD
 .layout-affiliated {
   margin-top: 246px;
   margin-top: 15.375rem;
-=======
+}
+
 .layout-amenities {
   margin-top: 329px;
   margin-top: 20.5625rem;
 }
 
 .layout-blog-page {
-<<<<<<< HEAD
   margin-top: 152px;
   margin-top: 9.5rem;
-=======
-  margin-top: 124px;
-  margin-top: 7.75rem;
->>>>>>> 8e4f298a47b8f23660e3a2929403af1de2ef1239
->>>>>>> 49ec11638cfe6197a5089ab79016b44ce8b592e6
 }
 
 .layout-blog-top {
@@ -1870,8 +1831,13 @@ sp
 }
 
 .layout-gallery {
-  margin-top: 500px;
-  margin-top: 31.25rem;
+  margin-top: 250px;
+  margin-top: 15.625rem;
+}
+@media screen and (max-width: 768px) {
+  .layout-gallery {
+    margin-top: 7.5rem;
+  }
 }
 
 .layout-hananoma-plan {
@@ -2053,10 +2019,7 @@ sp
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-family: "Noto Serif JP", serif;
-<<<<<<< HEAD
-=======
   text-transform: uppercase;
->>>>>>> 49ec11638cfe6197a5089ab79016b44ce8b592e6
 }
 
 .mv-sub__title-en {
@@ -2065,10 +2028,7 @@ sp
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-family: "SignPainter HouseScript";
-<<<<<<< HEAD
-=======
   text-transform: capitalize;
->>>>>>> 49ec11638cfe6197a5089ab79016b44ce8b592e6
 }
 
 .mv {
@@ -2145,6 +2105,10 @@ sp
   width: 100%;
   margin: 0 auto;
   position: relative;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  padding-right: 20px;
+  padding-right: 1.25rem;
 }
 
 .notes__title-area.sub-section-title::before,
@@ -2296,6 +2260,10 @@ sp
   max-width: 66.25rem;
   width: 100%;
   margin: 0 auto;
+}
+
+.privacy-policy__title-ja {
+  font-family: "Noto Serif JP", serif;
 }
 
 .privacy-policy__title-ja {
@@ -2839,25 +2807,12 @@ sp
 .shared-swiper {
   position: relative;
 }
-@media screen and (max-width: 768px) {
-  .shared-swiper {
-    max-width: 31.25rem;
-    width: 100%;
-    margin: 3.75rem auto 0;
-  }
-}
 
 .shared-swiper__container {
   max-width: 980px;
   max-width: 61.25rem;
   width: 100%;
   margin: auto;
-}
-
-@media screen and (max-width: 768px) {
-  .swiper-slide.shared-swiper__contant {
-    width: 31.25rem;
-  }
 }
 
 .shared-swiper__img {
@@ -2973,6 +2928,92 @@ sp
   left: auto !important;
 }
 
+/*========= 流れるテキスト ===============*/
+/*全共通*/
+.slide-in {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slide-in_inner {
+  display: inline-block;
+}
+
+/*左右のアニメーション*/
+.leftAnime {
+  opacity: 0; /*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+  -webkit-animation-name: slideTextX100;
+          animation-name: slideTextX100;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideTextX100 {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); /*要素を左の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+@keyframes slideTextX100 {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); /*要素を左の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+.slideAnimeRightLeft {
+  -webkit-animation-name: slideTextX-100;
+          animation-name: slideTextX-100;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideTextX-100 {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+@keyframes slideTextX-100 {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
 .slider-thumbnail .swiper-slide {
   opacity: 0.5;
   -webkit-transition: opacity 0.5s;
