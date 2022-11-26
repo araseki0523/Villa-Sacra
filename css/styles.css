@@ -697,13 +697,16 @@ select::-ms-expand {
 
 .facility-box__inner {
   margin-left: 150px;
+  margin-left: 150px;
   margin-left: 9.375rem;
+  margin-right: 150px;
   margin-right: 150px;
   margin-right: 9.375rem;
 }
 
 .facility-box__container {
   color: #000;
+  font-size: 28px;
   font-size: 28px;
   font-size: 1.75rem;
   font-family: "Yu Mincho", "YuGothic", sans-serif;
@@ -714,8 +717,8 @@ select::-ms-expand {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .facility-box__left,
@@ -723,21 +726,27 @@ select::-ms-expand {
 .facility-box__right {
   background-color: #fff;
   width: 348px;
+  width: 348px;
   width: 21.75rem;
   height: 90px;
+  height: 90px;
   height: 5.625rem;
+  padding-top: 18px;
   padding-top: 18px;
   padding-top: 1.125rem;
 }
 
 .facility-box__icon {
   padding-top: 26px;
+  padding-top: 26px;
   padding-top: 1.625rem;
   background-image: url(../images/common/arrow.png);
   background-position: center;
   background-repeat: no-repeat;
   width: 24px;
+  width: 24px;
   width: 1.5rem;
+  height: 23px;
   height: 23px;
   height: 1.4375rem;
   margin: auto;
@@ -746,6 +755,7 @@ select::-ms-expand {
 .facility__border {
   margin-top: 16%;
   max-width: 1076px;
+  max-width: 1076px;
   max-width: 67.25rem;
   width: 100%;
 }
@@ -753,10 +763,12 @@ select::-ms-expand {
 .facility__button-area {
   text-align: center;
   margin-top: 160px;
+  margin-top: 160px;
   margin-top: 10rem;
 }
 
 .facility__button {
+  max-width: 937px;
   max-width: 937px;
   max-width: 58.5625rem;
   width: 100%;
@@ -766,12 +778,13 @@ select::-ms-expand {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: auto;
 }
 
 .facility__button img {
+  max-width: 271px;
   max-width: 271px;
   max-width: 16.9375rem;
   width: 100%;
@@ -780,7 +793,9 @@ select::-ms-expand {
 .facility__button::after {
   content: "";
   width: 20px;
+  width: 20px;
   width: 1.25rem;
+  height: 20px;
   height: 20px;
   height: 1.25rem;
   border: 0;
@@ -791,21 +806,25 @@ select::-ms-expand {
   right: 15%;
   margin-top: -4px;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   color: #000;
 }
 
 .facility__button span {
   text-align: center;
   font-size: 40px;
+  font-size: 40px;
   font-size: 2.5rem;
   font-family: "メイリオ", "Meiryo", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
   color: #000;
+  margin-left: 37px;
   margin-left: 37px;
   margin-left: 2.3125rem;
 
 }
 
+<<<<<<< HEAD
+=======
 .footer__sns {
   background-color: #fff;
   color: #000;
@@ -867,6 +886,7 @@ select::-ms-expand {
   margin-right: 26.875rem;
 }
 
+>>>>>>> 015da451d326a620469375c9d94829d209ad182b
 .gallery__container {
   margin-top: 98px;
   margin-top: 6.125rem;

@@ -1,36 +1,49 @@
-@use 'global' as *;
+@use "global" as *;
 
 .facility-box__inner {
-    margin-left: rem(150);
-    margin-right: rem(150);
+    margin-left: 150px;
+    margin-left: 9.375rem;
+    margin-right: 150px;
+    margin-right: 9.375rem;
 }
+
 .facility-box__container {
-    color: $black;
-    font-size: rem(28);
-    font-family: $yumincho;
+    color: #000;
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-family: "Yu Mincho", "YuGothic", sans-serif;
     line-height: 1.7;
     font-weight: 500;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .facility-box__left,
 .facility-box__center,
 .facility-box__right {
-    background-color: $white;
-    width: rem(348);
-    height: rem(90);
-    padding-top: rem(18);
+    background-color: #fff;
+    width: 348px;
+    width: 21.75rem;
+    height: 90px;
+    height: 5.625rem;
+    padding-top: 18px;
+    padding-top: 1.125rem;
 }
 
 .facility-box__icon {
-    padding-top: rem(26);
-    background-image :url(../images/common/arrow.png);
-    background-position :center;
-    background-repeat :no-repeat;
-    width: rem(24);
-    height: rem(23);
+    padding-top: 26px;
+    padding-top: 1.625rem;
+    background-image: url(../images/common/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    width: 1.5rem;
+    height: 23px;
+    height: 1.4375rem;
     margin: auto;
 }
-
