@@ -3,21 +3,23 @@
 <footer class="footer layout-footer">
   <div class="footer__inner">
     <div class="footer__container">
-      <div class="footer__left">
-        <div class="footer__logo">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="メインビュータイトル下の背景画像">
+      <div class="footer__content">
+        <div class="footer__left">
+          <div class="footer__logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="メインビュータイトル下の背景画像">
+          </div>
         </div>
-      </div>
-      <!--footer__left-->
-      <div class="footer__right">
-        <ul class="footer__nav">
+        <!--footer__left-->
+        <div class="footer__right">
+          <ul class="footer__nav">
             <li class="footer__list-item">住所：鎌倉市御成町13-29</li>
             <li class="footer__list-item">電話：0467-40-4070<br>
               <span>​※繁忙時、留守番電話になります。折TELしますので、メッセージをお残し下さい。</span>
             </li>
             <li class="footer__list-item">Email：info@villa-sacra.com</li>
-        </ul>
-      </div><!-- /.footer__right -->
+          </ul>
+        </div><!-- /.footer__right -->
+      </div>
     </div>
     <!--footer__container-->
     <!-- SNSアイコン部分 -->

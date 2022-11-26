@@ -235,8 +235,4 @@
     <?php get_template_part('template/gallery'); ?>
 
 
-<section class="sub-gallery layout-sub-gallery">
-    <?php get_template_part('template/inquiry'); ?>
-</section>
-
 <?php get_footer(); ?>
