@@ -17,6 +17,7 @@
 // アコーディオン
 .qa__content > li {
     list-style: none;
+    border: 2px solid $white;
 }
 
 .qa__label  {
@@ -28,6 +29,13 @@
     color: $black;
 }
 
+.qa__label {
+    margin-top: rem(34);
+}
+
+.qa__label1 {
+    margin-top: 0;
+}
 .qa__label::before {
     content: "";
     background-image: url(../images/qa/Q.png);
@@ -36,13 +44,15 @@
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
-    color: red;
+    left: 10px;
 }
 
 .qa__label > p {
-    margin-left: rem(30);
+    padding-left: rem(50);
+    padding-top: rem(0);
+    padding-bottom: rem(0);
     font-size: rem(16);
 }
 
@@ -52,9 +62,9 @@
 
 .qa__answer > p {
     font-size: rem(16);
-    padding-left: rem(30);
-    padding-top: rem(14);
-    padding-bottom: rem(14);
+    padding-left: rem(50);
+    padding-top: rem(10);
+    padding-bottom: rem(12);
     position: relative;
 }
 
@@ -66,10 +76,9 @@
     background-size: contain;
     width: 20px;
     height: 20px;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
-    color: blue;
-    left: 0;
+    left: 10px;
 }
 /*======================================
 アイコン                                        

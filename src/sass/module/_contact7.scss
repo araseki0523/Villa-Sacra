@@ -1,0 +1,52 @@
+@use 'global' as *;
+
+.contact7 {
+
+}
+.contact7__flex {
+    display: flex;
+}
+.contact7__flex + .contact7__flex {
+    margin-top: rem(24);
+}
+.contact7__dt {
+    width: 30%;
+}
+.contact7__dt span {
+    margin-right: rem(10);
+}
+.contact7__dd,
+.contact7__dd-textarea {
+    width: 70%;
+    border: 1px solid $white;
+    border-radius: 5px;
+}
+.contact7__check {
+    margin-top: rem(50);
+    text-align: center;
+}
+.contact7__check span {
+    border-bottom: 1px solid $white;
+}
+.contact7__button {
+    margin-top: rem(50);
+    margin-left: auto;
+    margin-right: auto;
+    width: 204px;
+    border: 1px solid $white;
+    border-radius: 5px;
+}
+
+// 必須と任意
+.contact7__must,
+.contact7__any {
+    padding: rem(2) rem(10);
+}
+.contact7__must {
+    color: $black;
+    background-color: $white;
+}
+.contact7__any {
+    color: $white;
+    background-color: $gray;
+}
