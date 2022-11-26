@@ -19,22 +19,25 @@
 
 <section class="facility-box layout-facility-box">
     <div class="facility-box__inner">
-        <a href="#shared-space">
         <div class="facility-box__container">
             <div class="facility-box__left">
-                <p class="facility-box__title">共有スペース</p>
-                <div class="facility-box__icon"></div>
-            </div></a>
-            <a href="#amenities">
+                <a href="#shared-space">
+                    <p class="facility-box__title">共有スペース</p>
+                    <div class="facility-box__icon"></div>
+                </a>
+            </div>
             <div class="facility-box__center">
-                <p class="facility-box__title">アメニティ</p>
-                <div class="facility-box__icon"></div>
-            </div></a>
-            <a href="#notes">
+                <a href="#amenities">
+                    <p class="facility-box__title">アメニティ</p>
+                    <div class="facility-box__icon"></div>
+                </a>
+            </div>
             <div class="facility-box__right">
-                <p class="facility-box__title">注意事項</p>
-                <div class="facility-box__icon"></div>
-            </div></a>
+                <a href="#notes">
+                    <p class="facility-box__title">注意事項</p>
+                    <div class="facility-box__icon"></div>
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -95,14 +98,14 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="swiper-pagination"></div>
-
-                            <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </div>
