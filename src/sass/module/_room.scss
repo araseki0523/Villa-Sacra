@@ -1,4 +1,14 @@
 @use 'global' as *;
+.room {
+    margin-top: rem(195);
+}
+
+.room__inner {
+    max-width: rem(1076);
+    width: 100%;
+    margin: rem(65) auto;
+}
+
 .room__title {
     position: relative;
     font-size: rem(36);
@@ -34,4 +44,10 @@
 
 .room__text2 {
     margin-top: rem(33);
+}
+
+.room__border-line {
+    border-top: 3px solid $white;
+    width: rem(583);
+    margin: rem(180) auto 0;
 }
