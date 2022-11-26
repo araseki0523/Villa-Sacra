@@ -26,8 +26,6 @@
 <div>
 <a href="" class="button2">テスト</a>
 <!-- https://csshtml.work/button-hover-yajirushi-nobiru/ -->
-
-
 </div>
 <!-- testarea -->
 
