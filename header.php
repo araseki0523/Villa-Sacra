@@ -130,7 +130,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
       </button>
 
       <div class="header__sp-nav" id="js-drawer">
-      <ul class="header__sp-nav-items">
+        <ul class="header__sp-nav-items">
           <li class="header__sp-nav-item"><a href="<?php echo $concept ?>">concept</a></li>
           <li class="header__sp-nav-item"><a href="<?php echo $room ?>">room</a></li>
           <li class="header__sp-nav-item"><a href="<?php echo $bb ?>">b&amp;b</a></li>
@@ -141,7 +141,8 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
           <li class="header__sp-nav-item"><a href="<?php echo $contact ?>">contact</a></li>
           <!-- リンク未貼付 -->
           <li class="header__sp-nav-item"><a href="">english</a></li>
-        </ul>      </div>
+        </ul>
+      </div>
 
-    </div><!--header__inner->
-  </header>
+    </div>
+    </header>

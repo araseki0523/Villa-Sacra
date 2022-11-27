@@ -225,6 +225,89 @@ select::-ms-expand {
   display: none;
 }
 
+.slide-in {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slide-in_inner {
+  display: inline-block;
+}
+
+.leftAnime {
+  opacity: 0;
+}
+
+.slideAnimeLeftRight {
+  -webkit-animation-name: slideTextX100;
+          animation-name: slideTextX100;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideTextX100 {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTextX100 {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slideAnimeRightLeft {
+  -webkit-animation-name: slideTextX-100;
+          animation-name: slideTextX-100;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideTextX-100 {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTextX-100 {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
 .access-sub__inner {
   max-width: 1078px;
   max-width: 67.375rem;
@@ -1326,8 +1409,8 @@ select::-ms-expand {
   display: block;
   height: 2px;
   height: 0.125rem;
-  width: 24px;
-  width: 1.5rem;
+  width: 48px;
+  width: 3rem;
   background: #fff;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
@@ -2193,23 +2276,32 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .mv {
-  margin-top: 58px;
+  padding-top: 58px;
 }
 
 .mv__inner {
+  overflow: hidden;
+}
+
+.mv__background {
+  display: inline-block;
+  margin-top: auto;
+  background-color: #272727;
+  width: 40%;
+  height: 636px;
+  height: 39.75rem;
   position: relative;
+  z-index: -1;
 }
 
 .mv__title {
-  position: absolute;
+  margin-top: -500px;
+  margin-top: -31.25rem;
   font-size: 63px;
   font-size: 3.9375rem;
-  bottom: 144px;
-  bottom: 9rem;
   left: 58px;
   left: 3.625rem;
   letter-spacing: 0.13em;
-  z-index: 2;
   font-family: "Sawarabi Mincho", serif;
 }
 
@@ -2217,7 +2309,6 @@ sp版（1280px以下）のモーダル内メニュー
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: -1;
 }
 
 .mv__image {
@@ -2247,17 +2338,6 @@ sp版（1280px以下）のモーダル内メニュー
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  z-index: 1;
-}
-
-.mv__background {
-  margin-top: auto;
-  background-color: #272727;
-  width: 40%;
-  height: 636px;
-  height: 39.75rem;
-  z-index: -1;
-  position: relative;
 }
 
 .notes__inner {
@@ -3186,19 +3266,6 @@ sp版（1280px以下）のモーダル内メニュー
   opacity: 0;
 }
 
-@-webkit-keyframes slideTextX100 {
-  from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%); /*要素を左の枠外に移動*/
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); /*要素を元の位置に移動*/
-    opacity: 1;
-  }
-}
-
 @keyframes slideTextX100 {
   from {
     -webkit-transform: translateX(-100%);
@@ -3219,19 +3286,6 @@ sp版（1280px以下）のモーダル内メニュー
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
-}
-
-@-webkit-keyframes slideTextX-100 {
-  from {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%); /*要素を右の枠外に移動*/
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); /*要素を元の位置に移動*/
-    opacity: 1;
-  }
 }
 
 @keyframes slideTextX-100 {

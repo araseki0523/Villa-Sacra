@@ -15,35 +15,19 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
 
 <section class="mv layout-mv">
     <div class="mv__inner">
-        <div class="slide-in left">
-            <h2 class="mv__title slide-in_inner leftAnimeInner">深呼吸する<br>という贅沢。</h2>
-        </div>
         <div class="mv__wrapper">
-            <div class="mv__background"></div>
-            <div class="mv__image">
+            <div class="mv__background slide-in leftAnime">
+                <span class="slide-in_inner leftAnimeInner"></span>
+            </div>
+            <div class="mv__image slide-in leftAnime">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv-top.jpg" alt="トップページのメインビュー">
             </div>
         </div>
+        <div class="slide-in leftAnime">
+            <span class="mv__title slide-in_inner leftAnimeInner">深呼吸する<br>という贅沢。</span>
+        </div>
     </div>
 </section>
-
-
-
-<!-- testarea -->
-<p>
-<span class="slide-in leftAnime">
-<span class="slide-in_inner leftAnimeInner">左から右へテキストが流れます。左から右へテキストが流れます。</span>
-</span>
-</p>
-
-<div>
-
-
-<!-- testarea -->
-
-
-
-
 
 <?php get_template_part('template/reservation'); ?>
 
@@ -188,7 +172,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
             </div>
             <div class="introduction__text-area">
                 <p class="introduction__text">
-                    タタミの乗ったクイーンサイズのベッドは広々と使えるサイズでくつろぎの時間を与えてくれます。消しゴムはんこ作家・津久井智子により、漆喰と金の壁紙に押印された鶴たちの飛翔が見事なコントラストをみせた室内は、明るく清潔な印象を与える広がりのある角部屋です。紙のランプシェイド、２つの白い籐椅子、白くて小さい丸テーブルなど、日本家屋の粋や風情を感じさせる作り、古い柱や鴨居はそのままに、アーティストの手により、モダンに生まれ変わった客室はまるで作品の中に佇むよう。ベッドサイドの灯りやくつろぎのスペースもあり、狭いながらも滞在を楽しんでいただけるよう工夫を凝らしてあります。古民家の持つ優しさを生かしながら、羽ばたく鶴たちが壁を彩る、やさしい雰囲気の一室。お部屋に入った瞬間に「かわいい！」と声を上げてしまうので、女子旅におすすです。 </p>
+                    タタミの乗ったクイーンサイズのベッドは広々と使えるサイズでくつろぎの時間を与えてくれます。消しゴムはんこ作家・津久井智子により、漆喰と金の壁紙に押印された鶴たちの飛翔が見事なコントラストをみせた室内は、明るく清潔な印象を与える広がりのある角部屋です。紙のランプシェイド、２つの白い籐椅子、白くて小さい丸テーブルなど、日本家屋の粋や風情を感じさせる作り、古い柱や鴨居はそのままに、アーティストの手により、モダンに生まれ変わった客室はまるで作品の中に佇むよう。ベッドサイドの灯りやくつろぎのスペースもあり、狭いながらも滞在を楽しんでいただけるよう工夫を凝らしてあります。古民家の持つ優しさを生かしながら、羽ばたく鶴たちが壁を彩る、やさしい雰囲気の一室。お部屋に入った瞬間に「かわいい！」と声を上げてしまうので、女子旅におすすめです。
                 </p>
             </div>
             <div class="introduction__button-area">
@@ -264,35 +248,40 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a><!--blog-top__each-wrapper-->
+            </a>
+            <!--blog-top__each-wrapper-->
             <a href="" class="blog-top__each-wrapper">
                 <div class="blog-top__box">
                     <div class="blog-top__new">NEW</div>
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a><!--blog-top__each-wrapper-->
+            </a>
+            <!--blog-top__each-wrapper-->
             <a href="" class="blog-top__each-wrapper">
                 <div class="blog-top__box">
                     <div class="blog-top__new">NEW</div>
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a><!--blog-top__each-wrapper-->
+            </a>
+            <!--blog-top__each-wrapper-->
             <a href="" class="blog-top__each-wrapper">
                 <div class="blog-top__box">
                     <div class="blog-top__new">NEW</div>
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a><!--blog-top__each-wrapper-->
+            </a>
+            <!--blog-top__each-wrapper-->
             <a href="" class="blog-top__each-wrapper">
                 <div class="blog-top__box">
                     <div class="blog-top__new">NEW</div>
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a><!--blog-top__each-wrapper-->
+            </a>
+            <!--blog-top__each-wrapper-->
             <div class="blog-top__button-area">
                 <a href="<?php echo $blog ?>" class="blog-top__button button">MORE</a>
             </div>

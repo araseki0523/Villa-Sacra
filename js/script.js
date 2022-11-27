@@ -142,6 +142,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     },
   });
 
+    // ハンバーガーメニュー
+    $(function(){
+      const hamburger = $('#js-hamburger');
+      const drawer = $('#js-drawer');
+      hamburger.on('click',function(){
+        hamburger.toggleClass("is-checked")
+        drawer.toggleClass("is-checked")
+      })
+    });
+  
+
 // トップページMVのアニメーション
 function slideAnime(){
 	//====左に動くアニメーションここから===
@@ -163,15 +174,16 @@ function slideAnime(){
 		});
 		
 	}
+	
+	// 画面をスクロールをしたら動かしたい場合の記述
+	$(window).scroll(function (){
+		slideAnime();/* アニメーション用の関数を呼ぶ*/
+	});// ここまで画面をスクロールをしたら動かしたい場合の記述
 
-  // ハンバーガーメニュー
-  $(function(){
-    const hamburger = $('#js-hamburger');
-    const drawer = $('#js-drawer');
-    hamburger.on('click',function(){
-      hamburger.toggleClass("is-checked")
-      drawer.toggleClass("is-checked")
-    })
-  });
+	// 画面が読み込まれたらすぐに動かしたい場合の記述
+	$(window).on('load', function(){
+		slideAnime();/* アニメーション用の関数を呼ぶ*/
+	});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+  
 
 });
