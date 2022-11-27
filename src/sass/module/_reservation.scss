@@ -7,10 +7,10 @@
 .reservation__inner {
     max-width: rem(938);
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: rem(25);
     padding-right: rem(25);
+    margin: 0 auto;
+    
     @include mq(md) {
         padding-left: rem(20);
         padding-right: rem(20);
@@ -21,6 +21,8 @@
 .reservation__container {
     background-color: $white;
     height: rem(176);
+    width: rem(680);
+    margin: 0 auto;
 }
 
 .reservation__title-area {

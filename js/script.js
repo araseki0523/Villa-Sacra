@@ -63,12 +63,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //ドロワーメニュー
-  $("#MenuButton").click(function () {
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
+  // $("#nav").click(function () {
+  //   $(".js-drawer-menu").toggleClass(".is-open");
+  //   // $(".drawer-menu").toggleClass("open");
+  //   $("html").toggleClass("is-fixed");
 
-  });
+  // });
 
 
 
@@ -178,3 +178,12 @@ function slideAnime(){
 
 });
 
+// Javacript
+$(function(){
+  const hamburger = $('#js-hamburger');
+  const drawer = $('#js-drawer-menu');
+  hamburger.on('click',function(){
+    hamburger.toggleClass("is-checked")
+    drawer.toggleClass("is-checked")
+  })
+})

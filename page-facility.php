@@ -13,7 +13,7 @@
     </div>
 </section>
 
-<?php get_template_part('template/breadcrumb'); ?>
+<?php breadcrumb(); ?>
 
 <?php get_template_part('template/reservation'); ?>
 
@@ -226,6 +226,7 @@
 <hr class="facility__border">
 
 <div class="facility__button-area">
+    <!-- リンク未貼付 -->
     <a href="#" class="facility__button">
         <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility-button.png" alt="お部屋の画像">
         <span>お部屋のご予約はこちら</span>

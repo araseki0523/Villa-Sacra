@@ -5,4 +5,11 @@
     margin-left: rem(145);
     height: inherit;
     display: flex;
+    @include mq('xl') {
+       margin-left: rem(100);
+       padding-left: $padding-pc; 
+    }
+    @include mq('ll') {
+        margin-left: 0;
+    }
 }

@@ -24,7 +24,7 @@
     padding: 0 rem(30) 0 0;
 }
 
-.header__logo img{
+.header__logo{
     width: 158px;
 }
 
@@ -34,6 +34,9 @@ pc版のナビメニュー
 .header__nav {
     text-transform: uppercase;
     margin-left: auto;
+    @include mq('ll') {
+       display: none; 
+    }
 }   
 
 .header__nav-items {
@@ -63,10 +66,11 @@ pc版のナビメニュー
 .header__nav-item a::before {
     position: absolute;
     content: "";
-    bottom: rem(6);
+    bottom: rem(-10);
     left: 3%;
     width: 90%;
-    height: rem(1);
+    height: rem(3);
+    background: $yellow;
     visibility: hidden;
 }
 
@@ -76,7 +80,7 @@ pc版のナビメニュー
 }
 
 .header__nav-item.header__nav-item--white a:hover::before {
-    visibility: hidden;
+
 }
 
 .header__nav-item.header__nav-item--white {
@@ -113,45 +117,8 @@ pc版のナビメニュー
 
 
 /*======================================
-Englishのホバー                                        
+Englishホバー時表示メニュー                                        
 ======================================*/
-// .header__has-sub {
-//     position: relative;
-// }
-
-// .header__sub {
-//     overflow: hidden;
-//     position: absolute;
-//     left: 0%;
-//     top: 4em;
-//     width: rem(304);
-//     min-height: 0;
-//     height: 0;
-//     z-index: 3;
-//     transition: min-height 0.5s;
-// }
-
-// .header__sub.active {
-//     min-height: 180px;
-// }
-
-// .header__sub-text a {
-//     width: rem(20);
-// }
-
-// .header__sub-text a::before{
-//     display: none;
-// }
-
-// .header__sub-text a :hover {
-//     background-color: $green;
-//     color: $white;
-//     opacity: 1;
-// }
-
-// .header__sub.active {
-//     min-height: 680px;
-// }
 .header__has-sub {
     position: relative;
     .header__sub {
@@ -183,7 +150,7 @@ Englishのホバー
 }
 
 /*======================================
-sp                                        
+sp版（1280px以下）のモーダル内メニュー                                       
 ======================================*/
 .header__sp-nav {
     display: none;
@@ -195,8 +162,8 @@ sp
     width: 100%;
     height: 100vh;
     z-index: 8888;
-    @include mq(md) {
-        display: none;
+    @include mq('ll') {
+    //    display: block; 
     }
 }
 
@@ -207,7 +174,9 @@ sp
     height: 100vh;
     overflow: scroll;
 }
-
+.header__sp-nav-item {
+    margin-top: rem(20);
+}
 .header__sp-nav-item a {
     display: block;
     width: 100%;
@@ -215,5 +184,6 @@ sp
     padding-bottom: rem(16);
     text-align: center;
     color: $white;
-    font-size: rem(16);
+    font-size: rem(20);
+    text-transform: uppercase;
 }

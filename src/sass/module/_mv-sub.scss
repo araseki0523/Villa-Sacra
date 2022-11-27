@@ -41,7 +41,6 @@
     position: absolute;
 }
 .mv-sub__title-ja{
-    font-size: rem(36);
     font-size: min(2vw,36px);   
     top: 50%;
     left: 50%;
@@ -50,6 +49,9 @@
     text-transform: uppercase;
     @include mq(md) {
         font-size: rem(28);
+    }
+    @include mq('sm') {
+       font-size: rem(36); 
     }
 }
 .mv-sub__title-en {

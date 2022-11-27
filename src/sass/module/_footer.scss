@@ -73,8 +73,15 @@
 .footer__list + .footer__list {
     margin-left: rem(24);
 }
-.footer__list-big {
+.footer__list-big1,
+.footer__list-big2 {
     width: rem(72);
+}
+.footer__list.footer__list-big1 {
+    margin-left: rem(10);
+}
+.footer__list.footer__list-big2 {
+    margin-left: rem(0);
 }
 .footer__list a {
 
@@ -99,7 +106,6 @@
     }
 }
 .footer__cancel-policy {
-    // margin-left: rem(430);
     flex-shrink: 1;
 }
 .footer__copyright {

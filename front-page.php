@@ -1,3 +1,16 @@
+<?php
+$home = esc_url(home_url('/'));
+$concept = esc_url(home_url('/concept/'));
+$room = esc_url(home_url('/room/'));
+$bb = esc_url(home_url('/bb/'));
+$facility = esc_url(home_url('/facility/'));
+$access = esc_url(home_url('/access/'));
+$blog = esc_url(home_url('/blog/'));
+$qa = esc_url(home_url('/qa/'));
+$contact = esc_url(home_url('/contact/'));
+$privacypolicy = esc_url(home_url('/privacypolicy/'));
+?>
+
 <?php get_header(); ?>
 
 <section class="mv layout-mv">
@@ -24,9 +37,8 @@
 </p>
 
 <div>
-<a href="" class="button2">テスト</a>
-<!-- https://csshtml.work/button-hover-yajirushi-nobiru/ -->
-</div>
+
+
 <!-- testarea -->
 
 
@@ -55,7 +67,7 @@
         </div>
     </div>
     <div class="message__button-area">
-        <a href="" class="message__button button">MORE</a>
+        <a href="<?php echo $concept ?>" class="message__button button">MORE</a>
     </div>
 </div>
 
@@ -84,7 +96,7 @@
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="" class="introduction__button button">MORE</a>
+                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景１ -->
             <div class="introduction__background1"></div>
@@ -107,7 +119,7 @@
                     和の造りを生かしたユニークなデザインと縁側や小上がりといった日本家屋特有のシチュエーション。月の形の調光ライトは、部屋のムードを気分に合わせて変えてくれて、紙のシェードや障子などの日本独特の建具は魅力たっぷりです。この幻想的な一室は、特に外国人観光客には人気があり、陰影ある日本の美があふれています。シングルユースでも、カップルでない二人連れでも、落ち着いたステイができる空間となっています。 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="" class="introduction__button button">MORE</a>
+                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景２ -->
             <div class="introduction__background2"></div>
@@ -133,7 +145,7 @@
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="" class="introduction__button button">MORE</a>
+                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
             </div>
         </div>
         <!--introduction__each-wrapper  虎の間-->
@@ -157,7 +169,7 @@
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="" class="introduction__button button">MORE</a>
+                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景３ -->
             <div class="introduction__background3"></div>
@@ -180,7 +192,7 @@
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="" class="introduction__button button">MORE</a>
+                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
             </div>
         </div>
         <!--introduction__each-wrapper  鶴の間-->
@@ -202,7 +214,7 @@
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="" class="introduction__button button">MORE</a>
+                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景４ -->
             <div class="introduction__background4"></div>
@@ -220,6 +232,7 @@
                 <p class="box__left-title-en section-title__en">Restaurant</p>
             </div>
             <div class="box__button-area">
+                <!-- リンク未貼付 -->
                 <a href="" class="box__button button">MORE</a>
             </div>
         </div>
@@ -229,6 +242,7 @@
                 <p class="box__right-title-en section-title__en">Shared space</p>
             </div>
             <div class="box__button-area">
+                <!-- リンク未貼付 -->
                 <a href="" class="box__button button">MORE</a>
             </div>
         </div>
@@ -280,7 +294,7 @@
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
             </a><!--blog-top__each-wrapper-->
             <div class="blog-top__button-area">
-                <a href="" class="blog-top__button button">MORE</a>
+                <a href="<?php echo $blog ?>" class="blog-top__button button">MORE</a>
             </div>
         </div>
     </div>
@@ -296,7 +310,7 @@
             <iframe id="content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.4038017053203!2d139.54785405145992!3d35.32079288018314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845c1b11bf9d5%3A0xe238fda8e877df7!2z44CSMjQ4LTAwMTIg56We5aWI5bed55yM6Y6M5YCJ5biC5b6h5oiQ55S677yR77yT4oiS77yS77yZ!5e0!3m2!1sja!2sjp!4v1669177593243!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="access__button-area">
-            <a href="" class="access__button button">MORE</a>
+            <a href="<?php echo $access ?>" class="access__button button">MORE</a>
         </div>
 
     </div>
@@ -317,6 +331,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/top/staff.jpg" alt="スタッフ募集">
         </div>
         <div class="recruit__button-area">
+            <!-- リンク未貼付 -->
             <a href="" class="recruit__button button">MORE</a>
         </div>
     </div>
