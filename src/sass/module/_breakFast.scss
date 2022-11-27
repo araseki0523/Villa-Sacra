@@ -1,6 +1,7 @@
 @use "global" as *;
 
-.breakFast {
+.breakFast,
+.dinner {
     max-width: rem(1076);
     width: 100%;
     margin: auto;

@@ -674,7 +674,8 @@ select::-ms-expand {
   margin-left: 1rem;
 }
 
-.breakFast {
+.breakFast,
+.dinner {
   max-width: 1076px;
   max-width: 67.25rem;
   width: 100%;
@@ -1843,6 +1844,14 @@ sp
   height: 38.25rem;
 }
 
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 88px;
+  margin-top: 5.5rem;
+}
+
 .item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1857,6 +1866,7 @@ sp
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  position: relative;
 }
 
 .item:first-child {
@@ -1865,22 +1875,9 @@ sp
 }
 
 .item-box {
-  position: relative;
   margin: 2em 0;
   padding: 0.5em 1em;
   border: solid 1px #fff;
-}
-
-.item-box__head {
-  display: inline-block;
-  top: -27px;
-  left: -3px;
-  padding: 0 9px;
-  height: 25px;
-  line-height: 25px;
-  font-size: 17px;
-  border: 1px solid #fff;
-  font-weight: bold;
 }
 
 .item-box__sub-title-ja {
@@ -1921,6 +1918,24 @@ sp
 .item-box__head,
 .item-box__body {
   border: 1px solid #fff;
+}
+
+.item-box__body {
+  position: relative;
+  padding: 70px 60px 40px;
+  padding: 4.375rem 3.75rem 2.5rem;
+  margin-top: 52px;
+  margin-top: 3.25rem;
+}
+
+.item-box__head {
+  display: inline-block;
+  padding: 16px 48px 15px 47px;
+  padding: 1rem 3rem 0.9375rem 2.9375rem;
+  background: #000;
+  position: absolute;
+  top: -14%;
+  left: 5%;
 }
 
 .item-box__info .card-box__text {
@@ -2010,6 +2025,11 @@ sp
   margin-top: 30.5625rem;
 }
 
+.layout-dinner {
+  margin-top: 120px;
+  margin-top: 7.5rem;
+}
+
 .layout-facility-box {
   margin-top: 137px;
   margin-top: 8.5625rem;
@@ -2053,11 +2073,6 @@ sp
   .layout-gallery {
     margin-top: 7.5rem;
   }
-}
-
-.layout-hananoma-plan {
-  margin-top: 65px;
-  margin-top: 4.0625rem;
 }
 
 .layout-hananoma {
@@ -2118,19 +2133,19 @@ sp
   margin-top: 3.875rem;
 }
 
-.layout-room-plan {
-  margin-top: 90px;
-  margin-top: 5.625rem;
-}
-
 .layout-room-sub {
-  margin-top: 127px;
-  margin-top: 7.9375rem;
+  margin-top: 104px;
+  margin-top: 6.5rem;
 }
 
 .layout-room-thumbnail {
-  margin-top: 56px;
-  margin-top: 3.5rem;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+
+.layout-roomplan {
+  margin-top: 90px;
+  margin-top: 5.625rem;
 }
 
 .layout-shared-space {
@@ -2399,6 +2414,8 @@ sp
 
 .plan {
   border: 1px solid #fff;
+  margin-top: 55px;
+  margin-top: 3.4375rem;
 }
 
 .plan__inner {
@@ -2409,12 +2426,12 @@ sp
 }
 
 .plan__contents {
-  max-width: 671px;
-  max-width: 41.9375rem;
+  max-width: 673px;
+  max-width: 42.0625rem;
   width: 100%;
   margin: auto;
-  padding: 67px 0;
-  padding: 4.1875rem 0;
+  padding: 54px 0 50px;
+  padding: 3.375rem 0 3.125rem;
   font-size: 20px;
   font-size: 1.25rem;
   font-family: "Yu Mincho", "YuMincho", sans-serif;
@@ -2853,74 +2870,6 @@ sp
   margin: auto;
 }
 
-.room-plan__inner {
-  margin-left: 150px;
-  margin-left: 9.375rem;
-  margin-right: 150px;
-  margin-right: 9.375rem;
-}
-
-.room-plan__container {
-  color: #000;
-  font-size: 28px;
-  font-size: 28px;
-  font-size: 1.75rem;
-  font-family: "Yu Mincho", "YuGothic", sans-serif;
-  line-height: 1.7;
-  font-weight: 500;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.room-plan__left,
-.room-plan__center,
-.room-plan__right {
-  background-color: #E9E9E9;
-  width: 348px;
-  width: 348px;
-  width: 21.75rem;
-  height: 90px;
-  height: 90px;
-  height: 5.625rem;
-  padding-top: 18px;
-  padding-top: 18px;
-  padding-top: 1.125rem;
-  position: relative;
-}
-
-.room-plan__left::before,
-.room-plan__center::before,
-.room-plan__right::before {
-  content: "";
-  position: absolute;
-  top: calc(48% - 2px);
-  right: 0;
-  -webkit-transform: translateY(calc(-48% - 2px)) rotate(45deg);
-          transform: translateY(calc(-48% - 2px)) rotate(45deg);
-  width: 10px;
-  height: 1px;
-  background: #000;
-}
-
-.room-plan__left::after,
-.room-plan__center::after,
-.room-plan__right::after {
-  content: "";
-  position: absolute;
-  top: 48%;
-  right: -1em;
-  -webkit-transform: translateY(-48%);
-          transform: translateY(-48%);
-  width: 100px;
-  height: 1px;
-  background: #000;
-}
-
 .room-sub__inner {
   max-width: 1076px;
   max-width: 67.25rem;
@@ -2938,21 +2887,21 @@ sp
 }
 
 .room-sub__text2 {
-  margin-top: 40px;
-  margin-top: 2.5rem;
+  margin-top: 28px;
+  margin-top: 1.75rem;
 }
 
 .room {
-  margin-top: 195px;
-  margin-top: 12.1875rem;
+  margin-top: 145px;
+  margin-top: 9.0625rem;
 }
 
 .room__inner {
   max-width: 1076px;
   max-width: 67.25rem;
   width: 100%;
-  margin: 65px auto;
-  margin: 4.0625rem auto;
+  margin: 57px auto;
+  margin: 3.5625rem auto;
 }
 
 .room__title {
@@ -2969,8 +2918,8 @@ sp
   display: inline-block;
   position: absolute;
   content: "";
-  bottom: -17px;
-  bottom: -1.0625rem;
+  bottom: -5px;
+  bottom: -0.3125rem;
   left: 50%;
   width: 52px;
   width: 3.25rem;
@@ -2982,8 +2931,8 @@ sp
 
 .room__text-area {
   text-align: center;
-  margin-top: 55px;
-  margin-top: 3.4375rem;
+  margin-top: 38px;
+  margin-top: 2.375rem;
   font-size: 16px;
   font-size: 1rem;
   font-family: "Yu Gothic", "YuGothic", sans-serif;
@@ -3002,6 +2951,74 @@ sp
   width: 36.4375rem;
   margin: 180px auto 0;
   margin: 11.25rem auto 0;
+}
+
+.roomplan__inner {
+  margin-left: 150px;
+  margin-left: 9.375rem;
+  margin-right: 150px;
+  margin-right: 9.375rem;
+}
+
+.roomplan__container {
+  color: #000;
+  font-size: 28px;
+  font-size: 28px;
+  font-size: 1.75rem;
+  font-family: "Yu Mincho", "YuGothic", sans-serif;
+  line-height: 1.7;
+  font-weight: 500;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.roomplan__left,
+.roomplan__center,
+.roomplan__right {
+  background-color: #E9E9E9;
+  width: 348px;
+  width: 348px;
+  width: 21.75rem;
+  height: 90px;
+  height: 90px;
+  height: 5.625rem;
+  padding-top: 18px;
+  padding-top: 18px;
+  padding-top: 1.125rem;
+  position: relative;
+}
+
+.roomplan__left::before,
+.roomplan__center::before,
+.roomplan__right::before {
+  content: "";
+  position: absolute;
+  top: calc(48% - 2px);
+  right: 0;
+  -webkit-transform: translateY(calc(-48% - 2px)) rotate(45deg);
+          transform: translateY(calc(-48% - 2px)) rotate(45deg);
+  width: 10px;
+  height: 1px;
+  background: #000;
+}
+
+.roomplan__left::after,
+.roomplan__center::after,
+.roomplan__right::after {
+  content: "";
+  position: absolute;
+  top: 48%;
+  right: -1em;
+  -webkit-transform: translateY(-48%);
+          transform: translateY(-48%);
+  width: 100px;
+  height: 1px;
+  background: #000;
 }
 
 .section-title {

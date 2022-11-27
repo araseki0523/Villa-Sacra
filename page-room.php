@@ -21,13 +21,12 @@
     <div class="room-sub__inner">
         <div class="room-sub__text-area">
             <p class="room-sub__text1">
-                それぞれ異なった趣向が凝らされた部屋が全部で６つ。基本的には２人部屋ですが、
-                ２階の１室のみ、４人部屋です。
+                ６室のカラフルな客室は、それぞれアーティストによる異なる内装が施され、伝統的な美術品やアートが飾られています。<br>
+                非日常感たっぷりのインテリア。どこも個性的なオシャレな部屋で外国人の方にも人気です。
             </p>
             <p class="room-sub__text2">
-                このうち、アーティストが手がけた部屋が３つ、写真家の協力による部屋が１つ、
-                時折展示作品の替わるギャラリーのような部屋が１つ、あります。事前にお選びいただけますが、
-                空いている場合には実際に見てから、交換することも可能です。
+                基本的には２人部屋ですが、２階の１室のみ４人部屋です。各部屋にはトイレとバスルームはなく、<br>
+                共有のトイレ・バスルームが２ヶ所用意されています。
             </p>
         </div>
         <div class="room-sub__thumbnail layout-room-thumbnail">
@@ -153,7 +152,11 @@
             </div>
         </div>
     </div>
+
+    <?php get_template_part('template/roomplan'); ?>
+
 </section>
+
 <div class="room__border-line"></div>
 <!--月の間-->
 <section id="tsukinoma" class="tsukinoma layout-tsukinoma room">
@@ -230,9 +233,11 @@
             </div>
         </div>
     </div>
+    <?php get_template_part('template/roomplan'); ?>
 </section>
 
 <div class="room__border-line"></div>
+
 <!--虎の間-->
 <section id="toranoma" class="toranoma layout-toranoma room">
     <!-- スライダー -->
@@ -308,6 +313,7 @@
             </div>
         </div>
     </div>
+    <?php get_template_part('template/roomplan'); ?>
 </section>
 
 <div class="room__border-line"></div>
@@ -387,6 +393,7 @@
             </div>
         </div>
     </div>
+    <?php get_template_part('template/roomplan'); ?>
 </section>
 
 <div class="room__border-line"></div>
@@ -464,6 +471,7 @@
             </div>
         </div>
     </div>
+    <?php get_template_part('template/roomplan'); ?>
 </section>
 
 <div class="room__border-line"></div>
@@ -545,29 +553,10 @@
             </div>
         </div>
     </div>
+    <?php get_template_part('template/roomplan'); ?>
 </section>
 
-<section class="room-plan layout-room-plan">
-    <div class="room-plan__inner">
-        <a href="/">
-            <div class="room-plan__container">
-                <div class="room-plan__left">
-                    <p class="room-plan__title">DAY USE</p>
-                </div>
-        </a>
-        <a href="/">
-            <div class="room-plan__center">
-                <p class="room-plan__title">旅行支援</p>
-            </div>
-        </a>
-        <a href="/">
-            <div class="room-plan__right">
-                <p class="room-plan__title">ACTIVITY</p>
-            </div>
-        </a>
-    </div>
-    </div>
-</section>
+
 
 
 <section class="box layout-box">
