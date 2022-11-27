@@ -13,7 +13,7 @@
     </div>
 </section>
 
-<?php get_template_part('template/breadcrumb'); ?>
+<?php breadcrumb(); ?>
 
 <section class="blog-page layout-blog-page">
     <div class="blog-page__inner">

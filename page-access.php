@@ -75,6 +75,7 @@
       <div class="affiliated__address">
         <p class="affiliated__text">〒248-0007&nbsp;&nbsp;神奈川県鎌倉市大町 2-2-35</p>
         <div class="affiliated__button-area">
+          <!-- リンク未貼付 -->
           <a href="" class="affiliated__button button">詳しくはこちら</a>
         </div>
       </div>

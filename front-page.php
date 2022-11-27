@@ -1,37 +1,33 @@
+<?php
+$home = esc_url(home_url('/'));
+$concept = esc_url(home_url('/concept/'));
+$room = esc_url(home_url('/room/'));
+$bb = esc_url(home_url('/bb/'));
+$facility = esc_url(home_url('/facility/'));
+$access = esc_url(home_url('/access/'));
+$blog = esc_url(home_url('/blog/'));
+$qa = esc_url(home_url('/qa/'));
+$contact = esc_url(home_url('/contact/'));
+$privacypolicy = esc_url(home_url('/privacypolicy/'));
+?>
+
 <?php get_header(); ?>
 
 <section class="mv layout-mv">
     <div class="mv__inner">
-        <div class="slide-in left">
-            <h2 class="mv__title slide-in_inner leftAnimeInner">深呼吸する<br>という贅沢。</h2>
-        </div>
         <div class="mv__wrapper">
-            <div class="mv__background"></div>
-            <div class="mv__image">
+            <div class="mv__background slide-in leftAnime">
+                <span class="slide-in_inner leftAnimeInner"></span>
+            </div>
+            <div class="mv__image slide-in leftAnime">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv-top.jpg" alt="トップページのメインビュー">
             </div>
         </div>
+        <div class="slide-in leftAnime">
+            <span class="mv__title slide-in_inner leftAnimeInner">深呼吸する<br>という贅沢。</span>
+        </div>
     </div>
 </section>
-
-
-
-<!-- testarea -->
-<p>
-<span class="slide-in leftAnime">
-<span class="slide-in_inner leftAnimeInner">左から右へテキストが流れます。左から右へテキストが流れます。</span>
-</span>
-</p>
-
-<div>
-<a href="" class="button2">テスト</a>
-<!-- https://csshtml.work/button-hover-yajirushi-nobiru/ -->
-</div>
-<!-- testarea -->
-
-
-
-
 
 <?php get_template_part('template/reservation'); ?>
 
@@ -55,7 +51,7 @@
         </div>
     </div>
     <div class="message__button-area">
-        <a href="" class="message__button button">MORE</a>
+        <a href="<?php echo $concept ?>" class="message__button button">MORE</a>
     </div>
 </div>
 
@@ -84,7 +80,7 @@
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="" class="introduction__button button">MORE</a>
+                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景１ -->
             <div class="introduction__background1"></div>
@@ -107,7 +103,7 @@
                     和の造りを生かしたユニークなデザインと縁側や小上がりといった日本家屋特有のシチュエーション。月の形の調光ライトは、部屋のムードを気分に合わせて変えてくれて、紙のシェードや障子などの日本独特の建具は魅力たっぷりです。この幻想的な一室は、特に外国人観光客には人気があり、陰影ある日本の美があふれています。シングルユースでも、カップルでない二人連れでも、落ち着いたステイができる空間となっています。 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="" class="introduction__button button">MORE</a>
+                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景２ -->
             <div class="introduction__background2"></div>
@@ -133,7 +129,7 @@
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="" class="introduction__button button">MORE</a>
+                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
             </div>
         </div>
         <!--introduction__each-wrapper  虎の間-->
@@ -157,7 +153,7 @@
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="" class="introduction__button button">MORE</a>
+                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景３ -->
             <div class="introduction__background3"></div>
@@ -176,11 +172,11 @@
             </div>
             <div class="introduction__text-area">
                 <p class="introduction__text">
-                    タタミの乗ったクイーンサイズのベッドは広々と使えるサイズでくつろぎの時間を与えてくれます。消しゴムはんこ作家・津久井智子により、漆喰と金の壁紙に押印された鶴たちの飛翔が見事なコントラストをみせた室内は、明るく清潔な印象を与える広がりのある角部屋です。紙のランプシェイド、２つの白い籐椅子、白くて小さい丸テーブルなど、日本家屋の粋や風情を感じさせる作り、古い柱や鴨居はそのままに、アーティストの手により、モダンに生まれ変わった客室はまるで作品の中に佇むよう。ベッドサイドの灯りやくつろぎのスペースもあり、狭いながらも滞在を楽しんでいただけるよう工夫を凝らしてあります。古民家の持つ優しさを生かしながら、羽ばたく鶴たちが壁を彩る、やさしい雰囲気の一室。お部屋に入った瞬間に「かわいい！」と声を上げてしまうので、女子旅におすすです。 </p>
+                    タタミの乗ったクイーンサイズのベッドは広々と使えるサイズでくつろぎの時間を与えてくれます。消しゴムはんこ作家・津久井智子により、漆喰と金の壁紙に押印された鶴たちの飛翔が見事なコントラストをみせた室内は、明るく清潔な印象を与える広がりのある角部屋です。紙のランプシェイド、２つの白い籐椅子、白くて小さい丸テーブルなど、日本家屋の粋や風情を感じさせる作り、古い柱や鴨居はそのままに、アーティストの手により、モダンに生まれ変わった客室はまるで作品の中に佇むよう。ベッドサイドの灯りやくつろぎのスペースもあり、狭いながらも滞在を楽しんでいただけるよう工夫を凝らしてあります。古民家の持つ優しさを生かしながら、羽ばたく鶴たちが壁を彩る、やさしい雰囲気の一室。お部屋に入った瞬間に「かわいい！」と声を上げてしまうので、女子旅におすすめです。
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="" class="introduction__button button">MORE</a>
+                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
             </div>
         </div>
         <!--introduction__each-wrapper  鶴の間-->
@@ -202,7 +198,7 @@
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="" class="introduction__button button">MORE</a>
+                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景４ -->
             <div class="introduction__background4"></div>
@@ -220,6 +216,7 @@
                 <p class="box__left-title-en section-title__en">Restaurant</p>
             </div>
             <div class="box__button-area">
+                <!-- リンク未貼付 -->
                 <a href="" class="box__button button">MORE</a>
             </div>
         </div>
@@ -229,6 +226,7 @@
                 <p class="box__right-title-en section-title__en">Shared space</p>
             </div>
             <div class="box__button-area">
+                <!-- リンク未貼付 -->
                 <a href="" class="box__button button">MORE</a>
             </div>
         </div>
@@ -250,37 +248,42 @@
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a><!--blog-top__each-wrapper-->
+            </a>
+            <!--blog-top__each-wrapper-->
             <a href="" class="blog-top__each-wrapper">
                 <div class="blog-top__box">
                     <div class="blog-top__new">NEW</div>
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a><!--blog-top__each-wrapper-->
+            </a>
+            <!--blog-top__each-wrapper-->
             <a href="" class="blog-top__each-wrapper">
                 <div class="blog-top__box">
                     <div class="blog-top__new">NEW</div>
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a><!--blog-top__each-wrapper-->
+            </a>
+            <!--blog-top__each-wrapper-->
             <a href="" class="blog-top__each-wrapper">
                 <div class="blog-top__box">
                     <div class="blog-top__new">NEW</div>
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a><!--blog-top__each-wrapper-->
+            </a>
+            <!--blog-top__each-wrapper-->
             <a href="" class="blog-top__each-wrapper">
                 <div class="blog-top__box">
                     <div class="blog-top__new">NEW</div>
                     <date class="blog-top__date">2021.01.01</date>
                 </div>
                 <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a><!--blog-top__each-wrapper-->
+            </a>
+            <!--blog-top__each-wrapper-->
             <div class="blog-top__button-area">
-                <a href="" class="blog-top__button button">MORE</a>
+                <a href="<?php echo $blog ?>" class="blog-top__button button">MORE</a>
             </div>
         </div>
     </div>
@@ -296,7 +299,7 @@
             <iframe id="content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.4038017053203!2d139.54785405145992!3d35.32079288018314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845c1b11bf9d5%3A0xe238fda8e877df7!2z44CSMjQ4LTAwMTIg56We5aWI5bed55yM6Y6M5YCJ5biC5b6h5oiQ55S677yR77yT4oiS77yS77yZ!5e0!3m2!1sja!2sjp!4v1669177593243!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="access__button-area">
-            <a href="" class="access__button button">MORE</a>
+            <a href="<?php echo $access ?>" class="access__button button">MORE</a>
         </div>
 
     </div>
@@ -317,6 +320,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/top/staff.jpg" alt="スタッフ募集">
         </div>
         <div class="recruit__button-area">
+            <!-- リンク未貼付 -->
             <a href="" class="recruit__button button">MORE</a>
         </div>
     </div>

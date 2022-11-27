@@ -6,7 +6,9 @@
       <div class="footer__content">
         <div class="footer__left">
           <div class="footer__logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="メインビュータイトル下の背景画像">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="footer__logo-link">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="ヘッダーロゴ">
+            </a>
           </div>
         </div>
         <!--footer__left-->
@@ -26,21 +28,25 @@
     <div class="footer__sns">
       <ul class="footer__lists">
         <li class="footer__list">
+          <!-- リンク未貼付 -->
           <a href="">
             <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-instagram.png" alt="インスタグラムのアイコン画像">
           </a>
         </li>
         <li class="footer__list">
+          <!-- リンク未貼付 -->
           <a href="">
             <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-facebook.png" alt="フェイスブックのアイコン画像">
           </a>
         </li>
-        <li class="footer__list footer__list-big">
+        <li class="footer__list footer__list-big1">
+          <!-- リンク未貼付 -->
           <a href="">
             <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-tiktok.png" alt="ティックトックのアイコン画像">
           </a>
         </li>
-        <li class="footer__list footer__list-big">
+        <li class="footer__list footer__list-big2">
+          <!-- リンク未貼付 -->
           <a href="">
             <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-blog.png" alt="ブログのアイコン画像">
           </a>
