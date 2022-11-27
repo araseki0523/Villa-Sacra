@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.room-plan__inner {
+.roomplan__inner {
     margin-left: 9.375rem;
     margin-right: 9.375rem;
 }
 
-.room-plan__container {
+.roomplan__container {
     color: #000;
     font-size: 28px;
     font-size: 1.75rem;
@@ -21,9 +21,9 @@
     justify-content: space-between;
 }
 
-.room-plan__left,
-.room-plan__center,
-.room-plan__right {
+.roomplan__left,
+.roomplan__center,
+.roomplan__right {
     background-color: #E9E9E9;
     width: 348px;
     width: 21.75rem;
@@ -34,9 +34,9 @@
     position: relative;
 }
 
-.room-plan__left::before,
-.room-plan__center::before,
-.room-plan__right::before {
+.roomplan__left::before,
+.roomplan__center::before,
+.roomplan__right::before {
 	content: '';
 	position: absolute;
 	top: calc(48% - 2px);
@@ -46,9 +46,9 @@
 	height: 1px;
 	background: $black;
 }
-.room-plan__left::after,
-.room-plan__center::after,
-.room-plan__right::after {
+.roomplan__left::after,
+.roomplan__center::after,
+.roomplan__right::after {
 	content: '';
 	position: absolute;
 	top: 48%;

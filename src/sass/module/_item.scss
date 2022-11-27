@@ -1,0 +1,91 @@
+@use "global" as *;
+
+.items {
+    display: flex;
+    margin-top: rem(88);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3 - rem(32));
+    margin-left: rem(16);
+    flex-grow: 1;
+    position: relative;
+}
+
+.item:first-child {
+    margin-left: rem(0);
+}
+
+.item-box {
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 1px $white;
+}
+
+
+.item-box__sub-title-ja {
+    font-size: rem(24);
+    font-weight: 500;
+    font-family: $yumincho;
+    line-height: 1.7;
+    text-align: center;
+    position: relative;
+}
+
+.item-box__sub-title-ja::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% - 5px);
+    right: -35px;
+    width: 24px;
+    height: 4px;
+    border: none;
+    border-right: 2px solid #FFF;
+    border-bottom: 1.5px solid #FFF;
+    transform: skew(45deg);
+    transition: .3s;
+}
+
+.item-box__sub-title-en {
+    font-size: rem(16);
+    font-family: $sub-font-family;
+    line-height: 1.125;
+    text-align: center;
+}
+
+.item-box__head,
+.item-box__body {
+    border: 1px solid $white;
+}
+
+
+.item-box__body {
+    position: relative;
+    padding: rem(70) rem(60) rem(40);
+    margin-top: rem(52);
+}
+.item-box__head {
+    display: inline-block;
+    padding: rem(16) rem(48) rem(15) rem(47);
+    background: $black;
+    position: absolute;
+    top: -14%;
+    left: 5%;
+}
+
+.item-box__info
+.card-box__text {
+    font-size: rem(16);
+    font-weight: 500;
+    font-family: $yumincho;
+    line-height: 1.7;
+    margin-top: rem(30);
+}
+
+.card-box__text {
+    margin-top: rem(33);
+    line-height: 1.3;
+}

@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.bb-sub__inner {
+    max-width: rem(1076);
+    width: 100%;
+    margin: auto;
+}
+
+.bb-sub__lead {
+    font-size: rem(26);
+    line-height: 1.7;
+    font-family: Hiragino Kaku Gothic ProN;
+}
+.bb-sub__text-area {
+    margin-top: rem(58);
+    font-size: rem(18);
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: $yugothic;
+}
+
+.bb-sub__text2,
+.bb-sub__text3 {
+    margin-top: rem(35);
+}
+

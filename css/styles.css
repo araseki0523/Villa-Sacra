@@ -612,6 +612,36 @@ select::-ms-expand {
   text-align: center;
 }
 
+.bb-sub__inner {
+  max-width: 1076px;
+  max-width: 67.25rem;
+  width: 100%;
+  margin: auto;
+}
+
+.bb-sub__lead {
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 1.7;
+  font-family: Hiragino Kaku Gothic ProN;
+}
+
+.bb-sub__text-area {
+  margin-top: 58px;
+  margin-top: 3.625rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+}
+
+.bb-sub__text2,
+.bb-sub__text3 {
+  margin-top: 35px;
+  margin-top: 2.1875rem;
+}
+
 .blog-page__inner {
   max-width: 1078px;
   max-width: 67.375rem;
@@ -725,6 +755,14 @@ select::-ms-expand {
 .breadcrumb__item {
   margin-left: 16px;
   margin-left: 1rem;
+}
+
+.breakFast,
+.dinner {
+  max-width: 1076px;
+  max-width: 67.25rem;
+  width: 100%;
+  margin: auto;
 }
 
 .button {
@@ -1452,11 +1490,35 @@ top
           transform: rotate(-45deg);
 }
 
-.hananoma__inner {
+.swiper.swiper-main {
   max-width: 1076px;
   max-width: 67.25rem;
   width: 100%;
-  margin: 0 auto;
+}
+
+.swiper-slide.swiper-main__slide img {
+  height: auto;
+  width: 100%;
+}
+
+.swiper.swiper-thumb {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  max-width: 580px;
+  max-width: 36.25rem;
+  width: 100%;
+}
+
+.swiper-slide.swiper-thumb__slide {
+  margin-left: 20px;
+  margin-left: 1.25rem;
+  max-width: 101px;
+  max-width: 6.3125rem;
+  width: 100%;
+}
+
+.swiper-slide.swiper-thumb__slide:first-child {
+  margin-left: 0;
 }
 
 .header {
@@ -1951,6 +2013,116 @@ sp版（1280px以下）のモーダル内メニュー
   height: 38.25rem;
 }
 
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 88px;
+  margin-top: 5.5rem;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(33.33333% - 2rem);
+  margin-left: 16px;
+  margin-left: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+}
+
+.item:first-child {
+  margin-left: 0px;
+  margin-left: 0rem;
+}
+
+.item-box {
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 1px #fff;
+}
+
+.item-box__sub-title-ja {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Yu Mincho", "YuMincho", sans-serif;
+  line-height: 1.7;
+  text-align: center;
+  position: relative;
+}
+
+.item-box__sub-title-ja::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 5px);
+  right: -35px;
+  width: 24px;
+  height: 4px;
+  border: none;
+  border-right: 2px solid #FFF;
+  border-bottom: 1.5px solid #FFF;
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.item-box__sub-title-en {
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "SignPainter HouseScript";
+  line-height: 1.125;
+  text-align: center;
+}
+
+.item-box__head,
+.item-box__body {
+  border: 1px solid #fff;
+}
+
+.item-box__body {
+  position: relative;
+  padding: 70px 60px 40px;
+  padding: 4.375rem 3.75rem 2.5rem;
+  margin-top: 52px;
+  margin-top: 3.25rem;
+}
+
+.item-box__head {
+  display: inline-block;
+  padding: 16px 48px 15px 47px;
+  padding: 1rem 3rem 0.9375rem 2.9375rem;
+  background: #000;
+  position: absolute;
+  top: -14%;
+  left: 5%;
+}
+
+.item-box__info .card-box__text {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Yu Mincho", "YuMincho", sans-serif;
+  line-height: 1.7;
+  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+
+.card-box__text {
+  margin-top: 33px;
+  margin-top: 2.0625rem;
+  line-height: 1.3;
+}
+
 .layout-access-sub {
   padding-top: 192px;
   padding-top: 12rem;
@@ -1969,6 +2141,11 @@ sp版（1280px以下）のモーダル内メニュー
 .layout-amenities {
   margin-top: 329px;
   margin-top: 20.5625rem;
+}
+
+.layout-bb-sub {
+  margin-top: 120px;
+  margin-top: 7.5rem;
 }
 
 .layout-blog-page {
@@ -2008,6 +2185,11 @@ sp版（1280px以下）のモーダル内メニュー
   }
 }
 
+.layout-breakFast {
+  margin-top: 120px;
+  margin-top: 7.5rem;
+}
+
 .layout-concept {
   margin-top: 134px;
   margin-top: 8.375rem;
@@ -2021,6 +2203,11 @@ sp版（1280px以下）のモーダル内メニュー
 .layout-convention {
   margin-top: 489px;
   margin-top: 30.5625rem;
+}
+
+.layout-dinner {
+  margin-top: 120px;
+  margin-top: 7.5rem;
 }
 
 .layout-facility-box {
@@ -2066,11 +2253,6 @@ sp版（1280px以下）のモーダル内メニュー
   .layout-gallery {
     margin-top: 7.5rem;
   }
-}
-
-.layout-hananoma-plan {
-  margin-top: 65px;
-  margin-top: 4.0625rem;
 }
 
 .layout-hananoma {
@@ -2131,19 +2313,19 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 3.875rem;
 }
 
-.layout-room-plan {
-  margin-top: 90px;
-  margin-top: 5.625rem;
-}
-
 .layout-room-sub {
-  margin-top: 127px;
-  margin-top: 7.9375rem;
+  margin-top: 104px;
+  margin-top: 6.5rem;
 }
 
 .layout-room-thumbnail {
-  margin-top: 56px;
-  margin-top: 3.5rem;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+
+.layout-roomplan {
+  margin-top: 90px;
+  margin-top: 5.625rem;
 }
 
 .layout-shared-space {
@@ -2412,6 +2594,8 @@ sp版（1280px以下）のモーダル内メニュー
 
 .plan {
   border: 1px solid #fff;
+  margin-top: 55px;
+  margin-top: 3.4375rem;
 }
 
 .plan__inner {
@@ -2422,12 +2606,12 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .plan__contents {
-  max-width: 671px;
-  max-width: 41.9375rem;
+  max-width: 673px;
+  max-width: 42.0625rem;
   width: 100%;
   margin: auto;
-  padding: 67px 0;
-  padding: 4.1875rem 0;
+  padding: 54px 0 50px;
+  padding: 3.375rem 0 3.125rem;
   font-size: 20px;
   font-size: 1.25rem;
   font-family: "Yu Mincho", "YuMincho", sans-serif;
@@ -2935,74 +3119,6 @@ sp版（1280px以下）のモーダル内メニュー
   margin: auto;
 }
 
-.room-plan__inner {
-  margin-left: 150px;
-  margin-left: 9.375rem;
-  margin-right: 150px;
-  margin-right: 9.375rem;
-}
-
-.room-plan__container {
-  color: #000;
-  font-size: 28px;
-  font-size: 28px;
-  font-size: 1.75rem;
-  font-family: "Yu Mincho", "YuGothic", sans-serif;
-  line-height: 1.7;
-  font-weight: 500;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.room-plan__left,
-.room-plan__center,
-.room-plan__right {
-  background-color: #E9E9E9;
-  width: 348px;
-  width: 348px;
-  width: 21.75rem;
-  height: 90px;
-  height: 90px;
-  height: 5.625rem;
-  padding-top: 18px;
-  padding-top: 18px;
-  padding-top: 1.125rem;
-  position: relative;
-}
-
-.room-plan__left::before,
-.room-plan__center::before,
-.room-plan__right::before {
-  content: "";
-  position: absolute;
-  top: calc(48% - 2px);
-  right: 0;
-  -webkit-transform: translateY(calc(-48% - 2px)) rotate(45deg);
-          transform: translateY(calc(-48% - 2px)) rotate(45deg);
-  width: 10px;
-  height: 1px;
-  background: #000;
-}
-
-.room-plan__left::after,
-.room-plan__center::after,
-.room-plan__right::after {
-  content: "";
-  position: absolute;
-  top: 48%;
-  right: -1em;
-  -webkit-transform: translateY(-48%);
-          transform: translateY(-48%);
-  width: 100px;
-  height: 1px;
-  background: #000;
-}
-
 .room-sub__inner {
   max-width: 1076px;
   max-width: 67.25rem;
@@ -3020,8 +3136,21 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .room-sub__text2 {
-  margin-top: 40px;
-  margin-top: 2.5rem;
+  margin-top: 28px;
+  margin-top: 1.75rem;
+}
+
+.room {
+  margin-top: 145px;
+  margin-top: 9.0625rem;
+}
+
+.room__inner {
+  max-width: 1076px;
+  max-width: 67.25rem;
+  width: 100%;
+  margin: 57px auto;
+  margin: 3.5625rem auto;
 }
 
 .room__title {
@@ -3038,8 +3167,8 @@ sp版（1280px以下）のモーダル内メニュー
   display: inline-block;
   position: absolute;
   content: "";
-  bottom: -17px;
-  bottom: -1.0625rem;
+  bottom: -5px;
+  bottom: -0.3125rem;
   left: 50%;
   width: 52px;
   width: 3.25rem;
@@ -3051,8 +3180,8 @@ sp版（1280px以下）のモーダル内メニュー
 
 .room__text-area {
   text-align: center;
-  margin-top: 55px;
-  margin-top: 3.4375rem;
+  margin-top: 38px;
+  margin-top: 2.375rem;
   font-size: 16px;
   font-size: 1rem;
   font-family: "Yu Gothic", "YuGothic", sans-serif;
@@ -3063,6 +3192,82 @@ sp版（1280px以下）のモーダル内メニュー
 .room__text2 {
   margin-top: 33px;
   margin-top: 2.0625rem;
+}
+
+.room__border-line {
+  border-top: 3px solid #fff;
+  width: 583px;
+  width: 36.4375rem;
+  margin: 180px auto 0;
+  margin: 11.25rem auto 0;
+}
+
+.roomplan__inner {
+  margin-left: 150px;
+  margin-left: 9.375rem;
+  margin-right: 150px;
+  margin-right: 9.375rem;
+}
+
+.roomplan__container {
+  color: #000;
+  font-size: 28px;
+  font-size: 28px;
+  font-size: 1.75rem;
+  font-family: "Yu Mincho", "YuGothic", sans-serif;
+  line-height: 1.7;
+  font-weight: 500;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.roomplan__left,
+.roomplan__center,
+.roomplan__right {
+  background-color: #E9E9E9;
+  width: 348px;
+  width: 348px;
+  width: 21.75rem;
+  height: 90px;
+  height: 90px;
+  height: 5.625rem;
+  padding-top: 18px;
+  padding-top: 18px;
+  padding-top: 1.125rem;
+  position: relative;
+}
+
+.roomplan__left::before,
+.roomplan__center::before,
+.roomplan__right::before {
+  content: "";
+  position: absolute;
+  top: calc(48% - 2px);
+  right: 0;
+  -webkit-transform: translateY(calc(-48% - 2px)) rotate(45deg);
+          transform: translateY(calc(-48% - 2px)) rotate(45deg);
+  width: 10px;
+  height: 1px;
+  background: #000;
+}
+
+.roomplan__left::after,
+.roomplan__center::after,
+.roomplan__right::after {
+  content: "";
+  position: absolute;
+  top: 48%;
+  right: -1em;
+  -webkit-transform: translateY(-48%);
+          transform: translateY(-48%);
+  width: 100px;
+  height: 1px;
+  background: #000;
 }
 
 .section-title {

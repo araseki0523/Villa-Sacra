@@ -98,21 +98,21 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       disableOnInteraction: false,
     },
     speed: 2000,
-    
+
     grabCursor: true,
     watchSlidesProgress: true,
-    
+
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
       type: 'bullets'
     },
-    
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    
+
     scrollbar: {
       el: '.swiper-scrollbar',
     },
@@ -120,7 +120,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       768: { // 画面幅768px以上で適用
         slidesPerView: 3,
       },
-      
+
       centeredSlides: false,
     },
 
@@ -129,18 +129,45 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // お部屋情報スライダー
   // サムネイル
-  const sliderThumbnail = new Swiper(".slider-thumbnail", {
-    slidesPerView: 3, // サムネイルの枚数
+  const mySwiper_thumb = new Swiper(".swiper-thumb", {
+    slidesPerView: 5, // サムネイルの枚数
   });
   // スライダー
-  const slider = new Swiper(".room-sub-slider", {
+  const mySwiper_main = new Swiper(".swiper-main", {
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true,
+    },
     loop: true,
-    slidesPerView: 5,
+    slidesPerView: 1,
 
     thumbs: {
-      swiper: sliderThumbnail,
+      swiper: mySwiper_thumb,
     },
   });
+
+
+  // トップページMVのアニメーション
+  function slideAnime() {
+    //====左に動くアニメーションここから===
+    $('.leftAnime').each(function () {
+      var elemPos = $(this).offset().top - 50;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll >= elemPos - windowHeight) {
+        //左から右へ表示するクラスを付与
+        //テキスト要素を挟む親要素（左側）とテキスト要素を元位置でアニメーションをおこなう
+        $(this).addClass("slideAnimeLeftRight"); //要素を左枠外にへ移動しCSSアニメーションで左から元の位置に移動
+        $(this).children(".leftAnimeInner").addClass("slideAnimeRightLeft");  //子要素は親要素のアニメーションに影響されないように逆の指定をし元の位置をキープするアニメーションをおこなう
+      } else {
+        //左から右へ表示するクラスを取り除く
+        $(this).removeClass("slideAnimeLeftRight");
+        $(this).children(".leftAnimeInner").removeClass("slideAnimeRightLeft");
+
+      }
+    });
+
+  }
 
     // ハンバーガーメニュー
     $(function(){
@@ -179,6 +206,7 @@ function slideAnime(){
 	$(window).scroll(function (){
 		slideAnime();/* アニメーション用の関数を呼ぶ*/
 	});// ここまで画面をスクロールをしたら動かしたい場合の記述
+
 
 	// 画面が読み込まれたらすぐに動かしたい場合の記述
 	$(window).on('load', function(){
