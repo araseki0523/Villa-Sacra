@@ -3102,8 +3102,6 @@ sp版（1280px以下）のモーダル内メニュー
 .reservation__title--en {
   margin-top: -6px;
   margin-top: -0.375rem;
-  margin-left: 28px;
-  margin-left: 1.75rem;
 }
 
 .reservation__icon {
@@ -3280,10 +3278,9 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .section-title__en {
-  padding-left: 38px;
-  padding-left: 2.375rem;
   font-size: 12px;
   font-size: 0.75rem;
+  font-family: "SignPainter HouseScript";
 }
 
 .shared-space__inner {
@@ -3566,6 +3563,7 @@ sp版（1280px以下）のモーダル内メニュー
   font-size: 14px;
   font-size: 0.875rem;
   text-align: center;
+  font-family: "SignPainter HouseScript";
 }
 
 .swiper-wrapper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
