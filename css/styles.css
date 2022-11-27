@@ -1583,22 +1583,39 @@ sp版（1280px以下）のモーダル内メニュー
   left: 0;
   right: 0;
   background: #000;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   z-index: 8888;
 }
+@media screen and (max-width: 1280px) {
+  .header__sp-nav {
+    display: block;
+  }
+}
+
+.header__sp-nav.is-checked {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .header__sp-nav-items {
-  padding-top: 150px;
-  padding-top: 9.375rem;
-  padding-bottom: 100px;
-  padding-bottom: 6.25rem;
-  height: 100vh;
-  overflow: scroll;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .header__sp-nav-item {
   margin-top: 20px;
   margin-top: 1.25rem;
+  width: 100%;
 }
 
 .header__sp-nav-item a {

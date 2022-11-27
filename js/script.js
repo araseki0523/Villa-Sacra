@@ -62,16 +62,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-  //ドロワーメニュー
-  // $("#nav").click(function () {
-  //   $(".js-drawer-menu").toggleClass(".is-open");
-  //   // $(".drawer-menu").toggleClass("open");
-  //   $("html").toggleClass("is-fixed");
-
-  // });
-
-
-
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
@@ -82,8 +72,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
-
-
 
   // トップページのスライダー
   let swiperTop = {
@@ -176,14 +164,14 @@ function slideAnime(){
 		
 	}
 
-});
+  // ハンバーガーメニュー
+  $(function(){
+    const hamburger = $('#js-hamburger');
+    const drawer = $('#js-drawer');
+    hamburger.on('click',function(){
+      hamburger.toggleClass("is-checked")
+      drawer.toggleClass("is-checked")
+    })
+  });
 
-// Javacript
-$(function(){
-  const hamburger = $('#js-hamburger');
-  const drawer = $('#js-drawer-menu');
-  hamburger.on('click',function(){
-    hamburger.toggleClass("is-checked")
-    drawer.toggleClass("is-checked")
-  })
-})
+});

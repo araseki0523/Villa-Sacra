@@ -93,7 +93,8 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
           <li class="header__nav-item"><a href="<?php echo $blog ?>">blog</a></li>
           <li class="header__nav-item"><a href="<?php echo $qa ?>">q&amp;a</a></li>
           <li class="header__nav-item header__nav-item--white">
-            <div class="header__nav-item-icon"></div><a href="<?php echo $contact ?>">contact</a></li>
+            <div class="header__nav-item-icon"></div><a href="<?php echo $contact ?>">contact</a>
+          </li>
           <li class="header__nav-item header__has-sub"><a href="">english</a>
             <!-- Englishのホバー -->
             <ul class="header__sub">
@@ -128,8 +129,8 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
         <span></span>
       </button>
 
-      <div class="header__sp-nav" id="js-drawer-menu">
-        <ul class="header__sp-nav-items">
+      <div class="header__sp-nav" id="js-drawer">
+      <ul class="header__sp-nav-items">
           <li class="header__sp-nav-item"><a href="<?php echo $concept ?>">concept</a></li>
           <li class="header__sp-nav-item"><a href="<?php echo $room ?>">room</a></li>
           <li class="header__sp-nav-item"><a href="<?php echo $bb ?>">b&amp;b</a></li>
@@ -138,10 +139,9 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
           <li class="header__sp-nav-item"><a href="<?php echo $blog ?>">blog</a></li>
           <li class="header__sp-nav-item"><a href="<?php echo $qa ?>">q&amp;a</a></li>
           <li class="header__sp-nav-item"><a href="<?php echo $contact ?>">contact</a></li>
-            <!-- リンク未貼付 -->
+          <!-- リンク未貼付 -->
           <li class="header__sp-nav-item"><a href="">english</a></li>
-        </ul>
-      </div>
+        </ul>      </div>
 
-    </div>
+    </div><!--header__inner->
   </header>

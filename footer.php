@@ -6,7 +6,9 @@
       <div class="footer__content">
         <div class="footer__left">
           <div class="footer__logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="メインビュータイトル下の背景画像">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="footer__logo-link">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="ヘッダーロゴ">
+            </a>
           </div>
         </div>
         <!--footer__left-->
