@@ -62,16 +62,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-  //ドロワーメニュー
-  $("#MenuButton").click(function () {
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
-
-  });
-
-
-
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
@@ -82,8 +72,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
-
-
 
   // トップページのスライダー
   let swiperTop = {
@@ -154,6 +142,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     },
   });
 
+    // ハンバーガーメニュー
+    $(function(){
+      const hamburger = $('#js-hamburger');
+      const drawer = $('#js-drawer');
+      hamburger.on('click',function(){
+        hamburger.toggleClass("is-checked")
+        drawer.toggleClass("is-checked")
+      })
+    });
+  
+
 // トップページMVのアニメーション
 function slideAnime(){
 	//====左に動くアニメーションここから===
@@ -175,6 +174,16 @@ function slideAnime(){
 		});
 		
 	}
+	
+	// 画面をスクロールをしたら動かしたい場合の記述
+	$(window).scroll(function (){
+		slideAnime();/* アニメーション用の関数を呼ぶ*/
+	});// ここまで画面をスクロールをしたら動かしたい場合の記述
+
+	// 画面が読み込まれたらすぐに動かしたい場合の記述
+	$(window).on('load', function(){
+		slideAnime();/* アニメーション用の関数を呼ぶ*/
+	});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+  
 
 });
-
