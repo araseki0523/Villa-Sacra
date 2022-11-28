@@ -130,7 +130,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // お部屋情報スライダー1
   // サムネイル
 const sliderThumbnail = new Swiper(".slider-thumbnail", {
-  slidesPerView: 5, // サムネイルの枚数
+  slidesPerView: 6, // サムネイルの枚数
   spaceBetween: 20,
     grabCursor: true,
 });

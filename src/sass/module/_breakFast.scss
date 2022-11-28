@@ -7,3 +7,20 @@
     margin: auto;
 }
 
+
+.breakFast__title-area.sub-section-title::before, 
+.breakFast__title-area.sub-section-title::after, 
+.diner__title-area.sub-section-title::before, 
+.diner__title-area.sub-section-title::after {
+    width: rem(400);
+}
+
+.breakFast__title-area.sub-section-title::after,
+.diner__title-area.sub-section-title::after {
+    right: -18%;
+} 
+.breakFast__title-area.sub-section-title::before,
+.diner__title-area.sub-section-title::before {
+    left: 18%;
+} 
+

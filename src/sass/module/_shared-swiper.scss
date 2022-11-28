@@ -43,15 +43,16 @@
 
 /* ページネーションの余白 */
 .swiper-pagination {
-    bottom: rem(-60) !important;
+    bottom: rem(-95) !important;
 }
 /* ページネーションのサイズと色 */
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: $white !important;
-}
-
 .swiper-pagination-bullet {
-    border-color: $white !important;
+    background: $white!important;
+    opacity: 0.5!important;
+}
+.swiper-pagination-bullet-active {
+    background: $white!important;
+    opacity: 1!important;
 }
 
 /* 前へ次への矢印カスタマイズ */

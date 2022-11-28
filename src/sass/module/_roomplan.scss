@@ -1,8 +1,11 @@
 @use "global" as *;
 
 .roomplan__inner {
-    margin-left: 9.375rem;
-    margin-right: 9.375rem;
+    max-width: rem(1116);
+    width: 100%;
+    margin: 0 auto;
+    padding-left: rem(20);
+    padding-right: rem(20);
 }
 
 .roomplan__container {
@@ -13,25 +16,21 @@
     line-height: 1.7;
     font-weight: 500;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
 }
 
 .roomplan__left,
 .roomplan__center,
 .roomplan__right {
     background-color: #E9E9E9;
-    width: 348px;
-    width: 21.75rem;
-    height: 90px;
-    height: 5.625rem;
-    padding-top: 18px;
-    padding-top: 1.125rem;
+    width: calc(100% / 3 - rem(32));
+    margin-left: rem(16);
+    flex-grow: 1;
+    padding: rem(20) 50px rem(20) rem(20);
     position: relative;
+    @include mq(md) {
+        padding: rem(20) rem(20) rem(20) rem(5);
+    }
 }
 
 .roomplan__left::before,
@@ -42,9 +41,15 @@
 	top: calc(48% - 2px);
 	right: 0;
 	transform: translateY(calc(-48% - 2px)) rotate(45deg);
-	width: 10px;    
+	width: 2.8%;    
 	height: 1px;
 	background: $black;
+    @include mq(md) {
+        top: calc(52% - 1px);
+        transform: translateY(calc(-52% - 1px)) rotate(45deg);
+        right: 0.1em;
+        width: 2.8%;    
+    }
 }
 .roomplan__left::after,
 .roomplan__center::after,
@@ -54,8 +59,26 @@
 	top: 48%;
 	right: -1em;
 	transform: translateY(-48%);
-	width: 100px;
+	width: 28%;
 	height: 1px;
 	background: $black;
+    @include mq(md) {
+        transform: translateY(-52%);
+        top: 52%;
+        width: 14%;
+        right: 0;
+    }
+}
+
+.roomplan__title {
+    font-size: rem(28);
+    font-size:min(2vw, 28px);
+    font-weight: 500;
+    font-family: $yumincho;
+    line-height: 1.7;
+    @include mq(md) {
+        font-size: rem(20);
+        font-size:max(2vw, 10px);
+    }
 }
 

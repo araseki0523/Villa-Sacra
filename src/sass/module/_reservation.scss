@@ -21,7 +21,8 @@
 .reservation__container {
     background-color: $white;
     height: rem(176);
-    width: rem(680);
+    width:  100%;
+    max-width: rem(900);
     margin: 0 auto;
 }
 

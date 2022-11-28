@@ -150,7 +150,27 @@
         </div>
     </div>
 
-    <?php get_template_part('template/roomplan'); ?>
+    <section class="roomplan layout-roomplan">
+        <div class="roomplan__inner">
+            <div class="roomplan__container">
+                <a href="/">
+                    <div class="roomplan__left">
+                        <p class="roomplan__title">DAY USE（日帰り）</p>
+                </a>
+            </div>
+            <div class="roomplan__center">
+                <a href="/">
+                    <p class="roomplan__title">ACTIVITY</p>
+                </a>
+            </div>
+            <div class="roomplan__right">
+                <a href="/">
+                    <p class="roomplan__title">全国旅行支援</p>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
 
 </section>
 
@@ -571,7 +591,7 @@
     </div>
 </section>
 
-<section class="facility__gallery layout-sub-facility">
+<section class="room__gallery layout-sub-room">
     <?php get_template_part('template/gallery'); ?>
 </section>
 
