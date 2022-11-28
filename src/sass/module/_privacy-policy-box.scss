@@ -14,6 +14,10 @@
     text-align: center;
     display: flex;
     justify-content: space-between;
+    @include mq('ll') {
+       flex-direction: column; 
+       align-items: center;
+    }
 }
 
 .privacy-policy-box__left,
@@ -22,8 +26,17 @@
     width: rem(348);
     height: rem(90);
     padding-top: rem(18);
+    @include mq('sm') {
+        width: rem(432);
+        height: rem(112);
+    }
 }
 
+.privacy-policy-box__right {
+    @include mq('ll') {
+       margin-top: rem(20); 
+    }
+}
 .privacy-policy-box__title {
 
 }
@@ -36,5 +49,9 @@
     width: rem(24);
     height: rem(30);
     margin: auto;
+    @include mq('sm') {
+       width: rem(32);
+       height: rem(0); 
+    }
 }
 

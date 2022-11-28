@@ -77,7 +77,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   let swiperTop = {
     loop: true,
     spaceBetween: 10,
-    slidesPerView: 3.5,
+    slidesPerView: 2.5,
+    breakpoints: {
+      768: {
+        slidesPerView: 3.5,
+      }
+    },
     autoplay: {
       delay: 4000,
       disableOnInteraction: false,
@@ -244,26 +249,53 @@ const slider6 = new Swiper(".slider6", {
 
 
   // トップページMVのアニメーション
-  function slideAnime() {
-    //====左に動くアニメーションここから===
+  function slideAnime1() {
     $('.leftAnime').each(function () {
       var elemPos = $(this).offset().top - 50;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
       if (scroll >= elemPos - windowHeight) {
-        //左から右へ表示するクラスを付与
-        //テキスト要素を挟む親要素（左側）とテキスト要素を元位置でアニメーションをおこなう
-        $(this).addClass("slideAnimeLeftRight"); //要素を左枠外にへ移動しCSSアニメーションで左から元の位置に移動
-        $(this).children(".leftAnimeInner").addClass("slideAnimeRightLeft");  //子要素は親要素のアニメーションに影響されないように逆の指定をし元の位置をキープするアニメーションをおこなう
+        $(this).addClass("slideAnimeLeftRight"); 
+        $(this).children(".leftAnimeInner").addClass("slideAnimeRightLeft"); 
       } else {
-        //左から右へ表示するクラスを取り除く
         $(this).removeClass("slideAnimeLeftRight");
         $(this).children(".leftAnimeInner").removeClass("slideAnimeRightLeft");
 
       }
     });
-
   }
+
+  // function slideAnime2() {
+  //   $('.leftAnime2').each(function () {
+  //     var elemPos = $(this).offset().top - 50;
+  //     var scroll = $(window).scrollTop();
+  //     var windowHeight = $(window).height();
+  //     if (scroll >= elemPos - windowHeight) {
+  //       $(this).addClass("slideAnimeLeftRight2"); 
+  //       $(this).children(".leftAnimeInner").addClass("slideAnimeRightLeft2"); 
+  //     } else {
+  //       $(this).removeClass("slideAnimeLeftRight2");
+  //       $(this).children(".leftAnimeInner").removeClass("slideAnimeRightLeft2");
+
+  //     }
+  //   });
+  // }
+
+  // function slideAnime1() {
+  //   $('.leftAnime1').each(function () {
+  //     var elemPos = $(this).offset().top - 50;
+  //     var scroll = $(window).scrollTop();
+  //     var windowHeight = $(window).height();
+  //     if (scroll >= elemPos - windowHeight) {
+  //       $(this).addClass("slideAnimeLeftRight"); 
+  //       $(this).children(".leftAnimeInner").addClass("slideAnimeRightLeft"); 
+  //     } else {
+  //       $(this).removeClass("slideAnimeLeftRight");
+  //       $(this).children(".leftAnimeInner").removeClass("slideAnimeRightLeft");
+
+  //     }
+  //   });
+  // }
 
     // ハンバーガーメニュー
     $(function(){

@@ -1,10 +1,10 @@
 @use 'global' as *;
 
-.sub-section-title {
+.section-title-sub {
     position: relative;
 }
-.sub-section-title::before,
-.sub-section-title::after {
+.section-title-sub::before,
+.section-title-sub::after {
     position: absolute;
     content: "";
     top: 35%;
@@ -12,19 +12,25 @@
     background-color: $white;
     width: rem(280);
     height: rem(1);
+    @include mq('ll') {
+       width: rem(140); 
+    }
+    @include mq('md') {
+        width: rem(140);
+    }
 }
-.sub-section-title::before {
+.section-title-sub::before {
     left: 13%;
 }
-.sub-section-title::after {
-    right: -12%;
+.section-title-sub::after {
+    right: 1%;
 }
 
-.sub-section-title__ja {
+.section-title-sub__ja {
     font-size: rem(36);
     text-align: center;
 }
-.sub-section-title__en {
+.section-title-sub__en {
     font-size: rem(14);
     // padding-left: rem(76);
     text-align: center;

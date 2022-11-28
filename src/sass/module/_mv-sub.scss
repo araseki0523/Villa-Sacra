@@ -15,6 +15,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @include mq('md') {
+       height: rem(200); 
+    }
 }
 .mv-sub__image {
     width: 100%;
@@ -24,6 +27,9 @@
     content:"";
     display: block;
     padding-top: 21%; 
+    @include mq('md') {
+       padding-top: 30%; 
+    }
 }
 .mv-sub__image img {
     position: absolute;

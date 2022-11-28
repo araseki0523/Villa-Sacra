@@ -16,10 +16,10 @@
     position: relative;
     z-index: -1;
 }
+.mv__title-adjust {
+    margin-top: rem(-100);
+}
 .mv__title {
-    margin-top: rem(-500);
-    // position: relative;
-    // z-index: 2;
     font-size: rem(63);
     left: rem(58);
     letter-spacing: 0.13em;

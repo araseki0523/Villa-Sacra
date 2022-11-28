@@ -1,23 +1,27 @@
 @use 'global' as *;
 
-.access-sub {
-
-}
+.access-sub {}
 
 .access-sub__inner {
     max-width: rem(1078);
     width: 100%;
     margin: 0 auto;
+    @include mq('ll') {
+       padding-right: $padding-pc;
+       padding-left: $padding-pc; 
+    }
 }
 
+// ホテル名のロゴ
 .access-sub__title {
     width: 158px;
     margin: 0 auto;
+    @include mq('md') {
+       width: 110px; 
+    }
 }
 
-.access-sub__title img {
-
-}
+.access-sub__title img {}
 
 .access-sub__wrapper {
     margin-top: rem(50);
@@ -29,33 +33,42 @@
 
 .access-sub__box {
     margin-top: rem(64);
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
+    @include mq('md') {
+       flex-direction: column; 
+    }
 }
 
 .access-sub__left {
     border-right: 1px solid $white;
     padding-right: rem(100);
+    @include mq('md') {
+       border-right: none; 
+    }
 }
 
-.access-sub__address {
-}
+.access-sub__address {}
 
-.access-sub__nav {
+.access-sub__nav {}
 
-}
 .access-sub__list-item {
     font-family: $yugothic;
     font-size: rem(21);
 
 }
+
 .access-sub__right {
     padding-left: rem(100);
+    @include mq('md') {
+        margin-top: rem(20);
+       padding-left: 0; 
+    }
 }
-// SNS
-.access-sub__sns {
 
-}
+// SNS
+.access-sub__sns {}
+
 .access-sub__container {
     display: flex;
     align-items: center;
@@ -63,10 +76,11 @@ justify-content: center;
     width: rem(200);
 
 }
+
 .access-sub__sub-text {
     width: rem(42);
 }
 
-.access-sub__sub-text + .access-sub__sub-text {
+.access-sub__sub-text+.access-sub__sub-text {
     margin-left: rem(20);
 }

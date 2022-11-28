@@ -2,4 +2,13 @@
 
 .layout-mv-sub {
     padding-top: 90px;
+    @include mq('md') {
+       padding-top: 120px; 
+    }
+    @include mq('sm') {
+       padding-top: 65px; 
+    }
+    @include mq('ss') {
+       padding-top: 45px; 
+    }
 }

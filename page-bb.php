@@ -54,9 +54,9 @@
 <!--Break fast-->
 <section class="breakFast layout-breakFast">
     <div class="breakFast__inner">
-        <div class="breakFast__title-area sub-section-title">
-            <h2 class="breakFast__title-ja  sub-section-title__ja">朝食</h2>
-            <p class="breakFast__title-en sub-section-title__en">Break fast</p>
+        <div class="breakFast__title-area section-title-sub">
+            <h2 class="breakFast__title-ja  section-title-sub__ja">朝食</h2>
+            <p class="breakFast__title-en section-title-sub__en">Break fast</p>
         </div>
         <div class="breakFast__contants-wrap items">
             <div class="breakFast__contants item">
@@ -154,9 +154,9 @@
 <!--Dinner-->
 <section id="dinner" class="dinner layout-dinner">
     <div class="dinner__inner">
-        <div class="dinner__title-area sub-section-title">
-            <h2 class="dinner__title-ja  sub-section-title__ja">夕食</h2>
-            <p class="dinner__title-en sub-section-title__en">Dinner</p>
+        <div class="dinner__title-area section-title-sub">
+            <h2 class="dinner__title-ja  section-title-sub__ja">夕食</h2>
+            <p class="dinner__title-en section-title-sub__en">Dinner</p>
         </div>
         <div class="dinner__contants-wrap items">
             <div class="dinner__contants item">

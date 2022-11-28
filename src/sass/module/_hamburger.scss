@@ -11,6 +11,19 @@ $drawer-color: $white;
        display: block; 
        margin-left: auto;
     }
+    @include mq('lg') {
+        // header__logoと連動
+        margin-top: rem(24);
+    }
+    @include mq('md') {
+       margin-top: 20px;
+    }
+    @include mq('sm') {
+        margin-top: 10px; 
+    }
+    @include mq('ss') {
+        margin-top: 5px;
+     }  
 }
 
 .hamburger span {
