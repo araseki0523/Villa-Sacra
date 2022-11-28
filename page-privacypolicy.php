@@ -17,23 +17,23 @@
 <div class="privacy-policy-box layout-privacy-policy-box">
     <div class="privacy-policy-box__inner">
         <div class="privacy-policy-box__container">
-            <div class="privacy-policy-box__left">
+            <a href="#privacy-policy" class="privacy-policy-box__left">
                 <p class="privacy-policy-box__title">プライバシーポリシー</p>
                 <div class="privacy-policy-box__icon"></div>
-            </div>
-            <div class="privacy-policy-box__right">
+            </a>
+            <a href="#convention" class="privacy-policy-box__right">
                 <p class="privacy-policy-box__title">ホテル規約</p>
                 <div class="privacy-policy-box__icon"></div>
-            </div>
+            </a>
         </div>
     </div>
 </div>
 
-<section class="privacy-policy layout-privacy-policy">
+<section id="privacy-policy" class="privacy-policy layout-privacy-policy">
     <div class="privacy-policy__inner">
-        <div class="privacy-policy__title-area sub-section-title">
-            <h2 class="privacy-policy__title-ja  sub-section-title__ja">プライバシーポリシー</h2>
-            <p class="privacy-policy__title-en sub-section-title__en">Privacy Policy</p>
+        <div class="privacy-policy__title-area section-title-sub">
+            <h2 class="privacy-policy__title-ja  section-title-sub__ja">プライバシーポリシー</h2>
+            <p class="privacy-policy__title-en section-title-sub__en">Privacy Policy</p>
         </div>
         <div class="privacy-policy__container">
             <div class="privacy-policy__wrapper1">
@@ -217,11 +217,11 @@
     <!--privacy-policy__inner-->
 </section>
 
-<section class="convention layout-convention">
+<section id="convention" class="convention layout-convention">
     <div class="convention__inner">
-        <div class="convention__title-area sub-section-title">
-            <h2 class="convention__title-ja  sub-section-title__ja">ホテル規約</h2>
-            <p class="convention__title-en sub-section-title__en">Convention</p>
+        <div class="convention__title-area section-title-sub">
+            <h2 class="convention__title-ja  section-title-sub__ja">ホテル規約</h2>
+            <p class="convention__title-en section-title-sub__en">Convention</p>
         </div>
         <div class="convention__container">
             <div class="convention__wrapper1">

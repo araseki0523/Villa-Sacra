@@ -36,9 +36,19 @@
 .introduction__each-wrapper {
     margin-top: rem(213);
     padding-bottom: rem(100);
-    border-bottom: 1px solid $white;
+    position: relative;
 }    
+.introduction__each-wrapper::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: $white;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom : 0;
 
+}
 .introduction__image-big {
     width: 100%;
     max-width: rem(649);
@@ -148,7 +158,7 @@
 
 }
 
-// 背景
+//グレーの背景
 .introduction__each-wrapper-hana,
 .introduction__each-wrapper-tsuki,
 .introduction__each-wrapper-tora,
@@ -158,33 +168,67 @@
     position: relative;
     z-index: 2;
 }
-.introduction__background1,
-.introduction__background2,
-.introduction__background3,
-.introduction__background4 {
-    background-color: $gray;
+.introduction__each-wrapper-hana::before,
+.introduction__each-wrapper-tora::before {
     z-index: -2;
     position: absolute;
-
-}
-.introduction__background1,
-.introduction__background3 {
+    display: block;
+    background-color: $gray;
+    content: "";
     right: 0;
     top: rem(220);
     width: rem(833);
     height: rem(1250);
 }
-
-.introduction__background2 {
+.introduction__each-wrapper-tsuki::before {
+    z-index: -2;
+    position: absolute;
+    display: block;
+    background-color: $gray;
+    content: "";
     left: 0;
     top: rem(950);
     width: rem(958);
     height: rem(612);
-
 }
-.introduction__background4 {
+.introduction__each-wrapper-tsuru::before {
+    z-index: -2;
+    position: absolute;
+    display: block;
+    background-color: $gray;
+    content: "";
     left: 0;
     top: rem(205);
     width: rem(958);
     height: rem(612);
 }
+// .introduction__background1,
+// .introduction__background2,
+// .introduction__background3,
+// .introduction__background4 {
+//     background-color: $gray;
+//     z-index: -2;
+//     position: absolute;
+
+// }
+// .introduction__background1,
+// .introduction__background3 {
+//     right: 0;
+//     top: rem(220);
+//     width: rem(833);
+//     height: rem(1250);
+// }
+
+// .introduction__background2 {
+//     left: 0;
+//     top: rem(950);
+//     width: rem(958);
+//     height: rem(612);
+
+// }
+// .introduction__background4 {
+//     left: 0;
+//     top: rem(205);
+//     width: rem(958);
+//     height: rem(612);
+// }

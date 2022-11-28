@@ -23,14 +23,13 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 <img src="<?php echo get_template_directory_uri(); ?>/images/top/mv-top.jpg" alt="トップページのメインビュー">
             </div>
         </div>
-        <div class="slide-in leftAnime">
+        <div class="mv__title-adjust slide-in leftAnime">
             <span class="mv__title slide-in_inner leftAnimeInner">深呼吸する<br>という贅沢。</span>
         </div>
     </div>
 </section>
 
 <?php get_template_part('template/reservation'); ?>
-
 
 <div class="message layout-message">
     <div class="message__inner">

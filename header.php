@@ -75,7 +75,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
 
   <!-- ヘッダー部分（ロゴとハンバーガー） -->
   <header class="header layout-header" id="header">
-    <div class="header__inner">
+    <div class="header__inner  fade-in-up">
 
       <h1 class="header__logo">
         <a href="<?php echo esc_url(home_url('/')); ?>" class="header__logo-link">

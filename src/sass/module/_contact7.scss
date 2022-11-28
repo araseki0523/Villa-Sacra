@@ -1,40 +1,63 @@
 @use 'global' as *;
 
-.contact7 {
+.contact7 {}
 
-}
 .contact7__flex {
     display: flex;
+
+    @include mq('md') {
+        flex-direction: column;
+        width: 100%;
+    }
 }
-.contact7__flex + .contact7__flex {
+
+.contact7__flex+.contact7__flex {
     margin-top: rem(24);
 }
+
 .contact7__dt {
     width: 30%;
 }
+
+.contact7__dd {
+    width: 30%;
+}
+
 .contact7__dt span {
     margin-right: rem(10);
 }
+
 .contact7__dd,
 .contact7__dd-textarea {
     width: 70%;
     border: 1px solid $white;
     border-radius: 5px;
+
+    @include mq('md') {
+        margin-top: rem(20);
+        width: 100%;
+    }
 }
+
 .contact7__check {
     margin-top: rem(50);
     text-align: center;
 }
-.contact7__check span {
+.contact7__under {
     border-bottom: 1px solid $white;
 }
+
 .contact7__button {
     margin-top: rem(50);
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+}
+
+.contact7__button input {
     width: 204px;
     border: 1px solid $white;
+    padding: rem(16);
     border-radius: 5px;
+    color: $white;
 }
 
 // 必須と任意
@@ -42,11 +65,36 @@
 .contact7__any {
     padding: rem(2) rem(10);
 }
+
 .contact7__must {
     color: $black;
     background-color: $white;
 }
+
 .contact7__any {
     color: $white;
     background-color: $gray;
+}
+
+// contact form7の固有クラス
+.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required,
+.wpcf7-form-control.wpcf7-text,
+.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required {
+    width: 100%;
+    color: $white;
+}
+
+.wpcf7-form-control.wpcf7-checkbox.wpcf7-validates-as-required {
+    width: 18px;
+    height: 18px;
+    border: 1px solid $white;
+    display: inline-block;
+    margin-right: rem(10); 
+    vertical-align: middle;
+}
+.wpcf7-form-control.wpcf7-checkbox.wpcf7-validates-as-required.checkbox-input    {
+    color: $white;
+}
+.wpcf7-form-control.wpcf7-checkbox.wpcf7-validates-as-required.checkbox-input:hover {
+    color: $white;
 }

@@ -33,6 +33,9 @@
     content:"";
     display: block;
     padding-top: 31%; 
+    @include mq('md') {
+       padding-top: 65%;
+    }
 }
 #content {
     position: absolute;

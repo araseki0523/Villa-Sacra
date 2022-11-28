@@ -8,8 +8,20 @@
     max-width: rem(818);
     width: 100%;
     margin: 0 auto;
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+    @include mq('md') {
+       max-width: 85%; 
+    }
 }
 
 .contact__form {
 
+}
+.contact__thanks {
+    text-align: center;
+}
+.contact__button-area {
+    margin-top: rem(20);
+    text-align: center;
 }

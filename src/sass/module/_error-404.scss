@@ -1,0 +1,20 @@
+@use 'global' as *;
+
+.error-404 {
+    
+}
+.error-404__inner {
+    max-width: rem(938);
+    width: 100%;
+    padding-left: rem(25);
+    padding-right: rem(25);
+    margin: 0 auto;
+}   
+.error-404__message {
+    text-align: center;
+    font-size: rem(30);
+}
+.error-404__button-area {
+    margin-top: rem(80);
+    text-align: center;
+}
