@@ -127,24 +127,120 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   }
   new Swiper('.mySwiper-Facility', swiperFacility);
 
-  // お部屋情報スライダー
+  // お部屋情報スライダー1
   // サムネイル
-  const mySwiper_thumb = new Swiper(".swiper-thumb", {
-    slidesPerView: 5, // サムネイルの枚数
-  });
-  // スライダー
-  const mySwiper_main = new Swiper(".swiper-main", {
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true,
-    },
-    loop: true,
-    slidesPerView: 1,
+const sliderThumbnail = new Swiper(".slider-thumbnail", {
+  slidesPerView: 5, // サムネイルの枚数
+  spaceBetween: 20,
+    grabCursor: true,
+});
+// スライダー
+const slider = new Swiper(".slider", {
+  loop: true,
+  effect: "fade", // フェード
+  fadeEffect: {
+    crossFade: true,
+  },
 
-    thumbs: {
-      swiper: mySwiper_thumb,
-    },
-  });
+  thumbs: {
+    swiper: sliderThumbnail,
+  },
+});
+  // お部屋情報スライダー2
+  // サムネイル
+const sliderThumbnail2 = new Swiper(".slider-thumbnail2", {
+  slidesPerView: 5, // サムネイルの枚数
+  spaceBetween: 20,
+    grabCursor: true,
+});
+// スライダー
+const slider2 = new Swiper(".slider2", {
+  loop: true,
+  effect: "fade", // フェード
+  fadeEffect: {
+    crossFade: true,
+  },
+
+  thumbs: {
+    swiper: sliderThumbnail2,
+  },
+});
+  // お部屋情報スライダー3
+  // サムネイル
+const sliderThumbnail3 = new Swiper(".slider-thumbnail3", {
+  slidesPerView: 5, // サムネイルの枚数
+  spaceBetween: 20,
+    grabCursor: true,
+});
+// スライダー
+const slider3 = new Swiper(".slider3", {
+  loop: true,
+  effect: "fade", // フェード
+  fadeEffect: {
+    crossFade: true,
+  },
+
+  thumbs: {
+    swiper: sliderThumbnail3,
+  },
+});
+  // お部屋情報スライダー4
+  // サムネイル
+const sliderThumbnail4 = new Swiper(".slider-thumbnail4", {
+  slidesPerView: 4, // サムネイルの枚数
+  spaceBetween: 20,
+    grabCursor: true,
+});
+// スライダー
+const slider4 = new Swiper(".slider4", {
+  loop: true,
+  effect: "fade", // フェード
+  fadeEffect: {
+    crossFade: true,
+  },
+
+  thumbs: {
+    swiper: sliderThumbnail4,
+  },
+});
+  // お部屋情報スライダー5
+  // サムネイル
+const sliderThumbnail5 = new Swiper(".slider-thumbnail5", {
+  slidesPerView: 5, // サムネイルの枚数
+  spaceBetween: 20,
+    grabCursor: true,
+});
+// スライダー
+const slider5 = new Swiper(".slider5", {
+  loop: true,
+  effect: "fade", // フェード
+  fadeEffect: {
+    crossFade: true,
+  },
+
+  thumbs: {
+    swiper: sliderThumbnail5,
+  },
+});
+  // お部屋情報スライダー6
+  // サムネイル
+const sliderThumbnail6 = new Swiper(".slider-thumbnail6", {
+  slidesPerView: 5, // サムネイルの枚数
+  spaceBetween: 20,
+    grabCursor: true,
+});
+// スライダー
+const slider6 = new Swiper(".slider6", {
+  loop: true,
+  effect: "fade", // フェード
+  fadeEffect: {
+    crossFade: true,
+  },
+
+  thumbs: {
+    swiper: sliderThumbnail6,
+  },
+});
 
 
   // トップページMVのアニメーション

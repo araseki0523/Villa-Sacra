@@ -81,55 +81,52 @@
 <!--華の間-->
 <section id="hananoma" class="hananoma layout-hananoma room">
     <!-- スライダー -->
-    <div class="swiper swiper-main">
+    <div class="swiper slider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-main__slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma1.jpg" alt="花の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma1.jpg" alt="花の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma2.jpg" alt="花の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma2.jpg" alt="花の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma3.jpg" alt="花の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma3.jpg" alt="花の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma4.jpg" alt="花の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma4.jpg" alt="花の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma5.jpg" alt="花の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma5.jpg" alt="花の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma6.jpg" alt="花の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma6.jpg" alt="花の間">
             </div>
         </div>
     </div>
 
     <!-- サムネイル -->
-    <div class="swiper swiper-thumb">
+    <div class="swiper slider-thumbnail">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma1.jpg" alt="花の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma1.jpg" alt="花の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma2.jpg" alt="花の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma2.jpg" alt="花の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma3.jpg" alt="花の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma3.jpg" alt="花の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma4.jpg" alt="花の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma4.jpg" alt="花の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma5.jpg" alt="花の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma5.jpg" alt="花の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma6.jpg" alt="花の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/hananoma6.jpg" alt="花の間">
             </div>
         </div>
-        <div class="swiper-scrollbar"></div>
     </div>
-
-
     <div class="hananoma__inner room__inner">
         <h3 class="hananoma__title-area room__title">華の間</h3>
         <div class="hananoma__text-area room__text-area">
@@ -160,53 +157,53 @@
 <div class="room__border-line"></div>
 <!--月の間-->
 <section id="tsukinoma" class="tsukinoma layout-tsukinoma room">
+
     <!-- スライダー -->
-    <div class="swiper swiper-main">
+    <div class="swiper2 slider2">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-main__slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma1.jpg" alt="月の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma1.jpg" alt="月の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma2.jpg" alt="月の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma2.jpg" alt="月の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma3.jpg" alt="月の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma3.jpg" alt="月の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma4.jpg" alt="月の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma4.jpg" alt="月の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma5.jpg" alt="月の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma5.jpg" alt="月の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma6.jpg" alt="月の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma6.jpg" alt="月の間">
             </div>
         </div>
     </div>
 
     <!-- サムネイル -->
-    <div class="swiper swiper-thumb">
+    <div class="swiper2 slider-thumbnail2">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma1.jpg" alt="月の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma1.jpg" alt="月の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma2.jpg" alt="月の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma2.jpg" alt="月の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma3.jpg" alt="月の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma3.jpg" alt="月の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma4.jpg" alt="月の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma4.jpg" alt="月の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma5.jpg" alt="月の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma5.jpg" alt="月の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma6.jpg" alt="月の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsukinoma6.jpg" alt="月の間">
             </div>
         </div>
-        <div class="swiper-scrollbar"></div>
     </div>
 
 
@@ -216,7 +213,7 @@
             <p class="tsukinoma__text1 room__text1">現代美術家・滝沢達史
             </p>
             <p class="tsukinoma__text2 room__text2">
-                セミダブルベッド１台とソファベッド１台が設置された部屋です。
+                セミダブルベッド１台とソファベッド１台が設置された部屋です。<br>
                 部屋中に書家・松田響野の書を張りつめ、その上に藍色で雲を描いた現代美術家
                 ・滝沢達史の作品世界を堪能できます。月の形の調光ライトが部屋のムードを気分に合わせてかえてくれます。
             </p>
@@ -241,52 +238,51 @@
 <!--虎の間-->
 <section id="toranoma" class="toranoma layout-toranoma room">
     <!-- スライダー -->
-    <div class="swiper swiper-main">
+    <div class="swiper3 slider3">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-main__slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma1.jpg" alt="虎の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma1.jpg" alt="虎の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma2.jpg" alt="虎の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma2.jpg" alt="虎の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma3.jpg" alt="虎の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma3.jpg" alt="虎の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma4.jpg" alt="虎の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma4.jpg" alt="虎の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma5.jpg" alt="虎の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma5.jpg" alt="虎の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma6.jpg" alt="虎の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma6.jpg" alt="虎の間">
             </div>
         </div>
     </div>
 
     <!-- サムネイル -->
-    <div class="swiper swiper-thumb">
+    <div class="swiper3 slider-thumbnail3">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma1.jpg" alt="虎の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma1.jpg" alt="虎の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma2.jpg" alt="虎の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma2.jpg" alt="虎の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma3.jpg" alt="虎の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma3.jpg" alt="虎の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma4.jpg" alt="虎の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma4.jpg" alt="虎の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma5.jpg" alt="虎の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma5.jpg" alt="虎の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma6.jpg" alt="虎の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/toranoma6.jpg" alt="虎の間">
             </div>
         </div>
-        <div class="swiper-scrollbar"></div>
     </div>
 
 
@@ -295,8 +291,8 @@
         <div class="toranoma__text-area room__text-area">
             <p class="toranoma__text1 room__text1">ragazzi works</p>
             <p class="toranoma__text2 room__text2">
-                駕籠をモチーフとした和風な２段ベッドに布団を敷いてあります。
-                奥には、畳二畳弱の寛ぎスペース。ちゃぶ台と行灯風ランプ付き。
+                駕籠をモチーフとした和風な２段ベッドに布団を敷いてあります。<br>
+                奥には、畳二畳弱の寛ぎスペース。ちゃぶ台と行灯風ランプ付き。<br>
                 和紙のブラインドや虎模様の壁もユニークです。狭いながらも落ち着く部屋になっています。
                 竹のはしごは、扱いにご注意ください。
             </p>
@@ -320,52 +316,45 @@
 <!--雫の間-->
 <section id="shizukunoma" class="shizukunoma layout-shizukunoma room">
     <!-- スライダー -->
-    <div class="swiper swiper-main">
+    <div class="swiper4 slider4">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-main__slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma1.jpg" alt="雫の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma1.jpg" alt="雫の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma2.jpg" alt="雫の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma2.jpg" alt="雫の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma3.jpg" alt="雫の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma3.jpg" alt="雫の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma4.jpg" alt="雫の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma4.jpg" alt="雫の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma5.jpg" alt="雫の間"></div>
-            </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma6.jpg" alt="雫の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma5.jpg" alt="雫の間">
             </div>
         </div>
     </div>
 
     <!-- サムネイル -->
-    <div class="swiper swiper-thumb">
+    <div class="swiper4 slider-thumbnail4">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma1.jpg" alt="雫の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma1.jpg" alt="雫の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma2.jpg" alt="雫の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma2.jpg" alt="雫の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma3.jpg" alt="雫の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma3.jpg" alt="雫の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma4.jpg" alt="雫の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma4.jpg" alt="雫の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma5.jpg" alt="雫の間"></div>
-            </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma6.jpg" alt="雫の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/shizukunoma5.jpg" alt="雫の間">
             </div>
         </div>
-        <div class="swiper-scrollbar"></div>
     </div>
 
 
@@ -400,52 +389,51 @@
 <!--鶴の間-->
 <section id="tsurunoma" class="tsurunoma layout-tsurunoma room">
     <!-- スライダー -->
-    <div class="swiper swiper-main">
+    <div class="swiper5 slider5">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-main__slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma1.jpg" alt="鶴の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma1.jpg" alt="鶴の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma2.jpg" alt="鶴の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma2.jpg" alt="鶴の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma3.jpg" alt="鶴の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma3.jpg" alt="鶴の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma4.jpg" alt="鶴の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma4.jpg" alt="鶴の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma5.jpg" alt="鶴の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma5.jpg" alt="鶴の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma6.jpg" alt="鶴の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma6.jpg" alt="鶴の間">
             </div>
         </div>
     </div>
 
     <!-- サムネイル -->
-    <div class="swiper swiper-thumb">
+    <div class="swiper5 slider-thumbnail5">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma1.jpg" alt="鶴の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma1.jpg" alt="鶴の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma2.jpg" alt="鶴の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma2.jpg" alt="鶴の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma3.jpg" alt="鶴の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma3.jpg" alt="鶴の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma4.jpg" alt="鶴の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma4.jpg" alt="鶴の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma5.jpg" alt="鶴の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma5.jpg" alt="鶴の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma6.jpg" alt="鶴の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/tsurunoma6.jpg" alt="鶴の間">
             </div>
         </div>
-        <div class="swiper-scrollbar"></div>
     </div>
 
 
@@ -478,52 +466,51 @@
 <!--虹の間-->
 <section id="nizinoma" class="nizinoma layout-nizinoma room">
     <!-- スライダー -->
-    <div class="swiper swiper-main">
+    <div class="swiper6 slider6">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-main__slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma1.jpg" alt="虹の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma1.jpg" alt="虹の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma2.jpg" alt="虹の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma2.jpg" alt="虹の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma3.jpg" alt="虹の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma3.jpg" alt="虹の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma4.jpg" alt="虹の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma4.jpg" alt="虹の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma5.jpg" alt="虹の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma5.jpg" alt="虹の間">
             </div>
-            <div class="swiper-slide">
-                <div class="slide-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma6.jpg" alt="虹の間"></div>
+            <div class="swiper-slide room-swiper__slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma6.jpg" alt="虹の間">
             </div>
         </div>
     </div>
 
     <!-- サムネイル -->
-    <div class="swiper swiper-thumb">
+    <div class="swiper6 slider-thumbnail6">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma1.jpg" alt="虹の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma1.jpg" alt="虹の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma2.jpg" alt="虹の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma2.jpg" alt="虹の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma3.jpg" alt="虹の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma3.jpg" alt="虹の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma4.jpg" alt="虹の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma4.jpg" alt="虹の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma5.jpg" alt="虹の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma5.jpg" alt="虹の間">
             </div>
-            <div class="swiper-slide swiper-thumb__slide">
-                <div class="thumb-media"><img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma6.jpg" alt="虹の間"></div>
+            <div class="swiper-slide room-swiper__slide room-swiper__slide--thumb">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/room/nizinoma6.jpg" alt="虹の間">
             </div>
         </div>
-        <div class="swiper-scrollbar"></div>
     </div>
 
 
@@ -535,7 +522,7 @@
                 あえて、そのまま古民家本来のつくりを残した和室です。六畳間ですが、
                 虎画が飾られた床の間や出窓風のスペースなどもあり、広く感じられます。
                 古さを愛しつつ大切に使われ続けて来た美しい建具は必見です。
-                冬には日本古来の暖房器具・こたつも登場します。
+                冬には日本古来の暖房器具・こたつも登場します。<br>
                 押し入れに布団がありますので、ご自由に敷いてお使いください。
             </p>
         </div>
@@ -555,11 +542,11 @@
     </div>
     <?php get_template_part('template/roomplan'); ?>
 </section>
+<div class="room__border-line"></div>
 
 
 
-
-<section class="box layout-box">
+<section class="room-box box layout-box">
     <div class="box__inner">
         <div class="box__left">
             <div class="box__left-title-area section-title">

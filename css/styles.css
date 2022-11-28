@@ -1490,37 +1490,6 @@ top
           transform: rotate(-45deg);
 }
 
-.swiper.swiper-main {
-  max-width: 1076px;
-  max-width: 67.25rem;
-  width: 100%;
-}
-
-.swiper-slide.swiper-main__slide img {
-  height: auto;
-  width: 100%;
-}
-
-.swiper.swiper-thumb {
-  margin-top: 30px;
-  margin-top: 1.875rem;
-  max-width: 580px;
-  max-width: 36.25rem;
-  width: 100%;
-}
-
-.swiper-slide.swiper-thumb__slide {
-  margin-left: 20px;
-  margin-left: 1.25rem;
-  max-width: 101px;
-  max-width: 6.3125rem;
-  width: 100%;
-}
-
-.swiper-slide.swiper-thumb__slide:first-child {
-  margin-left: 0;
-}
-
 .header {
   background: #000;
   height: 90px;
@@ -2163,6 +2132,11 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 31.25rem;
 }
 
+.room-box.layout-box {
+  margin-top: 315px;
+  margin-top: 19.6875rem;
+}
+
 .layout-breadcrumb {
   margin-top: 5px;
   margin-top: 0.3125rem;
@@ -2256,8 +2230,8 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .layout-hananoma {
-  margin-top: 65px;
-  margin-top: 4.0625rem;
+  margin-top: 145px;
+  margin-top: 9.0625rem;
 }
 
 .layout-inquiry {
@@ -2281,6 +2255,11 @@ sp版（1280px以下）のモーダル内メニュー
 
 .layout-mv-sub {
   padding-top: 90px;
+}
+
+.layout-nizinoma {
+  margin-top: 195px;
+  margin-top: 12.1875rem;
 }
 
 .layout-notes {
@@ -2314,8 +2293,8 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .layout-room-sub {
-  margin-top: 104px;
-  margin-top: 6.5rem;
+  margin-top: 84px;
+  margin-top: 5.25rem;
 }
 
 .layout-room-thumbnail {
@@ -2338,9 +2317,29 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 3.75rem;
 }
 
+.layout-shizukunoma {
+  margin-top: 176px;
+  margin-top: 11rem;
+}
+
 .layout-sub-facility {
   margin-top: 270px;
   margin-top: 16.875rem;
+}
+
+.layout-toranoma {
+  margin-top: 190px;
+  margin-top: 11.875rem;
+}
+
+.layout-tsukinoma {
+  margin-top: 190px;
+  margin-top: 11.875rem;
+}
+
+.layout-tsurunoma {
+  margin-top: 195px;
+  margin-top: 12.1875rem;
 }
 
 .message {
@@ -2520,6 +2519,16 @@ sp版（1280px以下）のモーダル内メニュー
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.nizinoma__inner.room__inner {
+  margin: 40px auto;
+  margin: 2.5rem auto;
+}
+
+.nizinoma-plan.layout-nizinoma-plan.plan {
+  margin-top: 13px;
+  margin-top: 0.8125rem;
 }
 
 .notes__inner {
@@ -3138,9 +3147,62 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 1.75rem;
 }
 
-.room {
-  margin-top: 145px;
-  margin-top: 9.0625rem;
+.slider-thumbnail .swiper-slide.room-swiper__slide,
+.slider-thumbnail2 .swiper-slide.room-swiper__slide,
+.slider-thumbnail3 .swiper-slide.room-swiper__slide,
+.slider-thumbnail4 .swiper-slide.room-swiper__slide,
+.slider-thumbnail5 .swiper-slide.room-swiper__slide,
+.slider-thumbnail6 .swiper-slide.room-swiper__slide {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  width: 33.3333333333%;
+}
+
+.slider-thumbnail .swiper-slide.room-swiper__slide.swiper-slide-thumb-active,
+.slider-thumbnail2 .swiper-slide.room-swiper__slide.swiper-slide-thumb-active,
+.slider-thumbnail3 .swiper-slide.room-swiper__slide.swiper-slide-thumb-active,
+.slider-thumbnail4 .swiper-slide.room-swiper__slide.swiper-slide-thumb-active,
+.slider-thumbnail5 .swiper-slide.room-swiper__slide.swiper-slide-thumb-active,
+.slider-thumbnail6 .swiper-slide.room-swiper__slide.swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+/* レイアウトのためのスタイル */
+.swiper.slider,
+.swiper2.slider2,
+.swiper3.slider3,
+.swiper4.slider4,
+.swiper5.slider5,
+.swiper6.slider6 {
+  max-width: 1076px;
+  max-width: 67.25rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-slide.room-swiper__slide img {
+  height: auto;
+  width: 100%;
+}
+
+.swiper.slider-thumbnail,
+.swiper2.slider-thumbnail2,
+.swiper3.slider-thumbnail3,
+.swiper4.slider-thumbnail4,
+.swiper5.slider-thumbnail5,
+.swiper6.slider-thumbnail6 {
+  max-width: 580px;
+  max-width: 36.25rem;
+  width: 100%;
+  margin: 30px auto;
+  margin: 1.875rem auto;
+}
+
+.room-swiper__slide.room-swiper__slide--thumb {
+  max-width: 101px;
+  max-width: 6.3125rem;
+  width: 100%;
 }
 
 .room__inner {
@@ -3442,6 +3504,15 @@ sp版（1280px以下）のモーダル内メニュー
   left: auto !important;
 }
 
+.shizukunoma__inner {
+  margin: 51px auto;
+}
+
+.shizukunoma-plan__text1 {
+  margin-top: 35px;
+  margin-top: 2.1875rem;
+}
+
 /*========= 流れるテキスト ===============*/
 /*全共通*/
 .slide-in {
@@ -3580,5 +3651,15 @@ sp版（1280px以下）のモーダル内メニュー
   .swiper-slide img {
     width: 100%;
   }
+}
+
+.toranoma__text-area {
+  margin-top: 35px;
+  margin-top: 2.1875rem;
+}
+
+.tsurunoma__inner {
+  margin: 55px auto;
+  margin: 3.4375rem auto;
 }
 /*# sourceMappingURL=styles.css.map */

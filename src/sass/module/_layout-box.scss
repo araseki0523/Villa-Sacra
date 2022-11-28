@@ -1,6 +1,9 @@
 @use 'global' as *;
 
 .layout-box {
-    // 後で変える
     margin-top: rem(500);
+}
+
+.room-box.layout-box {
+    margin-top: rem(315);
 }
