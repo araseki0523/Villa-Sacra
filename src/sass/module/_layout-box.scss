@@ -1,7 +1,11 @@
 @use 'global' as *;
 
 .layout-box {
-    margin-top: rem(500);
+    margin-top: rem(320);
+    font-size: rem(36);
+    font-weight: 500;
+    font-family: $yumincho;
+    line-height: 1.7;
 }
 
 .room-box.layout-box {

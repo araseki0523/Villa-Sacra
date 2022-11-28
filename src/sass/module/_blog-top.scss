@@ -24,15 +24,19 @@
 }
 
 .blog-top__container {
-    margin-top: rem(80);
+    margin-top: rem(55);
 }
 
 .blog-top__each-wrapper {
     display: flex;
     align-items: center;
-    padding-top: rem(23);
-    padding-bottom: rem(20);
+    padding-top: rem(20);
+    padding-bottom: rem(10);
     border-bottom: 2px dotted $white;
+    font-size: rem(16);
+    font-weight: 500;
+    font-family: $yugothic;
+    line-height: 1.7;
 }
 .blog-top__box {
     display: flex;
@@ -41,6 +45,9 @@
 .blog-top__new {
     padding: rem(2) rem(6);
     border: 1px solid $white;
+    font-size: rem(12);
+    font-weight: 600;
+    line-height: 1.7;
 }
 .blog-top__date {
     margin-left: rem(20);

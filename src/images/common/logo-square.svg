@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="214" height="167" viewBox="0 0 214 167">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_1489" data-name="長方形 1489" width="214" height="167" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="マスクグループ_81" data-name="マスクグループ 81" clip-path="url(#clip-path)">
+    <g id="グループ_1502" data-name="グループ 1502" transform="translate(-625 7)">
+      <rect id="長方形_1316" data-name="長方形 1316" width="158" height="167" transform="translate(655 -7)" fill="#1a1a1a"/>
+      <text id="Artist_Hotel" data-name="Artist Hotel" transform="translate(680 20)" fill="#fff" font-size="21" font-family="SourceHanSansJP-Regular, Source Han Sans JP"><tspan x="0" y="0">Artist Hotel</tspan></text>
+      <text id="Villa_Sacra" data-name="Villa
+Sacra" transform="translate(734 73)" fill="#fff" font-size="50" font-family="ArialNarrow, Arial Narrow"><tspan x="-38.379" y="0">Villa</tspan><tspan x="-53.552" y="43">Sacra</tspan></text>
+      <text id="kamakura" transform="translate(734 144)" fill="#fff" font-size="23" font-family="ArialNarrow, Arial Narrow"><tspan x="-41.407" y="0">kamakura</tspan></text>
+      <line id="線_79" data-name="線 79" x2="46.408" transform="translate(710.796 26)" fill="none" stroke="#fff" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>

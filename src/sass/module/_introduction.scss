@@ -28,16 +28,22 @@
     display: flex;
 }
 
+.introduction__container-hana {
+    justify-content: flex-start;
+}
+
 .introduction__container-even {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .introduction__each-wrapper {
     margin-top: rem(213);
     padding-bottom: rem(100);
     position: relative;
-}    
+}   
+
 .introduction__each-wrapper::after {
     position: absolute;
     content: "";
@@ -74,17 +80,34 @@
     margin-top: rem(288);
     margin-left: rem(74);
     writing-mode: vertical-rl;
-    font-size: rem(62);
+    font-size: rem(63);
+    font-family: $yumincho;
+    font-weight: 800;
+    line-height: 1.7;
     letter-spacing: 0.5em;
+}
+
+.introduction__room-name-tsuki {
+    margin-top: rem(305);
 }
 .introduction__container-even > .introduction__room-name {
     margin-right: rem(60);
 }
 
 .introduction__image-wrapper {
-    margin-top: rem(-174);
-    margin-left: rem(108);
-    width: rem(380);
+    margin-top: rem(-150);
+    margin-left: rem(65);
+    width: rem(386);
+}
+
+.introduction__image-wrapper-tora {
+    margin-top: rem(-171);
+    margin-left: rem(94);
+}
+
+.introduction__image-wrapper-tsuru {
+    margin-top: rem(-171);
+    margin-left: rem(91);
 }
 
 .introduction__image-small {
@@ -143,19 +166,86 @@
     background-color: $white;
     color: $black;
 }
-.introduction__text {
-    padding: rem(53) rem(53);
-    line-height: 1.5;
+
+.introduction__text-area-tsuki {
+    margin-top: rem(143);
 }
+
+.introduction__text-area-shizuku {
+    margin-top: rem(157);
+}
+
+.introduction__text-area-niji {
+    margin-top: rem(157);
+}
+
+.introduction__text {
+    padding: rem(46) rem(50);
+    font-size: rem(16);
+    font-weight: 500;
+    font-family: $yumincho;
+    line-height: 1.75;
+}
+
+.introduction__text-tora {
+    padding: rem(50) rem(50) rem(25);
+}
+
+.introduction__text-shizuku {
+    padding: rem(50) rem(50) rem(34);
+}
+
 .introduction__text2 {
     padding: 0 rem(53) rem(53);
 }
+
+.introduction__text2-tora {
+    padding: 0 rem(53) rem(40);
+}
+
+.introduction__text2-shizuku {
+    padding: 0 rem(53) rem(43);
+}
+
 .introduction__button-area {
-    margin-top: rem(55);
+    margin-top: rem(47);
     text-align: center;
 }
+
+.introduction__button-area-shizuku {
+    margin-top: rem(70);
+}
+
+.introduction__button-area-tsuru {
+    margin-top: rem(63);
+}
+
 .introduction__button {
 
+}
+
+.introduction__each-wrapper.introduction__each-wrapper-hana {
+    padding-bottom: rem(170);
+}
+.introduction__each-wrapper.introduction__each-wrapper-tsuki {
+    margin-top: rem(360);
+    padding-bottom: rem(165);
+}
+.introduction__each-wrapper.introduction__each-wrapper-tora {
+    margin-top: rem(375);
+    padding-bottom: rem(179);
+}
+.introduction__each-wrapper.introduction__each-wrapper-shizuku {
+    margin-top: rem(356);
+    padding-bottom: rem(173);
+}
+.introduction__each-wrapper.introduction__each-wrapper-tsuru {
+    margin-top: rem(376);
+    padding-bottom: rem(150);
+}
+.introduction__each-wrapper.introduction__each-wrapper-nizi {
+    margin-top: rem(355);
+    padding-bottom: rem(144);
 }
 
 //グレーの背景
