@@ -936,12 +936,38 @@ select::-ms-expand {
   max-width: 51.125rem;
   width: 100%;
   margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .contact__inner {
+    max-width: 85%;
+  }
+}
+
+.contact__thanks {
+  text-align: center;
+}
+
+.contact__button-area {
+  margin-top: 20px;
+  margin-top: 1.25rem;
+  text-align: center;
 }
 
 .contact7__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .contact7__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
 }
 
 .contact7__flex + .contact7__flex {
@@ -950,6 +976,10 @@ select::-ms-expand {
 }
 
 .contact7__dt {
+  width: 30%;
+}
+
+.contact7__dd {
   width: 30%;
 }
 
@@ -964,6 +994,13 @@ select::-ms-expand {
   border: 1px solid #fff;
   border-radius: 5px;
 }
+@media screen and (max-width: 768px) {
+  .contact7__dd,
+  .contact7__dd-textarea {
+    margin-top: 1.25rem;
+    width: 100%;
+  }
+}
 
 .contact7__check {
   margin-top: 50px;
@@ -971,18 +1008,23 @@ select::-ms-expand {
   text-align: center;
 }
 
-.contact7__check span {
+.contact7__under {
   border-bottom: 1px solid #fff;
 }
 
 .contact7__button {
   margin-top: 50px;
   margin-top: 3.125rem;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+}
+
+.contact7__button input {
   width: 204px;
   border: 1px solid #fff;
+  padding: 16px;
+  padding: 1rem;
   border-radius: 5px;
+  color: #fff;
 }
 
 .contact7__must,
@@ -999,6 +1041,31 @@ select::-ms-expand {
 .contact7__any {
   color: #fff;
   background-color: #272727;
+}
+
+.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required,
+.wpcf7-form-control.wpcf7-text,
+.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required {
+  width: 100%;
+  color: #fff;
+}
+
+.wpcf7-form-control.wpcf7-checkbox.wpcf7-validates-as-required {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-right: 10px;
+  margin-right: 0.625rem;
+  vertical-align: middle;
+}
+
+.wpcf7-form-control.wpcf7-checkbox.wpcf7-validates-as-required.checkbox-input {
+  color: #fff;
+}
+
+.wpcf7-form-control.wpcf7-checkbox.wpcf7-validates-as-required.checkbox-input:hover {
+  color: #fff;
 }
 
 .convention__inner {
@@ -1096,6 +1163,29 @@ select::-ms-expand {
 .convention__wrapper17 {
   margin-top: 70px;
   margin-top: 4.375rem;
+}
+
+.error-404__inner {
+  max-width: 938px;
+  max-width: 58.625rem;
+  width: 100%;
+  padding-left: 25px;
+  padding-left: 1.5625rem;
+  padding-right: 25px;
+  padding-right: 1.5625rem;
+  margin: 0 auto;
+}
+
+.error-404__message {
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+
+.error-404__button-area {
+  margin-top: 80px;
+  margin-top: 5rem;
+  text-align: center;
 }
 
 .facility-box__inner {
@@ -1230,6 +1320,46 @@ select::-ms-expand {
   margin-right: 60px;
 }
 
+.fade-in-up {
+  position: absolute;
+  opacity: 0;
+  -webkit-animation-name: fade-in-up;
+          animation-name: fade-in-up;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .footer__container {
   background-color: #272727;
   padding: 100px 0 106px;
@@ -2280,6 +2410,11 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .layout-dinner {
+  margin-top: 120px;
+  margin-top: 7.5rem;
+}
+
+.layout-error-404 {
   margin-top: 120px;
   margin-top: 7.5rem;
 }
