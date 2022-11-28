@@ -69,6 +69,9 @@
 }
 .footer__list {
     width: rem(45);
+    @include mq('md') {
+       width: rem(85); 
+    }
 }
 .footer__list + .footer__list {
     margin-left: rem(24);
@@ -76,12 +79,15 @@
 .footer__list-big1,
 .footer__list-big2 {
     width: rem(72);
+    @include mq('md') {
+       width: rem(130); 
+    }
 }
 .footer__list.footer__list-big1 {
     margin-left: rem(10);
 }
 .footer__list.footer__list-big2 {
-    margin-left: rem(0);
+    margin-left: rem(-10);
 }
 .footer__list a {
 
@@ -99,10 +105,11 @@
     align-items: center;
     justify-content: space-between;
     padding: rem(4) 0;
+    white-space: nowrap;
     @include mq(md) {
         flex-direction: column;
         justify-content: center;
-        font-size: rem(13);
+        font-size: rem(12);
     }
 }
 .footer__cancel-policy {

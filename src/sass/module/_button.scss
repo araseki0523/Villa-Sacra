@@ -7,6 +7,10 @@
     border: 1px solid $white;
     position: relative;
 	font-family: $sub-font-family;
+    @include mq('md') {
+        font-size: 14px;
+       padding: rem(18) rem(100); 
+    }
 }
 .button::after {
     content: "";
@@ -21,6 +25,13 @@
     border-bottom: 1px solid $yellow;
     transform: skew(45deg);
     transition: .3s;
+    @include mq('md') {
+       right: rem(-60); 
+       width: 80px;
+    }
+    @include mq('sm') {
+       right: rem(-50); 
+    }
 }
 
 .button:hover::after{

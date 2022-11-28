@@ -46,8 +46,8 @@
 <section id="shared-space" class="shared-space layout-shared-space">
     <div class="shared-space__inner">
         <div class="shared-space__title-area">
-            <h2 class="shared-space__title-ja  sub-section-title__ja">共有スペース</h2>
-            <p class="shared-space__title-en sub-section-title__en">Shared space</p>
+            <h2 class="shared-space__title-ja  section-title-sub__ja">共有スペース</h2>
+            <p class="shared-space__title-en section-title-sub__en">Shared space</p>
         </div>
         <div class="shared-space__container">
             <p class="shared-space__text">
@@ -115,8 +115,8 @@
     <div class="amenities__bg">
         <div class="amenities__inner">
             <div class="amenities__title-area">
-                <h2 class="amenities__title-ja  sub-section-title__ja">アメニティ</h2>
-                <p class="amenities__title-en sub-section-title__en">Amenities</p>
+                <h2 class="amenities__title-ja  section-title-sub__ja">アメニティ</h2>
+                <p class="amenities__title-en section-title-sub__en">Amenities</p>
             </div>
 
             <div class="amenitiesList">
@@ -196,9 +196,9 @@
 <!--Notes-->
 <section id="notes" class="notes layout-notes">
     <div class="notes__inner">
-        <div class="notes__title-area sub-section-title">
-            <h2 class="notes__title-ja  sub-section-title__ja">注意事項</h2>
-            <p class="notes__title-en sub-section-title__en">Notes</p>
+        <div class="notes__title-area section-title-sub">
+            <h2 class="notes__title-ja  section-title-sub__ja">注意事項</h2>
+            <p class="notes__title-en section-title-sub__en">Notes</p>
         </div>
         <div class="notes__wrapper">
             <h3 class="notes__index">​チェックイン・チェックアウト</h3>

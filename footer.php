@@ -1,5 +1,10 @@
 <?php wp_footer(); ?>
 
+<?php
+$privacypolicy = esc_url(home_url('/privacypolicy/'));
+?>
+
+
 <footer class="footer layout-footer">
   <div class="footer__inner">
     <div class="footer__container">
@@ -56,7 +61,11 @@
     <!--footer__sns-->
     <!-- コピーライト -->
     <div class="footer__copy-box">
-      <p class="footer__cancel-policy">ホテル規約・キャンセルポリシー</p>
+      <p class="footer__cancel-policy">
+        <a href="<?php echo $privacypolicy ?>">
+          ホテル規約・キャンセルポリシー
+        </a>
+      </p>
       <p class="footer__copyright">© 2021 コピーライトが入ります</p>
     </div><!-- /.footer__copy -->
   </div>

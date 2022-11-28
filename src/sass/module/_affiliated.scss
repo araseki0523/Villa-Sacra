@@ -7,6 +7,11 @@
     max-width: rem(1260);
     width: 100%;
     margin: 0 auto;
+    @include mq('comp') {
+        padding-left: $padding-pc;
+        padding-right: $padding-pc;
+    }
+    
 }
 .affiliated__title-area {
 
@@ -32,6 +37,9 @@
 .affiliated__place-title-ja {
     font-family: $sawarabi;
     font-size: rem(36);
+    @include mq('lg') {
+       font-size: rem(28); 
+    }
 }
 .affiliated__place-title-ja {
     font-family: $sub-font-family;

@@ -63,9 +63,9 @@
 
 <section class="affiliated layout-affiliated">
   <div class="affiliated__inner">
-    <div class="affiliated__title-area sub-section-title">
-      <h2 class="affiliated__title-ja  sub-section-title__ja">系列ゲストハウス</h2>
-      <p class="affiliated__title-en sub-section-title__en">affiliated store</p>
+    <div class="affiliated__title-area section-title-sub">
+      <h2 class="affiliated__title-ja  section-title-sub__ja">系列ゲストハウス</h2>
+      <p class="affiliated__title-en section-title-sub__en">affiliated store</p>
     </div>
     <div class="affiliated__container">
       <div class="affiliated__place">
