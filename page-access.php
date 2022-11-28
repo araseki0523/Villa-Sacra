@@ -20,7 +20,7 @@
 <section class="access-sub layout-access-sub">
   <div class="access-sub__inner">
     <h2 class="access-sub__title">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.png" alt="アクセスページでのヴィラサクラの紹介タイトル">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.jpg" alt="アクセスページでのヴィラサクラの紹介タイトル">
     </h2>
     <div class="access-sub__wrapper">
       <div class="access-sub__map-area" id="wrapper">
@@ -31,8 +31,8 @@
       <div class="access-sub__left">
         <ul class="access-sub__nav">
           <li class="access-sub__list-item">住所：鎌倉市御成町13-29</li>
-          <li class="access-sub__list-item">Email：info@villa-sacra.com</li>
-          <li class="access-sub__list-item">電話：0467-40-4070</li>
+          <li class="access-sub__list-item">Mail：info@villa-sacra.com</li>
+          <li class="access-sub__list-item">Tel：0467-40-4070</li>
         </ul>
       </div>
       <!--access-sub__left-->
@@ -62,11 +62,11 @@
 </section>
 
 <section class="affiliated layout-affiliated">
+  <div class="affiliated__title-area section-title-sub">
+    <h2 class="affiliated__title-ja  section-title-sub__ja">系列ゲストハウス</h2>
+    <p class="affiliated__title-en section-title-sub__en">affiliated store</p>
+  </div>
   <div class="affiliated__inner">
-    <div class="affiliated__title-area section-title-sub">
-      <h2 class="affiliated__title-ja  section-title-sub__ja">系列ゲストハウス</h2>
-      <p class="affiliated__title-en section-title-sub__en">affiliated store</p>
-    </div>
     <div class="affiliated__container">
       <div class="affiliated__place">
         <h3 class="affiliated__place-title-ja">大町ジャンクション</h3>

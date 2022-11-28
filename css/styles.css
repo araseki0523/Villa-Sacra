@@ -249,13 +249,13 @@ select::-ms-expand {
 }
 
 .access-sub__wrapper {
-  margin-top: 50px;
-  margin-top: 3.125rem;
+  margin-top: 52px;
+  margin-top: 3.25rem;
 }
 
 .access-sub__box {
-  margin-top: 64px;
-  margin-top: 4rem;
+  margin-top: 57px;
+  margin-top: 3.5625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,13 +273,30 @@ select::-ms-expand {
 }
 
 .access-sub__left {
-  border-right: 1px solid #fff;
-  padding-right: 100px;
-  padding-right: 6.25rem;
+  margin-left: -70px;
+  margin-left: -4.375rem;
+  position: relative;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .access-sub__left {
     border-right: none;
+  }
+}
+
+.access-sub__left::after {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  width: 1px;
+  height: 77px;
+  right: -110px;
+  right: -6.875rem;
+  top: 0;
+}
+@media screen and (max-width: 768px) {
+  .access-sub__left::after {
+    display: none;
   }
 }
 
@@ -290,8 +307,8 @@ select::-ms-expand {
 }
 
 .access-sub__right {
-  padding-left: 100px;
-  padding-left: 6.25rem;
+  padding-left: 216px;
+  padding-left: 13.5rem;
 }
 @media screen and (max-width: 768px) {
   .access-sub__right {
@@ -319,8 +336,8 @@ select::-ms-expand {
 }
 
 .access-sub__sub-text + .access-sub__sub-text {
-  margin-left: 20px;
-  margin-left: 1.25rem;
+  margin-left: 23px;
+  margin-left: 1.4375rem;
 }
 
 .access__inner {
@@ -343,7 +360,7 @@ select::-ms-expand {
 #wrapper:before {
   content: "";
   display: block;
-  padding-top: 31%;
+  padding-top: 32%;
 }
 @media screen and (max-width: 768px) {
   #wrapper:before {
@@ -366,8 +383,8 @@ select::-ms-expand {
 }
 
 .affiliated__inner {
-  max-width: 1260px;
-  max-width: 78.75rem;
+  max-width: 986px;
+  max-width: 61.625rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -378,9 +395,14 @@ select::-ms-expand {
   }
 }
 
+.affiliated__title-ja {
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
 .affiliated__container {
-  margin-top: 64px;
-  margin-top: 4rem;
+  margin-top: 56px;
+  margin-top: 3.5rem;
 }
 
 .affiliated__place {
@@ -955,13 +977,13 @@ select::-ms-expand {
   text-align: center;
 }
 
-.contact7__flex {
+.contact7__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  .contact7__flex {
+  .contact7__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -970,39 +992,43 @@ select::-ms-expand {
   }
 }
 
-.contact7__flex + .contact7__flex {
+.contact7__content + .contact7__content {
   margin-top: 24px;
   margin-top: 1.5rem;
 }
 
-.contact7__dt {
+.contact7__head {
   width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
-.contact7__dd {
-  width: 30%;
-}
-
-.contact7__dt span {
+.contact7__head span {
   margin-right: 10px;
   margin-right: 0.625rem;
 }
 
-.contact7__dd,
-.contact7__dd-textarea {
+.contact7__content > p {
   width: 70%;
   border: 1px solid #fff;
   border-radius: 5px;
 }
 @media screen and (max-width: 768px) {
-  .contact7__dd,
-  .contact7__dd-textarea {
+  .contact7__content > p {
     margin-top: 1.25rem;
     width: 100%;
   }
 }
 
-.contact7__check {
+.contact7__content > textarea span {
+  display: none;
+}
+
+.contact7__content-check {
   margin-top: 50px;
   margin-top: 3.125rem;
   text-align: center;
@@ -1012,13 +1038,27 @@ select::-ms-expand {
   border-bottom: 1px solid #fff;
 }
 
-.contact7__button {
+.contact7__content-wrapper {
+  margin-top: 50px;
+  margin-top: 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.contact7__button-area {
   margin-top: 50px;
   margin-top: 3.125rem;
   text-align: center;
 }
 
-.contact7__button input {
+.contact7__button-area input {
   width: 204px;
   border: 1px solid #fff;
   padding: 16px;
@@ -1027,13 +1067,13 @@ select::-ms-expand {
   color: #fff;
 }
 
-.contact7__must,
+.contact7__required,
 .contact7__any {
   padding: 2px 10px;
   padding: 0.125rem 0.625rem;
 }
 
-.contact7__must {
+.contact7__required {
   color: #000;
   background-color: #fff;
 }
@@ -1066,6 +1106,78 @@ select::-ms-expand {
 
 .wpcf7-form-control.wpcf7-checkbox.wpcf7-validates-as-required.checkbox-input:hover {
   color: #fff;
+}
+
+.wpcf7-validation-errors,
+.wpcf7-acceptance-missing {
+  border: 1px solid #fff;
+}
+
+.wpcf7-spinner {
+  display: none;
+}
+
+.ECM_CheckboxInput {
+  padding: 12px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.ECM_CheckboxInput-Input {
+  margin: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.ECM_CheckboxInput:hover > .ECM_CheckboxInput-DummyInput {
+  background: #DDDDDD !important;
+  border: solid 2px #333333;
+}
+
+.ECM_CheckboxInput-Input:focus + .ECM_CheckboxInput-DummyInput {
+  background: #DDDDDD !important;
+  border: solid 2px #333333;
+}
+
+.ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput {
+  border: solid 2px #333333;
+  background: #FFFFFF;
+}
+
+.ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItY2hlY2siPjxwb2x5bGluZSBwb2ludHM9IjIwIDYgOSAxNyA0IDEyIj48L3BvbHlsaW5lPjwvc3ZnPg==") no-repeat center;
+  background-size: contain;
+}
+
+.ECM_CheckboxInput-DummyInput {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: solid 2px #888888;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+
+.ECM_CheckboxInput-LabelText {
+  margin-left: 12px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .convention__inner {
@@ -1543,13 +1655,6 @@ select::-ms-expand {
   margin-top: 98px;
   margin-top: 6.125rem;
   width: 100%;
-  height: 360px;
-  height: 22.5rem;
-}
-@media screen and (max-width: 768px) {
-  .gallery__container {
-    height: 25rem;
-  }
 }
 
 .gallery__button-area {
@@ -2425,13 +2530,13 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .layout-footer {
-  margin-top: 114px;
-  margin-top: 7.125rem;
+  margin-top: 265px;
+  margin-top: 16.5625rem;
 }
 
-.layout-gallery-concept {
-  margin-top: 360px;
-  margin-top: 22.5rem;
+.layout-gallery-access {
+  margin-top: 336px;
+  margin-top: 21rem;
 }
 
 .layout-gallery-concept {
@@ -2533,8 +2638,8 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .layout-reservation {
-  margin-top: 62px;
-  margin-top: 3.875rem;
+  margin-top: 42px;
+  margin-top: 2.625rem;
 }
 
 .layout-room-sub {
@@ -2629,7 +2734,7 @@ sp版（1280px以下）のモーダル内メニュー
 .mv-sub__image::before {
   content: "";
   display: block;
-  padding-top: 21%;
+  padding-top: 22%;
 }
 @media screen and (max-width: 768px) {
   .mv-sub__image::before {
@@ -3320,10 +3425,6 @@ sp版（1280px以下）のモーダル内メニュー
   max-width: 938px;
   max-width: 58.625rem;
   width: 100%;
-  padding-left: 25px;
-  padding-left: 1.5625rem;
-  padding-right: 25px;
-  padding-right: 1.5625rem;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
@@ -3337,8 +3438,8 @@ sp版（1280px以下）のモーダル内メニュー
   background-color: #fff;
   height: 176px;
   height: 11rem;
-  width: 680px;
-  width: 42.5rem;
+  width: 938px;
+  width: 58.625rem;
   margin: 0 auto;
 }
 
@@ -3359,11 +3460,12 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: -0.375rem;
   margin-left: 28px;
   margin-left: 1.75rem;
+  font-family: "SignPainter HouseScript";
 }
 
 .reservation__icon {
-  padding-top: 70px;
-  padding-top: 4.375rem;
+  padding-top: 82px;
+  padding-top: 5.125rem;
   background-image: url(../images/common/arrow.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -3578,6 +3680,7 @@ sp版（1280px以下）のモーダル内メニュー
   font-size: 14px;
   font-size: 0.875rem;
   text-align: center;
+  font-family: "SignPainter HouseScript";
 }
 
 .section-title {
@@ -3922,20 +4025,24 @@ sp版（1280px以下）のモーダル内メニュー
   width: 100%;
 }
 
+.mySwiper-top {
+  height: 360px;
+  height: 22.5rem;
+}
 @media screen and (max-width: 768px) {
   .mySwiper-top {
-    height: inherit;
+    height: 25rem;
   }
 }
 
 .swiper-wrapper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
-  width: 30%;
+  width: 28%;
 }
 
 .mySwiper-top.swiper-wrapper.swiper-slide,
 .mySwiper-top.swiper-wrapper.swiper-slide img {
-  width: 360px;
-  width: 22.5rem;
+  width: 340px;
+  width: 21.25rem;
 }
 @media screen and (max-width: 768px) {
   .mySwiper-top.swiper-wrapper.swiper-slide,

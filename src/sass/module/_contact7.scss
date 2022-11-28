@@ -1,34 +1,30 @@
 @use 'global' as *;
 
-.contact7 {}
+.contact7 {
 
-.contact7__flex {
+}
+
+.contact7__content {
     display: flex;
-
     @include mq('md') {
         flex-direction: column;
         width: 100%;
     }
 }
-
-.contact7__flex+.contact7__flex {
+.contact7__content +.contact7__content {
     margin-top: rem(24);
 }
 
-.contact7__dt {
+.contact7__head {
     width: 30%;
+    display: flex;
+    align-items: baseline;
 }
-
-.contact7__dd {
-    width: 30%;
-}
-
-.contact7__dt span {
+.contact7__head span {
     margin-right: rem(10);
 }
 
-.contact7__dd,
-.contact7__dd-textarea {
+.contact7__content > p {
     width: 70%;
     border: 1px solid $white;
     border-radius: 5px;
@@ -38,21 +34,27 @@
         width: 100%;
     }
 }
-
-.contact7__check {
+.contact7__content > textarea span{
+display: none;
+}
+.contact7__content-check {
     margin-top: rem(50);
     text-align: center;
 }
 .contact7__under {
     border-bottom: 1px solid $white;
 }
-
-.contact7__button {
+.contact7__content-wrapper {
+    margin-top: rem(50);
+    display: flex;
+    justify-content: center;
+    align-items:end;
+}
+.contact7__button-area{
     margin-top: rem(50);
     text-align: center;
 }
-
-.contact7__button input {
+.contact7__button-area input {
     width: 204px;
     border: 1px solid $white;
     padding: rem(16);
@@ -61,12 +63,12 @@
 }
 
 // 必須と任意
-.contact7__must,
+.contact7__required,
 .contact7__any {
     padding: rem(2) rem(10);
 }
 
-.contact7__must {
+.contact7__required {
     color: $black;
     background-color: $white;
 }
@@ -98,3 +100,70 @@
 .wpcf7-form-control.wpcf7-checkbox.wpcf7-validates-as-required.checkbox-input:hover {
     color: $white;
 }
+// .wpcf7-list-item.first.last {
+//     width: 382px;
+// }
+.wpcf7-validation-errors,
+.wpcf7-acceptance-missing {
+	border: 1px solid $white;
+}
+.wpcf7-spinner {
+    display: none;
+}
+
+
+
+
+// サンプル
+
+.ECM_CheckboxInput {
+    padding: 12px 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    }
+    .ECM_CheckboxInput-Input {
+    margin: 0;
+    width: 0;
+    opacity: 0;
+    }
+    .ECM_CheckboxInput:hover > .ECM_CheckboxInput-DummyInput {
+    background: #DDDDDD !important;
+    border: solid 2px #333333;
+    }
+    .ECM_CheckboxInput-Input:focus + .ECM_CheckboxInput-DummyInput {
+    background: #DDDDDD !important;
+    border: solid 2px #333333;
+    }
+    .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput {
+    border: solid 2px #333333;
+    background: #FFFFFF;
+    }
+    .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItY2hlY2siPjxwb2x5bGluZSBwb2ludHM9IjIwIDYgOSAxNyA0IDEyIj48L3BvbHlsaW5lPjwvc3ZnPg==") no-repeat center;
+    background-size: contain;
+    }
+    .ECM_CheckboxInput-DummyInput {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: solid 2px #888888;
+    background: #FFFFFF;
+    border-radius: 4px;
+    }
+    .ECM_CheckboxInput-LabelText {
+    margin-left: 12px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    }

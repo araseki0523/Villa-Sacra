@@ -26,7 +26,7 @@
 .mv-sub__image::before {
     content:"";
     display: block;
-    padding-top: 21%; 
+    padding-top: 22%; 
     @include mq('md') {
        padding-top: 30%; 
     }

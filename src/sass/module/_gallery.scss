@@ -20,10 +20,6 @@
 .gallery__container {
     margin-top: rem(98);
     width: 100%;
-    height: rem(360);
-    @include mq('md') {
-       height: rem(400); 
-    }
 }
 
 .gallery__button-area {

@@ -7,8 +7,6 @@
 .reservation__inner {
     max-width: rem(938);
     width: 100%;
-    padding-left: rem(25);
-    padding-right: rem(25);
     margin: 0 auto;
     
     @include mq(md) {
@@ -20,7 +18,7 @@
 .reservation__container {
     background-color: $white;
     height: rem(176);
-    width: rem(680);
+    width: rem(938);
     margin: 0 auto;
 }
 
@@ -37,10 +35,11 @@
 .reservation__title--en {
     margin-top: rem(-6);
     margin-left: rem(28);
+    font-family: $sub-font-family;
 }
 
 .reservation__icon {
-    padding-top: rem(70);
+    padding-top: rem(82);
     background-image :url(../images/common/arrow.png);
     background-position :center;
     background-repeat :no-repeat;
