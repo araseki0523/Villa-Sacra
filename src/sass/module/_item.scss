@@ -2,7 +2,7 @@
 
 .items {
     display: flex;
-    margin-top: rem(88);
+    margin-top: rem(40);
 }
 
 .item {
@@ -69,11 +69,11 @@
 }
 .item-box__head {
     display: inline-block;
-    padding: rem(16) rem(48) rem(15) rem(47);
-    background: $black;
+    padding: rem(8) rem(47) rem(8) rem(52);
+    background: #000;
     position: absolute;
-    top: -14%;
-    left: 5%;
+    top: -13%;
+    left: 8%;
 }
 
 .item-box__info

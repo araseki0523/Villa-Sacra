@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.slider-thumbnail .swiper-slide.room-swiper__slide,
+.slider-thumbnail2 .swiper-slide.room-swiper__slide,
+.slider-thumbnail3 .swiper-slide.room-swiper__slide,
+.slider-thumbnail4 .swiper-slide.room-swiper__slide,
+.slider-thumbnail5 .swiper-slide.room-swiper__slide,
+.slider-thumbnail6 .swiper-slide.room-swiper__slide {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+.slider-thumbnail .swiper-slide.room-swiper__slide.swiper-slide-thumb-active,
+.slider-thumbnail2 .swiper-slide.room-swiper__slide.swiper-slide-thumb-active,
+.slider-thumbnail3 .swiper-slide.room-swiper__slide.swiper-slide-thumb-active,
+.slider-thumbnail4 .swiper-slide.room-swiper__slide.swiper-slide-thumb-active,
+.slider-thumbnail5 .swiper-slide.room-swiper__slide.swiper-slide-thumb-active,
+.slider-thumbnail6 .swiper-slide.room-swiper__slide.swiper-slide-thumb-active {
+    opacity: 1;
+}
+/* レイアウトのためのスタイル */
+.swiper.slider,
+.swiper2.slider2,
+.swiper3.slider3,
+.swiper4.slider4,
+.swiper5.slider5,
+.swiper6.slider6 {
+    max-width: rem(1076);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.swiper-slide.room-swiper__slide img {
+    height: auto;
+    width: 100%;
+}
+
+.swiper.slider-thumbnail,
+.swiper2.slider-thumbnail2,
+.swiper3.slider-thumbnail3,
+.swiper4.slider-thumbnail4,
+.swiper5.slider-thumbnail5,
+.swiper6.slider-thumbnail6 {
+    max-width: rem(706);
+    width: 100%;
+    margin: rem(30) auto;
+}
+
+.room-swiper__slide.room-swiper__slide--thumb {
+    max-width: rem(101);
+    width: 100%;
+}

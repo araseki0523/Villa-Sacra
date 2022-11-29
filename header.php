@@ -79,7 +79,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
 
       <h1 class="header__logo">
         <a href="<?php echo esc_url(home_url('/')); ?>" class="header__logo-link">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.jpg" alt="ヘッダーロゴ">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo-square.svg" alt="ヘッダーロゴ">
         </a>
       </h1>
 

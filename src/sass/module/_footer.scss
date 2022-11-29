@@ -13,7 +13,7 @@
 .footer__content {
     display: flex;
     justify-content: space-between;
-    max-width: rem(1076);
+    max-width: rem(1221);
     width: 100%;
     padding-left: rem(145);
     @include mq(md) {
@@ -25,12 +25,13 @@
     border-right: 1px solid $white;
 }
 .footer__logo {
-    max-width: rem(160);
+    max-width: rem(167);
     width: 100%;
+    min-height: rem(194);
     flex-shrink: 0;
 }
 .footer__right {
-    margin-left: 9.6%;
+    margin-left: 11%;
     font-size: rem(20);
     flex: 1;
     @include mq(md) {
@@ -39,13 +40,14 @@
     }
 }
 .footer__nav {
-
+    font-family: $yumincho;
+    font-weight: 500;
 }
 .footer__list-item {
 
 }
 .footer__list-item + .footer__list-item {
-    margin-top: rem(50);
+    margin-top: rem(45);
     @include mq(md) {
         margin-top: rem(0);  
     }
@@ -60,7 +62,7 @@
 .footer__sns {
     background-color: $white;
     color: $black;
-    padding: rem(30) 0;
+    padding: rem(13) 0;
 }
 .footer__lists {
     display: flex;
