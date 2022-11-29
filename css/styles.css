@@ -208,7 +208,6 @@ textarea {
   resize: vertical;
 }
 
-input[type=checkbox],
 input[type=radio] {
   display: none;
 }
@@ -1159,6 +1158,12 @@ select::-ms-expand {
   border: 1px solid #fff;
 }
 
+.contact7__check-area {
+  margin-top: 50px;
+  margin-top: 3.125rem;
+  text-align: center;
+}
+
 .contact7__button-area {
   margin-top: 26px;
   margin-top: 1.625rem;
@@ -1181,6 +1186,7 @@ select::-ms-expand {
 @media screen and (max-width: 768px) {
   .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact7__item,
   .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7__item {
+    margin-top: 1.25rem;
     width: 100%;
   }
 }
@@ -1190,6 +1196,7 @@ select::-ms-expand {
 }
 @media screen and (max-width: 768px) {
   .wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required.contact7__item {
+    margin-top: 1.25rem;
     width: 100%;
   }
 }

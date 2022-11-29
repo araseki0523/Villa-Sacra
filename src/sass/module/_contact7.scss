@@ -227,7 +227,11 @@
 .contact7__item {
     border: 1px solid $white;
 }
-.contact7__content-wrapper {
+.contact7__check-area {
+    margin-top: rem(50);
+    text-align: center;
+}
+.contact7__check {
 
 }
 .contact7__button-area{
@@ -246,12 +250,19 @@
 {
     width: 155%;
     @include mq('md') {
+       margin-top: rem(20);
        width:  100%; 
     }
 }
 .wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required.contact7__item {
     width:  165%;
     @include mq('md') {
+        margin-top: rem(20);
         width:  100%; 
      } 
 }
+// input[type="checkbox"] {
+//     width: 30px;
+//     height: 30px;
+//     border: 1px solid $white;
+// }

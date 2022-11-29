@@ -33,14 +33,6 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
   </div>
 </section>
 
-<!-- サンプル -->
-<label class="ECM_CheckboxInput">
-  <input class="ECM_CheckboxInput-Input" type="checkbox">
-  <span class="ECM_CheckboxInput-DummyInput"></span>
-  <span class="ECM_CheckboxInput-LabelText">利用規約に同意する</span>
-</label>
-
-
 <section class="gallery-contact layout-gallery-contact">
   <?php get_template_part('template/gallery'); ?>
 </section>
@@ -93,8 +85,9 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
     [textarea* textarea-172 class:contact7__item]
   </div>
 </div>
-
-
+<div class="contact7__check-area">
+  [checkbox* checkbox-187 class:contact7__check use_label_element "プライバシーポリシーに同意する"]
+</div>
 <div class="contact7__button-area">
   [multistep multistep-667 first_step "/contact-confirm"]
   [submit class:contact7__button "送信内容を確認する"]
