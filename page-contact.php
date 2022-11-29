@@ -49,49 +49,53 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
 
 
 <!-- contact7__contentsの中身 -->
-<!-- <div class="contact7__content">
-<div class="contact7__head">
-<span class="contact7__required">必須</span>
-<p class="contact7__title">お名前</p>
-</div>
-[text* text-142]
+<div class="contact7__content">
+  <div class="contact7__head-wrapper">
+    <div class="contact7__head">
+      <span class="contact7__required">必須</span>
+      <p class="contact7__title">お名前</p>
+    </div>
+  </div>
+  <div class="contact7__input-text-area">
+    [text* text-410 class:contact7__item]
+  </div>
 </div>
 <div class="contact7__content">
-  <div class="contact7__head">
-    <span class="contact7__required">必須</span>
-    <p class="contact7__title">メールアドレス</p>
+  <div class="contact7__head-wrapper">
+    <div class="contact7__head">
+      <span class="contact7__required">必須</span>
+      <p class="contact7__title">メールアドレス</p>
+    </div>
   </div>
- [email* email-910 class:contact7__item]
+  <div class="contact7__input-text-area">
+   [email* email-374 class:contact7__item]
+  </div>
 </div>
-
 <div class="contact7__content">
-  <div class="contact7__head">
-    <span class="contact7__any">任意</span>
-    <p class="contact7__title">件名</p>
+  <div class="contact7__head-wrapper">
+    <div class="contact7__head">
+      <span class="contact7__any">任意</span>
+      <p class="contact7__title">件名</p>
+    </div>
   </div>
-  [text text-941 class:contact7__item]
+  <div class="contact7__input-text-area">
+   [text* text-410 class:contact7__item]
+  </div>
 </div>
-
 <div class="contact7__content">
-  <div class="contact7__head">
-    <span class="contact7__required">必須</span>
-    <p class="contact7__title">メッセージ</p>
+  <div class="contact7__head-wrapper">
+    <div class="contact7__head">
+      <span class="contact7__required">必須</span>
+      <p class="contact7__title">メッセージ</p>
+    </div>
   </div>
-[textarea* textarea-762  class:contact7__textarea]
+  <div　class="contact7__input-textarea-area">
+    [textarea* textarea-172 class:contact7__item]
+  </div>
 </div>
 
-<div class="contact7__content-wrapper">
-[checkbox* checkbox-432 class:contact7__content-check]
-<a href=""><span class="contact7__under">プライバシーポリシー</span></a>に同意する
-</div>
 
 <div class="contact7__button-area">
-[multistep multistep-667 first_step "/contact-confirm"]
-[submit class:contact7__button "送信内容を確認する"]
+  [multistep multistep-667 first_step "/contact-confirm"]
+  [submit class:contact7__button "送信内容を確認する"]
 </div>
-
-<label class="ECM_CheckboxInput">
-[checkbox* checkbox-844 class:ECM_CheckboxInput-Input]
-  <span class="ECM_CheckboxInput-DummyInput"></span>
-  <span class="ECM_CheckboxInput-LabelText">利用規約に同意する</span>
-</label> -->
