@@ -45,25 +45,28 @@
           周囲に今も住まわれている大家さんの一族がずうっと大切にしてこられたPrivate Propertyとそののどかで平和な空気に敬意を表してのことです。
         </p>
         <!-- /.concept__text4 -->
-      <p class="concept__text5">
-        SANCTUARYという言葉のニュアンスに近いかもしれません。
-      </p>
-      <!-- /.concept__text5 -->
-      <p class="concept__text6">
-        テレビもPCもない、ゆっくりと流れる時間に身を委ね、
-        <br>
-        穏やかに深呼吸をする、という贅沢、味わってみませんか？
-      </p>
-      <!-- /.concept__text6 -->
-      <div class="concept__text7">
-        Villa Sacra&nbsp;&nbsp;Owner
-        <br>
-        署名
+        <p class="concept__text5">
+          SANCTUARYという言葉のニュアンスに近いかもしれません。
+        </p>
+        <!-- /.concept__text5 -->
+        <p class="concept__text6">
+          テレビもPCもない、ゆっくりと流れる時間に身を委ね、
+          <br>
+          穏やかに深呼吸をする、という贅沢、味わってみませんか？
+        </p>
+        <!-- /.concept__text6 -->
+        <div class="concept__text7">
+          Villa Sacra&nbsp;&nbsp;Owner
+          <br>
+          <div class="concept__sign">
+            <!-- まだ -->
+            <img src="<?php echo get_template_directory_uri(); ?>/images/common/mv-sub-mask.png" alt="メインビュータイトル下の背景画像">
+          </div>
+        </div>
+        <!-- /.concept__text7 -->
       </div>
-      <!-- /.concept__text7 -->
-    </div>
-    <!--concept__container-->
-  </div><!-- /.concept__inner -->
+      <!--concept__container-->
+    </div><!-- /.concept__inner -->
   </div><!-- /.concept__background-image -->
 </section>
 

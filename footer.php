@@ -33,25 +33,25 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
     <div class="footer__sns">
       <ul class="footer__lists">
         <li class="footer__list">
-          <!-- リンク未貼付 -->
+          <!-- まだ -->
           <a href="">
             <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-instagram.png" alt="インスタグラムのアイコン画像">
           </a>
         </li>
         <li class="footer__list">
-          <!-- リンク未貼付 -->
+          <!-- まだ -->
           <a href="">
             <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-facebook.png" alt="フェイスブックのアイコン画像">
           </a>
         </li>
         <li class="footer__list footer__list-big1">
-          <!-- リンク未貼付 -->
+          <!-- まだ -->
           <a href="">
             <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-tiktok.png" alt="ティックトックのアイコン画像">
           </a>
         </li>
         <li class="footer__list footer__list-big2">
-          <!-- リンク未貼付 -->
+          <!-- まだ -->
           <a href="">
             <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-blog.png" alt="ブログのアイコン画像">
           </a>

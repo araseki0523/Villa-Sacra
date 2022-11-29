@@ -5,11 +5,10 @@
 }
 
 .qa__inner {
-    max-width: rem(1060);
+    max-width: rem(1076);
     width: 100%;
-    margin: 0 auto;
-    padding-right: $padding-pc;
-    padding-left: $padding-pc;
+    margin-left: rem(145);
+    margin-right: auto;
 }
 
 .qa__contents {
@@ -19,23 +18,23 @@
 // アコーディオン
 .qa__content > li {
     list-style: none;
-    border: 2px solid $white;
+    border: 1px solid $white;
     @include mq('md') {
        border: 1px solid $white; 
     }
 }
 
+.qa__content + .qa__content {
+    // padding-top: rem(6);
+}
 .qa__label  {
+    margin-top: rem(40);
     cursor: pointer;
     position: relative;
-    padding-top: rem(20);
-    padding-bottom: rem(20);
+    padding-top: rem(10);
+    padding-bottom: rem(16);
     background-color: $white;
     color: $black;
-}
-
-.qa__label {
-    margin-top: rem(34);
 }
 
 .qa__label1 {
@@ -47,11 +46,11 @@
     background-repeat: no-repeat;
     background-size: contain;
     width: 20px;
-    height: 20px;
+    height: 32px;
     position: absolute;
     top: 45%;
     transform: translateY(-50%);
-    left: 10px;
+    left: 26px;
      @media screen and (max-width:600px){
         top: 33%;
         width: 15px;
@@ -63,10 +62,11 @@
 }
 
 .qa__label > p {
-    padding-left: rem(50);
+    padding-left: rem(72);
     padding-top: rem(0);
     padding-bottom: rem(0);
     font-size: rem(16);
+    font-family: $yugothic;
     @include mq('md') {
        padding-right: rem(50);
     }
@@ -82,10 +82,12 @@
 
 .qa__answer > p {
     font-size: rem(16);
-    padding-left: rem(50);
-    padding-top: rem(10);
+    padding-left: rem(72);
+    padding-top: rem(18);
     padding-bottom: rem(12);
+    padding-right: rem(23);
     position: relative;
+    font-family: $yugothic;
 }
 
 .qa__answer > p::before {
@@ -95,8 +97,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     width: 20px;
-    height: 20px;
-    left: 10px;
+    height: 24px;
+    left: 29px;
     @include mq('md') {
        margin-top: -3px; 
     }
@@ -115,7 +117,7 @@
 ======================================*/
 .icon-wrap {
     position: absolute;
-    right: 5px;
+    right: 19px;
     top: 50%;
     transform: translateY(-50%);
     width: 38px;
@@ -146,7 +148,7 @@
     content: "";
     display: block;
     transition: all 0.4s;
-    background: #b3b3b3;
+    background: #707070;
     left: 50%;
     top: 50%;
     width: 50%;

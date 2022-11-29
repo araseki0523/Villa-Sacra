@@ -1,6 +1,11 @@
 @use "global" as *;
 
 .layout-reservation {
+<<<<<<< HEAD
     margin-top: 42px;
     margin-top: 2.625rem;
 }
+=======
+    margin-top: rem(42);
+}
+>>>>>>> d484befdba1af62a24c521084963ec0e3ab2c910

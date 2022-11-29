@@ -29,6 +29,7 @@
     </div>
 </div>
 
+
 <section id="privacy-policy" class="privacy-policy layout-privacy-policy">
     <div class="privacy-policy__inner">
         <div class="privacy-policy__title-area section-title-sub">

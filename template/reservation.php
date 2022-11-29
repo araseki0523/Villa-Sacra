@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- オーバーレイ -->
 <div id="overlay" class="overlay"></div>
 <!-- モーダルウィンドウ -->
@@ -8,6 +9,9 @@
     <!-- 閉じるボタン -->
     <button class="js-close button-close">×</button>
 </div>
+=======
+<!-- まだ -->
+>>>>>>> d484befdba1af62a24c521084963ec0e3ab2c910
 
 <div class="reservation layout-reservation">
     <!-- モーダルを開くボタン -->
