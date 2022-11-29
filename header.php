@@ -100,19 +100,19 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
             <ul class="header__sub">
               <div class="header__container">
                 <li class="header__sub-text">
-                  <!-- リンク未貼付 -->
+                  <!-- まだ -->
                   <a href="">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-instagram-white.png" alt="インスタグラムのアイコン画像">
                   </a>
                 </li>
                 <li class="header__sub-text">
-                  <!-- リンク未貼付 -->
+                  <!-- まだ -->
                   <a href="">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-facebook-white.png" alt="フェイスブックのアイコン画像">
                   </a>
                 </li>
                 <li class="header__sub-text">
-                  <!-- リンク未貼付 -->
+                  <!-- まだ -->
                   <a href="">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-tiktok-white.png" alt="ティックトックのアイコン画像">
                   </a>
@@ -139,7 +139,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
           <li class="header__sp-nav-item"><a href="<?php echo $blog ?>">blog</a></li>
           <li class="header__sp-nav-item"><a href="<?php echo $qa ?>">q&amp;a</a></li>
           <li class="header__sp-nav-item"><a href="<?php echo $contact ?>">contact</a></li>
-          <!-- リンク未貼付 -->
+          <!-- まだ -->
           <li class="header__sp-nav-item"><a href="">english</a></li>
         </ul>
       </div>

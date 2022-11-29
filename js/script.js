@@ -76,7 +76,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // トップページのスライダー
   let swiperTop = {
     loop: true,
-    spaceBetween: 40,
+    spaceBetween: 38,
     slidesPerView: 2.5,
     breakpoints: {
       768: {

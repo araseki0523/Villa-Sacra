@@ -567,7 +567,7 @@
                 <p class="box__left-title-en section-title__en">Restaurant</p>
             </div>
             <div class="box__button-area">
-                <!-- リンク未貼付 -->
+                <!-- まだ -->
                 <a href="" class="box__button button">MORE</a>
             </div>
         </div>
@@ -577,7 +577,7 @@
                 <p class="box__right-title-en section-title__en">Shared space</p>
             </div>
             <div class="box__button-area">
-                <!-- リンク未貼付 -->
+                <!-- まだ -->
                 <a href="" class="box__button button">MORE</a>
             </div>
         </div>

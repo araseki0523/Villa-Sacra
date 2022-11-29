@@ -892,16 +892,16 @@ select::-ms-expand {
 }
 
 .concept__inner {
-  max-width: 832px;
-  max-width: 52rem;
+  max-width: 890px;
+  max-width: 55.625rem;
   width: 100%;
   margin: 0 auto;
 }
 
 .concept__container {
   font-family: "Yu Gothic", "YuGothic", sans-serif;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -915,42 +915,52 @@ select::-ms-expand {
 }
 
 .concept__text1 {
-  padding-top: 150px;
-  padding-top: 9.375rem;
+  padding-top: 80px;
+  padding-top: 5rem;
+  line-height: 2.3;
+  letter-spacing: 0.1em;
 }
 
 .concept__text2 {
-  padding-top: 162px;
-  padding-top: 10.125rem;
+  padding-top: 102px;
+  padding-top: 6.375rem;
+  line-height: 2.5;
+  letter-spacing: 0.2em;
 }
 
 .concept__text3 {
-  padding-top: 202px;
-  padding-top: 12.625rem;
+  padding-top: 97px;
+  padding-top: 6.0625rem;
+  line-height: 2.5;
+  letter-spacing: 0.2em;
 }
 
 .concept__text4 {
-  padding-top: 162px;
-  padding-top: 10.125rem;
+  padding-top: 97px;
+  padding-top: 6.0625rem;
+  line-height: 2.5;
+  letter-spacing: 0.2em;
 }
 
 .concept__text5 {
   padding-top: 50px;
   padding-top: 3.125rem;
+  letter-spacing: 0.2em;
 }
 
 .concept__text6 {
-  padding-top: 202px;
-  padding-top: 12.625rem;
+  padding-top: 105px;
+  padding-top: 6.5625rem;
+  line-height: 2.5;
+  letter-spacing: 0.2em;
 }
 
 .concept__text7 {
-  padding-top: 126px;
-  padding-top: 7.875rem;
+  padding-top: 151px;
+  padding-top: 9.4375rem;
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
+  text-align: center;
+  letter-spacing: 0.1em;
 }
 
 .contact__inner {
@@ -958,12 +968,12 @@ select::-ms-expand {
   max-width: 51.125rem;
   width: 100%;
   margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 @media screen and (max-width: 768px) {
   .contact__inner {
     max-width: 85%;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -993,29 +1003,38 @@ select::-ms-expand {
 }
 
 .contact7__content + .contact7__content {
-  margin-top: 24px;
-  margin-top: 1.5rem;
+  margin-top: 29px;
+  margin-top: 1.8125rem;
 }
 
 .contact7__head {
-  width: 30%;
+  width: 36%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  padding-top: 8px;
+  padding-top: 0.5rem;
 }
 
 .contact7__head span {
   margin-right: 10px;
   margin-right: 0.625rem;
+  font-size: 12px;
+  padding: 4px 11px 3px;
+  padding: 0.25rem 0.6875rem 0.1875rem;
 }
 
 .contact7__content > p {
   width: 70%;
   border: 1px solid #fff;
   border-radius: 5px;
+  padding-top: 4px;
+  padding-top: 0.25rem;
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
 }
 @media screen and (max-width: 768px) {
   .contact7__content > p {
@@ -1039,8 +1058,8 @@ select::-ms-expand {
 }
 
 .contact7__content-wrapper {
-  margin-top: 50px;
-  margin-top: 3.125rem;
+  margin-top: -35px;
+  margin-top: -2.1875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1053,8 +1072,8 @@ select::-ms-expand {
 }
 
 .contact7__button-area {
-  margin-top: 50px;
-  margin-top: 3.125rem;
+  margin-top: 26px;
+  margin-top: 1.625rem;
   text-align: center;
 }
 
@@ -1654,6 +1673,8 @@ select::-ms-expand {
 .gallery__container {
   margin-top: 98px;
   margin-top: 6.125rem;
+  padding-left: 32px;
+  padding-left: 2rem;
   width: 100%;
 }
 
@@ -2485,7 +2506,8 @@ sp版（1280px以下）のモーダル内メニュー
 @media screen and (max-width: 1440px) {
   .layout-breadcrumb {
     margin-left: 6.25rem;
-    padding-left: 25px;
+    padding-left: 2.9375rem;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -2540,8 +2562,13 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .layout-gallery-concept {
-  margin-top: 360px;
-  margin-top: 22.5rem;
+  margin-top: 328px;
+  margin-top: 20.5rem;
+}
+
+.layout-gallery-contact {
+  margin-top: 248px;
+  margin-top: 15.5rem;
 }
 
 .layout-gallery-concept {
@@ -2549,14 +2576,9 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 22.5rem;
 }
 
-.layout-gallery-concept {
-  margin-top: 360px;
-  margin-top: 22.5rem;
-}
-
-.layout-gallery-concept {
-  margin-top: 360px;
-  margin-top: 22.5rem;
+.layout-gallery-qa {
+  margin-top: 215px;
+  margin-top: 13.4375rem;
 }
 
 .layout-gallery {
@@ -2618,18 +2640,18 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .layout-privacy-policy-box {
-  margin-top: 165px;
-  margin-top: 10.3125rem;
+  margin-top: 124px;
+  margin-top: 7.75rem;
 }
 
 .layout-privacy-policy {
-  margin-top: 158px;
-  margin-top: 9.875rem;
+  margin-top: 152px;
+  margin-top: 9.5rem;
 }
 
 .layout-qa {
-  margin-top: 134px;
-  margin-top: 8.375rem;
+  margin-top: 150px;
+  margin-top: 9.375rem;
 }
 
 .layout-recruit {
@@ -2980,8 +3002,8 @@ sp版（1280px以下）のモーダル内メニュー
 .privacy-policy-box__inner {
   margin-left: 284px;
   margin-left: 17.75rem;
-  margin-right: 268px;
-  margin-right: 16.75rem;
+  margin-right: 284px;
+  margin-right: 17.75rem;
 }
 
 .privacy-policy-box__container {
@@ -3053,10 +3075,14 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .privacy-policy__inner {
-  max-width: 1060px;
-  max-width: 66.25rem;
+  max-width: 1072px;
+  max-width: 67rem;
   width: 100%;
   margin: 0 auto;
+}
+
+.privacy-policy__title-area.section-title-sub::after {
+  right: -13%;
 }
 
 .privacy-policy__title-ja {
@@ -3068,8 +3094,9 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .privacy-policy__container {
-  margin-top: 130px;
-  margin-top: 8.125rem;
+  margin-top: 116px;
+  margin-top: 7.25rem;
+  line-height: 1.75;
 }
 
 .privacy-policy__index {
@@ -3086,8 +3113,8 @@ sp版（1280px以下）のモーダル内メニュー
 .privacy-policy__text7-1,
 .privacy-policy__text8-1,
 .privacy-policy__text9-1 {
-  padding-top: 16px;
-  padding-top: 1rem;
+  padding-top: 3px;
+  padding-top: 0.1875rem;
 }
 
 .privacy-policy__text1-2,
@@ -3101,20 +3128,20 @@ sp版（1280px以下）のモーダル内メニュー
 .privacy-policy__text8-2,
 .privacy-policy__text8-4,
 .privacy-policy__text8-6 {
-  padding-top: 20px;
-  padding-top: 1.25rem;
+  padding-top: 28px;
+  padding-top: 1.75rem;
 }
 
 .privacy-policy__text-title1-5,
 .privacy-policy__text-title6-2,
 .privacy-policy__text-title6-4 {
-  padding-top: 20px;
-  padding-top: 1.25rem;
+  padding-top: 28px;
+  padding-top: 1.75rem;
 }
 
 .privacy-policy__wrapper2 {
-  margin-top: 70px;
-  margin-top: 4.375rem;
+  margin-top: 66px;
+  margin-top: 4.125rem;
 }
 
 .privacy-policy__wrapper3 {
@@ -3153,12 +3180,12 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .qa__inner {
-  max-width: 1060px;
-  max-width: 66.25rem;
+  max-width: 1076px;
+  max-width: 67.25rem;
   width: 100%;
-  margin: 0 auto;
-  padding-right: 25px;
-  padding-left: 25px;
+  margin-left: 145px;
+  margin-left: 9.0625rem;
+  margin-right: auto;
 }
 
 .qa__contents {
@@ -3168,7 +3195,7 @@ sp版（1280px以下）のモーダル内メニュー
 
 .qa__content > li {
   list-style: none;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
 }
 @media screen and (max-width: 768px) {
   .qa__content > li {
@@ -3177,19 +3204,16 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .qa__label {
+  margin-top: 40px;
+  margin-top: 2.5rem;
   cursor: pointer;
   position: relative;
-  padding-top: 20px;
-  padding-top: 1.25rem;
-  padding-bottom: 20px;
-  padding-bottom: 1.25rem;
+  padding-top: 10px;
+  padding-top: 0.625rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
   background-color: #fff;
   color: #000;
-}
-
-.qa__label {
-  margin-top: 34px;
-  margin-top: 2.125rem;
 }
 
 .qa__label1 {
@@ -3202,12 +3226,12 @@ sp版（1280px以下）のモーダル内メニュー
   background-repeat: no-repeat;
   background-size: contain;
   width: 20px;
-  height: 20px;
+  height: 32px;
   position: absolute;
   top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 10px;
+  left: 26px;
 }
 @media screen and (max-width: 600px) {
   .qa__label::before {
@@ -3223,14 +3247,15 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .qa__label > p {
-  padding-left: 50px;
-  padding-left: 3.125rem;
+  padding-left: 72px;
+  padding-left: 4.5rem;
   padding-top: 0px;
   padding-top: 0rem;
   padding-bottom: 0px;
   padding-bottom: 0rem;
   font-size: 16px;
   font-size: 1rem;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .qa__label > p {
@@ -3250,13 +3275,16 @@ sp版（1280px以下）のモーダル内メニュー
 .qa__answer > p {
   font-size: 16px;
   font-size: 1rem;
-  padding-left: 50px;
-  padding-left: 3.125rem;
-  padding-top: 10px;
-  padding-top: 0.625rem;
+  padding-left: 72px;
+  padding-left: 4.5rem;
+  padding-top: 18px;
+  padding-top: 1.125rem;
   padding-bottom: 12px;
   padding-bottom: 0.75rem;
+  padding-right: 23px;
+  padding-right: 1.4375rem;
   position: relative;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
 }
 
 .qa__answer > p::before {
@@ -3266,8 +3294,8 @@ sp版（1280px以下）のモーダル内メニュー
   background-repeat: no-repeat;
   background-size: contain;
   width: 20px;
-  height: 20px;
-  left: 10px;
+  height: 24px;
+  left: 29px;
 }
 @media screen and (max-width: 768px) {
   .qa__answer > p::before {
@@ -3292,7 +3320,7 @@ sp版（1280px以下）のモーダル内メニュー
 ======================================*/
 .icon-wrap {
   position: absolute;
-  right: 5px;
+  right: 19px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -3328,7 +3356,7 @@ sp版（1280px以下）のモーダル内メニュー
   display: block;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background: #b3b3b3;
+  background: #707070;
   left: 50%;
   top: 50%;
   width: 50%;
@@ -4041,8 +4069,8 @@ sp版（1280px以下）のモーダル内メニュー
 
 .mySwiper-top.swiper-wrapper.swiper-slide,
 .mySwiper-top.swiper-wrapper.swiper-slide img {
-  width: 340px;
-  width: 21.25rem;
+  width: 344px;
+  width: 21.5rem;
 }
 @media screen and (max-width: 768px) {
   .mySwiper-top.swiper-wrapper.swiper-slide,

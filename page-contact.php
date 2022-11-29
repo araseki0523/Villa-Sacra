@@ -40,6 +40,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
   <span class="ECM_CheckboxInput-LabelText">利用規約に同意する</span>
 </label>
 
+
 <section class="gallery-contact layout-gallery-contact">
   <?php get_template_part('template/gallery'); ?>
 </section>

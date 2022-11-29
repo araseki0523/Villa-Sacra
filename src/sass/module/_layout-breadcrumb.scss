@@ -7,7 +7,8 @@
     display: flex;
     @include mq('xl') {
        margin-left: rem(100);
-       padding-left: $padding-pc; 
+       padding-left: rem(47);
+       font-size: 12px;
     }
     @include mq('ll') {
         margin-left: 0;
