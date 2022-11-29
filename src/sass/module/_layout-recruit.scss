@@ -2,4 +2,7 @@
 
 .layout-recruit {
    margin-top: rem(286);
+   @include mq('ll') {
+      margin-top: rem(220);
+   }
 }

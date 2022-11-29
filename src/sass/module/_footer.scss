@@ -55,6 +55,9 @@
 .footer__list-item span {
     font-size: rem(16);
     padding-left: rem(50);
+    @include mq('md') {
+        padding-left: 0;
+    }
 }
 
 

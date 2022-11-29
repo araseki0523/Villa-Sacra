@@ -9,7 +9,7 @@
     width: 100%;
     margin: 0 auto;
     
-    @include mq(md) {
+    @include mq(ll) {
         padding-left: $padding-sp;
         padding-right: $padding-sp;
     }
