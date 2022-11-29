@@ -3,7 +3,7 @@
 .pagenation {
     max-width: rem(540);
     width: 100%;
-    margin: 0 auto;
+    margin: rem(50) auto;
     text-align: center;
 }
 
@@ -15,9 +15,33 @@
     border: 1px solid $white;
     border-radius: 10px;
     padding: rem(9) rem(14);
+    margin-right: rem(8);
 }
 
-.page-numbers img {
-    max-width: rem(35);
-    width: 100%;
+/* ページネーション（共通）＞ 現在のページ番号 */
+.pagination .current {
+    color: $black;
+    background-color: $white;
 }
+
+.pagination .prev,
+.pagination .next {
+    padding: rem(7) rem(13) rem(8) rem(14);
+}
+
+/* ページネーション（共通）＞ 前へ */
+.pagination .prev {
+    margin: 0 rem(8) 0 0;
+}
+
+/* ページネーション（共通）＞ ドット */
+// .pagination .dots {
+//     margin: 0;
+// }
+
+.pagination .dots:hover,
+.pagination .dots:focus {
+    color: $black;
+    background-color: $white;
+}
+

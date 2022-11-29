@@ -65,10 +65,7 @@
             <!-- pagenation -->
             <div class="pagenation">
                 <?php
-                echo
-                paginate_links(
-                    array(
-                        'end_size' => 0,
+                the_posts_pagination(array(
                         'mid_size' => 1,
                         'prev_next' => true,
                         'prev_text' => '<',

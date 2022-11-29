@@ -628,6 +628,8 @@ select::-ms-expand {
   max-width: 67.25rem;
   width: 100%;
   margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .bb-sub__lead {
@@ -662,6 +664,11 @@ select::-ms-expand {
 
 .blog-page__item:nth-of-type(3n) {
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .blog-page__item:nth-of-type(3n) {
+    margin: auto;
+  }
 }
 
 .blog-page__items:nth-of-type(n + 4) {
@@ -896,6 +903,11 @@ select::-ms-expand {
   padding-right: 25px;
   padding-right: 1.5625rem;
 }
+@media screen and (max-width: 768px) {
+  .cards {
+    display: block;
+  }
+}
 
 .card {
   display: -webkit-box;
@@ -907,6 +919,12 @@ select::-ms-expand {
           flex-direction: column;
   width: 28%;
   margin-right: 8%;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80%;
+    margin: 1.875rem auto;
+  }
 }
 
 .card__img {
@@ -2570,6 +2588,15 @@ sp版（1280px以下）のモーダル内メニュー
   display: flex;
   margin-top: 40px;
   margin-top: 2.5rem;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+@media screen and (max-width: 768px) {
+  .items {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
 }
 
 .item {
@@ -2588,16 +2615,33 @@ sp版（1280px以下）のモーダル内メニュー
           flex-grow: 1;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .item {
+    max-width: 37.5rem;
+    width: 100%;
+    margin: 5rem auto 0;
+  }
+}
 
 .item:first-child {
   margin-left: 0px;
   margin-left: 0rem;
+}
+@media screen and (max-width: 768px) {
+  .item:first-child {
+    margin: auto;
+  }
 }
 
 .item-box {
   margin: 2em 0;
   padding: 0.5em 1em;
   border: solid 1px #fff;
+}
+@media screen and (max-width: 768px) {
+  .item-box {
+    font-size: max(2vw, 12px);
+  }
 }
 
 .item-box__sub-title-ja {
@@ -2619,8 +2663,8 @@ sp版（1280px以下）のモーダル内メニュー
   width: 24px;
   height: 4px;
   border: none;
-  border-right: 2px solid #FFF;
-  border-bottom: 1.5px solid #FFF;
+  border-right: 2px solid #fff;
+  border-bottom: 1.5px solid #fff;
   -webkit-transform: skew(45deg);
           transform: skew(45deg);
   -webkit-transition: 0.3s;
@@ -2647,6 +2691,11 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 52px;
   margin-top: 3.25rem;
 }
+@media screen and (max-width: 768px) {
+  .item-box__body {
+    text-align: center;
+  }
+}
 
 .item-box__head {
   display: inline-block;
@@ -2656,6 +2705,11 @@ sp版（1280px以下）のモーダル内メニュー
   position: absolute;
   top: -13%;
   left: 8%;
+}
+@media screen and (max-width: 768px) {
+  .item-box__head {
+    left: 20%;
+  }
 }
 
 .item-box__info .card-box__text {
@@ -3223,7 +3277,8 @@ sp版（1280px以下）のモーダル内メニュー
   max-width: 540px;
   max-width: 33.75rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 50px auto;
+  margin: 3.125rem auto;
   text-align: center;
 }
 
@@ -3237,12 +3292,33 @@ sp版（1280px以下）のモーダル内メニュー
   border-radius: 10px;
   padding: 9px 14px;
   padding: 0.5625rem 0.875rem;
+  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 
-.page-numbers img {
-  max-width: 35px;
-  max-width: 2.1875rem;
-  width: 100%;
+/* ページネーション（共通）＞ 現在のページ番号 */
+.pagination .current {
+  color: #000;
+  background-color: #fff;
+}
+
+.pagination .prev,
+.pagination .next {
+  padding: 7px 13px 8px 14px;
+  padding: 0.4375rem 0.8125rem 0.5rem 0.875rem;
+}
+
+/* ページネーション（共通）＞ 前へ */
+.pagination .prev {
+  margin: 0 8px 0 0;
+  margin: 0 0.5rem 0 0;
+}
+
+/* ページネーション（共通）＞ ドット */
+.pagination .dots:hover,
+.pagination .dots:focus {
+  color: #000;
+  background-color: #fff;
 }
 
 .plan {
@@ -3707,6 +3783,8 @@ sp版（1280px以下）のモーダル内メニュー
   max-width: 61.6875rem;
   width: 100%;
   margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 @media screen and (max-width: 768px) {
   .reservation__inner {
@@ -4110,7 +4188,7 @@ button.reservation__modal {
 }
 
 .section-title-sub::after {
-  right: 1%;
+  right: -10%;
 }
 
 .section-title-sub__ja {
@@ -4128,6 +4206,11 @@ button.reservation__modal {
 
 .section-title {
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .section-title {
+    margin-top: 3.125rem;
+  }
 }
 
 .section-title__ja {

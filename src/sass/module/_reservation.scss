@@ -7,6 +7,8 @@
     max-width: rem(987);
     width: 100%;
     margin: 0 auto;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
 
     @include mq(md) {
         padding-left: $padding-sp;

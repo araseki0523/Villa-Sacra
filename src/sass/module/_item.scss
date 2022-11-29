@@ -3,6 +3,13 @@
 .items {
     display: flex;
     margin-top: rem(40);
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+    @include mq(md) {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
 }
 
 .item {
@@ -12,18 +19,28 @@
     margin-left: rem(16);
     flex-grow: 1;
     position: relative;
+    @include mq(md) {
+        max-width: rem(600);
+        width: 100%;
+        margin: rem(80) auto 0;
+    }
 }
 
 .item:first-child {
     margin-left: rem(0);
+    @include mq(md) {
+        margin: auto;
+    }
 }
 
 .item-box {
     margin: 2em 0;
     padding: 0.5em 1em;
     border: solid 1px $white;
+    @include mq(md) {
+        font-size: max(2vw,12px);
+    }
 }
-
 
 .item-box__sub-title-ja {
     font-size: rem(24);
@@ -43,10 +60,10 @@
     width: 24px;
     height: 4px;
     border: none;
-    border-right: 2px solid #FFF;
-    border-bottom: 1.5px solid #FFF;
+    border-right: 2px solid #fff;
+    border-bottom: 1.5px solid #fff;
     transform: skew(45deg);
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .item-box__sub-title-en {
@@ -61,11 +78,13 @@
     border: 1px solid $white;
 }
 
-
 .item-box__body {
     position: relative;
     padding: rem(70) rem(60) rem(40);
     margin-top: rem(52);
+    @include mq(md) {
+        text-align: center;
+    }
 }
 .item-box__head {
     display: inline-block;
@@ -74,10 +93,12 @@
     position: absolute;
     top: -13%;
     left: 8%;
+    @include mq(md) {
+        left: 20%;
+    }
 }
 
-.item-box__info
-.card-box__text {
+.item-box__info .card-box__text {
     font-size: rem(16);
     font-weight: 500;
     font-family: $yumincho;
