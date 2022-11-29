@@ -5,7 +5,7 @@
 }
 
 .reservation__inner {
-    max-width: rem(938);
+    max-width: rem(987);
     width: 100%;
     margin: 0 auto;
     
@@ -18,7 +18,8 @@
 .reservation__container {
     background-color: $white;
     height: rem(176);
-    width: rem(938);
+    width:  100%;
+    max-width: rem(937);
     margin: 0 auto;
 }
 
@@ -32,11 +33,13 @@
   font-size: rem(34);
 }
 
+
 .reservation__title--en {
     margin-top: rem(-6);
     margin-left: rem(28);
     font-family: $sub-font-family;
 }
+
 
 .reservation__icon {
     padding-top: rem(82);

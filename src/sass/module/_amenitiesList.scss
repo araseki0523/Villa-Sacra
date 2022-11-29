@@ -14,6 +14,10 @@
     }
 }
 
+.amenitiesList__items:last-child {
+    margin-bottom: 0;
+}
+
 .amenitiesList__item {
     margin-left: rem(25);
     @include mq(md) {

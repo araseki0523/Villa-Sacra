@@ -7,7 +7,7 @@
             <div class="mv-sub__background">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/common/mv-sub-mask.png" alt="メインビュータイトル下の背景画像">
             </div>
-            <h2 class="mv-sub__title-ja">共有スペース/アメニティ/注意事項</h2>
+            <h2 class="facility__title-ja mv-sub__title-ja">共有スペース/アメニティ/注意事項</h2>
             <p class="mv-sub__title-en">facility</p>
         </div>
     </div>
@@ -233,7 +233,9 @@
     </a>
 </div>
 
+<section class="facility__gallery layout-sub-facility">
     <?php get_template_part('template/gallery'); ?>
+</section>
 
 
 <?php get_footer(); ?>

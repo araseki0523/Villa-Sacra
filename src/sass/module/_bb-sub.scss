@@ -1,4 +1,7 @@
 @use "global" as *;
+.bb-sub__reservation.layout-sub-reservation {
+    margin-top: rem(55);
+}
 
 .bb-sub__inner {
     max-width: rem(1076);
@@ -12,7 +15,7 @@
     font-family: Hiragino Kaku Gothic ProN;
 }
 .bb-sub__text-area {
-    margin-top: rem(58);
+    margin-top: rem(45);
     font-size: rem(18);
     font-weight: 500;
     line-height: 1.5;

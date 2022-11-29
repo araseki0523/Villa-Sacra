@@ -15,7 +15,9 @@
 
 <?php get_template_part('template/breadcrumb'); ?>
 
+<section class="bb-sub__reservation layout-sub-reservation">
 <?php get_template_part('template/reservation'); ?>
+</section>
 
 <section class="bb-sub layout-bb-sub">
     <div class="bb-sub__inner">
@@ -78,36 +80,7 @@
                                     営業時間 : 00:00〜00:00<br>
                                 </p>
                                 <p class="breakFast-box__text card-box__text">
-                                    コメントコメントコメント
-                                    コメントコメントコメント
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="breakFast__contants item">
-                <div class="breakFast__contant-head item__contant-head">
-                    <div class="breakFast__img item__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/bb/breakFast2.jpg" alt="朝食の画像">
-                    </div>
-                </div>
-                <div class="breakFast__contant-body item__contant-body">
-                    <div class="breakFast-box item-boxes">
-                        <div class="breakFast-box__body item-box__body">
-                            <div class="breakFast-box__head item-box__head">
-                                <h2 class="breakFast-box__sub-title-ja item-box__sub-title-ja">ワンダーキッチン</h2>
-                                <p class="breakFast-box__sub-title-en item-box__sub-title-en">Wander kitchen</p>
-                            </div>
-                            <div class="breakFast-box__text-box item-box__text-box">
-                                <p class="breakFast-box__info item-box__info">
-                                    〒248-0012<br>
-                                    神奈川県鎌倉市御成町10-15<br>
-                                    TEL : 0467-61-4751<br>
-                                    営業時間 : 00:00〜00:00<br>
-                                </p>
-                                <p class="breakFast-box__text card-box__text">
-                                    コメントコメントコメント
+                                    コメントコメントコメント<br>
                                     コメントコメントコメント
                                 </p>
                             </div>
@@ -136,7 +109,36 @@
                                     営業時間 : 00:00〜00:00<br>
                                 </p>
                                 <p class="breakFast-box__text card-box__text">
+                                    コメントコメントコメント<br>
                                     コメントコメントコメント
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breakFast__contants item">
+                <div class="breakFast__contant-head item__contant-head">
+                    <div class="breakFast__img item__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/bb/breakFast2.jpg" alt="朝食の画像">
+                    </div>
+                </div>
+                <div class="breakFast__contant-body item__contant-body">
+                    <div class="breakFast-box item-boxes">
+                        <div class="breakFast-box__body item-box__body">
+                            <div class="breakFast-box__head item-box__head">
+                                <h2 class="breakFast-box__sub-title-ja item-box__sub-title-ja">ワンダーキッチン</h2>
+                                <p class="breakFast-box__sub-title-en item-box__sub-title-en">Wander kitchen</p>
+                            </div>
+                            <div class="breakFast-box__text-box item-box__text-box">
+                                <p class="breakFast-box__info item-box__info">
+                                    〒248-0012<br>
+                                    神奈川県鎌倉市御成町10-15<br>
+                                    TEL : 0467-61-4751<br>
+                                    営業時間 : 00:00〜00:00<br>
+                                </p>
+                                <p class="breakFast-box__text card-box__text">
+                                    コメントコメントコメント<br>
                                     コメントコメントコメント
                                 </p>
                             </div>
@@ -178,36 +180,7 @@
                                     営業時間 : 00:00〜00:00<br>
                                 </p>
                                 <p class="dinner-box__text card-box__text">
-                                    コメントコメントコメント
-                                    コメントコメントコメント
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dinner__contants item">
-                <div class="dinner__contant-head item__contant-head">
-                    <div class="dinner__img item__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/bb/breakFast2.jpg" alt="朝食の画像">
-                    </div>
-                </div>
-                <div class="dinner__contant-body item__contant-body">
-                    <div class="dinner-box item-boxes">
-                        <div class="dinner-box__body item-box__body">
-                            <div class="dinner-box__head item-box__head">
-                                <h2 class="dinner-box__sub-title-ja item-box__sub-title-ja">ワンダーキッチン</h2>
-                                <p class="dinner-box__sub-title-en item-box__sub-title-en">Wander kitchen</p>
-                            </div>
-                            <div class="dinner-box__text-box item-box__text-box">
-                                <p class="dinner-box__info item-box__info">
-                                    〒248-0012<br>
-                                    神奈川県鎌倉市御成町10-15<br>
-                                    TEL : 0467-61-4751<br>
-                                    営業時間 : 00:00〜00:00<br>
-                                </p>
-                                <p class="dinner-box__text card-box__text">
-                                    コメントコメントコメント
+                                    コメントコメントコメント<br>
                                     コメントコメントコメント
                                 </p>
                             </div>
@@ -236,7 +209,36 @@
                                     営業時間 : 00:00〜00:00<br>
                                 </p>
                                 <p class="dinner-box__text card-box__text">
+                                    コメントコメントコメント<br>
                                     コメントコメントコメント
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dinner__contants item">
+                <div class="dinner__contant-head item__contant-head">
+                    <div class="dinner__img item__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/bb/breakFast2.jpg" alt="朝食の画像">
+                    </div>
+                </div>
+                <div class="dinner__contant-body item__contant-body">
+                    <div class="dinner-box item-boxes">
+                        <div class="dinner-box__body item-box__body">
+                            <div class="dinner-box__head item-box__head">
+                                <h2 class="dinner-box__sub-title-ja item-box__sub-title-ja">ワンダーキッチン</h2>
+                                <p class="dinner-box__sub-title-en item-box__sub-title-en">Wander kitchen</p>
+                            </div>
+                            <div class="dinner-box__text-box item-box__text-box">
+                                <p class="dinner-box__info item-box__info">
+                                    〒248-0012<br>
+                                    神奈川県鎌倉市御成町10-15<br>
+                                    TEL : 0467-61-4751<br>
+                                    営業時間 : 00:00〜00:00<br>
+                                </p>
+                                <p class="dinner-box__text card-box__text">
+                                    コメントコメントコメント<br>    
                                     コメントコメントコメント
                                 </p>
                             </div>

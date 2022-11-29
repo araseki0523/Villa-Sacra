@@ -1,4 +1,8 @@
 @use "global" as *;
+.facility__title-ja {
+	font-family: $yumincho;
+}
+
 .facility__border {
 	margin-top: 16%;
 	max-width: 1076px;
@@ -60,4 +64,8 @@
 	margin-left: 37px;
 	margin-left: 2.3125rem;
 	margin-right: 60px;
+}
+
+.facility__gallery {
+	margin-top: rem(430);
 }
