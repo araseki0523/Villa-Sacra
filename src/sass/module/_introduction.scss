@@ -26,22 +26,30 @@
 
 .introduction__container {
     display: flex;
-}
-
-.introduction__container-hana {
-    justify-content: flex-start;
+    @include mq('ll') {
+       flex-direction: column; 
+       align-items: center;
+    }
 }
 
 .introduction__container-even {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    @include mq('ll') {
+        flex-direction: column; 
+        align-items: center;
+     }
+ 
 }
 
 .introduction__each-wrapper {
     margin-top: rem(213);
     padding-bottom: rem(100);
     position: relative;
+    @include mq('ll') {
+       margin-top: rem(120); 
+    }
 }   
 
 .introduction__each-wrapper::after {
@@ -59,11 +67,17 @@
     width: 100%;
     max-width: rem(649);
     position: relative;
+    @include mq('ll') {
+       max-width: rem(820); 
+    }
 }
 .introduction__image-big::before {
     content:"";
     display: block;
     padding-top: 100%; 
+    @include mq('ll') {
+       padding-top: 65%;; 
+    }
 }
 .introduction__image-big img {
     position: absolute;
@@ -85,10 +99,17 @@
     font-weight: 800;
     line-height: 1.7;
     letter-spacing: 0.5em;
+    @include mq('ll') {
+       margin-top: rem(50);
+       writing-mode: horizontal-tb;
+    }
 }
 
 .introduction__room-name-tsuki {
     margin-top: rem(305);
+    @include mq('ll') {
+       margin-top: rem(48); 
+    }
 }
 .introduction__container-even > .introduction__room-name {
     margin-right: rem(60);
@@ -98,16 +119,29 @@
     margin-top: rem(-150);
     margin-left: rem(65);
     width: rem(386);
+    @include mq('ll') {
+       width: rem(389);
+       margin-top: rem(68); 
+       margin-left: 0;
+    }
 }
 
 .introduction__image-wrapper-tora {
     margin-top: rem(-171);
     margin-left: rem(94);
+    @include mq('ll') {
+       margin-top: rem(50); 
+       margin-left: rem(26);
+    }
 }
 
 .introduction__image-wrapper-tsuru {
     margin-top: rem(-171);
     margin-left: rem(91);
+    @include mq('ll') {
+       margin-top: rem(50); 
+       margin-left: rem(42);
+    }
 }
 
 .introduction__image-small {
@@ -144,6 +178,13 @@
     content: "";
     width: 61px;
     border-bottom: 1px solid yellow;
+    @include mq('md') {
+       bottom: rem(-5); 
+       left: 40%;
+    }
+    @include mq('sm') {
+        left: 35%;
+    }
 }
 
 .introduction__capacity {
@@ -165,6 +206,9 @@
     width: 100%;
     background-color: $white;
     color: $black;
+    @include mq('ll') {
+        max-width: rem(900);
+    } 
 }
 
 .introduction__text-area-tsuki {
@@ -226,26 +270,57 @@
 
 .introduction__each-wrapper.introduction__each-wrapper-hana {
     padding-bottom: rem(170);
+    justify-content: flex-start;
+    @include mq('ll') {
+        margin-top: rem(120); 
+        padding-bottom: rem(120);
+     }
+ 
 }
 .introduction__each-wrapper.introduction__each-wrapper-tsuki {
     margin-top: rem(360);
     padding-bottom: rem(165);
+    @include mq('ll') {
+        margin-top: rem(120); 
+        padding-bottom: rem(120);
+     }
+ 
 }
 .introduction__each-wrapper.introduction__each-wrapper-tora {
     margin-top: rem(375);
     padding-bottom: rem(179);
+    @include mq('ll') {
+        margin-top: rem(120); 
+        padding-bottom: rem(120);
+     }
+ 
 }
 .introduction__each-wrapper.introduction__each-wrapper-shizuku {
     margin-top: rem(356);
     padding-bottom: rem(173);
+    @include mq('ll') {
+        margin-top: rem(120); 
+        padding-bottom: rem(120);
+     }
+ 
 }
 .introduction__each-wrapper.introduction__each-wrapper-tsuru {
     margin-top: rem(376);
     padding-bottom: rem(150);
+    @include mq('ll') {
+        margin-top: rem(120); 
+        padding-bottom: rem(120);
+     }
+ 
 }
 .introduction__each-wrapper.introduction__each-wrapper-nizi {
     margin-top: rem(355);
     padding-bottom: rem(144);
+    @include mq('ll') {
+        margin-top: rem(120); 
+        padding-bottom: rem(120);
+     }
+ 
 }
 
 //グレーの背景
@@ -280,6 +355,9 @@
     top: rem(950);
     width: rem(958);
     height: rem(612);
+    @include mq('ll') {
+        top: rem(724);
+    }
 }
 .introduction__each-wrapper-tsuru::before {
     z-index: -2;
@@ -291,34 +369,7 @@
     top: rem(205);
     width: rem(958);
     height: rem(612);
+    @include mq('ll') {
+       top: rem(300); 
+    }
 }
-// .introduction__background1,
-// .introduction__background2,
-// .introduction__background3,
-// .introduction__background4 {
-//     background-color: $gray;
-//     z-index: -2;
-//     position: absolute;
-
-// }
-// .introduction__background1,
-// .introduction__background3 {
-//     right: 0;
-//     top: rem(220);
-//     width: rem(833);
-//     height: rem(1250);
-// }
-
-// .introduction__background2 {
-//     left: 0;
-//     top: rem(950);
-//     width: rem(958);
-//     height: rem(612);
-
-// }
-// .introduction__background4 {
-//     left: 0;
-//     top: rem(205);
-//     width: rem(958);
-//     height: rem(612);
-// }

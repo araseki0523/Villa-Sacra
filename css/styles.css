@@ -346,6 +346,12 @@ select::-ms-expand {
   width: 100%;
   margin: 0 auto;
 }
+@media screen and (max-width: 1280px) {
+  .access__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 .access__map-area {
   margin-top: 68px;
@@ -364,7 +370,12 @@ select::-ms-expand {
 }
 @media screen and (max-width: 768px) {
   #wrapper:before {
-    padding-top: 65%;
+    padding-top: 45%;
+  }
+}
+@media screen and (max-width: 375px) {
+  #wrapper:before {
+    padding-top: 70%;
   }
 }
 
@@ -663,6 +674,12 @@ select::-ms-expand {
   width: 100%;
   margin: 0 auto;
 }
+@media screen and (max-width: 1280px) {
+  .blog-top__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 .blog-top__container {
   margin-top: 55px;
@@ -686,6 +703,17 @@ select::-ms-expand {
   font-weight: 500;
   font-family: "Yu Gothic", "YuGothic", sans-serif;
   line-height: 1.7;
+}
+@media screen and (max-width: 1280px) {
+  .blog-top__each-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .blog-top__box {
@@ -735,6 +763,23 @@ select::-ms-expand {
   margin-right: 144px;
   margin-right: 9rem;
 }
+@media screen and (max-width: 1280px) {
+  .box__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .box__right {
+    margin-top: 3.125rem;
+  }
+}
 
 .box__left,
 .box__right {
@@ -743,6 +788,12 @@ select::-ms-expand {
   width: 46%;
   padding: 55px 80px;
   padding: 3.4375rem 5rem;
+}
+@media screen and (max-width: 768px) {
+  .box__left,
+  .box__right {
+    width: 75%;
+  }
 }
 
 .box__left-title-ja,
@@ -1716,6 +1767,11 @@ select::-ms-expand {
   padding-left: 50px;
   padding-left: 3.125rem;
 }
+@media screen and (max-width: 768px) {
+  .footer__list-item span {
+    padding-left: 0;
+  }
+}
 
 .footer__sns {
   background-color: #fff;
@@ -2237,11 +2293,16 @@ sp版（1280px以下）のモーダル内メニュー
   display: -ms-flexbox;
   display: flex;
 }
-
-.introduction__container-hana {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+@media screen and (max-width: 1280px) {
+  .introduction__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .introduction__container-even {
@@ -2256,6 +2317,17 @@ sp版（1280px以下）のモーダル内メニュー
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 1280px) {
+  .introduction__container-even {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .introduction__each-wrapper {
   margin-top: 213px;
@@ -2263,6 +2335,11 @@ sp版（1280px以下）のモーダル内メニュー
   padding-bottom: 100px;
   padding-bottom: 6.25rem;
   position: relative;
+}
+@media screen and (max-width: 1280px) {
+  .introduction__each-wrapper {
+    margin-top: 7.5rem;
+  }
 }
 
 .introduction__each-wrapper::after {
@@ -2282,11 +2359,21 @@ sp版（1280px以下）のモーダル内メニュー
   max-width: 40.5625rem;
   position: relative;
 }
+@media screen and (max-width: 1280px) {
+  .introduction__image-big {
+    max-width: 51.25rem;
+  }
+}
 
 .introduction__image-big::before {
   content: "";
   display: block;
   padding-top: 100%;
+}
+@media screen and (max-width: 1280px) {
+  .introduction__image-big::before {
+    padding-top: 65%;
+  }
 }
 
 .introduction__image-big img {
@@ -2318,10 +2405,23 @@ sp版（1280px以下）のモーダル内メニュー
   line-height: 1.7;
   letter-spacing: 0.5em;
 }
+@media screen and (max-width: 1280px) {
+  .introduction__room-name {
+    margin-top: 3.125rem;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+}
 
 .introduction__room-name-tsuki {
   margin-top: 305px;
   margin-top: 19.0625rem;
+}
+@media screen and (max-width: 1280px) {
+  .introduction__room-name-tsuki {
+    margin-top: 3rem;
+  }
 }
 
 .introduction__container-even > .introduction__room-name {
@@ -2337,6 +2437,13 @@ sp版（1280px以下）のモーダル内メニュー
   width: 386px;
   width: 24.125rem;
 }
+@media screen and (max-width: 1280px) {
+  .introduction__image-wrapper {
+    width: 24.3125rem;
+    margin-top: 4.25rem;
+    margin-left: 0;
+  }
+}
 
 .introduction__image-wrapper-tora {
   margin-top: -171px;
@@ -2344,12 +2451,24 @@ sp版（1280px以下）のモーダル内メニュー
   margin-left: 94px;
   margin-left: 5.875rem;
 }
+@media screen and (max-width: 1280px) {
+  .introduction__image-wrapper-tora {
+    margin-top: 3.125rem;
+    margin-left: 1.625rem;
+  }
+}
 
 .introduction__image-wrapper-tsuru {
   margin-top: -171px;
   margin-top: -10.6875rem;
   margin-left: 91px;
   margin-left: 5.6875rem;
+}
+@media screen and (max-width: 1280px) {
+  .introduction__image-wrapper-tsuru {
+    margin-top: 3.125rem;
+    margin-left: 2.625rem;
+  }
 }
 
 .introduction__image-small {
@@ -2394,6 +2513,17 @@ sp版（1280px以下）のモーダル内メニュー
   width: 61px;
   border-bottom: 1px solid yellow;
 }
+@media screen and (max-width: 768px) {
+  .introduction__person::after {
+    bottom: -0.3125rem;
+    left: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .introduction__person::after {
+    left: 35%;
+  }
+}
 
 .introduction__capacity {
   margin-top: 48px;
@@ -2421,6 +2551,11 @@ sp版（1280px以下）のモーダル内メニュー
   width: 100%;
   background-color: #fff;
   color: #000;
+}
+@media screen and (max-width: 1280px) {
+  .introduction__text-area {
+    max-width: 56.25rem;
+  }
 }
 
 .introduction__text-area-tsuki {
@@ -2492,6 +2627,15 @@ sp版（1280px以下）のモーダル内メニュー
 .introduction__each-wrapper.introduction__each-wrapper-hana {
   padding-bottom: 170px;
   padding-bottom: 10.625rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+@media screen and (max-width: 1280px) {
+  .introduction__each-wrapper.introduction__each-wrapper-hana {
+    margin-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
 }
 
 .introduction__each-wrapper.introduction__each-wrapper-tsuki {
@@ -2500,12 +2644,24 @@ sp版（1280px以下）のモーダル内メニュー
   padding-bottom: 165px;
   padding-bottom: 10.3125rem;
 }
+@media screen and (max-width: 1280px) {
+  .introduction__each-wrapper.introduction__each-wrapper-tsuki {
+    margin-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+}
 
 .introduction__each-wrapper.introduction__each-wrapper-tora {
   margin-top: 375px;
   margin-top: 23.4375rem;
   padding-bottom: 179px;
   padding-bottom: 11.1875rem;
+}
+@media screen and (max-width: 1280px) {
+  .introduction__each-wrapper.introduction__each-wrapper-tora {
+    margin-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
 }
 
 .introduction__each-wrapper.introduction__each-wrapper-shizuku {
@@ -2514,6 +2670,12 @@ sp版（1280px以下）のモーダル内メニュー
   padding-bottom: 173px;
   padding-bottom: 10.8125rem;
 }
+@media screen and (max-width: 1280px) {
+  .introduction__each-wrapper.introduction__each-wrapper-shizuku {
+    margin-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+}
 
 .introduction__each-wrapper.introduction__each-wrapper-tsuru {
   margin-top: 376px;
@@ -2521,12 +2683,24 @@ sp版（1280px以下）のモーダル内メニュー
   padding-bottom: 150px;
   padding-bottom: 9.375rem;
 }
+@media screen and (max-width: 1280px) {
+  .introduction__each-wrapper.introduction__each-wrapper-tsuru {
+    margin-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+}
 
 .introduction__each-wrapper.introduction__each-wrapper-nizi {
   margin-top: 355px;
   margin-top: 22.1875rem;
   padding-bottom: 144px;
   padding-bottom: 9rem;
+}
+@media screen and (max-width: 1280px) {
+  .introduction__each-wrapper.introduction__each-wrapper-nizi {
+    margin-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
 }
 
 .introduction__each-wrapper-hana,
@@ -2569,6 +2743,11 @@ sp版（1280px以下）のモーダル内メニュー
   height: 612px;
   height: 38.25rem;
 }
+@media screen and (max-width: 1280px) {
+  .introduction__each-wrapper-tsuki::before {
+    top: 45.25rem;
+  }
+}
 
 .introduction__each-wrapper-tsuru::before {
   z-index: -2;
@@ -2583,6 +2762,11 @@ sp版（1280px以下）のモーダル内メニュー
   width: 59.875rem;
   height: 612px;
   height: 38.25rem;
+}
+@media screen and (max-width: 1280px) {
+  .introduction__each-wrapper-tsuru::before {
+    top: 18.75rem;
+  }
 }
 
 .items {
@@ -2704,6 +2888,11 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 228px;
   margin-top: 14.25rem;
 }
+@media screen and (max-width: 1280px) {
+  .layout-access {
+    margin-top: 13.75rem;
+  }
+}
 
 .layout-affiliated {
   margin-top: 246px;
@@ -2729,6 +2918,11 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 235px;
   margin-top: 14.6875rem;
 }
+@media screen and (max-width: 1280px) {
+  .layout-blog-top {
+    margin-top: 13.75rem;
+  }
+}
 
 .layout-box {
   margin-top: 320px;
@@ -2738,6 +2932,11 @@ sp版（1280px以下）のモーダル内メニュー
   font-weight: 500;
   font-family: "Yu Mincho", "YuMincho", sans-serif;
   line-height: 1.7;
+}
+@media screen and (max-width: 1280px) {
+  .layout-box {
+    margin-top: 13.75rem;
+  }
 }
 
 .room-box.layout-box {
@@ -2842,9 +3041,9 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 250px;
   margin-top: 15.625rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
   .layout-gallery {
-    margin-top: 7.5rem;
+    margin-top: 13.75rem;
   }
 }
 
@@ -2919,6 +3118,11 @@ sp版（1280px以下）のモーダル内メニュー
 .layout-recruit {
   margin-top: 286px;
   margin-top: 17.875rem;
+}
+@media screen and (max-width: 1280px) {
+  .layout-recruit {
+    margin-top: 13.75rem;
+  }
 }
 
 .layout-reservation {
@@ -3123,8 +3327,32 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .mv__title-adjust {
-  margin-top: -100px;
-  margin-top: -6.25rem;
+  margin-top: -600px;
+  margin-top: -37.5rem;
+  background-color: transparent;
+  background-color: red;
+  width: 500px;
+  width: 31.25rem;
+  height: 545px;
+  height: 34.0625rem;
+}
+@media screen and (max-width: 768px) {
+  .mv__title-adjust {
+    width: 31rem;
+    height: 28rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mv__title-adjust {
+    width: 32rem;
+    height: 30rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mv__title-adjust {
+    width: 175px;
+    height: 164px;
+  }
 }
 
 .mv__title {
@@ -3150,6 +3378,11 @@ sp版（1280px以下）のモーダル内メニュー
   width: 1152px;
   width: 72rem;
   padding-top: 59.6%;
+}
+@media screen and (max-width: 1280px) {
+  .mv__image {
+    padding-top: 85%;
+  }
 }
 
 .mv__image img {
@@ -3696,6 +3929,11 @@ sp版（1280px以下）のモーダル内メニュー
   width: 100%;
   margin: 0 auto;
 }
+@media screen and (max-width: 1280px) {
+  .recruit__bg-image {
+    max-width: 64.25rem;
+  }
+}
 
 .recruit__title-area.section-title {
   padding-top: 70px;
@@ -3719,6 +3957,11 @@ sp版（1280px以下）のモーダル内メニュー
   margin: 5.375rem auto 0;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .recruit__button-area {
+    margin-top: 3.125rem;
+  }
+}
 
 .reservation__inner {
   max-width: 987px;
@@ -3726,7 +3969,7 @@ sp版（1280px以下）のモーダル内メニュー
   width: 100%;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
   .reservation__inner {
     padding-left: 20px;
     padding-right: 20px;
