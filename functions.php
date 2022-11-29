@@ -215,6 +215,19 @@ function my_archives_link($link_html){
     }
 add_filter('get_archives_link', 'my_archives_link');
 
-
+//アイキャッチの設定
+function catch_that_image() {
+    global $post, $posts;
+    $first_img = '';
+    ob_start();
+    ob_end_clean();
+    $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+    $first_img = $matches [1] [0];
+    if(empty($first_img)){
+        // 記事内で画像がなかったときのためのデフォルト画像を指定
+        $first_img = "/images/default.jpg";
+    }
+    return $first_img;
+}
 
 ?>

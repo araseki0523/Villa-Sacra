@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.pagenation {
+    max-width: rem(540);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-numbers {
+    display: inline-block;
+    font-size: rem(16);
+    font-weight: 500;
+    font-family: $yugothic;
+    border: 1px solid $white;
+    border-radius: 10px;
+    padding: rem(9) rem(14);
+}
+
+.page-numbers img {
+    max-width: rem(35);
+    width: 100%;
+}

@@ -540,6 +540,17 @@ select::-ms-expand {
   margin-top: 0.5625rem;
 }
 
+.amenitiesList__note {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.7;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+  margin-top: 66px;
+  margin-top: 4.125rem;
+  text-align: right;
+}
+
 .banners {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -1033,6 +1044,11 @@ select::-ms-expand {
   letter-spacing: 0.1em;
 }
 
+.concept__sign {
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+
 .contact__inner {
   max-width: 818px;
   max-width: 51.125rem;
@@ -1364,6 +1380,38 @@ select::-ms-expand {
 .convention__wrapper17 {
   margin-top: 70px;
   margin-top: 4.375rem;
+}
+
+.directin-sp-form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.directin-sp-form-input.directin-sp-form-guest-selector {
+  position: relative;
+}
+
+.directin-sp-form-input.directin-sp-form-guest-selector::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  width: 2.5rem;
+  height: 40px;
+  height: 2.5rem;
+  background-image: url("../images/top/person-icon.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .error-404__inner {
@@ -2848,8 +2896,8 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .layout-reservation {
-  margin-top: 42px;
-  margin-top: 2.625rem;
+  margin-top: 61px;
+  margin-top: 3.8125rem;
 }
 
 .layout-room-sub {
@@ -3049,26 +3097,25 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .mv__title-adjust {
-  margin-top: -100px;
-  margin-top: -6.25rem;
+  top: min(42vw, 582px);
+  left: 58px;
+  left: 3.625rem;
+  position: absolute;
 }
 
 .mv__title {
-  position: absolute;
   font-size: 63px;
   font-size: 3.9375rem;
-  top: 42%;
-  left: 58px;
-  left: 3.625rem;
   letter-spacing: 0.13em;
   font-family: "Sawarabi Mincho", serif;
-  z-index: 10;
+  position: relative;
 }
 
 .mv__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .mv__image {
@@ -3170,6 +3217,32 @@ sp版（1280px以下）のモーダル内メニュー
   line-height: 1.75;
   margin-top: 10px;
   margin-top: 0.625rem;
+}
+
+.pagenation {
+  max-width: 540px;
+  max-width: 33.75rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-numbers {
+  display: inline-block;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 9px 14px;
+  padding: 0.5625rem 0.875rem;
+}
+
+.page-numbers img {
+  max-width: 35px;
+  max-width: 2.1875rem;
+  width: 100%;
 }
 
 .plan {
@@ -3646,8 +3719,9 @@ sp版（1280px以下）のモーダル内メニュー
   background-color: #fff;
   height: 176px;
   height: 11rem;
-  width: 938px;
-  width: 58.625rem;
+  width: 100%;
+  max-width: 937px;
+  max-width: 58.5625rem;
   margin: 0 auto;
 }
 
@@ -3663,6 +3737,13 @@ sp版（1280px以下）のモーダル内メニュー
   font-size: 2.125rem;
 }
 
+.reservation__icon {
+  padding-top: 70px;
+  padding-top: 4.375rem;
+  background-image: url(../images/common/arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .reservation__title--en {
   margin-top: -6px;

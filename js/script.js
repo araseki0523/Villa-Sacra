@@ -308,7 +308,6 @@ function slideAnime(){
 		slideAnime();/* アニメーション用の関数を呼ぶ*/
 	});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
   
-<<<<<<< HEAD
 
   //予約ホーム,モーダル
 $(function () {
@@ -331,11 +330,10 @@ directInSearchPanelConfig = {
 }  
 
 
-=======
 // Contact Form 7の自動pタグ無効
 add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false() {
   return false;
 }
->>>>>>> d484befdba1af62a24c521084963ec0e3ab2c910
+
 });

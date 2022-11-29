@@ -1,17 +1,16 @@
-<<<<<<< HEAD
 <!-- オーバーレイ -->
 <div id="overlay" class="overlay"></div>
 <!-- モーダルウィンドウ -->
 <div class="reserve__modal">
-
+    <div class="reservation__title-area section-title">
+        <h2 class="reservation__title--ja section-title__ja">ご予約</h2>
+        <p class="reservation__title--en section-title__en">Booking now</p>
+    </div>
     <!-- 予約フォーム -->
     <div class="search-panel-frame"></div>
     <!-- 閉じるボタン -->
     <button class="js-close button-close">×</button>
 </div>
-=======
-<!-- まだ -->
->>>>>>> d484befdba1af62a24c521084963ec0e3ab2c910
 
 <div class="reservation layout-reservation">
     <!-- モーダルを開くボタン -->
