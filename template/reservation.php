@@ -1,4 +1,4 @@
-<!-- リンク未貼付 -->
+<!-- まだ -->
 
 <div class="reservation layout-reservation">
     <div class="reservation__inner">

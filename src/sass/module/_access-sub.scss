@@ -24,7 +24,7 @@
 .access-sub__title img {}
 
 .access-sub__wrapper {
-    margin-top: rem(50);
+    margin-top: rem(52);
 }
 
 .access-sub__map-area {
@@ -32,7 +32,7 @@
 }
 
 .access-sub__box {
-    margin-top: rem(64);
+    margin-top: rem(57);
     display: flex;
     justify-content: center;
     @include mq('md') {
@@ -41,10 +41,23 @@
 }
 
 .access-sub__left {
-    border-right: 1px solid $white;
-    padding-right: rem(100);
+    margin-left: rem(-70);
+    position: relative;
+    font-family: $yugothic;
     @include mq('md') {
        border-right: none; 
+    }
+}
+.access-sub__left::after {
+    position: absolute;
+    content: "";
+    background-color: $white;
+    width: 1px;
+    height: 77px;
+    right:rem(-110);
+    top: 0;
+    @include mq('md') {
+       display: none; 
     }
 }
 
@@ -59,7 +72,7 @@
 }
 
 .access-sub__right {
-    padding-left: rem(100);
+    padding-left: rem(216);
     @include mq('md') {
         margin-top: rem(20);
        padding-left: 0; 
@@ -82,5 +95,5 @@
 }
 
 .access-sub__sub-text+.access-sub__sub-text {
-    margin-left: rem(20);
+    margin-left: rem(23);
 }

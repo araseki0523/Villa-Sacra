@@ -1,4 +1,3 @@
-<section class="gallery layout-gallery">
     <div class="gallery__inner">
         <div class="gallery__title-area section-title">
             <h2 class="gallery__title-ja section-title__ja">写真ギャラリー</h2>
@@ -26,4 +25,3 @@
             <a href="" class="gallery__button button">MORE</a>
         </div>
     </div>
-</section>

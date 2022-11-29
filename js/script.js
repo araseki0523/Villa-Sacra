@@ -76,7 +76,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // トップページのスライダー
   let swiperTop = {
     loop: true,
-    spaceBetween: 10,
+    spaceBetween: 38,
     slidesPerView: 2.5,
     breakpoints: {
       768: {
@@ -264,39 +264,6 @@ const slider6 = new Swiper(".slider6", {
       }
     });
   }
-
-  // function slideAnime2() {
-  //   $('.leftAnime2').each(function () {
-  //     var elemPos = $(this).offset().top - 50;
-  //     var scroll = $(window).scrollTop();
-  //     var windowHeight = $(window).height();
-  //     if (scroll >= elemPos - windowHeight) {
-  //       $(this).addClass("slideAnimeLeftRight2"); 
-  //       $(this).children(".leftAnimeInner").addClass("slideAnimeRightLeft2"); 
-  //     } else {
-  //       $(this).removeClass("slideAnimeLeftRight2");
-  //       $(this).children(".leftAnimeInner").removeClass("slideAnimeRightLeft2");
-
-  //     }
-  //   });
-  // }
-
-  // function slideAnime1() {
-  //   $('.leftAnime1').each(function () {
-  //     var elemPos = $(this).offset().top - 50;
-  //     var scroll = $(window).scrollTop();
-  //     var windowHeight = $(window).height();
-  //     if (scroll >= elemPos - windowHeight) {
-  //       $(this).addClass("slideAnimeLeftRight"); 
-  //       $(this).children(".leftAnimeInner").addClass("slideAnimeRightLeft"); 
-  //     } else {
-  //       $(this).removeClass("slideAnimeLeftRight");
-  //       $(this).children(".leftAnimeInner").removeClass("slideAnimeRightLeft");
-
-  //     }
-  //   });
-  // }
-
     // ハンバーガーメニュー
     $(function(){
       const hamburger = $('#js-hamburger');
@@ -341,5 +308,9 @@ function slideAnime(){
 		slideAnime();/* アニメーション用の関数を呼ぶ*/
 	});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
   
-
+// Contact Form 7の自動pタグ無効
+add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
+function wpcf7_autop_return_false() {
+  return false;
+}
 });

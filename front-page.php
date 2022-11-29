@@ -215,7 +215,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 <p class="box__left-title-en section-title__en">Restaurant</p>
             </div>
             <div class="box__button-area">
-                <!-- リンク未貼付 -->
+                <!-- まだ -->
                 <a href="" class="box__button button">MORE</a>
             </div>
         </div>
@@ -225,7 +225,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 <p class="box__right-title-en section-title__en">Shared space</p>
             </div>
             <div class="box__button-area">
-                <!-- リンク未貼付 -->
+                <!-- まだ -->
                 <a href="" class="box__button button">MORE</a>
             </div>
         </div>
@@ -305,6 +305,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
 </section>
 
 <section class="recruit layout-recruit">
+
     <div class="recruit__bg-image">
         <div class="recruit__inner">
             <div class="recruit__title-area section-title">

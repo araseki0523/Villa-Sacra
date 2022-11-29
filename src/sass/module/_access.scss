@@ -32,7 +32,7 @@
 #wrapper:before {
     content:"";
     display: block;
-    padding-top: 31%; 
+    padding-top: 32%; 
     @include mq('md') {
        padding-top: 65%;
     }

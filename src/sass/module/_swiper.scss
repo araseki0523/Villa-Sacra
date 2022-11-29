@@ -1,18 +1,19 @@
 @use 'global' as *;
 
 .mySwiper-top {
+    height: rem(360);
     @include mq('md') {
-        height: inherit; 
+       height: rem(400); 
     }
 }
 
 .swiper-wrapper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
-    width: 30%;
+    width: 28%;
 }
 
 .mySwiper-top.swiper-wrapper.swiper-slide,
 .mySwiper-top.swiper-wrapper.swiper-slide img{
-    width: rem(360);
+    width: rem(344);
     @include mq(md) {
         width: 100%;
     }
