@@ -342,4 +342,25 @@ function slideAnime(){
 	});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
   
 
+  //予約ホーム,モーダル
+$(function () {
+  $('.js-open').click(function () {
+      $('#overlay, .reserve__modal').fadeIn();
+  });
+  $('.js-close').click(function () {
+      $('#overlay, .reserve__modal').fadeOut();
+  });
+});
+//予約ホーム,検索パネル
+directInSearchPanelConfig = {
+  rooms: "1..3", // 部屋数の選択可能範囲
+  guests: [
+    {
+      type: 0,
+      range: "1..5", // 人数 (大人) の選択可能範囲
+    },
+  ],
+}  
+
+
 });

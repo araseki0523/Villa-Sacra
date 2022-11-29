@@ -3553,6 +3553,63 @@ sp版（1280px以下）のモーダル内メニュー
   }
 }
 
+/* モーダルウィンドウ */
+.reserve__modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 1076px;
+  width: 100%;
+  height: 562px;
+  background-color: white;
+  border: solid 1px #707070;
+  z-index: 11;
+}
+@media screen and (max-width: 768px) {
+  .reserve__modal {
+    top: 30%;
+    left: 50%;
+    z-index: 12;
+  }
+}
+
+.search-panel-frame {
+  z-index: 99;
+}
+
+button.reservation__modal {
+  display: contents;
+}
+
+/* 閉じるボタン */
+.button-close {
+  z-index: 12;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0px;
+  right: 30px;
+  font-size: 32px;
+  font-size: 2rem;
+  background-color: #fff;
+  cursor: pointer;
+  border-style: none;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
 .room-sub__inner {
   max-width: 1076px;
   max-width: 67.25rem;
