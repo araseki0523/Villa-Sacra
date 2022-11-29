@@ -47,7 +47,7 @@
     position: absolute;
 }
 .mv-sub__title-ja{
-    font-size: min(2vw,36px);   
+    font-size: clamp(24px,2.635431918vw,36px); 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -56,9 +56,9 @@
     @include mq(md) {
         font-size: rem(28);
     }
-    @include mq('sm') {
-       font-size: rem(36); 
-    }
+    // @include mq('sm') {
+    //     font-size: rem(36); 
+    // }
 }
 .mv-sub__title-en {
     top: 60%;
