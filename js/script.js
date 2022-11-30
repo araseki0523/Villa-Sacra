@@ -308,9 +308,32 @@ function slideAnime(){
 		slideAnime();/* アニメーション用の関数を呼ぶ*/
 	});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
   
+
+  //予約ホーム,モーダル
+$(function () {
+  $('.js-open').click(function () {
+      $('#overlay, .reserve__modal').fadeIn();
+  });
+  $('.js-close').click(function () {
+      $('#overlay, .reserve__modal').fadeOut();
+  });
+});
+//予約ホーム,検索パネル
+directInSearchPanelConfig = {
+  rooms: "1..3", // 部屋数の選択可能範囲
+  guests: [
+    {
+      type: 0,
+      range: "1..5", // 人数 (大人) の選択可能範囲
+    },
+  ],
+}  
+
+
 // Contact Form 7の自動pタグ無効
 add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false() {
   return false;
 }
+
 });

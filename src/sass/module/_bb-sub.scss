@@ -7,11 +7,8 @@
     max-width: rem(1076);
     width: 100%;
     margin: auto;
-    @include mq('ll') {
-        padding-left: $padding-sp;
-        padding-right: $padding-sp; 
-     }
- 
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
 }
 
 .bb-sub__lead {

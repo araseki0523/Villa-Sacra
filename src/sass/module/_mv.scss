@@ -22,6 +22,10 @@
 }
 // relativeでも可
 .mv__title-adjust {
+    top: min(42vw, 582px);
+    // top: 43%;
+    left: rem(58);
+    position: absolute;
     margin-top: rem(-600);
     background-color: transparent;
     width:  rem(500);
@@ -38,19 +42,18 @@
         width: 175px;
         height: 164px;
     }
+
 }
 .mv__title {
-    position: absolute;
     font-size: rem(63);
-    top: 42%;
-    left: rem(58);
     letter-spacing: 0.13em;
     font-family: $sawarabi;
-    z-index: 10;
+    position: relative;
 }
 
 .mv__wrapper {
     display: flex;
+    position: relative;
 }
 
 .mv__image {
