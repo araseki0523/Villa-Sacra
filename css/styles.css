@@ -474,7 +474,8 @@ select::-ms-expand {
   max-width: 980px;
   max-width: 61.25rem;
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .amenitiesList__items {
@@ -621,6 +622,12 @@ select::-ms-expand {
   max-width: 67.25rem;
   width: 100%;
   margin: auto;
+}
+@media screen and (max-width: 1280px) {
+  .bb-sub__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .bb-sub__lead {
@@ -847,7 +854,7 @@ select::-ms-expand {
 @media screen and (max-width: 1280px) {
   .box__left,
   .box__right {
-    width: 70%;
+    width: 85%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -912,6 +919,13 @@ select::-ms-expand {
   max-width: 67.25rem;
   width: 100%;
   margin: auto;
+}
+@media screen and (max-width: 1280px) {
+  .breakFast,
+  .dinner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .breakFast__title-area.sub-section-title::before,
@@ -1078,6 +1092,12 @@ select::-ms-expand {
   max-width: 55.625rem;
   width: 100%;
   margin: 0 auto;
+}
+@media screen and (max-width: 1280px) {
+  .concept__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .concept__container {
@@ -2248,6 +2268,13 @@ sp版（1280px以下）のモーダル内メニュー
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 1920px) {
+  .introduction__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media screen and (max-width: 1280px) {
   .introduction__container {
     -webkit-box-orient: vertical;
@@ -2264,13 +2291,24 @@ sp版（1280px以下）のモーダル内メニュー
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+@media screen and (max-width: 1920px) {
+  .introduction__container-even {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .introduction__container-even {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 @media screen and (max-width: 1280px) {
   .introduction__container-even {
@@ -2683,6 +2721,12 @@ sp版（1280px以下）のモーダル内メニュー
   height: 1250px;
   height: 78.125rem;
 }
+@media screen and (max-width: 1280px) {
+  .introduction__each-wrapper-hana::before,
+  .introduction__each-wrapper-tora::before {
+    width: 37.5rem;
+  }
+}
 
 .introduction__each-wrapper-tsuki::before {
   z-index: -2;
@@ -2700,6 +2744,7 @@ sp版（1280px以下）のモーダル内メニュー
 }
 @media screen and (max-width: 1280px) {
   .introduction__each-wrapper-tsuki::before {
+    width: 37.5rem;
     top: 45.25rem;
   }
 }
@@ -2720,6 +2765,7 @@ sp版（1280px以下）のモーダル内メニュー
 }
 @media screen and (max-width: 1280px) {
   .introduction__each-wrapper-tsuru::before {
+    width: 37.5rem;
     top: 18.75rem;
   }
 }
@@ -3310,12 +3356,21 @@ sp版（1280px以下）のモーダル内メニュー
   height: 39.75rem;
   z-index: -1;
 }
+@media screen and (max-width: 1280px) {
+  .mv__background {
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mv__background {
+    height: 39.75rem;
+  }
+}
 
 .mv__title-adjust {
   margin-top: -600px;
   margin-top: -37.5rem;
   background-color: transparent;
-  background-color: red;
   width: 500px;
   width: 31.25rem;
   height: 545px;
@@ -3360,11 +3415,20 @@ sp版（1280px以下）のモーダル内メニュー
 
 .mv__image {
   position: relative;
-  width: 1152px;
-  width: 72rem;
-  padding-top: 59.6%;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1920px) {
+  .mv__image {
+    width: 100%;
+    padding-top: 50%;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .mv__image {
+    width: 72rem;
+    padding-top: 59.6%;
+  }
+}
+@media screen and (max-width: 768px) {
   .mv__image {
     padding-top: 85%;
   }
@@ -4094,6 +4158,12 @@ sp版（1280px以下）のモーダル内メニュー
   margin: 57px auto;
   margin: 3.5625rem auto;
 }
+@media screen and (max-width: 1280px) {
+  .room__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 .room__title {
   position: relative;
@@ -4327,6 +4397,12 @@ sp版（1280px以下）のモーダル内メニュー
   max-width: 61.1875rem;
   width: 100%;
   margin: 0 auto;
+}
+@media screen and (max-width: 1280px) {
+  .shared-space__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .shared-space__title-ja {
