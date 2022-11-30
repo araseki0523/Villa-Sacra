@@ -1180,6 +1180,7 @@ select::-ms-expand {
 }
 
 .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact7__item,
+.wpcf7-form-control.wpcf7-text.contact7__item,
 .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7__item {
   width: 155%;
   border-radius: 5px;
@@ -1187,6 +1188,7 @@ select::-ms-expand {
 }
 @media screen and (max-width: 768px) {
   .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact7__item,
+  .wpcf7-form-control.wpcf7-text.contact7__item,
   .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7__item {
     margin-top: 1.25rem;
     width: 100%;
