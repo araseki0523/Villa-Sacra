@@ -13,8 +13,6 @@
     max-width: vw(1366, 214);
     width: 100%;
     padding-top: 46.57%;
-    // width: 15.6617%;
-    // height: rem(636);
     z-index: -1;
 }
 // relativeでも可
@@ -48,17 +46,10 @@
 
 .mv__image {
     position: relative;
-    // max-width: rem(1152);
-    // width: 100%;
-    // padding-top: 59.6%;
     width: 85%;
     max-width: vw(1366, 1152);
     padding-top: vw(1366, 814);
     margin-left: auto;
-    // @include mq("ll") {
-    //     max-width: vw(1280, 1152);
-    //     padding-top: vw(1280, 814);
-    // }
 }
 
 .mv__image img {

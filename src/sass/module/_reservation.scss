@@ -8,8 +8,8 @@
     width: 100%;
     margin: 0 auto;
     padding-left: $padding-pc;
-    padding-right: $padding-pc;
-    @include mq(md) {
+    padding-right: $padding-pc;    
+    @include mq(ll) {
         padding-left: $padding-sp;
         padding-right: $padding-sp;
     }
