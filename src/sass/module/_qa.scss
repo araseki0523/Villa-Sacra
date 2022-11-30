@@ -5,10 +5,21 @@
 }
 
 .qa__inner {
-    max-width: rem(1076);
     width: 100%;
-    margin-left: rem(145);
+    margin-left: auto;
     margin-right: auto;
+    @media screen and (max-width:1920px){
+        max-width: rem(1280);
+    }
+    @include mq('comp') {
+        max-width: rem(1076);
+        margin-left: rem(145);
+    }
+    @include mq('ll') {
+       margin-left: auto;
+       padding-left: $padding-sp;
+       padding-right: $padding-sp;
+    }
 }
 
 .qa__contents {
@@ -51,8 +62,13 @@
     top: 45%;
     transform: translateY(-50%);
     left: 26px;
+    @include mq('md') {
+       top: 40%;
+       height: 22px; 
+    }
      @media screen and (max-width:600px){
-        top: 33%;
+        top: 42%;
+        left: 15px;
         width: 15px;
         height: 15px;
     } 
@@ -67,8 +83,9 @@
     padding-bottom: rem(0);
     font-size: rem(16);
     font-family: $yugothic;
-    @include mq('md') {
-       padding-right: rem(50);
+    padding-right: rem(60); 
+    @include mq('sm') {
+       padding-right: rem(80); 
     }
     @include mq('ss') {
        padding-right: rem(70); 
@@ -154,6 +171,9 @@
     width: 50%;
     height: 2px;
     transform: translate(-50%, -50%);
+    @include mq('sm') {
+        left: 140%;
+    }
 }
 
   /* そのうち1本を縦にする */

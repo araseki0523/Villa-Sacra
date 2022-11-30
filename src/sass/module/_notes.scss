@@ -12,14 +12,23 @@
 .notes__title-area.section-title-sub::before,
 .notes__title-area.section-title-sub::after {
     width: rem(400);
+    @include mq('ll') {
+       width: rem(150); 
+    }
 }
 
 .notes__title-area.section-title-sub::before {
     left: 18%;
+    @include mq('ll') {
+        
+    }
 }
 
 .notes__title-area.section-title-sub::after {
     right: -19%;
+    @include mq('ll') {
+        right: 2%;
+    }
 }
 
 

@@ -53,6 +53,9 @@
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 	color: #000;
+	@include mq('sm') {
+		right: 7%;
+	}
 }
 
 .facility__button span {
@@ -64,6 +67,9 @@
 	margin-left: 37px;
 	margin-left: 2.3125rem;
 	margin-right: 60px;
+	@include mq('mm') {
+		font-size: rem(32);
+	}
 }
 
 .facility__gallery {

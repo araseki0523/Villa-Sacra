@@ -1,0 +1,8 @@
+@use 'global' as *;
+
+.layout-gallery-single {
+    margin-top: rem(320);
+    @include mq('ll') {
+       margin-top: rem(200); 
+    }
+}

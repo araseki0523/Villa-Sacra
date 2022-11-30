@@ -13,6 +13,12 @@
     width: 15.6617%;
     height: rem(636);
     z-index: -1;
+    @include mq('ll') {
+       height: rem(400); 
+    }
+    @include mq('md') {
+       height: rem(636); 
+    }
 }
 // relativeでも可
 .mv__title-adjust {
@@ -22,7 +28,6 @@
     position: absolute;
     margin-top: rem(-600);
     background-color: transparent;
-    background-color: red;
     width:  rem(500);
     height: rem(545);
     @include mq('md') {
@@ -53,10 +58,15 @@
 
 .mv__image {
     position: relative;
-    width: rem(1152);
-    padding-top: 59.6%; 
-}
-    @include mq('ll') {
+    @media screen and (max-width:1920px){
+        width: 100%;
+        padding-top: 50%;
+    }
+    @include mq('comp') {
+        width: rem(1152);
+        padding-top: 59.6%; 
+    }
+    @include mq('md') {
        padding-top: 85%; 
     }
 }
