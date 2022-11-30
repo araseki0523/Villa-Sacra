@@ -1171,14 +1171,13 @@ select::-ms-expand {
   width: 100%;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
   .contact__inner {
     max-width: 85%;
     padding-right: 20px;
     padding-left: 20px;
   }
 }
-
 .contact__thanks {
   text-align: center;
 }
@@ -1218,12 +1217,15 @@ select::-ms-expand {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  white-space: nowrap;
 }
 
 .contact7__required,
 .contact7__any {
   padding: 2px 10px;
   padding: 0.125rem 0.625rem;
+  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .contact7__required {
@@ -1268,6 +1270,13 @@ select::-ms-expand {
   border-radius: 5px;
   color: #fff;
 }
+@media screen and (max-width: 960px) {
+  .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact7__item,
+  .wpcf7-form-control.wpcf7-text.contact7__item,
+  .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7__item {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact7__item,
   .wpcf7-form-control.wpcf7-text.contact7__item,
@@ -1281,6 +1290,11 @@ select::-ms-expand {
   width: 165%;
   border-radius: 5px;
   color: #fff;
+}
+@media screen and (max-width: 960px) {
+  .wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required.contact7__item {
+    width: 106%;
+  }
 }
 @media screen and (max-width: 768px) {
   .wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required.contact7__item {
@@ -1606,6 +1620,11 @@ input[type=checkbox] {
   transform: rotate(45deg);
   color: #000;
 }
+@media screen and (max-width: 600px) {
+  .facility__button span::after {
+    right: 7%;
+  }
+}
 
 .facility__button span {
   text-align: center;
@@ -1618,6 +1637,11 @@ input[type=checkbox] {
   margin-left: 37px;
   margin-left: 2.3125rem;
   margin-right: 60px;
+}
+@media screen and (max-width: 960px) {
+  .facility__button span {
+    font-size: 2rem;
+  }
 }
 
 .facility__gallery {
@@ -3475,13 +3499,23 @@ sp版（1280px以下）のモーダル内メニュー
   width: 400px;
   width: 25rem;
 }
+@media screen and (max-width: 1280px) {
+  .notes__title-area.section-title-sub::before,
+  .notes__title-area.section-title-sub::after {
+    width: 9.375rem;
+  }
+}
 
 .notes__title-area.section-title-sub::before {
   left: 18%;
 }
-
 .notes__title-area.section-title-sub::after {
   right: -19%;
+}
+@media screen and (max-width: 1280px) {
+  .notes__title-area.section-title-sub::after {
+    right: 2%;
+  }
 }
 
 .notes__title-area {
@@ -3769,12 +3803,27 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .qa__inner {
-  max-width: 1076px;
-  max-width: 67.25rem;
   width: 100%;
-  margin-left: 145px;
-  margin-left: 9.0625rem;
+  margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 1920px) {
+  .qa__inner {
+    max-width: 80rem;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .qa__inner {
+    max-width: 67.25rem;
+    margin-left: 9.0625rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .qa__inner {
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .qa__contents {
@@ -3822,9 +3871,16 @@ sp版（1280px以下）のモーダル内メニュー
           transform: translateY(-50%);
   left: 26px;
 }
+@media screen and (max-width: 768px) {
+  .qa__label::before {
+    top: 40%;
+    height: 22px;
+  }
+}
 @media screen and (max-width: 600px) {
   .qa__label::before {
-    top: 33%;
+    top: 42%;
+    left: 15px;
     width: 15px;
     height: 15px;
   }
@@ -3845,10 +3901,12 @@ sp版（1280px以下）のモーダル内メニュー
   font-size: 16px;
   font-size: 1rem;
   font-family: "Yu Gothic", "YuGothic", sans-serif;
+  padding-right: 60px;
+  padding-right: 3.75rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .qa__label > p {
-    padding-right: 3.125rem;
+    padding-right: 5rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -3952,6 +4010,12 @@ sp版（1280px以下）のモーダル内メニュー
   height: 2px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 600px) {
+  .icon:before,
+  .icon:after {
+    left: 140%;
+  }
 }
 
 /* そのうち1本を縦にする */

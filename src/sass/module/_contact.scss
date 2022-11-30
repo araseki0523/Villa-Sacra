@@ -8,11 +8,12 @@
     max-width: rem(818);
     width: 100%;
     margin: 0 auto;
+    @include mq('ll') {
+        max-width: 85%;         
+        padding-right: $padding-sp;
+        padding-left: $padding-sp;
+    }
     @include mq('md') {
-       max-width: 85%; 
-       padding-right: $padding-sp;
-       padding-left: $padding-sp;
-   
     }
 }
 
