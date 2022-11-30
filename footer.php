@@ -1,5 +1,3 @@
-<?php wp_footer(); ?>
-
 <?php
 $privacypolicy = esc_url(home_url('/privacypolicy/'));
 ?>
@@ -71,7 +69,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
   </div>
 </footer>
 
-
+<?php wp_footer(); ?>
 </body>
 
 </html>

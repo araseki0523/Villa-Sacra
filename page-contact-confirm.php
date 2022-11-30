@@ -33,7 +33,6 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
   </div>
 </section>
 
-
 <section class="gallery-contact layout-gallery-contact">
   <?php get_template_part('template/gallery'); ?>
 </section>
