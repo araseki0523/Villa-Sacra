@@ -1182,6 +1182,8 @@ select::-ms-expand {
 .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact7__item,
 .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7__item {
   width: 155%;
+  border-radius: 5px;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact7__item,
@@ -1193,6 +1195,8 @@ select::-ms-expand {
 
 .wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required.contact7__item {
   width: 165%;
+  border-radius: 5px;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   .wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required.contact7__item {
