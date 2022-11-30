@@ -702,6 +702,12 @@ select::-ms-expand {
   margin-right: auto;
 }
 
+.blog-page-detail__button-area {
+  margin-top: 100px;
+  margin-top: 6.25rem;
+  text-align: center;
+}
+
 .blog-page__inner {
   max-width: 1078px;
   max-width: 67.375rem;
@@ -2969,6 +2975,16 @@ sp版（1280px以下）のモーダル内メニュー
 .layout-gallery-access {
   margin-top: 336px;
   margin-top: 21rem;
+}
+
+.layout-gallery-bb {
+  margin-top: 320px;
+  margin-top: 20rem;
+}
+@media screen and (max-width: 768px) {
+  .layout-gallery-bb {
+    margin-top: 13.75rem;
+  }
 }
 
 .layout-gallery-concept {

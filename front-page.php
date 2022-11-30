@@ -1,12 +1,11 @@
 <?php
 $home = esc_url(home_url('/'));
-$newsarchive = esc_url(home_url('/news-archive/'));
+$archive = esc_url(home_url('/news-archive/'));
 $concept = esc_url(home_url('/concept/'));
 $room = esc_url(home_url('/room/'));
 $bb = esc_url(home_url('/bb/'));
 $facility = esc_url(home_url('/facility/'));
 $access = esc_url(home_url('/access/'));
-$blog = esc_url(home_url('/blog/'));
 $qa = esc_url(home_url('/qa/'));
 $contact = esc_url(home_url('/contact/'));
 $privacypolicy = esc_url(home_url('/privacypolicy/'));
@@ -271,7 +270,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
             <?php wp_reset_postdata(); ?>
 
             <div class="blog-top__button-area">
-                <a href="<?php echo $newsarchive ?>" class="blog-top__button button">MORE</a>
+                <a href="<?php echo $archive ?>" class="blog-top__button button">MORE</a>
             </div>
         </div>
     </div>

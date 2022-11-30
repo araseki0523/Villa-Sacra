@@ -1,3 +1,9 @@
+<?php
+$home = esc_url(home_url('/'));
+$archive = esc_url(home_url('/news-archive/'));
+?>
+
+
 <?php get_header(); ?>
 
 <section class="mv-sub layout-mv-sub">
@@ -34,8 +40,15 @@
 
         <?php endwhile;
         endif; ?>
+
+        <div class="blog-page-detail__button-area">
+            <a href="<?php echo $archive ?>" class="blog-page-detail__button button">一覧へ戻る</a>
+        </div>
+
     </div>
 </section>
+
+
 
 
 <section class="gallery-single layout-gallery-single">

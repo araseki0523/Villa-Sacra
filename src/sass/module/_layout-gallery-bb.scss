@@ -1,0 +1,9 @@
+
+@use 'global' as *;
+
+.layout-gallery-bb {
+    margin-top: rem(320);
+    @include mq('md') {
+        margin-top: rem(220);
+    }
+}
