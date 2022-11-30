@@ -1201,6 +1201,12 @@ select::-ms-expand {
   }
 }
 
+input[type=checkbox] {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+}
+
 .convention__inner {
   max-width: 1078px;
   max-width: 67.375rem;
