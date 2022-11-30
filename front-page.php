@@ -232,7 +232,9 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
     </div>
 </section>
 
-<?php get_template_part('template/gallery'); ?>
+<section class="gallery layout-gallery">
+    <?php get_template_part('template/gallery'); ?>
+</section>
 
 <section class="blog-top layout-blog-top">
     <div class="blog-top__inner">
@@ -318,7 +320,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 ボランティアスタッフ・フリーアコモデーションスタッフ・正社員・アルバイトを募集中です♪
             </p>
             <div class="recruit__button-area">
-                <!-- リンク未貼付 -->
+                <!-- まだ -->
                 <a href="" class="recruit__button button">MORE</a>
             </div>
         </div>

@@ -11,6 +11,8 @@
     padding-right: $padding-pc;
 
     @include mq(md) {
+    
+    @include mq(ll) {
         padding-left: $padding-sp;
         padding-right: $padding-sp;
     }

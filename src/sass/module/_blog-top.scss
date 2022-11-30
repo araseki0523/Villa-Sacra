@@ -8,7 +8,10 @@
     max-width: rem(1078);
     width: 100%;
     margin: 0 auto;
-
+    @include mq('ll') {
+       padding-left: $padding-sp;
+       padding-right: $padding-sp; 
+    }
 }
 
 .blog-top__title-area {
@@ -37,6 +40,10 @@
     font-weight: 500;
     font-family: $yugothic;
     line-height: 1.7;
+    @include mq('ll') {
+       flex-direction: column; 
+       align-items: baseline;
+    }
 }
 .blog-top__box {
     display: flex;

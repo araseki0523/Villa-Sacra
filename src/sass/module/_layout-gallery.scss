@@ -2,7 +2,7 @@
 
 .layout-gallery {
         margin-top: rem(250);
-        @include mq(md) {
-                margin-top: rem(120);
+        @include mq('ll') {
+           margin-top: rem(220);     
         }
 }
