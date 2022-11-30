@@ -21,6 +21,7 @@
     @include mq(md) {
         width: 80%;
         margin: rem(30) auto;
+        font-size: max(2vw,12px)
     }
 }
 

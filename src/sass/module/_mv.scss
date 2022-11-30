@@ -1,54 +1,42 @@
-@use 'global' as *;
+@use "global" as *;
 
 .mv {
     padding-top: 58px;
 }
 .mv__inner {
-    overflow: hidden;
 }
 .mv__background {
     display: inline-block;
     margin-top: auto;
     background-color: $gray;
-    width: 15.6617%;
-    height: rem(636);
+    max-width: rem(214);
+    max-width: vw(1366, 214);
+    width: 100%;
+    padding-top: 46.57%;
     z-index: -1;
-    @include mq('ll') {
-       height: rem(400); 
-    }
-    @include mq('md') {
-       height: rem(636); 
-    }
 }
 // relativeでも可
 .mv__title-adjust {
-    top: min(42vw, 582px);
-    // top: 43%;
+    top: vw(1366, 582);
     left: rem(58);
+    left: fmin(58, 1366);
     position: absolute;
-    margin-top: rem(-600);
-    background-color: transparent;
-    width:  rem(500);
-    height: rem(545);
-    @include mq('md') {
-       width: rem(496);
-       height: rem(448);
+    @include mq(md) {
+        top: vw(765, 450);
+        left: rem(40);
+        left: fmin(40, 765);
     }
-    @include mq('sm') {
-        width: rem(512);
-        height: rem(480);
-    }
-    @include mq('ss') {
-        width: 175px;
-        height: 164px;
-    }
-
 }
 .mv__title {
     font-size: rem(63);
+    font-size: fmin(63, 1366);
     letter-spacing: 0.13em;
     font-family: $sawarabi;
     position: relative;
+    @include mq("ll") {
+        font-size: rem(60);
+        font-size: fmin(60, 1280);
+    }
 }
 
 .mv__wrapper {
@@ -58,18 +46,12 @@
 
 .mv__image {
     position: relative;
-    @media screen and (max-width:1920px){
-        width: 100%;
-        padding-top: 50%;
-    }
-    @include mq('comp') {
-        width: rem(1152);
-        padding-top: 59.6%; 
-    }
-    @include mq('md') {
-       padding-top: 85%; 
-    }
+    width: 85%;
+    max-width: vw(1366, 1152);
+    padding-top: vw(1366, 814);
+    margin-left: auto;
 }
+
 .mv__image img {
     position: absolute;
     top: 50%;
@@ -80,4 +62,3 @@
     object-fit: cover;
     object-position: center;
 }
-

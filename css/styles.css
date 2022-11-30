@@ -497,6 +497,9 @@ select::-ms-expand {
     margin-top: 0rem;
     padding-bottom: 0rem;
     border-bottom: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -555,6 +558,11 @@ select::-ms-expand {
   margin-top: 4.125rem;
   text-align: right;
 }
+@media screen and (max-width: 768px) {
+  .amenitiesList__note {
+    text-align: center;
+  }
+}
 
 .banners {
   display: grid;
@@ -578,7 +586,7 @@ select::-ms-expand {
 }
 @media screen and (max-width: 768px) {
   .banners__img {
-    max-width: 12.5rem;
+    max-width: 100%;
   }
 }
 
@@ -635,12 +643,6 @@ select::-ms-expand {
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
-}
-@media screen and (max-width: 1280px) {
-  .bb-sub__inner {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 
 .bb-sub__lead {
@@ -865,7 +867,7 @@ select::-ms-expand {
 .box__right {
   background-color: #fff;
   color: #000;
-  width: 46%;
+  min-width: 46%;
   padding: 55px 80px;
   padding: 3.4375rem 5rem;
 }
@@ -886,9 +888,16 @@ select::-ms-expand {
 .box__right-title-ja {
   font-size: 36px;
   font-size: 2.25rem;
+  font-size: min(2.6vw, 36px);
   font-weight: 500;
   font-family: "Yu Mincho", "YuMincho", sans-serif;
   line-height: 1.7;
+}
+@media screen and (max-width: 768px) {
+  .box__left-title-ja,
+  .box__right-title-ja {
+    font-size: 2.25rem;
+  }
 }
 
 .box__left-title-en,
@@ -1050,6 +1059,7 @@ select::-ms-expand {
   .card {
     width: 80%;
     margin: 1.875rem auto;
+    font-size: max(2vw, 12px);
   }
 }
 
@@ -1424,38 +1434,6 @@ input[type=checkbox] {
   margin-top: 4.375rem;
 }
 
-
-.directin-sp-form {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-}
-
-.directin-sp-form-input.directin-sp-form-guest-selector {
-  position: relative;
-}
-
-.directin-sp-form-input.directin-sp-form-guest-selector::before {
-  position: absolute;
-  content: "";
-  width: 40px;
-  width: 2.5rem;
-  height: 40px;
-  height: 2.5rem;
-  background-image: url("../images/top/person-icon.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-
 .convention__wrapper2 {
   margin-top: 93px;
   margin-top: 5.8125rem;
@@ -1539,6 +1517,38 @@ input[type=checkbox] {
 .convention__index {
   font-size: 24px;
   font-size: 1.5rem;
+}
+
+.directin-sp-form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.directin-sp-form-input.directin-sp-form-guest-selector {
+  position: relative;
+}
+
+.directin-sp-form-input.directin-sp-form-guest-selector::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  width: 2.5rem;
+  height: 40px;
+  height: 2.5rem;
+  background-image: url("../images/top/person-icon.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .error-404__inner {
@@ -1777,6 +1787,8 @@ input[type=checkbox] {
 @media screen and (max-width: 768px) {
   .footer__content {
     display: block;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 
@@ -2827,6 +2839,7 @@ sp版（1280px以下）のモーダル内メニュー
   left: 0;
   top: 950px;
   top: 59.375rem;
+  max-width: 100%;
   width: 958px;
   width: 59.875rem;
   height: 612px;
@@ -2848,6 +2861,7 @@ sp版（1280px以下）のモーダル内メニュー
   left: 0;
   top: 205px;
   top: 12.8125rem;
+  max-width: 100%;
   width: 958px;
   width: 59.875rem;
   height: 612px;
@@ -2871,6 +2885,7 @@ sp版（1280px以下）のモーダル内メニュー
 }
 @media screen and (max-width: 768px) {
   .items {
+    margin-top: 5rem;
     width: 100%;
     display: block;
     margin: auto;
@@ -3469,69 +3484,46 @@ sp版（1280px以下）のモーダル内メニュー
   padding-top: 58px;
 }
 
-.mv__inner {
-  overflow: hidden;
-}
-
 .mv__background {
   display: inline-block;
   margin-top: auto;
   background-color: #272727;
-  width: 15.6617%;
-  height: 636px;
-  height: 39.75rem;
+  max-width: 214px;
+  max-width: 13.375rem;
+  max-width: 15.6661786237vw;
+  width: 100%;
+  padding-top: 46.57%;
   z-index: -1;
-}
-@media screen and (max-width: 1280px) {
-  .mv__background {
-    height: 25rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .mv__background {
-    height: 39.75rem;
-  }
 }
 
 .mv__title-adjust {
-
-  top: min(42vw, 582px);
+  top: 42.6061493411vw;
   left: 58px;
   left: 3.625rem;
+  left: min(4.24597vw, 58px);
   position: absolute;
-  margin-top: -600px;
-  margin-top: -37.5rem;
-  background-color: transparent;
-  width: 500px;
-  width: 31.25rem;
-  height: 545px;
-  height: 34.0625rem;
 }
 @media screen and (max-width: 768px) {
   .mv__title-adjust {
-    width: 31rem;
-    height: 28rem;
-  }
-}
-@media screen and (max-width: 600px) {
-  .mv__title-adjust {
-    width: 32rem;
-    height: 30rem;
-  }
-}
-@media screen and (max-width: 375px) {
-  .mv__title-adjust {
-    width: 175px;
-    height: 164px;
+    top: 58.8235294118vw;
+    left: 2.5rem;
+    left: min(5.22876vw, 40px);
   }
 }
 
 .mv__title {
   font-size: 63px;
   font-size: 3.9375rem;
+  font-size: min(4.61201vw, 63px);
   letter-spacing: 0.13em;
   font-family: "Sawarabi Mincho", serif;
   position: relative;
+}
+@media screen and (max-width: 1280px) {
+  .mv__title {
+    font-size: 3.75rem;
+    font-size: min(4.6875vw, 60px);
+  }
 }
 
 .mv__wrapper {
@@ -3543,23 +3535,10 @@ sp版（1280px以下）のモーダル内メニュー
 
 .mv__image {
   position: relative;
-}
-@media screen and (max-width: 1920px) {
-  .mv__image {
-    width: 100%;
-    padding-top: 50%;
-  }
-}
-@media screen and (max-width: 1366px) {
-  .mv__image {
-    width: 72rem;
-    padding-top: 59.6%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .mv__image {
-    padding-top: 85%;
-  }
+  width: 85%;
+  max-width: 84.3338213763vw;
+  padding-top: 59.5900439239vw;
+  margin-left: auto;
 }
 
 .mv__image img {
@@ -4265,7 +4244,6 @@ sp版（1280px以下）のモーダル内メニュー
   font-size: 2.125rem;
 }
 
-
 .reservation__icon {
   padding-top: 70px;
   padding-top: 4.375rem;
@@ -4673,6 +4651,12 @@ button.reservation__modal {
 .section-title__ja {
   font-size: 34px;
   font-size: 2.125rem;
+  font-size: min(2.4vw, 34px);
+}
+@media screen and (max-width: 768px) {
+  .section-title__ja {
+    font-size: 2.125rem;
+  }
 }
 
 .section-title__en {

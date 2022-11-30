@@ -367,6 +367,7 @@
     content: "";
     left: 0;
     top: rem(950);
+    max-width: 100%;
     width: rem(958);
     height: rem(612);
     @include mq('ll') {
@@ -382,6 +383,7 @@
     content: "";
     left: 0;
     top: rem(205);
+    max-width: 100%;
     width: rem(958);
     height: rem(612);
     @include mq('ll') {

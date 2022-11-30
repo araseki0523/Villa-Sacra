@@ -1,3 +1,15 @@
+<?php
+$home = esc_url(home_url('/'));
+$concept = esc_url(home_url('/concept/'));
+$room = esc_url(home_url('/room/'));
+$bb = esc_url(home_url('/bb/'));
+$facility = esc_url(home_url('/facility/'));
+$access = esc_url(home_url('/access/'));
+$blog = esc_url(home_url('/blog/'));
+$qa = esc_url(home_url('/qa/'));
+$contact = esc_url(home_url('/contact/'));
+$privacypolicy = esc_url(home_url('/privacypolicy/'));
+?>
 <?php get_header(); ?>
 
 <section class="mv-sub layout-mv-sub">
@@ -153,18 +165,18 @@
     <section class="roomplan layout-roomplan">
         <div class="roomplan__inner">
             <div class="roomplan__container">
-                <a href="/">
+                <a href="https://d-reserve.jp/GSEA001F01300/GSEA001A01?hotelCode=0000001003&searchTagCode=&sumrm=1&dpck=false&pagingKey=1&sortKeyOrder=0&dayuse=true&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0">
                     <div class="roomplan__left">
                         <p class="roomplan__title">DAY USE（日帰り）</p>
                 </a>
             </div>
             <div class="roomplan__center">
-                <a href="/">
+                <a href="https://d-reserve.jp/GSEA002F01400/GSEA002A01?hotelCode=0000001003&pl=PL00004311&ci=20221130&co=20221201&rmcd001=RM00002148&rm001=1&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0&sumrm=1&way=1&cinon=true&dpck=false">
                     <p class="roomplan__title">ACTIVITY</p>
                 </a>
             </div>
             <div class="roomplan__right">
-                <a href="/">
+                <a href="https://d-reserve.jp/GSEA002F01400/GSEA002A01?hotelCode=0000001003&pl=PL00004748&ci=20221130&co=20221201&rmcd001=RM00002148&rm001=1&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0&sumrm=1&way=1&cinon=true&dpck=false">
                     <p class="roomplan__title">全国旅行支援</p>
                 </a>
             </div>
@@ -250,7 +262,27 @@
             </div>
         </div>
     </div>
-    <?php get_template_part('template/roomplan'); ?>
+    <section class="roomplan layout-roomplan">
+    <div class="roomplan__inner">
+        <div class="roomplan__container">
+            <div class="roomplan__left">
+                <a href="https://d-reserve.jp/GSEA001F01300/GSEA001A01?hotelCode=0000001003&searchTagCode=&sumrm=1&dpck=false&pagingKey=1&sortKeyOrder=0&dayuse=true&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0">
+                    <p class="roomplan__title">DAY USE</p>
+                </a>
+            </div>
+            <div class="roomplan__center">
+                <a href="https://d-reserve.jp/GSEA002F01400/GSEA002A01?hotelCode=0000001003&pl=PL00004313&ci=20221130&co=20221201&rmcd001=RM00002149&rm001=1&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0&sumrm=1&way=1&cinon=true&dpck=false">
+                    <p class="roomplan__title">ACTIVITY</p>
+                </a>
+            </div>
+            <div class="roomplan__right">
+                <a href="https://d-reserve.jp/GSEA002F01400/GSEA002A01?hotelCode=0000001003&pl=PL00004313&ci=20221130&co=20221201&rmcd001=RM00002149&rm001=1&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0&sumrm=1&way=1&cinon=true&dpck=false">
+                    <p class="roomplan__title">旅行支援</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 </section>
 
 <div class="room__border-line"></div>
@@ -329,7 +361,27 @@
             </div>
         </div>
     </div>
-    <?php get_template_part('template/roomplan'); ?>
+    <section class="roomplan layout-roomplan">
+    <div class="roomplan__inner">
+        <div class="roomplan__container">
+            <div class="roomplan__left">
+                <a href="https://d-reserve.jp/GSEA001F01300/GSEA001A01?hotelCode=0000001003&searchTagCode=&sumrm=1&dpck=false&pagingKey=1&sortKeyOrder=0&dayuse=true&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0">
+                    <p class="roomplan__title">DAY USE</p>
+                </a>
+            </div>
+            <div class="roomplan__center">
+                <a href="https://d-reserve.jp/GSEA002F01400/GSEA002A01?hotelCode=0000001003&pl=PL00004315&ci=20221130&co=20221201&rmcd001=RM00002151&rm001=1&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0&sumrm=1&way=1&cinon=true&dpck=false">
+                    <p class="roomplan__title">ACTIVITY</p>
+                </a>
+            </div>
+            <div class="roomplan__right">
+                <a href="https://d-reserve.jp/GSEA002F01400/GSEA002A01?hotelCode=0000001003&pl=PL00004730&ci=20221130&co=20221201&rmcd001=RM00002151&rm001=1&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0&sumrm=1&way=1&cinon=true&dpck=false">
+                    <p class="roomplan__title">旅行支援</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 </section>
 
 <div class="room__border-line"></div>
@@ -402,7 +454,28 @@
             </div>
         </div>
     </div>
-    <?php get_template_part('template/roomplan'); ?>
+    <section class="roomplan layout-roomplan">
+    <div class="roomplan__inner">
+        <div class="roomplan__container">
+            <div class="roomplan__left">
+                <a href="https://d-reserve.jp/GSEA001F01300/GSEA001A01?hotelCode=0000001003&searchTagCode=&sumrm=1&dpck=false&pagingKey=1&sortKeyOrder=0&dayuse=true&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0">
+                    <p class="roomplan__title">DAY USE</p>
+                </a>
+            </div>
+            <div class="roomplan__center">
+                <a href="https://d-reserve.jp/GSEA002F01400/GSEA002A01?hotelCode=0000001003&pl=PL00004316&ci=20221130&co=20221201&rmcd001=RM00002152&rm001=1&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0&sumrm=1&way=1&cinon=true&dpck=false">
+                    <p class="roomplan__title">ACTIVITY</p>
+                </a>
+            </div>
+            <div class="roomplan__right">
+                <a href="https://d-reserve.jp/GSEA002F01400/GSEA002A01?hotelCode=0000001003&pl=PL00004316&ci=20221130&co=20221201&rmcd001=RM00002152&rm001=1&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0&sumrm=1&way=1&cinon=true&dpck=false">
+                    <p class="roomplan__title">旅行支援</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
 </section>
 
 <div class="room__border-line"></div>
@@ -479,7 +552,28 @@
             </div>
         </div>
     </div>
-    <?php get_template_part('template/roomplan'); ?>
+    <section class="roomplan layout-roomplan">
+    <div class="roomplan__inner">
+        <div class="roomplan__container">
+            <div class="roomplan__left">
+                <a href="https://d-reserve.jp/GSEA001F01300/GSEA001A01?hotelCode=0000001003&searchTagCode=&sumrm=1&dpck=false&pagingKey=1&sortKeyOrder=0&dayuse=true&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0">
+                    <p class="roomplan__title">DAY USE</p>
+                </a>
+            </div>
+            <div class="roomplan__center">
+                <a href="https://d-reserve.jp/GSEA002F01400/GSEA002A01?hotelCode=0000001003&pl=PL00004314&ci=20221130&co=20221201&rmcd001=RM00002150&rm001=1&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0&sumrm=1&way=1&cinon=true&dpck=false">
+                    <p class="roomplan__title">ACTIVITY</p>
+                </a>
+            </div>
+            <div class="roomplan__right">
+                <a href="https://d-reserve.jp/GSEA002F01400/GSEA002A01?hotelCode=0000001003&pl=PL00004314&ci=20221130&co=20221201&rmcd001=RM00002150&rm001=1&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0&sumrm=1&way=1&cinon=true&dpck=false">
+                    <p class="roomplan__title">旅行支援</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
 </section>
 
 <div class="room__border-line"></div>
@@ -560,7 +654,28 @@
             </div>
         </div>
     </div>
-    <?php get_template_part('template/roomplan'); ?>
+    <section class="roomplan layout-roomplan">
+    <div class="roomplan__inner">
+        <div class="roomplan__container">
+            <div class="roomplan__left">
+                <a href="https://d-reserve.jp/GSEA001F01300/GSEA001A01?hotelCode=0000001003&searchTagCode=&sumrm=1&dpck=false&pagingKey=1&sortKeyOrder=0&dayuse=true&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0">
+                    <p class="roomplan__title">DAY USE</p>
+                </a>
+            </div>
+            <div class="roomplan__center">
+                <a href="https://d-reserve.jp/GSEA002F01400/GSEA002A01?hotelCode=0000001003&pl=PL00004317&ci=20221130&co=20221201&rmcd001=RM00002187&rm001=1&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0&sumrm=1&way=1&cinon=true&dpck=false">
+                    <p class="roomplan__title">ACTIVITY</p>
+                </a>
+            </div>
+            <div class="roomplan__right">
+                <a href="https://d-reserve.jp/GSEA002F01400/GSEA002A01?hotelCode=0000001003&pl=PL00004317&ci=20221130&co=20221201&rmcd001=RM00002187&rm001=1&lt001=0_1_2_3_4_5_6&lnum001=1_0_0_0_0_0_0&sumrm=1&way=1&cinon=true&dpck=false">
+                    <p class="roomplan__title">旅行支援</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
 </section>
 <div class="room__border-line"></div>
 
@@ -574,8 +689,7 @@
                 <p class="box__left-title-en section-title__en">Restaurant</p>
             </div>
             <div class="box__button-area">
-                <!-- まだ -->
-                <a href="" class="box__button button">MORE</a>
+                <a href="<?php echo $bb ?>" class="box__button button">MORE</a>
             </div>
         </div>
         <div class="box__right">
@@ -584,8 +698,7 @@
                 <p class="box__right-title-en section-title__en">Shared space</p>
             </div>
             <div class="box__button-area">
-                <!-- まだ -->
-                <a href="" class="box__button button">MORE</a>
+                <a href="<?php echo $facility ?>" class="box__button button">MORE</a>
             </div>
         </div>
     </div>
@@ -594,5 +707,6 @@
 <section class="room__gallery layout-sub-room">
     <?php get_template_part('template/gallery'); ?>
 </section>
+
 
 <?php get_footer(); ?>

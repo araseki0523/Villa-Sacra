@@ -22,7 +22,7 @@
 .box__right {
     background-color: $white;
     color: $black;
-    width: 46%;
+    min-width: 46%;
     padding: rem(55) rem(80);
     @include mq('ll') {
         width: 85%;
@@ -37,9 +37,13 @@
 .box__left-title-ja,
 .box__right-title-ja {
     font-size: rem(36);
+    font-size: min(2.6vw,36px);
     font-weight: 500;
     font-family: $yumincho;
     line-height: 1.7;
+    @include mq(md) {
+        font-size: rem(36);
+    }
 }
 
 .box__left-title-en,

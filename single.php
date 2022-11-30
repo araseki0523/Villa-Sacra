@@ -1,6 +1,7 @@
 <?php
 $home = esc_url(home_url('/'));
 $archive = esc_url(home_url('/news-archive/'));
+$blog = esc_url(home_url('/blog/'));
 ?>
 
 
@@ -9,7 +10,7 @@ $archive = esc_url(home_url('/news-archive/'));
 <section class="mv-sub layout-mv-sub">
     <div class="mv-sub__inner">
         <div class="mv-sub__image">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/blog/blog.jpg" alt="ブログ画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/blog/blog-top.jpg" alt="ブログ画像">
             <div class="mv-sub__background">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/common/mv-sub-mask.png" alt="メインビュータイトル下の背景画像">
             </div>
@@ -42,7 +43,7 @@ $archive = esc_url(home_url('/news-archive/'));
         endif; ?>
 
         <div class="blog-page-detail__button-area">
-            <a href="<?php echo $archive ?>" class="blog-page-detail__button button">一覧へ戻る</a>
+            <a href="<?php echo $blog ?>" class="blog-page-detail__button button">一覧へ戻る</a>
         </div>
 
     </div>

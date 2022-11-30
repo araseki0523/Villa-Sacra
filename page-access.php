@@ -76,7 +76,7 @@
         <p class="affiliated__text">〒248-0007&nbsp;&nbsp;神奈川県鎌倉市大町 2-2-35</p>
         <div class="affiliated__button-area">
           <!-- まだ -->
-          <a href="" class="affiliated__button button">詳しくはこちら</a>
+          <a href="https://goo.gl/maps/76pf75CafaVhmq3n6" class="affiliated__button button">詳しくはこちら</a>
         </div>
       </div>
     </div>

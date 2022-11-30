@@ -19,7 +19,7 @@
     // height: auto;
     position: relative;
     @include mq(md) {
-        max-width: rem(200);
+        max-width: 100%;
     }
 }
 

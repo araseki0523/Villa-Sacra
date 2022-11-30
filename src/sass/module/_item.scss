@@ -6,6 +6,7 @@
     padding-left: $padding-pc;
     padding-right: $padding-pc;
     @include mq(md) {
+        margin-top: rem(80);
         width: 100%;
         display: block;
         margin: auto;
