@@ -24,7 +24,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
             </div>
         </div>
         <div class="mv__title-adjust slide-in leftAnime">
-            <span class="mv__title slide-in_inner leftAnimeInner">深呼吸する<br>という贅沢。</span>
+            <span class="mv__title slide-in_inner leftAnimeInner">深呼吸をする<br>という贅沢。</span>
         </div>
     </div>
 </section>

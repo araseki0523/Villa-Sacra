@@ -32,7 +32,8 @@ function my_script_init()
 	wp_enqueue_script( 'my-js-jQ', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0.1', true );	
     
     wp_enqueue_style( 'google-fonts', 'link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&family=Sawarabi+Mincho&display=swap"', false );
-    
+    //予約サイト埋め込み（検索パネルは/headの上）
+    wp_enqueue_style( 'reserve-css', "https://d-reserve.jp/hotel-business/search-panel/directin-search-panel-2.0.css"  );
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 
@@ -214,6 +215,19 @@ function my_archives_link($link_html){
     }
 add_filter('get_archives_link', 'my_archives_link');
 
-
+//アイキャッチの設定
+function catch_that_image() {
+    global $post, $posts;
+    $first_img = '';
+    ob_start();
+    ob_end_clean();
+    $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+    $first_img = $matches [1] [0];
+    if(empty($first_img)){
+        // 記事内で画像がなかったときのためのデフォルト画像を指定
+        $first_img = "/images/default.jpg";
+    }
+    return $first_img;
+}
 
 ?>

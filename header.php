@@ -66,7 +66,19 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
   <meta property="og:site_name" content="">
   <!-- ファビコン -->
   <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/common/favicon.ico" />
-
+<!-- 検索パネルタグの埋め込み -->
+<script src="https://d-reserve.jp/hotel-business/search-panel/directin-search-panel-2.0.js"
+            data-hotel="0000001003" data-target=".search-panel-frame"></script>
+        <script>
+            directInSearchPanelConfig = {
+                rooms: "1..3", // 部屋数の選択可能範囲
+                guests: [
+                    {
+                        type: 0,
+                        range: "1..5", // 人数 (大人) の選択可能範囲
+                    },
+                ],
+            }  </script>
   <?php wp_head(); ?>
 </head>
 

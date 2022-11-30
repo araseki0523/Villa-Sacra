@@ -1,7 +1,6 @@
-@use 'global' as *;
+@use "global" as *;
 
 .concept {
-
 }
 
 .concept__inner {
@@ -17,15 +16,14 @@
 .concept__background-image {
     // text1の上からtext4の下まで
     background-image: url(../images/concept/background-message-concept.png);
-    background-position :initial;
-    background-size :55% rem(1500);
+    background-position: initial;
+    background-size: 55% rem(1500);
     background-repeat: no-repeat;
     font-family: $sub-font-family;
 }
 .concept__text1,
 .concept__text2,
-.concept__text3
-.concept__text2,
+.concept__text3 .concept__text2,
 .concept__text4,
 .concept__text5,
 .concept__text6,
@@ -51,21 +49,21 @@
 .concept__text3 {
     padding-top: rem(97);
     line-height: 2.5;
-    letter-spacing: 0.2em;    
+    letter-spacing: 0.2em;
 }
 .concept__text4 {
     padding-top: rem(97);
     line-height: 2.5;
-    letter-spacing: 0.2em;   
+    letter-spacing: 0.2em;
 }
 .concept__text5 {
     padding-top: rem(50);
-    letter-spacing: 0.2em;    
+    letter-spacing: 0.2em;
 }
 .concept__text6 {
     padding-top: rem(105);
     line-height: 2.5;
-    letter-spacing: 0.2em;    
+    letter-spacing: 0.2em;
 }
 .concept__text7 {
     padding-top: rem(151);
@@ -74,5 +72,5 @@
     letter-spacing: 0.1em;
 }
 .concept__sign {
-
+    margin-top: rem(32);
 }

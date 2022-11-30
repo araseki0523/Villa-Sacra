@@ -64,37 +64,34 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide shared-swiper__contant">
                                 <div class="shared-swiper__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility1.jpg" alt="共有スペース1">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility1.jpg" alt="共用パスルーム">
                                 </div>
                                 <div class="shared-swiper__content">
-                                    <div class="shared-swiper__title">この文章はダミーです</div>
+                                    <div class="shared-swiper__title">共用パスルーム</div>
                                     <p class="shared-swiper__text">
-                                        この文章はダミーです文字の大きさ・量・字間・行間等を確認するために
-                                        入れていますこの文章はダミーです
+                                    シャンプー、リンス、ボディソープが設置された、共用バスルームが1ヶ所あります。　
                                     </p>
                                 </div>
                             </div>
                             <div class="swiper-slide shared-swiper__contant">
                                 <div class="shared-swiper__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility2.jpg" alt="共有スペース2">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility2.jpg" alt="共用トイレ">
                                 </div>
                                 <div class="shared-swiper__content">
-                                    <div class="shared-swiper__title">この文章はダミーです</div>
+                                    <div class="shared-swiper__title">共用トイレ</div>
                                     <p class="shared-swiper__text">
-                                        この文章はダミーです文字の大きさ・量・字間・行間等を確認するために
-                                        入れていますこの文章はダミーです
+                                    ウォッシュレットが付いた、おしゃれなデザインの洋式共用トイレが2ヶ所あります。
                                     </p>
                                 </div>
                             </div>
                             <div class="swiper-slide shared-swiper__contant">
                                 <div class="shared-swiper__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility3.jpg" alt="共有スペース3">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility3.jpg" alt="洗面台">
                                 </div>
                                 <div class="shared-swiper__content">
-                                    <div class="shared-swiper__title">この文章はダミーです</div>
+                                    <div class="shared-swiper__title">洗面台</div>
                                     <p class="shared-swiper__text">
-                                        この文章はダミーです文字の大きさ・量・字間・行間等を確認するために
-                                        入れていますこの文章はダミーです
+                                    女性に人気の可愛いデザインの洗面台です。ハンドソープが設置されています。
                                     </p>
                                 </div>
                             </div>
@@ -122,73 +119,65 @@
             <div class="amenitiesList">
                 <div class="amenitiesList__items">
                     <div class="amenitiesList__item">
-                        <h3 class="amenitiesList__title">この文章はダミーです</h3>
+                        <h3 class="amenitiesList__title">フェイスタオル・バスタオル</h3>
                         <p class="amenitiesList__text">
-                            この文章はダミーです文字の大きさ・量・字間・行間等を確認するために
-                            入れていますこの文章はダミーです
+                        各お部屋にフェイスタオル1枚とバスタオル1枚が設置されています。
                         </p>
                     </div>
                     <div class="amenitiesList__item">
-                        <h3 class="amenitiesList__title">この文章はダミーです</h3>
+                        <h3 class="amenitiesList__title">シャンプ・リンス・ボディソープ</h3>
                         <p class="amenitiesList__text">
-                            この文章はダミーです文字の大きさ・量・字間・行間等を確認するために
-                            入れていますこの文章はダミーです
+                        浴室には、シャンプ・リンス・ボディソープが備え付けられています。
                         </p>
                     </div>
                     <div class="amenitiesList__item">
-                        <h3 class="amenitiesList__title">この文章はダミーです</h3>
+                        <h3 class="amenitiesList__title">ドライヤー</h3>
                         <p class="amenitiesList__text">
-                            この文章はダミーです文字の大きさ・量・字間・行間等を確認するために
-                            入れていますこの文章はダミーです
+                        洗面台に、ドライヤーが設置されております。ご自由にお使い下さい。
                         </p>
                     </div>
                 </div>
                 <div class="amenitiesList__items">
                     <div class="amenitiesList__item">
-                        <h3 class="amenitiesList__title">この文章はダミーです</h3>
+                        <h3 class="amenitiesList__title">洗濯機・乾燥機</h3>
                         <p class="amenitiesList__text">
-                            この文章はダミーです文字の大きさ・量・字間・行間等を確認するために
-                            入れていますこの文章はダミーです
+                        24時間使用可能な、洗濯機・乾燥機があります。ご自由にお使い下さい。
                         </p>
                     </div>
                     <div class="amenitiesList__item">
-                        <h3 class="amenitiesList__title">この文章はダミーです</h3>
+                        <h3 class="amenitiesList__title">ひざ掛け</h3>
                         <p class="amenitiesList__text">
-                            この文章はダミーです文字の大きさ・量・字間・行間等を確認するために
-                            入れていますこの文章はダミーです
+                        寒い冬に備えひざ掛け毛布をお部屋にご用意してあります（冬季期間）
                         </p>
                     </div>
                     <div class="amenitiesList__item">
-                        <h3 class="amenitiesList__title">この文章はダミーです</h3>
+                        <h3 class="amenitiesList__title">フリードリンク</h3>
                         <p class="amenitiesList__text">
-                            この文章はダミーです文字の大きさ・量・字間・行間等を確認するために
-                            入れていますこの文章はダミーです
+                        ラウンジのコーヒー・紅茶・ルイボスティー等は自由にお飲み頂けます。
                         </p>
                     </div>
                 </div>
                 <div class="amenitiesList__items">
                     <div class="amenitiesList__item">
-                        <h3 class="amenitiesList__title">この文章はダミーです</h3>
+                        <h3 class="amenitiesList__title">冷蔵庫</h3>
                         <p class="amenitiesList__text">
-                            この文章はダミーです文字の大きさ・量・字間・行間等を確認するために
-                            入れていますこの文章はダミーです
+                        ラウンジに備え付けられた2か所の冷蔵庫は、自由にお使い頂けます。
                         </p>
                     </div>
                     <div class="amenitiesList__item">
-                        <h3 class="amenitiesList__title">この文章はダミーです</h3>
+                        <h3 class="amenitiesList__title">電子レンジ</h3>
                         <p class="amenitiesList__text">
-                            この文章はダミーです文字の大きさ・量・字間・行間等を確認するために
-                            入れていますこの文章はダミーです
+                        ラウンジに備え付けられた電子レンジは自由にお使い頂けます。
                         </p>
                     </div>
                     <div class="amenitiesList__item">
-                        <h3 class="amenitiesList__title">この文章はダミーです</h3>
+                        <h3 class="amenitiesList__title">ケトル</h3>
                         <p class="amenitiesList__text">
-                            この文章はダミーです文字の大きさ・量・字間・行間等を確認するために
-                            入れていますこの文章はダミーです
+                        ウンジにあるケトルで自由にお湯を沸かして頂くことが出来ます。
                         </p>
                     </div>
                 </div>
+                <p class="amenitiesList__note">※当ゲストハウスには、パジャマ・歯ブラシのご用意はございませんので、ご持参下さいませ。</p>
             </div>
         </div>
 </section>
