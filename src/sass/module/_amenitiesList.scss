@@ -21,11 +21,11 @@
 .amenitiesList__item {
     margin-left: rem(25);
     @include mq(md) {
-        margin-left: rem(0);    
+        margin-left: rem(0);
     }
 }
 
-.amenitiesList__item:nth-child(3n+1) {
+.amenitiesList__item:nth-child(3n + 1) {
     margin-left: 0;
 }
 
@@ -49,4 +49,13 @@
     line-height: 1.7;
     font-family: $yugothic;
     margin-top: rem(9);
+}
+
+.amenitiesList__note {
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: 1.7;
+    font-family: $yugothic;
+    margin-top: rem(66);
+    text-align: right;
 }

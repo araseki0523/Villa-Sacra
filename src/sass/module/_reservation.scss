@@ -1,13 +1,16 @@
-@use 'global' as *;
+@use "global" as *;
 
 .reservation {
-
 }
 
 .reservation__inner {
     max-width: rem(987);
     width: 100%;
     margin: 0 auto;
+    padding-left: $padding-pc;
+    padding-right: $padding-pc;
+
+    @include mq(md) {
     
     @include mq(ll) {
         padding-left: $padding-sp;
@@ -18,7 +21,7 @@
 .reservation__container {
     background-color: $white;
     height: rem(176);
-    width:  100%;
+    width: 100%;
     max-width: rem(937);
     margin: 0 auto;
 }
@@ -30,10 +33,15 @@
 }
 
 .reservation__title--ja {
-  font-size: rem(34);
+    font-size: rem(34);
 }
 
-
+.reservation__icon {
+    padding-top: rem(70);
+    background-image: url(../images/common/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .reservation__title--en {
     margin-top: rem(-6);
     margin-left: rem(28);
@@ -49,7 +57,61 @@
     width: rem(50);
     height: rem(30);
     margin: auto;
-    @include mq('sm') {
-       padding-top: 0; 
+    @include mq("sm") {
+        padding-top: 0;
     }
+}
+
+/* モーダルウィンドウ */
+.reserve__modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1076px;
+    width: 100%;
+    height: 562px;
+    background-color: #ffff;
+    border: solid 1px #707070;
+    z-index: 11;
+    @include mq(md) {
+        top: 30%;
+        left: 50%;
+        z-index: 12;
+    }
+}
+
+.search-panel-frame {
+z-index: 99;
+}
+
+button.reservation__modal {
+    display: contents;
+}
+
+/* 閉じるボタン */
+.button-close {
+    z-index: 12;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0px;
+    right: 30px;
+    font-size: 2rem;
+    background-color: #fff;
+    cursor: pointer;
+    border-style: none;
+}
+
+//オーバーレイ
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }

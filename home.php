@@ -17,8 +17,25 @@
 
 <section class="blog-page layout-blog-page">
     <div class="blog-page__inner">
-            <div class="blog-page__items cards">
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <div class="blog-page__items cards">
+
+            <!-- 記事のループ処理開始 -->
+            <?php
+            if (wp_is_mobile()) {
+                $num = 3; // スマホの表示数(全件は-1)
+            } else {
+                $num = 9; // PCの表示数(全件は-1)
+            }
+            $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+            $args = [
+                'post_type' => 'post', // 投稿タイプのスラッグ(通常投稿なので'post')
+                'paged' => $paged, // ページネーションがある場合に必要
+                'posts_per_page' => $num, // 表示件数
+            ];
+            $wp_query = new WP_Query($args);
+            if (have_posts()) : while (have_posts()) : the_post();
+            ?>
+
                     <a href="<?php the_permalink(); ?>" class="blog-page__item card">
                         <div class="card__img">
                             <?php if (has_post_thumbnail()) : ?>
@@ -35,28 +52,30 @@
                             <p class="card__text"><?php the_excerpt(); ?></p>
                         </div>
 
-                <?php endwhile;
-            endif; ?>
+                    <?php endwhile;
+                                else : ?>
+                    <p>まだ記事がありません</p>
+                <?php endif ?>
+                <?php wp_reset_postdata(); ?>
+                <!-- 記事のループ処理終了 -->
                     </a>
         </div>
-    <?php if (paginate_links()) : //ページが1ページ以上あれば以下を表示 
-    ?>
-        <!-- pagenation -->
-        <div class="pagenation">
-            <?php
-            echo
-            paginate_links(
-                array(
-                    'end_size' => 0,
-                    'mid_size' => 1,
-                    'prev_next' => true,
-                    'prev_text' => '<i class="fas fa-caret-left"></i>',
-                    'next_text' => '<i class="fas fa-caret-right"></i>',
-                )
-            );
-            ?>
-        </div><!-- /pagenation -->
-    <?php endif; ?>
+        <?php if (paginate_links()) : //ページが1ページ以上あれば以下を表示 
+        ?>
+            <!-- pagenation -->
+            <div class="pagenation">
+                <?php
+                the_posts_pagination(array(
+                        'mid_size' => 1,
+                        'prev_next' => true,
+                        'prev_text' => '<',
+                        'next_text' => '>',
+                    )
+                );
+                ?>
+            </div><!-- /pagenation -->
+        <?php endif; ?>
+        
     </div>
 </section>
 

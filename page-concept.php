@@ -59,8 +59,7 @@
           Villa Sacra&nbsp;&nbsp;Owner
           <br>
           <div class="concept__sign">
-            <!-- まだ -->
-            <img src="<?php echo get_template_directory_uri(); ?>/images/common/mv-sub-mask.png" alt="メインビュータイトル下の背景画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/concept/villasacra-owner.svg" alt="villasacraオーナーサイン">
           </div>
         </div>
         <!-- /.concept__text7 -->

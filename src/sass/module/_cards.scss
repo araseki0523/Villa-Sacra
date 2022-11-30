@@ -8,6 +8,9 @@
     width: 100%;
     padding-left: rem(25);
     padding-right: rem(25);
+    @include mq(md) {
+        display: block;
+    }
 }
 
 .card {
@@ -15,6 +18,10 @@
     flex-direction: column;
     width: 28%;
     margin-right: 8%;
+    @include mq(md) {
+        width: 80%;
+        margin: rem(30) auto;
+    }
 }
 
 .card__img {
