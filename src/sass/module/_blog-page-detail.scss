@@ -1,0 +1,47 @@
+@use 'global' as *;
+
+.blog-page-detail {
+    padding-bottom: rem(200);
+}
+
+.blog-page-detail__inner {
+    max-width: rem(960);
+    width: 100%;
+    margin: 0 auto;
+
+}
+.blog-page-detail__title {
+    font-size: rem(36);
+    font-family: $yugothic;
+}
+.blog-page-detail__image{
+    margin-top: rem(50);
+    width: 70%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog-page-detail__image::before {
+    content:"";
+    display: block;
+    padding-top: 60%; 
+}
+.blog-page-detail__image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-page-detail__body {
+    margin-top: rem(50);
+    font-family: $yugothic;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog-page-detail__content {
+}   

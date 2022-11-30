@@ -1,5 +1,6 @@
 <?php
 $home = esc_url(home_url('/'));
+$newsarchive = esc_url(home_url('/news-archive/'));
 $concept = esc_url(home_url('/concept/'));
 $room = esc_url(home_url('/room/'));
 $bb = esc_url(home_url('/bb/'));
@@ -243,48 +244,34 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
             <p class="blog-top__title-en section-title__en">Blog</p>
         </div>
         <div class="blog-top__container">
-            <a href="" class="blog-top__each-wrapper">
-                <div class="blog-top__box">
-                    <div class="blog-top__new">NEW</div>
-                    <date class="blog-top__date">2021.01.01</date>
-                </div>
-                <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a>
-            <!--blog-top__each-wrapper-->
-            <a href="" class="blog-top__each-wrapper">
-                <div class="blog-top__box">
-                    <div class="blog-top__new">NEW</div>
-                    <date class="blog-top__date">2021.01.01</date>
-                </div>
-                <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a>
-            <!--blog-top__each-wrapper-->
-            <a href="" class="blog-top__each-wrapper">
-                <div class="blog-top__box">
-                    <div class="blog-top__new">NEW</div>
-                    <date class="blog-top__date">2021.01.01</date>
-                </div>
-                <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a>
-            <!--blog-top__each-wrapper-->
-            <a href="" class="blog-top__each-wrapper">
-                <div class="blog-top__box">
-                    <div class="blog-top__new">NEW</div>
-                    <date class="blog-top__date">2021.01.01</date>
-                </div>
-                <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a>
-            <!--blog-top__each-wrapper-->
-            <a href="" class="blog-top__each-wrapper">
-                <div class="blog-top__box">
-                    <div class="blog-top__new">NEW</div>
-                    <date class="blog-top__date">2021.01.01</date>
-                </div>
-                <p class="blog-top__title">この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーですこの文章はダミ…</p>
-            </a>
-            <!--blog-top__each-wrapper-->
+
+        <?php
+                $news_query = new WP_Query(
+                    array(
+                        'post_type'      => 'post',
+                        'posts_per_page' => 5,
+                    )
+                );
+            ?>
+            <?php if ($news_query->have_posts()) : ?>
+            <?php while ($news_query->have_posts()) : ?>
+            <?php $news_query->the_post(); ?>
+
+                <a href="<?php the_permalink(); ?>" class="blog-top__each-wrapper">
+                    <div class="blog-top__box">
+                        <div class="blog-top__new">NEW</div>
+                        <time class="blog-top__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y.m.d'); ?></time>
+                    </div>
+                    <p class="blog-top__title"><?php the_title(); ?></p>
+                </a>
+                <!--blog-top__each-wrapper-->
+
+            <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
+
             <div class="blog-top__button-area">
-                <a href="<?php echo $blog ?>" class="blog-top__button button">MORE</a>
+                <a href="<?php echo $newsarchive ?>" class="blog-top__button button">MORE</a>
             </div>
         </div>
     </div>
