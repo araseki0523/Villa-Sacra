@@ -250,11 +250,10 @@
     </div>
 </section>
 
+<section class="gallery-bb layout-gallery-bb">
+    <?php get_template_part('template/gallery'); ?>
 
-
-
-
-<?php get_template_part('template/gallery'); ?>
+</section>
 
 
 <?php get_footer(); ?>

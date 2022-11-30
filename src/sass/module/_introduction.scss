@@ -26,6 +26,12 @@
 
 .introduction__container {
     display: flex;
+    @media screen and (max-width:1920px){
+        justify-content: center;
+    }
+    @include mq('comp') {
+        
+    }
     @include mq('ll') {
        flex-direction: column; 
        align-items: center;
@@ -34,8 +40,13 @@
 
 .introduction__container-even {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    @media screen and (max-width:1920px){
+        justify-content: center;
+    }
+    @include mq('comp') {
+        flex-direction: row-reverse;
+        justify-content: space-between;    
+    }
     @include mq('ll') {
         flex-direction: column; 
         align-items: center;
@@ -344,6 +355,9 @@
     top: rem(220);
     width: rem(833);
     height: rem(1250);
+    @include mq('ll') {
+       width: rem(600); 
+    }
 }
 .introduction__each-wrapper-tsuki::before {
     z-index: -2;
@@ -357,6 +371,7 @@
     width: rem(958);
     height: rem(612);
     @include mq('ll') {
+        width: rem(600);
         top: rem(724);
     }
 }
@@ -372,6 +387,7 @@
     width: rem(958);
     height: rem(612);
     @include mq('ll') {
+        width: rem(600);
        top: rem(300); 
     }
 }

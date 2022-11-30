@@ -24,6 +24,9 @@
     color: $black;
     min-width: 46%;
     padding: rem(55) rem(80);
+    @include mq('ll') {
+        width: 85%;
+    }
     @include mq('md') {
        width: 75%; 
     }
