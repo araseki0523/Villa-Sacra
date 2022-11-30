@@ -215,8 +215,7 @@
 <hr class="facility__border">
 
 <div class="facility__button-area">
-    <!-- まだ -->
-    <a href="#" class="facility__button">
+    <a href="https://d-reserve.jp/GSEA001F01300/GSEA001A01?hotelCode=0000001003" class="facility__button">
         <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility-button.png" alt="お部屋の画像">
         <span>お部屋のご予約はこちら</span>
     </a>

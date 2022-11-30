@@ -122,7 +122,7 @@ update_option( 'medium_large_size_w', 0 );
 function breadcrumb() {
     // $home = '<li><a href="'.get_bloginfo('url').'" >HOME　→</a></li>';
     $home = '<li><a href="'.home_url('/').'" >HOME　></a></li>';
-    $news = '<li><a href="'.home_url('/news/').'" >ニュース　→</a></li>';
+    $news = '<li><a href="'.home_url('/blog/').'" >blog</a></li>';
  
     echo '<ul class="breadcrumb layout-breadcrumb">';
     if ( is_front_page() ) {

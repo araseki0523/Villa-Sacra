@@ -18,6 +18,8 @@
     padding-left: rem(145);
     @include mq(md) {
         display: block;
+        padding-left: rem(20);
+        padding-right: rem(20);
     }
 }
 .footer__left {

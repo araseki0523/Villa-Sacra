@@ -3,7 +3,7 @@
 <section class="mv-sub layout-mv-sub">
     <div class="mv-sub__inner">
         <div class="mv-sub__image">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/blog/blog.jpg" alt="ブログ画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/blog/blog-top.jpg" alt="ブログ画像">
             <div class="mv-sub__background">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/common/mv-sub-mask.png" alt="メインビュータイトル下の背景画像">
             </div>
@@ -84,8 +84,5 @@
     <?php get_template_part('template/gallery'); ?>
 </section>
 
-<section class="sub-gallery layout-sub-gallery">
-    <?php get_template_part('template/inquiry'); ?>
-</section>
 
 <?php get_footer(); ?>

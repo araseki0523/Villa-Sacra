@@ -1,31 +1,44 @@
-@use 'global' as *;
+@use "global" as *;
 
 .mv {
     padding-top: 58px;
 }
 .mv__inner {
-    overflow: hidden;
 }
 .mv__background {
     display: inline-block;
     margin-top: auto;
     background-color: $gray;
-    width: 15.6617%;
-    height: rem(636);
+    max-width: rem(214);
+    max-width: vw(1366, 214);
+    width: 100%;
+    padding-top: 46.57%;
+    // width: 15.6617%;
+    // height: rem(636);
     z-index: -1;
 }
 // relativeでも可
 .mv__title-adjust {
-    top: min(42vw, 582px);
-    // top: 43%;
+    top: vw(1366, 582);
     left: rem(58);
+    left: fmin(58, 1366);
     position: absolute;
+    @include mq(md) {
+        top: vw(765, 450);
+        left: rem(40);
+        left: fmin(40, 765);
+    }
 }
 .mv__title {
     font-size: rem(63);
+    font-size: fmin(63, 1366);
     letter-spacing: 0.13em;
     font-family: $sawarabi;
     position: relative;
+    @include mq("ll") {
+        font-size: rem(60);
+        font-size: fmin(60, 1280);
+    }
 }
 
 .mv__wrapper {
@@ -35,11 +48,17 @@
 
 .mv__image {
     position: relative;
-    width: rem(1152);
-    padding-top: 59.6%; 
-    @include mq('ll') {
-       padding-top: 85%; 
-    }
+    // max-width: rem(1152);
+    // width: 100%;
+    // padding-top: 59.6%;
+    width: 85%;
+    max-width: vw(1366, 1152);
+    padding-top: vw(1366, 814);
+    margin-left: auto;
+    // @include mq("ll") {
+    //     max-width: vw(1280, 1152);
+    //     padding-top: vw(1280, 814);
+    // }
 }
 
 .mv__image img {
@@ -52,4 +71,3 @@
     object-fit: cover;
     object-position: center;
 }
-

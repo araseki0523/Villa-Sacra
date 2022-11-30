@@ -13,3 +13,7 @@
 @function vw($window_width, $size) {
 	@return math.div($size, $window_width) * 100vw;
 }
+
+@function fmin($pixel,$window_width){
+  @return unquote('min(calc((#{$pixel} / #{$window_width}) * 100vw), #{$pixel}px)');
+} 
