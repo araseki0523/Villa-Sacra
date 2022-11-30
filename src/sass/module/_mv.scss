@@ -14,12 +14,6 @@
     width: 100%;
     padding-top: 46.57%;
     z-index: -1;
-    @include mq('ll') {
-       height: rem(400); 
-    }
-    @include mq('md') {
-       height: rem(636); 
-    }
 }
 // relativeでも可
 .mv__title-adjust {
@@ -56,17 +50,6 @@
     max-width: vw(1366, 1152);
     padding-top: vw(1366, 814);
     margin-left: auto;
-    @media screen and (max-width:1920px){
-        width: 100%;
-        padding-top: 50%;
-    }
-    @include mq('comp') {
-        width: rem(1152);
-        padding-top: 59.6%; 
-    }
-    @include mq('md') {
-       padding-top: 85%; 
-    }
 }
 
 .mv__image img {

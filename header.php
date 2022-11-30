@@ -1,6 +1,7 @@
 <?php
 $home = esc_url(home_url('/'));
 $archive = esc_url(home_url('/news-archive/'));
+$blog = esc_url(home_url('/blog/'));
 $concept = esc_url(home_url('/concept/'));
 $room = esc_url(home_url('/room/'));
 $bb = esc_url(home_url('/bb/'));
@@ -102,7 +103,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
           <li class="header__nav-item"><a href="<?php echo $bb ?>">b&amp;b</a></li>
           <li class="header__nav-item"><a href="<?php echo $facility ?>">facility</a></li>
           <li class="header__nav-item"><a href="<?php echo $access ?>">access</a></li>
-          <li class="header__nav-item"><a href="<?php echo $archive ?>">blog</a></li>
+          <li class="header__nav-item"><a href="<?php echo $blog ?>">blog</a></li>
           <li class="header__nav-item"><a href="<?php echo $qa ?>">q&amp;a</a></li>
           <li class="header__nav-item header__nav-item--white">
             <div class="header__nav-item-icon"></div><a href="<?php echo $contact ?>">contact</a>
@@ -148,7 +149,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
           <li class="header__sp-nav-item"><a href="<?php echo $bb ?>">b&amp;b</a></li>
           <li class="header__sp-nav-item"><a href="<?php echo $facility ?>">facility</a></li>
           <li class="header__sp-nav-item"><a href="<?php echo $access ?>">access</a></li>
-          <li class="header__sp-nav-item"><a href="<?php echo $archive ?>">blog</a></li>
+          <li class="header__sp-nav-item"><a href="<?php echo $blog ?>">blog</a></li>
           <li class="header__sp-nav-item"><a href="<?php echo $qa ?>">q&amp;a</a></li>
           <li class="header__sp-nav-item"><a href="<?php echo $contact ?>">contact</a></li>
           <!-- まだ -->

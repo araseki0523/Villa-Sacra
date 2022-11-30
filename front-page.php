@@ -1,6 +1,7 @@
 <?php
 $home = esc_url(home_url('/'));
 $archive = esc_url(home_url('/news-archive/'));
+$blog = esc_url(home_url('/blog/'));
 $concept = esc_url(home_url('/concept/'));
 $room = esc_url(home_url('/room/'));
 $bb = esc_url(home_url('/bb/'));
@@ -270,7 +271,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
             <?php wp_reset_postdata(); ?>
 
             <div class="blog-top__button-area">
-                <a href="<?php echo $archive ?>" class="blog-top__button button">MORE</a>
+                <a href="<?php echo $blog ?>" class="blog-top__button button">MORE</a>
             </div>
         </div>
     </div>
