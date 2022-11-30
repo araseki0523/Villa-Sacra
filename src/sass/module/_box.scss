@@ -8,14 +8,25 @@
     justify-content: space-between;
     margin-left: rem(144);
     margin-right: rem(144);
+    @include mq('ll') {
+       flex-direction: column; 
+       align-items: center;
+    }
 }
-
+.box__right {
+    @include mq('ll') {
+       margin-top: rem(50); 
+    }
+}
 .box__left,
 .box__right {
     background-color: $white;
     color: $black;
     width: 46%;
     padding: rem(55) rem(80);
+    @include mq('md') {
+       width: 75%; 
+    }
 }
 .box__left-title-area,
 .box__right-title-area {

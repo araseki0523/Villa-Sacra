@@ -1,7 +1,6 @@
 @use 'global' as *;
 
 .mv {
-    // 後で消す
     padding-top: 58px;
 }
 .mv__inner {
@@ -15,6 +14,7 @@
     height: rem(636);
     z-index: -1;
 }
+// relativeでも可
 .mv__title-adjust {
     top: min(42vw, 582px);
     // top: 43%;
@@ -37,6 +37,9 @@
     position: relative;
     width: rem(1152);
     padding-top: 59.6%; 
+    @include mq('ll') {
+       padding-top: 85%; 
+    }
 }
 
 .mv__image img {

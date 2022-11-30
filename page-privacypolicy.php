@@ -184,19 +184,19 @@
                 <p class="privacy-policy__text">
                     09:00～18:00 / 土・日・祝日を除く
                 </p>
-                <p class="privacy-policy__text">
+                <p class="privacy-policy__text8-4">
                     ※お取引先ご担当者様の窓口は当社担当部署にご連絡ください。
                 </p>
-                <p class="privacy-policy__text8-4">
+                <p class="privacy-policy__text8-5">
                     ※開示の求めに関する手続き (必要書類・受付の方法・ご本人確認の方法・手数料・その他) についての詳細は各窓口までお問い合わせください。
                 </p>
-                <p class="privacy-policy__text">
+                <p class="privacy-policy__text8-6">
                     当館ホームページより取得する個人情報については、下記窓口までご連絡ください。
                 </p>
-                <p class="privacy-policy__text8-6">
+                <p class="privacy-policy__text8-7">
                     Villa Sacra(ヴィラ・サクラ） 代表：0467-40-4070
                 </p>
-                <p class="privacy-policy__text">
+                <p class="privacy-policy__text8-8">
                     09:00～18:00 / 土・日・祝日を除く
                 </p>
             </div>
@@ -541,7 +541,7 @@
     <!--convention__inner-->
 </section>
 
-<section class="gallery-privacy-policy layout-privacy-policy">
+<section class="gallery-privacy-policy layout-gallery-privacy-policy">
    <?php get_template_part('template/gallery'); ?>
 </section>
 
