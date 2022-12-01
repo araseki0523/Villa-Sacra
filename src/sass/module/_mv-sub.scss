@@ -54,11 +54,8 @@
     font-family: $notoserif;
     text-transform: uppercase;
     @include mq(md) {
-        font-size: rem(28);
+        font-size:26px;
     }
-    // @include mq('sm') {
-    //     font-size: rem(36); 
-    // }
 }
 .mv-sub__title-en {
     top: 60%;
@@ -67,6 +64,7 @@
     font-family: $sub-font-family;
     text-transform:capitalize;
     @include mq(md) {
+        font-size: 20px;
         top: 65%;
     }
 }

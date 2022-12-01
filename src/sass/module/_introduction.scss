@@ -114,6 +114,11 @@
        margin-top: rem(50);
        writing-mode: horizontal-tb;
     }
+    @include mq('md') {
+       font-size: 32px; 
+       margin-left: rem(13);
+    }
+
 }
 
 .introduction__room-name-tsuki {
@@ -180,6 +185,10 @@
     text-align: center;
     font-size: rem(26);
     position: relative;
+    white-space: nowrap;
+    @include mq('md') {
+       font-size: 18px; 
+    }
 }
 
 .introduction__person::after{
@@ -202,12 +211,20 @@
     margin-top: rem(48);
     text-align: center;
     font-size: rem(20);
+    white-space: nowrap;
+    @include mq('md') {
+       font-size: 16px; 
+    }
 }
 
 .introduction__breadth {
     margin-top: rem(8);
     text-align: center;
     font-size: rem(20);
+    white-space: nowrap;
+    @include mq('md') {
+       font-size: 16px; 
+    }
 }
 .introduction__text-area {
     margin-top: rem(128);
@@ -240,6 +257,9 @@
     font-weight: 500;
     font-family: $yumincho;
     line-height: 1.75;
+    @include mq('md') {
+       font-size: 16px; 
+    }
 }
 
 .introduction__text-tora {
@@ -256,10 +276,18 @@
 
 .introduction__text2-tora {
     padding: 0 rem(53) rem(40);
+    @include mq('md') {
+       font-size: 16px; 
+       font-weight: 500;
+    }
 }
 
 .introduction__text2-shizuku {
     padding: 0 rem(53) rem(43);
+    @include mq('md') {
+        font-size: 16px; 
+        font-weight: 500;
+     } 
 }
 
 .introduction__button-area {

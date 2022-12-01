@@ -165,7 +165,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 <h3 class="introduction__room-name">鶴の間</h3>
                 <div class="introduction__image-wrapper introduction__image-wrapper-tsuru">
                     <div class="introduction__image-small"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuru-small-top.jpg" alt="鶴の間の部屋画像2"></div>
-                    <p class="introduction__person">消しゴムはんこ作家・津久井智子</p>
+                    <p class="introduction__person">消しゴムはんこ作家・<br class="br-md">津久井智子</p>
                     <div class="introduction__capacity">部屋定員：1～2 名</div>
                     <div class="introduction__breadth">部屋の広さ：8 平米</div>
                 </div>

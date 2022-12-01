@@ -40,8 +40,8 @@
     @include mq('md') {
        padding-top: 45%;
     }
-    @include mq('ss') {
-       padding-top: 70%; 
+    @media screen and (max-width:450px){
+        padding-top: 70%; 
     }
 }
 #content {

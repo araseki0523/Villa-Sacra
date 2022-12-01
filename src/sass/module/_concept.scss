@@ -32,12 +32,9 @@
 .concept__text5,
 .concept__text6,
 .concept__text7 {
-    // font-family: $yugothic;
-    // font-size: rem(24);
-    // text-align: center;
-    // max-width: rem(832);
-    // width: 100%;
-    // margin: 0 auto;
+    @include mq('md') {
+       font-size: 16px; 
+    }
 }
 
 .concept__text1 {

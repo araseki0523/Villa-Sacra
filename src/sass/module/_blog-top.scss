@@ -44,6 +44,9 @@
        flex-direction: column; 
        align-items: baseline;
     }
+    @include mq('md') {
+       font-size: 16px; 
+    }
 }
 .blog-top__box {
     display: flex;

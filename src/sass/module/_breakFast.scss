@@ -19,13 +19,25 @@
 .diner__title-area.sub-section-title::after {
     width: rem(400);
 }
-
-.breakFast__title-area.sub-section-title::after,
-.diner__title-area.sub-section-title::after {
-    right: -18%;
-} 
 .breakFast__title-area.sub-section-title::before,
 .diner__title-area.sub-section-title::before {
     left: 18%;
 } 
+.breakFast__title-area.sub-section-title::after,
+.diner__title-area.sub-section-title::after {
+    right: -18%;
+    @include mq('md') {
+       right: 0; 
+    }
+} 
 
+.breakFast__contants-wrap.items {
+    @include mq('md') {
+       margin-top: rem(50); 
+    }
+}
+.breakFast-box__sub-title-ja.item-box__sub-title-ja::after {
+    @include mq('md') {
+        right: -25px;
+    }
+}

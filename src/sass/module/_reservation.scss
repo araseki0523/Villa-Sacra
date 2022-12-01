@@ -21,6 +21,9 @@
     width: 100%;
     max-width: rem(937);
     margin: 0 auto;
+    @include mq('ss') {
+        height: rem(280);
+    }
 }
 
 .reservation__title-area {
@@ -31,6 +34,9 @@
 
 .reservation__title--ja {
     font-size: rem(34);
+    @include mq('md') {
+       font-size: 20px; 
+    }
 }
 
 .reservation__icon {
@@ -43,6 +49,9 @@
     margin-top: rem(-6);
     margin-left: rem(28);
     font-family: $sub-font-family;
+    @include mq('md') {
+       font-size: 16px; 
+    }
 }
 
 

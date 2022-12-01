@@ -11,8 +11,7 @@
     font-size: rem(34);
     font-size: min(2.4vw,34px);
     @include mq(md) {
-        font-size: rem(34);
-        font-size: max(2.4vw,14px);
+        font-size: 20px;
     }
 }
 
@@ -20,4 +19,7 @@
     // padding-left: rem(38);
     font-size: rem(12);
     font-family: $sub-font-family;
+    @include mq('md') {
+       font-size: 16px; 
+    }
 }

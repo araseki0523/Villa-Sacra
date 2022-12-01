@@ -6,17 +6,19 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: rem(500);
-    // display: grid;
-    // place-items: center; 
     max-width: rem(1078);
     width: 100%;
     margin: 0 auto;
     @include mq('ll') {
        max-width: rem(1028); 
+       padding-bottom: rem(70);
     }
 }
 .recruit__inner {
- 
+ @include mq('md') {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+ }
 }
 
 .recruit__title-area.section-title{
@@ -36,6 +38,9 @@
     line-height: 1.75;
     color:$white;
     padding-top: rem(70);
+    @include mq('md') {
+       font-size: 16px; 
+    }
 }
 
 .recruit__button-area {
