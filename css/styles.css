@@ -989,38 +989,122 @@ select::-ms-expand {
 }
 
 .breakFast__title-area.sub-section-title::before,
-.breakFast__title-area.sub-section-title::after,
-.diner__title-area.sub-section-title::before,
-.diner__title-area.sub-section-title::after {
+.breakFast__title-area.sub-section-title::after {
   width: 400px;
   width: 25rem;
 }
 
-.breakFast__title-area.sub-section-title::before,
-.diner__title-area.sub-section-title::before {
+.breakFast__title-area.sub-section-title::before {
   left: 18%;
 }
 
-.breakFast__title-area.sub-section-title::after,
-.diner__title-area.sub-section-title::after {
+.breakFast__title-area.section-title-sub::after {
   right: -18%;
 }
 @media screen and (max-width: 768px) {
-  .breakFast__title-area.sub-section-title::after,
-  .diner__title-area.sub-section-title::after {
-    right: 0;
+  .breakFast__title-area.section-title-sub::after {
+    right: -2%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .breakFast__contants-wrap.items {
+  .breakFast__title-ja.section-title-sub__ja {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .breakFast__contents-wrap.items {
     margin-top: 3.125rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .breakFast-box__sub-title-ja.item-box__sub-title-ja {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .breakFast-box__sub-title-ja.item-box__sub-title-ja {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .breakFast-box__head.item-box__head {
+    padding: 0.5rem 5rem 0.5rem 5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .breakFast-box__head.item-box__head {
+    padding: 0.5rem 4.5rem 0.5rem 4.5rem;
+  }
+}
+@media screen and (max-width: 326px) {
+  .breakFast-box__head.item-box__head {
+    padding: 0.5rem 4rem 0.5rem 4rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .breakFast-box__sub-title-ja.item-box__sub-title-ja::after {
     right: -25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .breakFast-box__sub-title-ja.item-box__sub-title-ja::after {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .breakFast-box__sub-title-ja.item-box__sub-title-ja::after {
+    right: -18px;
+    width: 18px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .breakFast-box__sub-title-ja.item-box__sub-title-ja::after {
+    right: -14px;
+    width: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .breakFast-box__sub-title-en.item-box__sub-title-en {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .breakFast-box__body.item-box__body {
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .breakFast-box__body.item-box__body {
+    margin-top: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .breakFast-box__info.item-box__info {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .breakFast-box__info.item-box__info {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .breakFast-box__text.card-box__text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .breakFast-box__text.card-box__text {
+    font-size: 14px;
   }
 }
 
@@ -1587,6 +1671,126 @@ input[type=checkbox] {
 .convention__index {
   font-size: 24px;
   font-size: 1.5rem;
+}
+
+.diner__title-area.sub-section-title::before,
+.diner__title-area.sub-section-title::after {
+  width: 400px;
+  width: 25rem;
+}
+
+.diner__title-area.sub-section-title::before {
+  left: 18%;
+}
+
+.diner__title-area.sub-section-title-sub::after {
+  right: -18%;
+}
+@media screen and (max-width: 768px) {
+  .diner__title-area.sub-section-title-sub::after {
+    right: -2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dinner__title-ja.section-title-sub__ja {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dinner__contents-wrap.items {
+    margin-top: 3.125rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dinner-box__sub-title-ja.item-box__sub-title-ja {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .dinner-box__sub-title-ja.item-box__sub-title-ja {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dinner-box__head.item-box__head {
+    padding: 0.5rem 5rem 0.5rem 5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .dinner-box__head.item-box__head {
+    padding: 0.5rem 4.5rem 0.5rem 4.5rem;
+  }
+}
+@media screen and (max-width: 326px) {
+  .dinner-box__head.item-box__head {
+    padding: 0.5rem 4rem 0.5rem 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dinner-box__sub-title-ja.item-box__sub-title-ja::after {
+    right: -25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .dinner-box__sub-title-ja.item-box__sub-title-ja::after {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .dinner-box__sub-title-ja.item-box__sub-title-ja::after {
+    right: -18px;
+    width: 18px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .dinner-box__sub-title-ja.item-box__sub-title-ja::after {
+    right: -14px;
+    width: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dinner-box__sub-title-en.item-box__sub-title-en {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dinner-box__body.item-box__body {
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .dinner-box__body.item-box__body {
+    margin-top: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dinner-box__info.item-box__info {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .dinner-box__info.item-box__info {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dinner-box__text.card-box__text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .dinner-box__text.card-box__text {
+    font-size: 14px;
+  }
 }
 
 .directin-sp-form {
@@ -3331,6 +3535,21 @@ sp版（1280px以下）のモーダル内メニュー
     left: 20%;
   }
 }
+@media screen and (max-width: 600px) {
+  .item-box__head {
+    left: 14%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .item-box__head {
+    left: 8%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .item-box__head {
+    left: 2%;
+  }
+}
 
 .item-box__info .card-box__text {
   font-size: 16px;
@@ -3497,7 +3716,7 @@ sp版（1280px以下）のモーダル内メニュー
 }
 @media screen and (max-width: 768px) {
   .layout-gallery-bb {
-    margin-top: 13.75rem;
+    margin-top: 15.625rem;
   }
 }
 
@@ -3815,7 +4034,7 @@ sp版（1280px以下）のモーダル内メニュー
 }
 @media screen and (max-width: 768px) {
   .mv-sub__title-en {
-    font-size: 20px;
+    font-size: 16px;
     top: 65%;
   }
 }
@@ -5041,6 +5260,12 @@ button.reservation__modal {
   font-size: 0.875rem;
   text-align: center;
   font-family: "SignPainter HouseScript";
+}
+
+@media screen and (max-width: 768px) {
+  .breakFast__title-en.section-title-sub__en {
+    font-size: 14px;
+  }
 }
 
 .section-title {

@@ -1,54 +1,45 @@
-@use "global" as *;
+@use 'global' as *;
 
-.breakFast,
 .dinner {
-    max-width: rem(1076);
-    width: 100%;
-    margin: auto;
-
-    @include mq('ll') {
-        padding-left: $padding-sp;
-        padding-right: $padding-sp;
-    }
 
 }
 
+.dinner__inner {
 
-.breakFast__title-area.sub-section-title::before,
-.breakFast__title-area.sub-section-title::after {
+}
+.diner__title-area.sub-section-title::before,
+.diner__title-area.sub-section-title::after {
     width: rem(400);
 }
-
-.breakFast__title-area.sub-section-title::before {
+.diner__title-area.sub-section-title::before {
     left: 18%;
 }
-
-.breakFast__title-area.section-title-sub::after {
+.diner__title-area.sub-section-title-sub::after {
     right: -18%;
     @include mq('md') {
        right: -2%; 
     }
 }
-.breakFast__title-ja.section-title-sub__ja{
+.dinner__title-ja.section-title-sub__ja{
     @include mq('md') {
        font-size: 20px; 
     }
 }
-.breakFast__contents-wrap.items {
+
+.dinner__contents-wrap.items {
     @include mq('md') {
-        margin-top: rem(50);
+       margin-top: rem(50); 
     }
 }
-
-.breakFast-box__sub-title-ja.item-box__sub-title-ja {
+.dinner-box__sub-title-ja.item-box__sub-title-ja {
     @include mq('md') {
         font-size: 18px;
     }
     @include mq('ss') {
-       font-size: 16px; 
-    }
+        font-size: 16px; 
+     } 
 }
-.breakFast-box__head.item-box__head{
+.dinner-box__head.item-box__head{
     @include mq('md') {
         padding: 0.5rem 5rem 0.5rem 5rem;
     }
@@ -59,7 +50,7 @@
         padding: 0.5rem 4rem 0.5rem 4rem;
     }
 }
-.breakFast-box__sub-title-ja.item-box__sub-title-ja::after {
+.dinner-box__sub-title-ja.item-box__sub-title-ja::after {
     @include mq('md') {
         right: -25px;
     }
@@ -72,31 +63,32 @@
     }
     @include mq('ss') {
         right: -14px;
-       width: 15px; 
-    }
+        width: 15px; 
+     } 
 }
-.breakFast-box__sub-title-en.item-box__sub-title-en {
+
+.dinner-box__sub-title-en.item-box__sub-title-en {
     @include mq('md') {
        font-size: 14px; 
     }
 }
-.breakFast-box__body.item-box__body {
+.dinner-box__body.item-box__body {
     @include mq('md') {
        margin-top: rem(64); 
     }
     @include mq('sm') {
-       margin-top: rem(120); 
-    }
+        margin-top: rem(120); 
+     } 
 }
-.breakFast-box__info.item-box__info {
+.dinner-box__info.item-box__info {
     @include mq('md') {
        font-size: 16px; 
     }
     @include mq('ss') {
-       font-size: 14px; 
-    }
+        font-size: 14px; 
+     } 
 }
-.breakFast-box__text.card-box__text {
+.dinner-box__text.card-box__text {
     @include mq('md') {
        font-size: 16px; 
     }

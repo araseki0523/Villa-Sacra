@@ -58,14 +58,14 @@
             <h2 class="breakFast__title-ja  section-title-sub__ja">朝食</h2>
             <p class="breakFast__title-en section-title-sub__en">Break fast</p>
         </div>
-        <div class="breakFast__contants-wrap items">
-            <div class="breakFast__contants item">
-                <div class="breakFast__contant-head item__contant-head">
+        <div class="breakFast__contents-wrap items">
+            <div class="breakFast__contents item">
+                <div class="breakFast__content-head item__contant-head">
                     <div class="breakFast__img item__img">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/bb/breakFast1.jpg" alt="朝食の画像">
                     </div>
                 </div>
-                <div class="breakFast__contant-body item__contant-body">
+                <div class="breakFast__content-body item__contant-body">
                     <div class="breakFast-box item-boxes">
                         <div class="breakFast-box__body item-box__body">
                             <div class="breakFast-box__head item-box__head">
@@ -88,13 +88,13 @@
                     </div>
                 </div>
             </div>
-            <div class="breakFast__contants item">
-                <div class="breakFast__contant-head item__contant-head">
+            <div class="breakFast__contents item">
+                <div class="breakFast__content-head item__contant-head">
                     <div class="breakFast__img item__img">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/bb/breakFast2.jpg" alt="朝食の画像">
                     </div>
                 </div>
-                <div class="breakFast__contant-body item__contant-body">
+                <div class="breakFast__content-body item__contant-body">
                     <div class="breakFast-box item-boxes">
                         <div class="breakFast-box__body item-box__body">
                             <div class="breakFast-box__head item-box__head">
@@ -117,13 +117,13 @@
                     </div>
                 </div>
             </div>
-            <div class="breakFast__contants item">
-                <div class="breakFast__contant-head item__contant-head">
+            <div class="breakFast__contents item">
+                <div class="breakFast__content-head item__contant-head">
                     <div class="breakFast__img item__img">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/bb/breakFast2.jpg" alt="朝食の画像">
                     </div>
                 </div>
-                <div class="breakFast__contant-body item__contant-body">
+                <div class="breakFast__content-body item__contant-body">
                     <div class="breakFast-box item-boxes">
                         <div class="breakFast-box__body item-box__body">
                             <div class="breakFast-box__head item-box__head">
@@ -158,14 +158,14 @@
             <h2 class="dinner__title-ja  section-title-sub__ja">夕食</h2>
             <p class="dinner__title-en section-title-sub__en">Dinner</p>
         </div>
-        <div class="dinner__contants-wrap items">
-            <div class="dinner__contants item">
-                <div class="dinner__contant-head item__contant-head">
+        <div class="dinner__contents-wrap items">
+            <div class="dinner__contents item">
+                <div class="dinner__content-head item__contant-head">
                     <div class="dinner__img item__img">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/bb/breakFast1.jpg" alt="朝食の画像">
                     </div>
                 </div>
-                <div class="dinner__contant-body item__contant-body">
+                <div class="dinner__content-body item__contant-body">
                     <div class="dinner-box item-boxes">
                         <div class="dinner-box__body item-box__body">
                             <div class="dinner-box__head item-box__head">
@@ -188,13 +188,13 @@
                     </div>
                 </div>
             </div>
-            <div class="dinner__contants item">
-                <div class="dinner__contant-head item__contant-head">
+            <div class="dinner__contents item">
+                <div class="dinner__content-head item__contant-head">
                     <div class="dinner__img item__img">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/bb/breakFast2.jpg" alt="朝食の画像">
                     </div>
                 </div>
-                <div class="dinner__contant-body item__contant-body">
+                <div class="dinner__content-body item__contant-body">
                     <div class="dinner-box item-boxes">
                         <div class="dinner-box__body item-box__body">
                             <div class="dinner-box__head item-box__head">
@@ -217,13 +217,13 @@
                     </div>
                 </div>
             </div>
-            <div class="dinner__contants item">
-                <div class="dinner__contant-head item__contant-head">
+            <div class="dinner__contents item">
+                <div class="dinner__content-head item__contant-head">
                     <div class="dinner__img item__img">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/bb/breakFast2.jpg" alt="朝食の画像">
                     </div>
                 </div>
-                <div class="dinner__contant-body item__contant-body">
+                <div class="dinner__content-body item__contant-body">
                     <div class="dinner-box item-boxes">
                         <div class="dinner-box__body item-box__body">
                             <div class="dinner-box__head item-box__head">

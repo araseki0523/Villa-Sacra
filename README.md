@@ -65,3 +65,18 @@ single.phpへの動線ok
 
 ◯single.php
 ブログ一覧へ戻る ok
+
+
+##  要確認
+26mv-sub, 20title, 16
+
+front-page
+concept
+room
+bandb
+facility
+
+
+
+b&bの「ワンダーキッチン」はリンク？
+

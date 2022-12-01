@@ -97,6 +97,15 @@
     @include mq(md) {
         left: 20%;
     }
+    @include mq('sm') {
+       left: 14%; 
+    }
+    @media screen and (max-width:450px){
+        left: 8%;
+    }
+    @include mq('ss') {
+       left: 2%; 
+    }
 }
 
 .item-box__info .card-box__text {
