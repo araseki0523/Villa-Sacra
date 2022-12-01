@@ -12,6 +12,7 @@
     font-size: min(2.4vw,34px);
     @include mq(md) {
         font-size: rem(34);
+        font-size: max(2.4vw,14px);
     }
 }
 

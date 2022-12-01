@@ -1,0 +1,191 @@
+@use "global" as *;
+
+.form-item {
+    display: flex;
+    align-items: flex-start;
+    @include mq(md) {
+        flex-direction: column;
+    }
+}
+
+.form-item__text {
+    max-width: rem(540);
+    width: 100%;
+    display: block;
+    font-size: rem(16);
+    color: $white;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 5px;
+    padding: 12px 20px;
+    appearance: none;
+    border: 1px solid $white;
+    @include mq(md) {
+        font-size: 16px;
+        max-width: rem(868);
+    }
+}
+
+.form-textarea {
+    max-width: 540px;
+    width: 100%;
+    align-items: flex-start;
+    padding-bottom: rem(60);
+    border: 1px solid $white;
+    border-radius: 5px;
+    padding: 12px 20px;
+}
+
+.form-item__textarea,
+.form-text,
+.form-item__heading,
+.contact-footer__text {
+    font-family: $yugothic;
+    font-size: rem(16);
+    color: $white;
+    font-weight: 500;
+    line-height: 1.75;
+    @include mq(md) {
+        font-size: 14px;
+    }
+}
+
+.form-item__heading {
+    margin-right: rem(107);
+    max-width: 170px;
+    width: 100%;
+    @include mq("md") {
+        margin-right: 0;
+        font-size: 16px;
+    }
+}
+
+.form-item__heading span {
+    font-size: rem(14);
+    font-weight: 600;
+    background-color: #fff;
+    color: $black;
+    padding: 5px 10px;
+    margin-right: 10px;
+    @include mq(md) {
+        font-size: 14px;
+    }
+}
+
+span.any {
+    font-size: rem(14);
+    font-weight: 600;
+    background-color: #707070;
+    color: $white;
+    border: 5px 10px 5px 10px;
+    margin-right: 10px;
+    @include mq(md) {
+        font-size: 14px;
+    }
+}
+
+.form-list__item + .form-list__item,
+.form-list__btn-wrapper {
+    margin-top: rem(60);
+}
+
+.form-list__item {
+    margin-top: rem(48);
+}
+
+.contact-footer__text {
+    text-align: center;
+    margin-top: 52px;
+}
+
+// input[type=checkbox] {
+//     display: inline-block;
+//     width: 20px;
+//     height: 20px;
+//     border: $white;
+//     background-color: transparent;
+//     cursor: pointer;
+//     transition: opacity 0.3s ease 0s;
+//     margin-right: 20px;
+//     appearance: auto;
+//     vertical-align: bottom;
+// }
+
+input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* チェックボックスデザイン */
+input[type="checkbox"] {
+    cursor: pointer;
+    padding-left: 30px; /*label手前にチェックボックス用の余白を開ける*/
+    vertical-align: middle;
+    position: relative;
+}
+input[type="checkbox"]::before,
+input[type="checkbox"]::after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+input[type="checkbox"]::before {
+    background-color: transparent;
+    border-radius: 0%;
+    border: 1px solid $white;
+    width: 20px; /*チェックボックスの横幅*/
+    height: 20px; /*チェックボックスの縦幅*/
+    transform: translateY(-50%);
+    top: 50%;
+    left: 5px;
+}
+input[type="checkbox"]::after {
+    border-bottom: 3px solid $white; /*チェックの太さ*/
+    border-left: 3px solid $white; /*チェックの太さ*/
+    opacity: 0; /*チェック前は非表示*/
+    height: 6px; /*チェックの高さ*/
+    width: 11px; /*チェックの横幅*/
+    transform: rotate(-45deg);
+    top: 10px; /*チェック時の位置調整*/
+    left: 10px; /*チェック時の位置調整*/
+}
+input[type="checkbox"]:checked::after {
+    opacity: 1; /*チェック後表示*/
+}
+
+.wpcf7-form-control-wrap span {
+    border: $white;
+    background-color: transparent;
+}
+
+span.acceptance {
+    text-decoration: underline;
+}
+
+.form-list__btn-wrapper {
+    text-align: center;
+}
+
+.form-list__btn {
+    padding: 20px 30px;
+    width: 204px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: $yugothic;
+    line-height: 1.75;
+    border: 1px solid $white;
+    border-radius: 5px;
+    color: $white;
+    transition: ease 0.3s;
+}
+
+input[type="text" i] {
+    width: 98%;
+}

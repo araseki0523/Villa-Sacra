@@ -177,8 +177,8 @@
                         </p>
                     </div>
                 </div>
-                <p class="amenitiesList__note">※当ゲストハウスには、パジャマ・歯ブラシのご用意はございませんので、ご持参下さいませ。</p>
             </div>
+                <p class="amenitiesList__note">※当ゲストハウスには、パジャマ・歯ブラシのご用意はございませんので、ご持参下さいませ。</p>
         </div>
 </section>
 
