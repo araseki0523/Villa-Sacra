@@ -7,11 +7,11 @@
     padding: 0 rem(20) rem(51);
     border-bottom: 1px solid $black;
     @include mq(md) {
-        flex-wrap: wrap;
-        margin-top: rem(0);
+        flex-direction: column;
+        margin: rem(0) auto;
         padding-bottom: rem(0);
         border-bottom: none;
-        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -60,6 +60,6 @@
     margin-top: rem(66);
     text-align: right;
     @include mq(md) {
-        text-align: center;  
+        text-align: left;  
     }
 }
