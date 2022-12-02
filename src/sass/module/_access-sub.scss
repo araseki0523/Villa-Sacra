@@ -37,6 +37,8 @@
     justify-content: center;
     @include mq('md') {
        flex-direction: column; 
+       align-items: center;
+       justify-content: center;
     }
 }
 
@@ -46,6 +48,7 @@
     font-family: $yugothic;
     @include mq('md') {
        border-right: none; 
+       margin-left: 0;
     }
 }
 .access-sub__left::after {
@@ -68,7 +71,9 @@
 .access-sub__list-item {
     font-family: $yugothic;
     font-size: rem(21);
-
+    @include mq('md') {
+       font-size: 16px; 
+    }
 }
 
 .access-sub__right {
@@ -90,10 +95,14 @@
 
 }
 
-.access-sub__sub-text {
-    width: rem(42);
+.access-sub__sub-icon+.access-sub__sub-icon {
+    margin-left: rem(23);
 }
 
-.access-sub__sub-text+.access-sub__sub-text {
-    margin-left: rem(23);
+.access-sub__sub-icon,
+.access-sub__sub-icon a {
+    width: rem(42);
+    @include mq('md') {
+       width: rem(100); 
+    }
 }

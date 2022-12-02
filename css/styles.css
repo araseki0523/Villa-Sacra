@@ -262,6 +262,12 @@ select::-ms-expand {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -274,6 +280,7 @@ select::-ms-expand {
 @media screen and (max-width: 768px) {
   .access-sub__left {
     border-right: none;
+    margin-left: 0;
   }
 }
 
@@ -297,6 +304,11 @@ select::-ms-expand {
   font-family: "Yu Gothic", "YuGothic", sans-serif;
   font-size: 21px;
   font-size: 1.3125rem;
+}
+@media screen and (max-width: 768px) {
+  .access-sub__list-item {
+    font-size: 16px;
+  }
 }
 
 .access-sub__right {
@@ -323,14 +335,21 @@ select::-ms-expand {
   width: 12.5rem;
 }
 
-.access-sub__sub-text {
+.access-sub__sub-icon + .access-sub__sub-icon {
+  margin-left: 23px;
+  margin-left: 1.4375rem;
+}
+
+.access-sub__sub-icon,
+.access-sub__sub-icon a {
   width: 42px;
   width: 2.625rem;
 }
-
-.access-sub__sub-text + .access-sub__sub-text {
-  margin-left: 23px;
-  margin-left: 1.4375rem;
+@media screen and (max-width: 768px) {
+  .access-sub__sub-icon,
+  .access-sub__sub-icon a {
+    width: 6.25rem;
+  }
 }
 
 .access__inner {
@@ -418,6 +437,7 @@ select::-ms-expand {
 
 .affiliated__place-title-ja {
   font-family: "Sawarabi Mincho", serif;
+  font-family: "SignPainter HouseScript";
   font-size: 36px;
   font-size: 2.25rem;
 }
@@ -426,9 +446,10 @@ select::-ms-expand {
     font-size: 1.75rem;
   }
 }
-
-.affiliated__place-title-ja {
-  font-family: "SignPainter HouseScript";
+@media screen and (max-width: 768px) {
+  .affiliated__place-title-ja {
+    font-size: 18px;
+  }
 }
 
 .affiliated__place-title-ja,
@@ -455,6 +476,16 @@ select::-ms-expand {
   margin-top: 3.125rem;
   text-align: center;
   font-family: "Yu Gothic", "YuGothic", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .affiliated__text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .affiliated__text {
+    font-size: 14px;
+  }
 }
 
 .affiliated__button-area {
@@ -1255,6 +1286,11 @@ select::-ms-expand {
   font-weight: 700;
   line-height: 1.75;
 }
+@media screen and (max-width: 768px) {
+  .card__title {
+    font-size: 16px;
+  }
+}
 
 .card__text {
   font-size: 14px;
@@ -1265,6 +1301,11 @@ select::-ms-expand {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .card__text {
+    font-size: 16px;
+  }
 }
 
 .concept__inner {
@@ -1887,6 +1928,13 @@ input[type=checkbox] {
   padding-top: 18px;
   padding-top: 1.125rem;
 }
+@media screen and (max-width: 450px) {
+  .facility-box__left,
+  .facility-box__center,
+  .facility-box__right {
+    padding-bottom: 1.125rem;
+  }
+}
 
 .facility-box__left {
   margin-left: 0px;
@@ -1907,6 +1955,13 @@ input[type=checkbox] {
   height: 23px;
   height: 1.4375rem;
   margin: auto;
+}
+@media screen and (max-width: 450px) {
+  .facility-box__icon {
+    background-position: top;
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .facility__title-ja {
@@ -1991,6 +2046,11 @@ input[type=checkbox] {
 @media screen and (max-width: 960px) {
   .facility__button span {
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .facility__button span {
+    font-size: 16px;
   }
 }
 
@@ -3882,6 +3942,11 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 270px;
   margin-top: 16.875rem;
 }
+@media screen and (max-width: 768px) {
+  .layout-sub-facility {
+    margin-top: 21.875rem;
+  }
+}
 
 .layout-sub-room {
   margin-top: 430px;
@@ -4808,6 +4873,16 @@ sp版（1280px以下）のモーダル内メニュー
   max-width: 58.5625rem;
   margin: 0 auto;
 }
+@media screen and (max-width: 600px) {
+  .reservation__container {
+    height: 12rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .reservation__container {
+    height: 15rem;
+  }
+}
 @media screen and (max-width: 375px) {
   .reservation__container {
     height: 17.5rem;
@@ -5249,10 +5324,33 @@ button.reservation__modal {
   right: -10%;
 }
 
+@media screen and (max-width: 768px) {
+  .affiliated__title-area.section-title-sub::after {
+    right: 0;
+  }
+}
+
 .section-title-sub__ja {
   font-size: 36px;
   font-size: 2.25rem;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .section-title-sub__ja {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shared-space__title-ja.section-title-sub__ja {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .notes__title-ja.section-title-sub__ja {
+    font-size: 20px;
+  }
 }
 
 .section-title-sub__en {
@@ -5261,10 +5359,27 @@ button.reservation__modal {
   text-align: center;
   font-family: "SignPainter HouseScript";
 }
+@media screen and (max-width: 768px) {
+  .section-title-sub__en {
+    font-size: 14px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .breakFast__title-en.section-title-sub__en {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shared-space__title-en.section-title-sub__en {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .notes__title-en.section-title-sub__en {
+    font-size: 16px;
   }
 }
 

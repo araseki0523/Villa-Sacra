@@ -25,18 +25,53 @@
 .section-title-sub::after {
     right: -10%;
 }
+.affiliated__title-area.section-title-sub::after {
+    @include mq('md') {
+        right: 0;
+    }
+}
+
+// 日本語
 .section-title-sub__ja {
     font-size: rem(36);
     text-align: center;
+    @include mq('md') {
+       font-size: 20px; 
+    }
 }
+.shared-space__title-ja.section-title-sub__ja{
+    @include mq('md') {
+       font-size: 20px; 
+    }
+}
+.notes__title-ja.section-title-sub__ja {
+    @include mq('md') {
+       font-size: 20px; 
+    }
+}
+
+// 英語
 .section-title-sub__en {
     font-size: rem(14);
     // padding-left: rem(76);
     text-align: center;
     font-family: $sub-font-family;
+    @include mq('md') {
+       font-size: 14px; 
+    }
 }
 .breakFast__title-en.section-title-sub__en {
     @include mq('md') {
        font-size: 14px; 
+    }
+}
+.shared-space__title-en.section-title-sub__en {
+    @include mq('md') {
+       font-size: 16px; 
+    }
+}
+.notes__title-en.section-title-sub__en {
+    @include mq('md') {
+       font-size: 16px; 
     }
 }

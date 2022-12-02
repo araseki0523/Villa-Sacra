@@ -28,12 +28,11 @@
     width: calc(100% / 3 - rem(32));
     margin-left: rem(16);
     flex-grow: 1;
-    // width: 348px;
-    // width: 21.75rem;
-    // height: 90px;
-    // height: 5.625rem;
     padding-top: 18px;
     padding-top: 1.125rem;
+    @media screen and (max-width:450px){
+        padding-bottom: rem(18);
+    }
 }
 
 .facility-box__left {
@@ -51,4 +50,9 @@
     height: 23px;
     height: 1.4375rem;
     margin: auto;
+    @media screen and (max-width:450px){
+        background-position: top;
+        width: 10px;
+        height: 10px;
+    }
 }

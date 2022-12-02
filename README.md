@@ -75,7 +75,11 @@ concept
 room
 bandb
 facility
+access
 
+blog
+qa
+contact
 
 
 b&bの「ワンダーキッチン」はリンク？

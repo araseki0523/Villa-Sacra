@@ -39,17 +39,17 @@
       <div class="access-sub__right">
         <ul class="access-sub__sns">
           <div class="access-sub__container">
-            <li class="access-sub__sub-text">
+            <li class="access-sub__sub-icon">
               <a href="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-instagram-white.png" alt="インスタグラムのアイコン画像">
               </a>
             </li>
-            <li class="access-sub__sub-text">
+            <li class="access-sub__sub-icon">
               <a href="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-facebook-white.png" alt="フェイスブックのアイコン画像">
               </a>
             </li>
-            <li class="access-sub__sub-text">
+            <li class="access-sub__sub-icon">
               <a href="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/common/icon-tiktok-white.png" alt="ティックトックのアイコン画像">
               </a>

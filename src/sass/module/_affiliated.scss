@@ -36,13 +36,14 @@
 }
 .affiliated__place-title-ja {
     font-family: $sawarabi;
+    font-family: $sub-font-family;
     font-size: rem(36);
     @include mq('lg') {
        font-size: rem(28); 
     }
-}
-.affiliated__place-title-ja {
-    font-family: $sub-font-family;
+    @include mq('md') {
+       font-size: 18px; 
+    }
 }
 .affiliated__place-title-ja,
 .affiliated__place-title-en {
@@ -58,6 +59,12 @@
     margin-top: rem(50);
     text-align: center;
     font-family: $yugothic;
+    @include mq('md') {
+       font-size: 16px; 
+    }
+    @include mq('sm') {
+       font-size: 14px; 
+    }
 }
 .affiliated__button-area {
     margin-top: rem(50);
