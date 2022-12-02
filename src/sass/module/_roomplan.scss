@@ -45,11 +45,17 @@
 	height: 1px;
 	background: $black;
     @include mq(md) {
-        top: calc(52% - 1px);
+        top: calc(52% - 0px);
         transform: translateY(calc(-52% - 1px)) rotate(45deg);
         right: rem(30);
         width: 2.8%;    
     }
+    @include mq('ss') {
+        right: rem(15);
+        top: calc(52% - 0px);
+
+    }
+
 }
 .roomplan__left::after,
 .roomplan__center::after,
@@ -67,6 +73,12 @@
         top: 52%;
         width: 14%;
         right: rem(30);
+    }
+    @media screen and (max-width:450px){
+        width: 10%;
+    }
+    @include mq('ss') {
+        right: rem(15);
     }
 }
 

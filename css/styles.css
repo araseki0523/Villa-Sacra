@@ -334,6 +334,12 @@ select::-ms-expand {
   width: 200px;
   width: 12.5rem;
 }
+@media screen and (max-width: 768px) {
+  .access-sub__container {
+    margin-top: 3.125rem;
+    width: 25rem;
+  }
+}
 
 .access-sub__sub-icon + .access-sub__sub-icon {
   margin-left: 23px;
@@ -508,6 +514,11 @@ select::-ms-expand {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 768px) {
+  .amenities__inner {
+    max-width: 45rem;
+  }
+}
 
 .amenitiesList__items {
   display: -webkit-box;
@@ -530,9 +541,9 @@ select::-ms-expand {
     margin: 0rem auto;
     padding-bottom: 0rem;
     border-bottom: none;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -568,6 +579,7 @@ select::-ms-expand {
 @media screen and (max-width: 768px) {
   .amenitiesList__title {
     margin-top: 1.875rem;
+    font-size: 16px;
   }
 }
 
@@ -579,6 +591,11 @@ select::-ms-expand {
   font-family: "Yu Gothic", "YuGothic", sans-serif;
   margin-top: 9px;
   margin-top: 0.5625rem;
+}
+@media screen and (max-width: 768px) {
+  .amenitiesList__text {
+    font-size: 14px;
+  }
 }
 
 .amenitiesList__note {
@@ -594,6 +611,7 @@ select::-ms-expand {
 @media screen and (max-width: 768px) {
   .amenitiesList__note {
     text-align: left;
+    font-size: 12px;
   }
 }
 
@@ -650,7 +668,13 @@ select::-ms-expand {
 }
 @media screen and (max-width: 768px) {
   .banners_icon {
-    left: 47%;
+    left: 45%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banners_icon {
+    bottom: 10px;
+    width: 2.5rem;
   }
 }
 
@@ -671,6 +695,11 @@ select::-ms-expand {
 @media screen and (max-width: 768px) {
   .banners__text {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banners__text {
+    font-size: 18px;
   }
 }
 
@@ -1062,7 +1091,7 @@ select::-ms-expand {
 }
 @media screen and (max-width: 375px) {
   .breakFast-box__sub-title-ja.item-box__sub-title-ja {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -1781,7 +1810,7 @@ input[type=checkbox] {
 }
 @media screen and (max-width: 375px) {
   .dinner-box__sub-title-ja.item-box__sub-title-ja {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
@@ -4341,6 +4370,11 @@ sp版（1280px以下）のモーダル内メニュー
   font-family: "Yu Gothic", "YuGothic", sans-serif;
   line-height: 1.5;
 }
+@media screen and (max-width: 768px) {
+  .notes__index {
+    font-size: 18px;
+  }
+}
 
 .notes__text {
   font-size: 16px;
@@ -4350,6 +4384,11 @@ sp版（1280px以下）のモーダル内メニュー
   line-height: 1.75;
   margin-top: 10px;
   margin-top: 0.625rem;
+}
+@media screen and (max-width: 768px) {
+  .notes__text {
+    font-size: 16px;
+  }
 }
 
 .pagenation {
@@ -5349,11 +5388,19 @@ button.reservation__modal {
   .roomplan__left::before,
   .roomplan__center::before,
   .roomplan__right::before {
-    top: calc(52% - 1px);
+    top: 52%;
     -webkit-transform: translateY(calc(-52% - 1px)) rotate(45deg);
             transform: translateY(calc(-52% - 1px)) rotate(45deg);
     right: 1.875rem;
     width: 2.8%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .roomplan__left::before,
+  .roomplan__center::before,
+  .roomplan__right::before {
+    right: 0.9375rem;
+    top: 52%;
   }
 }
 
@@ -5379,6 +5426,20 @@ button.reservation__modal {
     top: 52%;
     width: 14%;
     right: 1.875rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .roomplan__left::after,
+  .roomplan__center::after,
+  .roomplan__right::after {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .roomplan__left::after,
+  .roomplan__center::after,
+  .roomplan__right::after {
+    right: 0.9375rem;
   }
 }
 
@@ -5573,6 +5634,11 @@ button.reservation__modal {
   line-height: 1.75;
   font-family: "Yu Mincho", "YuMincho", sans-serif;
 }
+@media screen and (max-width: 768px) {
+  .shared-space__text {
+    font-size: 16px;
+  }
+}
 
 .shared-swiper {
   position: relative;
@@ -5614,6 +5680,11 @@ button.reservation__modal {
   font-family: "Yu Gothic", "YuGothic", sans-serif;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .shared-swiper__title {
+    font-size: 14px;
+  }
+}
 
 .shared-swiper__text {
   font-size: 14px;
@@ -5626,6 +5697,7 @@ button.reservation__modal {
 @media screen and (max-width: 768px) {
   .shared-swiper__text {
     text-align: center;
+    font-size: 14px;
   }
 }
 

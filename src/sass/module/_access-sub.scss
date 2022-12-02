@@ -85,14 +85,19 @@
 }
 
 // SNS
-.access-sub__sns {}
+.access-sub__sns {
+
+}
 
 .access-sub__container {
     display: flex;
     align-items: center;
     height: rem(60);
     width: rem(200);
-
+    @include mq('md') {
+        margin-top: rem(50);
+        width: rem(400); 
+     }     
 }
 
 .access-sub__sub-icon+.access-sub__sub-icon {
