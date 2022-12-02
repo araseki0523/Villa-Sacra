@@ -68,7 +68,7 @@ single.phpへの動線ok
 
 
 ##  要確認
-26mv-sub, 20title, 16
+「26mv-sub, 20title, 16px」
 
 front-page
 concept
@@ -84,4 +84,4 @@ contact
 b&bの「ワンダーキッチン」はリンク？
 affiliated_place-title-jaのfont-family
 contact7__input-textarea-areaにバリデーションをつける
-
+各aタグからのhome.phpとsingle.phpへのリンク確認
