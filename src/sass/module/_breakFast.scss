@@ -44,6 +44,9 @@
     @include mq('md') {
         font-size: 18px;
     }
+    @media screen and (max-width:450px){
+        font-size: 17px;
+    }
     @include mq('ss') {
        font-size: 16px; 
     }
@@ -53,7 +56,7 @@
         padding: 0.5rem 5rem 0.5rem 5rem;
     }
     @media screen and (max-width:450px){
-        padding: 0.5rem 4.5rem 0.5rem 4.5rem;
+        padding: 0.5rem 4.3rem 0.5rem 4.5rem;
     }
     @media screen and (max-width:326px){
         padding: 0.5rem 4rem 0.5rem 4rem;
@@ -67,7 +70,7 @@
        width: 20px;
     }
     @media screen and (max-width:450px){
-        right: -18px;
+        right: -17px;
         width: 18px;
     }
     @include mq('ss') {

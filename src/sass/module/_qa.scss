@@ -69,8 +69,7 @@
      @media screen and (max-width:600px){
         top: 42%;
         left: 15px;
-        width: 15px;
-        height: 15px;
+        height: 24px;
     } 
     @media screen and (max-width:450px){
         left: 4px;
@@ -81,9 +80,12 @@
     padding-left: rem(72);
     padding-top: rem(0);
     padding-bottom: rem(0);
+    padding-right: rem(80); 
     font-size: rem(16);
     font-family: $yugothic;
-    padding-right: rem(60); 
+    @include mq('md') {
+        font-size: 16px; 
+     } 
     @include mq('sm') {
        padding-right: rem(80); 
     }
@@ -105,6 +107,9 @@
     padding-right: rem(23);
     position: relative;
     font-family: $yugothic;
+    @include mq('md') {
+       font-size: 16px; 
+    }
 }
 
 .qa__answer > p::before {
@@ -115,14 +120,16 @@
     background-size: contain;
     width: 20px;
     height: 24px;
-    left: 29px;
+    left: 27px;
     @include mq('md') {
        margin-top: -3px; 
+       padding-left: rem(72);
+       height: 21px;
     }
      @media screen and (max-width:600px){
         margin-top: 0;
-        width: 15px;
-        height: 15px;
+        height: 24px;
+        left: 15px;
     } 
     @media screen and (max-width:450px){
         left: 4px;

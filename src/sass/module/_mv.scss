@@ -22,9 +22,12 @@
     left: fmin(58, 1366);
     position: absolute;
     @include mq(md) {
-        top: vw(765, 450);
+        top: vw(765, 350);
         left: rem(40);
         left: fmin(40, 765);
+    }
+    @include mq('ss') {
+        top: vw(375, 200);
     }
 }
 .mv__title {
@@ -36,6 +39,9 @@
     @include mq("ll") {
         font-size: rem(60);
         font-size: fmin(60, 1280);
+    }
+    @media screen and (max-width:450px){
+        font-size: fmin(30, 450);
     }
 }
 

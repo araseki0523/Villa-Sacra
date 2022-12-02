@@ -1055,6 +1055,11 @@ select::-ms-expand {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 450px) {
+  .breakFast-box__sub-title-ja.item-box__sub-title-ja {
+    font-size: 17px;
+  }
+}
 @media screen and (max-width: 375px) {
   .breakFast-box__sub-title-ja.item-box__sub-title-ja {
     font-size: 16px;
@@ -1068,7 +1073,7 @@ select::-ms-expand {
 }
 @media screen and (max-width: 450px) {
   .breakFast-box__head.item-box__head {
-    padding: 0.5rem 4.5rem 0.5rem 4.5rem;
+    padding: 0.5rem 4.3rem 0.5rem 4.5rem;
   }
 }
 @media screen and (max-width: 326px) {
@@ -1089,7 +1094,7 @@ select::-ms-expand {
 }
 @media screen and (max-width: 450px) {
   .breakFast-box__sub-title-ja.item-box__sub-title-ja::after {
-    right: -18px;
+    right: -17px;
     width: 18px;
   }
 }
@@ -1340,7 +1345,7 @@ select::-ms-expand {
 @media screen and (max-width: 768px) {
   .concept__text1,
   .concept__text2,
-  .concept__text3 .concept__text2,
+  .concept__text3,
   .concept__text4,
   .concept__text5,
   .concept__text6,
@@ -1446,9 +1451,15 @@ select::-ms-expand {
   margin-top: 29px;
   margin-top: 1.8125rem;
 }
+@media screen and (max-width: 768px) {
+  .contact7__content + .contact7__content {
+    margin-top: 3.125rem;
+  }
+}
 
 .contact7__head-wrapper {
   width: 36%;
+  font-size: 16px;
 }
 
 .contact7__head {
@@ -1487,6 +1498,12 @@ select::-ms-expand {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .contact7__check {
+    font-size: 12px;
+  }
+}
+
 .contact7__button-area {
   margin-top: 26px;
   margin-top: 1.625rem;
@@ -1501,10 +1518,17 @@ select::-ms-expand {
   border-radius: 5px;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .contact7__button-area input {
+    padding: 1.5rem;
+    font-size: 16px;
+  }
+}
 
 .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact7__item,
 .wpcf7-form-control.wpcf7-text.contact7__item,
 .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7__item {
+  font-size: 16px;
   width: 155%;
   border-radius: 5px;
   color: #fff;
@@ -1748,6 +1772,11 @@ input[type=checkbox] {
 @media screen and (max-width: 768px) {
   .dinner-box__sub-title-ja.item-box__sub-title-ja {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .dinner-box__sub-title-ja.item-box__sub-title-ja {
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -2141,6 +2170,11 @@ input[type=checkbox] {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    max-width: 12.5rem;
+  }
+}
 
 .footer__right {
   margin-left: 11%;
@@ -2162,6 +2196,12 @@ input[type=checkbox] {
   font-weight: 500;
 }
 
+@media screen and (max-width: 768px) {
+  .footer__list-item {
+    font-size: 14px;
+  }
+}
+
 .footer__list-item + .footer__list-item {
   margin-top: 45px;
   margin-top: 2.8125rem;
@@ -2181,6 +2221,7 @@ input[type=checkbox] {
 @media screen and (max-width: 768px) {
   .footer__list-item span {
     padding-left: 0;
+    font-size: 12px;
   }
 }
 
@@ -2271,7 +2312,7 @@ input[type=checkbox] {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 0.75rem;
+    font-size: 12px;
   }
 }
 
@@ -2677,6 +2718,7 @@ top
 @media screen and (max-width: 375px) {
   .header__logo {
     margin-top: 5px;
+    width: 12.125rem;
   }
 }
 
@@ -3600,14 +3642,24 @@ sp版（1280px以下）のモーダル内メニュー
     left: 14%;
   }
 }
+@media screen and (max-width: 500px) {
+  .item-box__head {
+    left: 10%;
+  }
+}
 @media screen and (max-width: 450px) {
   .item-box__head {
-    left: 8%;
+    left: 9%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .item-box__head {
+    left: 6%;
   }
 }
 @media screen and (max-width: 375px) {
   .item-box__head {
-    left: 2%;
+    left: 4%;
   }
 }
 
@@ -3789,6 +3841,11 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 248px;
   margin-top: 15.5rem;
 }
+@media screen and (max-width: 768px) {
+  .layout-gallery-contact {
+    margin-top: 21.875rem;
+  }
+}
 
 .layout-gallery-concept {
   margin-top: 360px;
@@ -3803,6 +3860,11 @@ sp版（1280px以下）のモーダル内メニュー
 .layout-gallery-qa {
   margin-top: 215px;
   margin-top: 13.4375rem;
+}
+@media screen and (max-width: 768px) {
+  .layout-gallery-qa {
+    margin-top: 21.875rem;
+  }
 }
 
 .layout-gallery-single {
@@ -4088,6 +4150,11 @@ sp版（1280px以下）のモーダル内メニュー
     font-size: 26px;
   }
 }
+@media screen and (max-width: 375px) {
+  .mv-sub__title-ja {
+    font-size: 22px;
+  }
+}
 
 .mv-sub__title-en {
   top: 60%;
@@ -4101,6 +4168,12 @@ sp版（1280px以下）のモーダル内メニュー
   .mv-sub__title-en {
     font-size: 16px;
     top: 65%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mv-sub__title-en {
+    top: 70%;
+    font-size: 18px;
   }
 }
 
@@ -4129,9 +4202,14 @@ sp版（1280px以下）のモーダル内メニュー
 }
 @media screen and (max-width: 768px) {
   .mv__title-adjust {
-    top: 58.8235294118vw;
+    top: 45.7516339869vw;
     left: 2.5rem;
     left: min(5.22876vw, 40px);
+  }
+}
+@media screen and (max-width: 375px) {
+  .mv__title-adjust {
+    top: 53.3333333333vw;
   }
 }
 
@@ -4147,6 +4225,11 @@ sp版（1280px以下）のモーダル内メニュー
   .mv__title {
     font-size: 3.75rem;
     font-size: min(4.6875vw, 60px);
+  }
+}
+@media screen and (max-width: 450px) {
+  .mv__title {
+    font-size: min(6.66667vw, 30px);
   }
 }
 
@@ -4641,8 +4724,7 @@ sp版（1280px以下）のモーダル内メニュー
   .qa__label::before {
     top: 42%;
     left: 15px;
-    width: 15px;
-    height: 15px;
+    height: 24px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -4658,11 +4740,16 @@ sp版（1280px以下）のモーダル内メニュー
   padding-top: 0rem;
   padding-bottom: 0px;
   padding-bottom: 0rem;
+  padding-right: 80px;
+  padding-right: 5rem;
   font-size: 16px;
   font-size: 1rem;
   font-family: "Yu Gothic", "YuGothic", sans-serif;
-  padding-right: 60px;
-  padding-right: 3.75rem;
+}
+@media screen and (max-width: 768px) {
+  .qa__label > p {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 600px) {
   .qa__label > p {
@@ -4693,6 +4780,11 @@ sp版（1280px以下）のモーダル内メニュー
   position: relative;
   font-family: "Yu Gothic", "YuGothic", sans-serif;
 }
+@media screen and (max-width: 768px) {
+  .qa__answer > p {
+    font-size: 16px;
+  }
+}
 
 .qa__answer > p::before {
   position: absolute;
@@ -4702,18 +4794,20 @@ sp版（1280px以下）のモーダル内メニュー
   background-size: contain;
   width: 20px;
   height: 24px;
-  left: 29px;
+  left: 27px;
 }
 @media screen and (max-width: 768px) {
   .qa__answer > p::before {
     margin-top: -3px;
+    padding-left: 4.5rem;
+    height: 21px;
   }
 }
 @media screen and (max-width: 600px) {
   .qa__answer > p::before {
     margin-top: 0;
-    width: 15px;
-    height: 15px;
+    height: 24px;
+    left: 15px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -4903,6 +4997,18 @@ sp版（1280px以下）のモーダル内メニュー
 @media screen and (max-width: 768px) {
   .reservation__title--ja {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .reservation__title--ja.section-title__ja {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .reservation__title--en.section-title__en {
+    font-size: 14px;
   }
 }
 
@@ -5128,6 +5234,11 @@ button.reservation__modal {
   font-weight: 500;
   line-height: 1.7;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .room__title {
+    font-size: 22px;
+  }
 }
 
 .room__title:before {

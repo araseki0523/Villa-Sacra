@@ -35,6 +35,10 @@
     @include mq('md') {
         font-size: 18px;
     }
+    @media screen and (max-width:450px){
+        font-size: 17px;
+    }
+
     @include mq('ss') {
         font-size: 16px; 
      } 

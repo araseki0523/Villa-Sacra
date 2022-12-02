@@ -95,16 +95,24 @@
     top: -13%;
     left: 8%;
     @include mq(md) {
+        // transform: translateX(-50%);
+        // left: 50%;
         left: 20%;
     }
     @include mq('sm') {
        left: 14%; 
     }
+    @media screen and (max-width:500px){
+        left: 10%;
+    }
     @media screen and (max-width:450px){
-        left: 8%;
+        left: 9%;
+    }
+    @media screen and (max-width:400px){
+        left: 6%;
     }
     @include mq('ss') {
-       left: 2%; 
+       left: 4%; 
     }
 }
 

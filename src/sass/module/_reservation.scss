@@ -44,6 +44,16 @@
        font-size: 20px; 
     }
 }
+.reservation__title--ja.section-title__ja {
+    @include mq('ss') {
+        font-size: 18px; 
+     }
+ }
+.reservation__title--en.section-title__en {
+    @include mq('ss') {
+        font-size: 14px; 
+     }
+}
 
 .reservation__icon {
     padding-top: rem(70);

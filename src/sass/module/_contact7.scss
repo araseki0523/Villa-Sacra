@@ -12,10 +12,13 @@
 }
 .contact7__content + .contact7__content {
     margin-top: rem(29);
+    @include mq('md') {
+       margin-top: rem(50); 
+    }
 }
 .contact7__head-wrapper {
     width:  36%;
-
+    font-size: 16px; 
 }
 .contact7__head {
     display: flex;
@@ -54,7 +57,9 @@
     text-align: center;
 }
 .contact7__check {
-
+    @include mq('md') {
+       font-size: 12px; 
+    }
 }
 .contact7__button-area{
     margin-top: rem(26);
@@ -66,11 +71,16 @@
     padding: rem(16);
     border-radius: 5px;
     color: $white;
+    @include mq('md') {
+       padding: rem(24);
+       font-size: 16px; 
+    }
 }
 .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact7__item,
 .wpcf7-form-control.wpcf7-text.contact7__item,
 .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7__item
 {
+    font-size: 16px;
     width: 155%;
     border-radius: 5px;
     color: $white;

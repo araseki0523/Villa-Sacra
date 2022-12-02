@@ -2,4 +2,7 @@
 
 .layout-gallery-qa {
     margin-top: rem(215);
+    @include mq('md') {
+       margin-top: rem(350); 
+    }
 }

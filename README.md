@@ -76,11 +76,12 @@ room
 bandb
 facility
 access
-
 blog
 qa
 contact
 
 
 b&bの「ワンダーキッチン」はリンク？
+affiliated_place-title-jaのfont-family
+contact7__input-textarea-areaにバリデーションをつける
 

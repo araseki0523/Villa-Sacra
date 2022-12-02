@@ -56,6 +56,9 @@
     @include mq(md) {
         font-size:26px;
     }
+    @include mq('ss') {
+       font-size: 22px; 
+    }
 }
 .mv-sub__title-en {
     top: 60%;
@@ -66,5 +69,9 @@
     @include mq(md) {
         font-size: 16px;
         top: 65%;
+    }
+    @include mq('ss') {
+        top: 70%;
+       font-size: 18px; 
     }
 }
