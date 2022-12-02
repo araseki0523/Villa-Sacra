@@ -3726,7 +3726,6 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: auto;
   background-color: #272727;
   max-width: 214px;
-  max-width: 13.375rem;
   max-width: 15.6661786237vw;
   width: 100%;
   padding-top: 46.57%;
@@ -3750,7 +3749,6 @@ sp版（1280px以下）のモーダル内メニュー
 
 .mv__title {
   font-size: 63px;
-  font-size: 3.9375rem;
   font-size: min(4.61201vw, 63px);
   letter-spacing: 0.13em;
   font-family: "Sawarabi Mincho", serif;
@@ -3773,7 +3771,7 @@ sp版（1280px以下）のモーダル内メニュー
 .mv__image {
   position: relative;
   width: 85%;
-  max-width: 84.3338213763vw;
+  max-width: 1152px;
   padding-top: 59.5900439239vw;
   margin-left: auto;
 }
