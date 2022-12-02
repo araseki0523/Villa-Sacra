@@ -9,7 +9,7 @@
     display: inline-block;
     margin-top: auto;
     background-color: $gray;
-    max-width: rem(214);
+    max-width: 214px;
     max-width: vw(1366, 214);
     width: 100%;
     padding-top: 46.57%;
@@ -28,7 +28,7 @@
     }
 }
 .mv__title {
-    font-size: rem(63);
+    font-size: 63px;
     font-size: fmin(63, 1366);
     letter-spacing: 0.13em;
     font-family: $sawarabi;
@@ -47,7 +47,7 @@
 .mv__image {
     position: relative;
     width: 85%;
-    max-width: vw(1366, 1152);
+    max-width: 1152px;
     padding-top: vw(1366, 814);
     margin-left: auto;
 }
