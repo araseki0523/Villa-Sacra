@@ -64,10 +64,10 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide shared-swiper__contant">
                                 <div class="shared-swiper__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility1.jpg" alt="共用パスルーム">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility-bathroom.jpg" alt="共用パスルーム">
                                 </div>
                                 <div class="shared-swiper__content">
-                                    <div class="shared-swiper__title">共用パスルーム</div>
+                                    <div class="shared-swiper__title">共用バスルーム</div>
                                     <p class="shared-swiper__text">
                                     シャンプー、リンス、ボディソープが設置された、共用バスルームが1ヶ所あります。　
                                     </p>
@@ -75,7 +75,7 @@
                             </div>
                             <div class="swiper-slide shared-swiper__contant">
                                 <div class="shared-swiper__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility2.jpg" alt="共用トイレ">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility-toilet.jpg" alt="共用トイレ">
                                 </div>
                                 <div class="shared-swiper__content">
                                     <div class="shared-swiper__title">共用トイレ</div>
@@ -86,12 +86,56 @@
                             </div>
                             <div class="swiper-slide shared-swiper__contant">
                                 <div class="shared-swiper__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility3.jpg" alt="洗面台">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility-washroom.jpg" alt="洗面台">
                                 </div>
                                 <div class="shared-swiper__content">
                                     <div class="shared-swiper__title">洗面台</div>
                                     <p class="shared-swiper__text">
                                     女性に人気の可愛いデザインの洗面台です。ハンドソープが設置されています。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide shared-swiper__contant">
+                                <div class="shared-swiper__img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility-lounge.jpg" alt="ラウンジ">
+                                </div>
+                                <div class="shared-swiper__content">
+                                    <div class="shared-swiper__title">ラウンジ</div>
+                                    <p class="shared-swiper__text">
+                                    国内・海外の宿泊者同士の交流や休憩の場所としてお使い頂けます。フリードリンク有。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide shared-swiper__contant">
+                                <div class="shared-swiper__img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility-laundry.jpg" alt="洗面台">
+                                </div>
+                                <div class="shared-swiper__content">
+                                    <div class="shared-swiper__title">ランドリールーム</div>
+                                    <p class="shared-swiper__text">
+                                    24時間、お洗濯が可能な洗濯機・乾燥機が設置されています。ご自由にお使い下さい。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide shared-swiper__contant">
+                                <div class="shared-swiper__img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/" alt="フロント">
+                                </div>
+                                <div class="shared-swiper__content">
+                                    <div class="shared-swiper__title">フロント</div>
+                                    <p class="shared-swiper__text">
+                                    分からないことがある時やご用の時は、フロントにお気軽にお申し付け下さい
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide shared-swiper__contant">
+                                <div class="shared-swiper__img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facility/facility-books.jpg" alt="書籍">
+                                </div>
+                                <div class="shared-swiper__content">
+                                    <div class="shared-swiper__title">書籍</div>
+                                    <p class="shared-swiper__text">
+                                    ラウンジには、鎌倉の周辺のお店や観光地などの情報が載った書籍を多数揃えています。
                                     </p>
                                 </div>
                             </div>
@@ -173,7 +217,7 @@
                     <div class="amenitiesList__item">
                         <h3 class="amenitiesList__title">ケトル</h3>
                         <p class="amenitiesList__text">
-                        ウンジにあるケトルで自由にお湯を沸かして頂くことが出来ます。
+                        ラウンジにあるケトルで自由にお湯を沸かして頂くことが出来ます。
                         </p>
                     </div>
                 </div>
