@@ -24,7 +24,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
 <section class="contact layout-contact">
   <div class="contact__inner">
     <div class="contact7__contents">
-      <?php /*echo do_shortcode('');*/ ?>
+      <?php echo do_shortcode('[contact-form-7 id="98" title="お問合せフォーム"]'); ?>
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
           <?php the_content(); ?>
