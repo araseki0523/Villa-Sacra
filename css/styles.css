@@ -427,10 +427,6 @@ select::-ms-expand {
   }
 }
 
-.affiliated__place-title-ja {
-  font-family: "SignPainter HouseScript";
-}
-
 .affiliated__place-title-ja,
 .affiliated__place-title-en {
   display: -webkit-box;
