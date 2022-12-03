@@ -41,6 +41,7 @@
 .introduction__container-even {
     display: flex;
     @media screen and (max-width:1920px){
+        flex-direction: row-reverse;
         justify-content: center;
     }
     @include mq('comp') {

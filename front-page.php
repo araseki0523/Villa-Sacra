@@ -4,6 +4,12 @@ $archive = esc_url(home_url('/news-archive/'));
 $blog = esc_url(home_url('/blog/'));
 $concept = esc_url(home_url('/concept/'));
 $room = esc_url(home_url('/room/'));
+$roomhana = esc_url(home_url('/room/#hananoma'));
+$roomtsuki = esc_url(home_url('/room/#tsukinoma'));
+$roomtora = esc_url(home_url('/room/#toranoma'));
+$roomshizuku = esc_url(home_url('/room/#shizukunoma'));
+$roomtsuru = esc_url(home_url('/room/#tsurunoma'));
+$roomnizi = esc_url(home_url('/room/#nizinoma'));
 $bb = esc_url(home_url('/bb/'));
 $facility = esc_url(home_url('/facility/'));
 $access = esc_url(home_url('/access/'));
@@ -80,7 +86,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
+                <a href="<?php echo $roomhana ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景１ -->
             <div class="introduction__background1"></div>
@@ -103,7 +109,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                     和の造りを生かしたユニークなデザインと縁側や小上がりといった日本家屋特有のシチュエーション。月の形の調光ライトは、部屋のムードを気分に合わせて変えてくれて、紙のシェードや障子などの日本独特の建具は魅力たっぷりです。この幻想的な一室は、特に外国人観光客には人気があり、陰影ある日本の美があふれています。シングルユースでも、カップルでない二人連れでも、落ち着いたステイができる空間となっています。 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
+                <a href="<?php echo $roomtsuki ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景２ -->
             <div class="introduction__background2"></div>
@@ -129,7 +135,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
+                <a href="<?php echo $roomtora ?>" class="introduction__button button">MORE</a>
             </div>
         </div>
         <!--introduction__each-wrapper  虎の間-->
@@ -153,7 +159,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 </p>
             </div>
             <div class="introduction__button-area introduction__button-area-shizuku">
-                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
+                <a href="<?php echo $roomshizuku ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景３ -->
             <div class="introduction__background3"></div>
@@ -176,7 +182,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 </p>
             </div>
             <div class="introduction__button-area introduction__button-area-tsuru">
-                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
+                <a href="<?php echo $roomtsuru ?>" class="introduction__button button">MORE</a>
             </div>
         </div>
         <!--introduction__each-wrapper  鶴の間-->
@@ -198,7 +204,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
+                <a href="<?php echo $roomnizi ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景４ -->
             <div class="introduction__background4"></div>
@@ -216,8 +222,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 <p class="box__left-title-en section-title__en">Restaurant</p>
             </div>
             <div class="box__button-area">
-                <!-- まだ -->
-                <a href="" class="box__button button">MORE</a>
+                <a href="<?php echo $bb ?>" class="box__button button">MORE</a>
             </div>
         </div>
         <div class="box__right">
@@ -226,8 +231,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 <p class="box__right-title-en section-title__en">Shared space</p>
             </div>
             <div class="box__button-area">
-                <!-- まだ -->
-                <a href="" class="box__button button">MORE</a>
+                <a href="<?php echo $facility ?>" class="box__button button">MORE</a>
             </div>
         </div>
     </div>
