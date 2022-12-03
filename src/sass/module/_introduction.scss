@@ -67,6 +67,9 @@
     font-size: rem(62);
     letter-spacing: 0.5em;
 }
+.introduction__container-even > .introduction__room-name {
+    margin-right: rem(60);
+}
 
 .introduction__image-wrapper {
     margin-top: rem(-174);
@@ -134,6 +137,9 @@
     padding: rem(53) rem(53);
     line-height: 1.5;
 }
+.introduction__text2 {
+    padding: 0 rem(53) rem(53);
+}
 .introduction__button-area {
     margin-top: rem(55);
     text-align: center;
@@ -156,7 +162,7 @@
 .introduction__background2,
 .introduction__background3,
 .introduction__background4 {
-    background-color: lightblue;
+    background-color: $gray;
     z-index: -2;
     position: absolute;
 

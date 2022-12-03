@@ -1,0 +1,117 @@
+@use 'global' as *;
+
+.qa {
+
+}
+
+.qa__inner {
+    max-width: rem(1060);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.qa__contents {
+    margin-top: rem(66);
+}
+
+// アコーディオン
+.qa__content > li {
+    list-style: none;
+}
+
+.qa__label  {
+    cursor: pointer;
+    position: relative;
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+    background-color: $white;
+    color: $black;
+}
+
+.qa__label::before {
+    content: "";
+    background-image: url(../images/qa/Q.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+}
+
+.qa__label > p {
+    margin-left: rem(30);
+    font-size: rem(16);
+}
+
+.qa__answer {
+    display: none;
+}
+
+.qa__answer > p {
+    font-size: rem(16);
+    padding-left: rem(30);
+    padding-top: rem(14);
+    padding-bottom: rem(14);
+    position: relative;
+}
+
+.qa__answer > p::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/qa/A.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: blue;
+    left: 0;
+}
+/*======================================
+アイコン                                        
+======================================*/
+.icon-wrap {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+}
+  /* プラスアイコン */
+  /* ２本の線を.icon-wrapの中央に並行に重ねる */
+.icon:before,
+.icon:after {
+    position: absolute;
+    content: "";
+    display: block;
+    transition: all 0.4s;
+    background: #b3b3b3;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 2px;
+    transform: translate(-50%, -50%);
+}
+
+  /* そのうち1本を縦にする */
+.icon:before {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+  
+/* プラスアイコンクリック後、マイナスにする */
+.icon.open:before {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
