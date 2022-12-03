@@ -14,12 +14,25 @@
 }
 
 .shared-swiper__img {
-    height: auto;
+    max-width: rem(310);
     width: 100%;
+    padding-top: 66.2%;
+    position: relative;
     @include mq(md) {
         position: relative;
+        max-width: 100%;
     }
 }
+.shared-swiper__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .shared-swiper__content {
     margin-top: rem(40);
 }
@@ -51,12 +64,12 @@
 }
 /* ページネーションのサイズと色 */
 .swiper-pagination-bullet {
-    background: $white!important;
-    opacity: 0.5!important;
+    background: $white !important;
+    opacity: 0.5 !important;
 }
 .swiper-pagination-bullet-active {
-    background: $white!important;
-    opacity: 1!important;
+    background: $white !important;
+    opacity: 1 !important;
 }
 
 /* 前へ次への矢印カスタマイズ */

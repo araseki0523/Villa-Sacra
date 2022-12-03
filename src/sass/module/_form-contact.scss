@@ -98,19 +98,6 @@ span.any {
     margin-top: 52px;
 }
 
-// input[type=checkbox] {
-//     display: inline-block;
-//     width: 20px;
-//     height: 20px;
-//     border: $white;
-//     background-color: transparent;
-//     cursor: pointer;
-//     transition: opacity 0.3s ease 0s;
-//     margin-right: 20px;
-//     appearance: auto;
-//     vertical-align: bottom;
-// }
-
 input[type="checkbox"] {
     margin: 0;
     padding: 0;
@@ -186,6 +173,11 @@ span.acceptance {
     transition: ease 0.3s;
 }
 
-input[type="text" i] {
+input[type="text" i],
+textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required.form-item__textarea {
     width: 98%;
+}
+
+span.wpcf7-spinner {
+    display: none;
 }

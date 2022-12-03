@@ -1,76 +1,83 @@
-@use 'global' as *;
+@use "global" as *;
 
 .contact7__contents {
-
 }
-.contact7__content {
+.contact7content {
     display: flex;
-        @include mq('md') {
+    @include mq("md") {
         flex-direction: column;
         width: 100%;
     }
 }
-.contact7__content + .contact7__content {
+.contact7content + .contact7content {
     margin-top: rem(29);
     @include mq('md') {
        margin-top: rem(50); 
     }
 }
+<<<<<<< HEAD
 .contact7__head-wrapper {
     width:  36%;
     font-size: 16px; 
+=======
+.contact7head-wrapper {
+    width: 32%;
+>>>>>>> 614a7dafb1cdc1b929c8c1ab6314eccf115d24bb
 }
-.contact7__head {
+.contact7head {
     display: flex;
-    width:  100%;
+    width: 100%;
     white-space: nowrap;
 }
-.contact7__required,
-.contact7__any {
+.contact7required,
+.contact7any {
     padding: rem(2) rem(10);
     margin-right: rem(10);
 }
 
-.contact7__required {
+.contact7required {
     color: $black;
     background-color: $white;
+    font-weight: 600;
 }
 
-.contact7__any {
+.contact7any {
     color: $white;
     background-color: $gray;
 }
-.contact7__title {
-
+.contact7title {
 }
-.contact7__input-text-area {
-
+.contact7input-text-area {
 }
-.contact7__input-textarea-area {
-
+.contact7input-textarea-area {
 }
-.contact7__item {
+.contact7item {
     border: 1px solid $white;
 }
-.contact7__check-area {
+.contact7check-area {
     margin-top: rem(50);
     text-align: center;
 }
+<<<<<<< HEAD
 .contact7__check {
     @include mq('md') {
        font-size: 12px; 
     }
+=======
+.contact7check {
+>>>>>>> 614a7dafb1cdc1b929c8c1ab6314eccf115d24bb
 }
-.contact7__button-area{
+.contact7button-area {
     margin-top: rem(26);
     text-align: center;
 }
-.contact7__button-area input {
+.contact7button-area input {
     width: 204px;
     border: 1px solid $white;
     padding: rem(16);
     border-radius: 5px;
     color: $white;
+<<<<<<< HEAD
     @include mq('md') {
        padding: rem(24);
        font-size: 16px; 
@@ -81,31 +88,49 @@
 .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7__item
 {
     font-size: 16px;
+=======
+    font-family: $yugothic;
+}
+.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact7item,
+.wpcf7-form-control.wpcf7-text.contact7item,
+.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7item {
+>>>>>>> 614a7dafb1cdc1b929c8c1ab6314eccf115d24bb
     width: 155%;
     border-radius: 5px;
     color: $white;
-    @include mq('mm') {
-       width: 100%; 
+    padding: 7px 20px;
+    @include mq("mm") {
+        width: 100%;
     }
-    @include mq('md') {
-       margin-top: rem(20);
-       width:  100%; 
+    @include mq("md") {
+        margin-top: rem(20);
+        width: 100%;
     }
 }
-.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required.contact7__item {
-    width:  165%;
+.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required.contact7item {
+    width: 155%;
+    padding: 7px 20px;
     border-radius: 5px;
     color: $white;
-    @include mq('mm') {
-       width: 106%; 
+    @include mq("mm") {
+        width: 106%;
     }
-    @include mq('md') {
+    @include mq("md") {
         margin-top: rem(20);
-        width:  100%; 
-     } 
+        width: 100%;
+    }
 }
 input[type="checkbox"] {
     width: 30px;
     height: 30px;
     border: 1px solid $white;
 }
+
+.contact7content,
+.contact7check-area {
+    font-size: rem(16);
+    font-weight: 500;
+    font-family: $yugothic;
+    line-height: 1.75;
+}
+
