@@ -3722,38 +3722,37 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: auto;
   background-color: #272727;
   max-width: 214px;
-  max-width: 15.6661786237vw;
+  height: 636px;
   width: 100%;
-  padding-top: 46.57%;
   z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .mv__background {
+    max-width: 13.375rem;
+  }
 }
 
 .mv__title-adjust {
-  top: 42.6061493411vw;
+  top: 582px;
   left: 58px;
-  left: 3.625rem;
-  left: min(4.24597vw, 58px);
   position: absolute;
 }
 @media screen and (max-width: 768px) {
   .mv__title-adjust {
-    top: 58.8235294118vw;
-    left: 2.5rem;
-    left: min(5.22876vw, 40px);
+    top: 582px;
+    left: 40px;
   }
 }
 
 .mv__title {
   font-size: 63px;
-  font-size: min(4.61201vw, 63px);
   letter-spacing: 0.13em;
   font-family: "Sawarabi Mincho", serif;
   position: relative;
 }
 @media screen and (max-width: 1280px) {
   .mv__title {
-    font-size: 3.75rem;
-    font-size: min(4.6875vw, 60px);
+    font-size: 40px;
   }
 }
 
@@ -3768,8 +3767,13 @@ sp版（1280px以下）のモーダル内メニュー
   position: relative;
   width: 85%;
   max-width: 1152px;
-  padding-top: 59.5900439239vw;
+  height: 814px;
   margin-left: auto;
+}
+@media screen and (max-width: 768px) {
+  .mv__image {
+    max-width: 72rem;
+  }
 }
 
 .mv__image img {
