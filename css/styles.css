@@ -2600,13 +2600,9 @@ sp版（1280px以下）のモーダル内メニュー
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media screen and (max-width: 1920px) {
-  .introduction__container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 1280px) {
   .introduction__container {
@@ -2624,17 +2620,13 @@ sp版（1280px以下）のモーダル内メニュー
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media screen and (max-width: 1920px) {
-  .introduction__container-even {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 1366px) {
   .introduction__container-even {
@@ -2688,6 +2680,11 @@ sp版（1280px以下）のモーダル内メニュー
   max-width: 649px;
   max-width: 40.5625rem;
   position: relative;
+}
+@media screen and (min-width: 1920px) {
+  .introduction__image-big {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 1280px) {
   .introduction__image-big {
@@ -2804,6 +2801,11 @@ sp版（1280px以下）のモーダル内メニュー
 .introduction__image-small {
   width: 100%;
   position: relative;
+}
+@media screen and (min-width: 1920px) {
+  .introduction__image-small {
+    width: 90%;
+  }
 }
 
 .introduction__image-small::before {
@@ -5312,6 +5314,12 @@ button.reservation__modal {
 .mySwiper-top.swiper-wrapper.swiper-slide img {
   width: 344px;
   width: 21.5rem;
+}
+@media screen and (min-width: 1920px) {
+  .mySwiper-top.swiper-wrapper.swiper-slide,
+  .mySwiper-top.swiper-wrapper.swiper-slide img {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 768px) {
   .mySwiper-top.swiper-wrapper.swiper-slide,
