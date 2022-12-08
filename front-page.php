@@ -71,7 +71,9 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
     <div class="introduction__whole-wrapper">
         <div class="introduction__each-wrapper introduction__each-wrapper-hana">
             <div class="introduction__container introduction__container-hana">
-                <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/hana-big-top.jpg" alt="華の間の部屋画像"></div>
+                <div class="introduction__image-big-wrapper">
+                    <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/hana-big-top.jpg" alt="華の間の部屋画像"></div>
+                </div>
                 <h3 class="introduction__room-name">華の間</h3>
                 <div class="introduction__image-wrapper">
                     <div class="introduction__image-small"><img src="<?php echo get_template_directory_uri(); ?>/images/top/hana-small-top.jpg" alt="華の間の部屋画像2"></div>
@@ -94,7 +96,9 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
         <!--introduction__each-wrapper  華の間-->
         <div class="introduction__each-wrapper introduction__each-wrapper-tsuki">
             <div class="introduction__container introduction__container-even">
-                <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuki-big-top.jpg" alt="月の間の部屋画像"></div>
+                <div class="introduction__image-big-wrapper">
+                    <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuki-big-top.jpg" alt="月の間の部屋画像"></div>
+                </div>
                 <h3 class="introduction__room-name introduction__room-name-tsuki">月の間</h3>
                 <div class="introduction__image-wrapper">
                     <div class="introduction__image-small"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuki-small-top.jpg" alt="月の間の部屋画像2"></div>
@@ -117,7 +121,9 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
         <!--introduction__each-wrapper  月の間-->
         <div class="introduction__each-wrapper introduction__each-wrapper-tora">
             <div class="introduction__container">
-                <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tora-big-top.jpg" alt="虎の間の部屋画像"></div>
+                <div class="introduction__image-big-wrapper">
+                    <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tora-big-top.jpg" alt="虎の間の部屋画像"></div>
+                </div>
                 <h3 class="introduction__room-name">虎の間</h3>
                 <div class="introduction__image-wrapper introduction__image-wrapper-tora">
                     <div class="introduction__image-small"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tora-small-top.jpg" alt="虎の間の部屋画像2"></div>
@@ -141,7 +147,9 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
         <!--introduction__each-wrapper  虎の間-->
         <div class="introduction__each-wrapper introduction__each-wrapper-shizuku">
             <div class="introduction__container introduction__container-even">
-                <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/shizuku-big-top.jpg" alt="雫の間の部屋画像"></div>
+                <div class="introduction__image-big-wrapper">
+                    <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/shizuku-big-top.jpg" alt="雫の間の部屋画像"></div>
+                </div>
                 <h3 class="introduction__room-name">雫の間</h3>
                 <div class="introduction__image-wrapper">
                     <div class="introduction__image-small"><img src="<?php echo get_template_directory_uri(); ?>/images/top/shizuku-small-top.jpg" alt="雫の間の部屋画像2"></div>
@@ -167,7 +175,9 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
         <!--introduction__each-wrapper  雫の間-->
         <div class="introduction__each-wrapper introduction__each-wrapper-tsuru">
             <div class="introduction__container">
-                <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuru-big-top.jpg" alt="鶴の間の部屋画像"></div>
+                <div class="introduction__image-big-wrapper">
+                    <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuru-big-top.jpg" alt="鶴の間の部屋画像"></div>
+                </div>
                 <h3 class="introduction__room-name">鶴の間</h3>
                 <div class="introduction__image-wrapper introduction__image-wrapper-tsuru">
                     <div class="introduction__image-small"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuru-small-top.jpg" alt="鶴の間の部屋画像2"></div>
@@ -188,7 +198,9 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
         <!--introduction__each-wrapper  鶴の間-->
         <div class="introduction__each-wrapper introduction__each-wrapper-nizi">
             <div class="introduction__container introduction__container-even">
-                <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/nizi-big-top.jpg" alt="虹の間の部屋画像"></div>
+                <div class="introduction__image-big-wrapper">
+                    <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/nizi-big-top.jpg" alt="虹の間の部屋画像"></div>
+                </div>
                 <h3 class="introduction__room-name">虹の間</h3>
                 <div class="introduction__image-wrapper">
                     <div class="introduction__image-small"><img src="<?php echo get_template_directory_uri(); ?>/images/top/nizi-small-top.jpg" alt="虹の間の部屋画像2"></div>
@@ -249,28 +261,28 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
         </div>
         <div class="blog-top__container">
 
-        <?php
-                $news_query = new WP_Query(
-                    array(
-                        'post_type'      => 'post',
-                        'posts_per_page' => 5,
-                    )
-                );
+            <?php
+            $news_query = new WP_Query(
+                array(
+                    'post_type'      => 'post',
+                    'posts_per_page' => 5,
+                )
+            );
             ?>
             <?php if ($news_query->have_posts()) : ?>
-            <?php while ($news_query->have_posts()) : ?>
-            <?php $news_query->the_post(); ?>
+                <?php while ($news_query->have_posts()) : ?>
+                    <?php $news_query->the_post(); ?>
 
-                <a href="<?php the_permalink(); ?>" class="blog-top__each-wrapper">
-                    <div class="blog-top__box">
-                        <div class="blog-top__new">NEW</div>
-                        <time class="blog-top__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y.m.d'); ?></time>
-                    </div>
-                    <p class="blog-top__title"><?php the_title(); ?></p>
-                </a>
-                <!--blog-top__each-wrapper-->
+                    <a href="<?php the_permalink(); ?>" class="blog-top__each-wrapper">
+                        <div class="blog-top__box">
+                            <div class="blog-top__new">NEW</div>
+                            <time class="blog-top__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y.m.d'); ?></time>
+                        </div>
+                        <p class="blog-top__title"><?php the_title(); ?></p>
+                    </a>
+                    <!--blog-top__each-wrapper-->
 
-            <?php endwhile; ?>
+                <?php endwhile; ?>
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
 

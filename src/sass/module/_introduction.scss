@@ -62,12 +62,16 @@
     left: 0;
     bottom: 0;
 }
+
+.introduction__image-big-wrapper {
+    width: rem(650);
+}
+
 .introduction__image-big {
     width: 100%;
-    max-width: rem(649);
     position: relative;
     @media screen and (min-width: 1920px) {
-        width: 90%;
+        width: 80%;
     }
     @include mq("ll") {
         max-width: rem(820);
@@ -150,7 +154,7 @@
     width: 100%;
     position: relative;
     @media screen and (min-width: 1920px) {
-        width: 90%;
+        width: 80%;
     }
 }
 .introduction__image-small::before {

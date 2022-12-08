@@ -2675,15 +2675,18 @@ sp版（1280px以下）のモーダル内メニュー
   bottom: 0;
 }
 
+.introduction__image-big-wrapper {
+  width: 650px;
+  width: 40.625rem;
+}
+
 .introduction__image-big {
   width: 100%;
-  max-width: 649px;
-  max-width: 40.5625rem;
   position: relative;
 }
 @media screen and (min-width: 1920px) {
   .introduction__image-big {
-    width: 90%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -2804,7 +2807,7 @@ sp版（1280px以下）のモーダル内メニュー
 }
 @media screen and (min-width: 1920px) {
   .introduction__image-small {
-    width: 90%;
+    width: 80%;
   }
 }
 
