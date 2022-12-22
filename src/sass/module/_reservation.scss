@@ -17,10 +17,14 @@
 
 .reservation__container {
     background-color: $white;
-    height: rem(176);
+    height: 141px;
     width: 100%;
-    max-width: rem(937);
+    max-width: 749px;
     margin: 0 auto;
+    @media screen and (max-width:1365px) {
+        height: rem(177);
+        max-width: rem(937);
+        }
 }
 
 .reservation__title-area {
@@ -47,7 +51,7 @@
 
 
 .reservation__icon {
-    padding-top: rem(82);
+    padding-top: rem(50);
     background-image :url(../images/common/arrow.png);
     background-position :center;
     background-repeat :no-repeat;

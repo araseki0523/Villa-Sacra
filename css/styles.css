@@ -2676,8 +2676,12 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .introduction__image-big-wrapper {
-  width: 650px;
-  width: 40.625rem;
+  width: 520px;
+}
+@media screen and (max-width: 1365px) {
+  .introduction__image-big-wrapper {
+    width: 40.625rem;
+  }
 }
 
 .introduction__image-big {
@@ -2728,12 +2732,16 @@ sp版（1280px以下）のモーダル内メニュー
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-  font-size: 63px;
-  font-size: 3.9375rem;
-  font-family: "Yu Mincho", "YuMincho", sans-serif;
+  font-size: 50px;
   font-weight: 800;
+  font-family: "Yu Mincho", "YuMincho", sans-serif;
   line-height: 1.7;
   letter-spacing: 0.5em;
+}
+@media screen and (max-width: 1365px) {
+  .introduction__room-name {
+    font-size: 3.9375rem;
+  }
 }
 @media screen and (max-width: 1280px) {
   .introduction__room-name {
@@ -2764,8 +2772,12 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: -9.375rem;
   margin-left: 65px;
   margin-left: 4.0625rem;
-  width: 386px;
-  width: 24.125rem;
+  width: 308px;
+}
+@media screen and (max-width: 1365px) {
+  .introduction__image-wrapper {
+    width: 24.125rem;
+  }
 }
 @media screen and (max-width: 1280px) {
   .introduction__image-wrapper {
@@ -4468,12 +4480,16 @@ sp版（1280px以下）のモーダル内メニュー
 
 .reservation__container {
   background-color: #fff;
-  height: 176px;
-  height: 11rem;
+  height: 141px;
   width: 100%;
-  max-width: 937px;
-  max-width: 58.5625rem;
+  max-width: 749px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1365px) {
+  .reservation__container {
+    height: 11.0625rem;
+    max-width: 58.5625rem;
+  }
 }
 
 .reservation__title-area {
@@ -4505,8 +4521,8 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .reservation__icon {
-  padding-top: 82px;
-  padding-top: 5.125rem;
+  padding-top: 50px;
+  padding-top: 3.125rem;
   background-image: url(../images/common/arrow.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -4936,12 +4952,10 @@ button.reservation__modal {
 .section-title__ja {
   font-size: 34px;
   font-size: 2.125rem;
-  font-size: min(2.4vw, 34px);
 }
 @media screen and (max-width: 768px) {
   .section-title__ja {
     font-size: 2.125rem;
-    font-size: max(2.4vw, 14px);
   }
 }
 
