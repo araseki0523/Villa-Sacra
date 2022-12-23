@@ -10,32 +10,40 @@
     margin-top: auto;
     background-color: $gray;
     max-width: 214px;
-    max-width: vw(1366, 214);
+    height: 636px;
+    // max-width: vw(1366, 214);
     width: 100%;
-    padding-top: 46.57%;
+    // padding-top: 46.57%;
     z-index: -1;
+    @include mq(md) {
+        max-width: rem(214);
+    }
 }
 // relativeでも可
 .mv__title-adjust {
-    top: vw(1366, 582);
-    left: rem(58);
-    left: fmin(58, 1366);
+    // top: vw(1366, 582);
+    // left: rem(58);
+    // left: fmin(58, 1366);
+    top:582px;
+    left: 58px;
     position: absolute;
     @include mq(md) {
-        top: vw(765, 450);
-        left: rem(40);
-        left: fmin(40, 765);
+        // top: vw(765, 450);
+        // left: rem(40);
+        // left: fmin(40, 765);
+        top:582px;
+        left: 40px;
     }
 }
 .mv__title {
     font-size: 63px;
-    font-size: fmin(63, 1366);
+    // font-size: fmin(63, 1366);
     letter-spacing: 0.13em;
     font-family: $sawarabi;
     position: relative;
     @include mq("ll") {
-        font-size: rem(60);
-        font-size: fmin(60, 1280);
+        font-size: 40px;
+        // font-size: fmin(60, 1280);
     }
 }
 
@@ -48,8 +56,12 @@
     position: relative;
     width: 85%;
     max-width: 1152px;
-    padding-top: vw(1366, 814);
+    height: 814px;
+    // padding-top: vw(1366, 814);
     margin-left: auto;
+    @include mq(md) {
+        max-width: rem(1152);
+    }
 }
 
 .mv__image img {

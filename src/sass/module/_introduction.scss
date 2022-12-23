@@ -1,67 +1,56 @@
-@use 'global' as *;
+@use "global" as *;
 
 .introduction {
-
 }
 
 .introduction__inner {
-
 }
 
 .introduction__title-area {
-
 }
 
-.introduction__title--ja{
-
+.introduction__title--ja {
 }
 
 .introduction__title--en {
-
 }
 
-.introduction__whole-wrapper{
-
+.introduction__whole-wrapper {
 }
 
 .introduction__container {
     display: flex;
-    @media screen and (max-width:1920px){
-        justify-content: center;
+    justify-content: center;
+    @include mq("comp") {
     }
-    @include mq('comp') {
-        
-    }
-    @include mq('ll') {
-       flex-direction: column; 
-       align-items: center;
+    @include mq("ll") {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 .introduction__container-even {
     display: flex;
-    @media screen and (max-width:1920px){
-        justify-content: center;
-    }
-    @include mq('comp') {
+    flex-direction: row-reverse;
+    justify-content: center;
+    @include mq("comp") {
         flex-direction: row-reverse;
-        justify-content: space-between;    
+        justify-content: space-between;
     }
-    @include mq('ll') {
-        flex-direction: column; 
+    @include mq("ll") {
+        flex-direction: column;
         align-items: center;
-     }
- 
+    }
 }
 
 .introduction__each-wrapper {
     margin-top: rem(213);
     padding-bottom: rem(100);
     position: relative;
-    @include mq('ll') {
-       margin-top: rem(120); 
+    @include mq("ll") {
+        margin-top: rem(120);
     }
-}   
+}
 
 .introduction__each-wrapper::after {
     position: absolute;
@@ -71,23 +60,32 @@
     width: 100%;
     height: 1px;
     left: 0;
-    bottom : 0;
-
+    bottom: 0;
 }
+
+.introduction__image-big-wrapper {
+    width: 520px;
+    @media screen and (max-width:1365px) {
+        width: rem(650);
+        }
+}
+
 .introduction__image-big {
     width: 100%;
-    max-width: rem(649);
     position: relative;
-    @include mq('ll') {
-       max-width: rem(820); 
+    @media screen and (min-width: 1920px) {
+        width: 80%;
+    }
+    @include mq("ll") {
+        max-width: rem(820);
     }
 }
 .introduction__image-big::before {
-    content:"";
+    content: "";
     display: block;
-    padding-top: 100%; 
-    @include mq('ll') {
-       padding-top: 65%;; 
+    padding-top: 100%;
+    @include mq("ll") {
+        padding-top: 65%;
     }
 }
 .introduction__image-big img {
@@ -105,21 +103,24 @@
     margin-top: rem(288);
     margin-left: rem(74);
     writing-mode: vertical-rl;
-    font-size: rem(63);
-    font-family: $yumincho;
+    font-size: 50px;
     font-weight: 800;
+    font-family: $yumincho;
     line-height: 1.7;
     letter-spacing: 0.5em;
-    @include mq('ll') {
-       margin-top: rem(50);
-       writing-mode: horizontal-tb;
+    @media screen and (max-width:1365px) {
+        font-size: rem(63);        
+    }
+    @include mq("ll") {
+        margin-top: rem(50);
+        writing-mode: horizontal-tb;
     }
 }
 
 .introduction__room-name-tsuki {
     margin-top: rem(305);
-    @include mq('ll') {
-       margin-top: rem(48); 
+    @include mq("ll") {
+        margin-top: rem(48);
     }
 }
 .introduction__container-even > .introduction__room-name {
@@ -129,40 +130,46 @@
 .introduction__image-wrapper {
     margin-top: rem(-150);
     margin-left: rem(65);
-    width: rem(386);
-    @include mq('ll') {
-       width: rem(389);
-       margin-top: rem(68); 
-       margin-left: 0;
+    width: 308px;
+    @media screen and (max-width:1365px) {
+        width: rem(386);
+    }
+    @include mq("ll") {
+        width: rem(389);
+        margin-top: rem(68);
+        margin-left: 0;
     }
 }
 
 .introduction__image-wrapper-tora {
     margin-top: rem(-171);
     margin-left: rem(94);
-    @include mq('ll') {
-       margin-top: rem(50); 
-       margin-left: rem(26);
+    @include mq("ll") {
+        margin-top: rem(50);
+        margin-left: rem(26);
     }
 }
 
 .introduction__image-wrapper-tsuru {
     margin-top: rem(-171);
     margin-left: rem(91);
-    @include mq('ll') {
-       margin-top: rem(50); 
-       margin-left: rem(42);
+    @include mq("ll") {
+        margin-top: rem(50);
+        margin-left: rem(42);
     }
 }
 
 .introduction__image-small {
     width: 100%;
     position: relative;
+    @media screen and (min-width: 1920px) {
+        width: 80%;
+    }
 }
 .introduction__image-small::before {
-    content:"";
+    content: "";
     display: block;
-    padding-top: 135%; 
+    padding-top: 135%;
 }
 .introduction__image-small img {
     position: absolute;
@@ -182,18 +189,18 @@
     position: relative;
 }
 
-.introduction__person::after{
+.introduction__person::after {
     position: absolute;
     bottom: -23px;
     left: 43%;
     content: "";
     width: 61px;
     border-bottom: 1px solid yellow;
-    @include mq('md') {
-       bottom: rem(-5); 
-       left: 40%;
+    @include mq("md") {
+        bottom: rem(-5);
+        left: 40%;
     }
-    @include mq('sm') {
+    @include mq("sm") {
         left: 35%;
     }
 }
@@ -217,9 +224,9 @@
     width: 100%;
     background-color: $white;
     color: $black;
-    @include mq('ll') {
+    @include mq("ll") {
         max-width: rem(900);
-    } 
+    }
 }
 
 .introduction__text-area-tsuki {
@@ -276,62 +283,55 @@
 }
 
 .introduction__button {
-
 }
 
 .introduction__each-wrapper.introduction__each-wrapper-hana {
     padding-bottom: rem(170);
     justify-content: flex-start;
-    @include mq('ll') {
-        margin-top: rem(120); 
+    @include mq("ll") {
+        margin-top: rem(120);
         padding-bottom: rem(120);
-     }
- 
+    }
 }
 .introduction__each-wrapper.introduction__each-wrapper-tsuki {
     margin-top: rem(360);
     padding-bottom: rem(165);
-    @include mq('ll') {
-        margin-top: rem(120); 
+    @include mq("ll") {
+        margin-top: rem(120);
         padding-bottom: rem(120);
-     }
- 
+    }
 }
 .introduction__each-wrapper.introduction__each-wrapper-tora {
     margin-top: rem(375);
     padding-bottom: rem(179);
-    @include mq('ll') {
-        margin-top: rem(120); 
+    @include mq("ll") {
+        margin-top: rem(120);
         padding-bottom: rem(120);
-     }
- 
+    }
 }
 .introduction__each-wrapper.introduction__each-wrapper-shizuku {
     margin-top: rem(356);
     padding-bottom: rem(173);
-    @include mq('ll') {
-        margin-top: rem(120); 
+    @include mq("ll") {
+        margin-top: rem(120);
         padding-bottom: rem(120);
-     }
- 
+    }
 }
 .introduction__each-wrapper.introduction__each-wrapper-tsuru {
     margin-top: rem(376);
     padding-bottom: rem(150);
-    @include mq('ll') {
-        margin-top: rem(120); 
+    @include mq("ll") {
+        margin-top: rem(120);
         padding-bottom: rem(120);
-     }
- 
+    }
 }
 .introduction__each-wrapper.introduction__each-wrapper-nizi {
     margin-top: rem(355);
     padding-bottom: rem(144);
-    @include mq('ll') {
-        margin-top: rem(120); 
+    @include mq("ll") {
+        margin-top: rem(120);
         padding-bottom: rem(120);
-     }
- 
+    }
 }
 
 //グレーの背景
@@ -355,8 +355,8 @@
     top: rem(220);
     width: rem(833);
     height: rem(1250);
-    @include mq('ll') {
-       width: rem(600); 
+    @include mq("ll") {
+        width: rem(600);
     }
 }
 .introduction__each-wrapper-tsuki::before {
@@ -370,7 +370,7 @@
     max-width: 100%;
     width: rem(958);
     height: rem(612);
-    @include mq('ll') {
+    @include mq("ll") {
         width: rem(600);
         top: rem(724);
     }
@@ -386,8 +386,8 @@
     max-width: 100%;
     width: rem(958);
     height: rem(612);
-    @include mq('ll') {
+    @include mq("ll") {
         width: rem(600);
-       top: rem(300); 
+        top: rem(300);
     }
 }

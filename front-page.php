@@ -4,6 +4,12 @@ $archive = esc_url(home_url('/news-archive/'));
 $blog = esc_url(home_url('/blog/'));
 $concept = esc_url(home_url('/concept/'));
 $room = esc_url(home_url('/room/'));
+$roomhana = esc_url(home_url('/room/#hananoma'));
+$roomtsuki = esc_url(home_url('/room/#tsukinoma'));
+$roomtora = esc_url(home_url('/room/#toranoma'));
+$roomshizuku = esc_url(home_url('/room/#shizukunoma'));
+$roomtsuru = esc_url(home_url('/room/#tsurunoma'));
+$roomnizi = esc_url(home_url('/room/#nizinoma'));
 $bb = esc_url(home_url('/bb/'));
 $facility = esc_url(home_url('/facility/'));
 $access = esc_url(home_url('/access/'));
@@ -65,7 +71,9 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
     <div class="introduction__whole-wrapper">
         <div class="introduction__each-wrapper introduction__each-wrapper-hana">
             <div class="introduction__container introduction__container-hana">
-                <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/hana-big-top.jpg" alt="華の間の部屋画像"></div>
+                <div class="introduction__image-big-wrapper">
+                    <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/hana-big-top.jpg" alt="華の間の部屋画像"></div>
+                </div>
                 <h3 class="introduction__room-name">華の間</h3>
                 <div class="introduction__image-wrapper">
                     <div class="introduction__image-small"><img src="<?php echo get_template_directory_uri(); ?>/images/top/hana-small-top.jpg" alt="華の間の部屋画像2"></div>
@@ -80,7 +88,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
+                <a href="<?php echo $roomhana ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景１ -->
             <div class="introduction__background1"></div>
@@ -88,7 +96,9 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
         <!--introduction__each-wrapper  華の間-->
         <div class="introduction__each-wrapper introduction__each-wrapper-tsuki">
             <div class="introduction__container introduction__container-even">
-                <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuki-big-top.jpg" alt="月の間の部屋画像"></div>
+                <div class="introduction__image-big-wrapper">
+                    <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuki-big-top.jpg" alt="月の間の部屋画像"></div>
+                </div>
                 <h3 class="introduction__room-name introduction__room-name-tsuki">月の間</h3>
                 <div class="introduction__image-wrapper">
                     <div class="introduction__image-small"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuki-small-top.jpg" alt="月の間の部屋画像2"></div>
@@ -103,7 +113,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                     和の造りを生かしたユニークなデザインと縁側や小上がりといった日本家屋特有のシチュエーション。月の形の調光ライトは、部屋のムードを気分に合わせて変えてくれて、紙のシェードや障子などの日本独特の建具は魅力たっぷりです。この幻想的な一室は、特に外国人観光客には人気があり、陰影ある日本の美があふれています。シングルユースでも、カップルでない二人連れでも、落ち着いたステイができる空間となっています。 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
+                <a href="<?php echo $roomtsuki ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景２ -->
             <div class="introduction__background2"></div>
@@ -111,7 +121,9 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
         <!--introduction__each-wrapper  月の間-->
         <div class="introduction__each-wrapper introduction__each-wrapper-tora">
             <div class="introduction__container">
-                <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tora-big-top.jpg" alt="虎の間の部屋画像"></div>
+                <div class="introduction__image-big-wrapper">
+                    <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tora-big-top.jpg" alt="虎の間の部屋画像"></div>
+                </div>
                 <h3 class="introduction__room-name">虎の間</h3>
                 <div class="introduction__image-wrapper introduction__image-wrapper-tora">
                     <div class="introduction__image-small"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tora-small-top.jpg" alt="虎の間の部屋画像2"></div>
@@ -129,13 +141,15 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
+                <a href="<?php echo $roomtora ?>" class="introduction__button button">MORE</a>
             </div>
         </div>
         <!--introduction__each-wrapper  虎の間-->
         <div class="introduction__each-wrapper introduction__each-wrapper-shizuku">
             <div class="introduction__container introduction__container-even">
-                <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/shizuku-big-top.jpg" alt="雫の間の部屋画像"></div>
+                <div class="introduction__image-big-wrapper">
+                    <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/shizuku-big-top.jpg" alt="雫の間の部屋画像"></div>
+                </div>
                 <h3 class="introduction__room-name">雫の間</h3>
                 <div class="introduction__image-wrapper">
                     <div class="introduction__image-small"><img src="<?php echo get_template_directory_uri(); ?>/images/top/shizuku-small-top.jpg" alt="雫の間の部屋画像2"></div>
@@ -153,7 +167,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 </p>
             </div>
             <div class="introduction__button-area introduction__button-area-shizuku">
-                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
+                <a href="<?php echo $roomshizuku ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景３ -->
             <div class="introduction__background3"></div>
@@ -161,7 +175,9 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
         <!--introduction__each-wrapper  雫の間-->
         <div class="introduction__each-wrapper introduction__each-wrapper-tsuru">
             <div class="introduction__container">
-                <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuru-big-top.jpg" alt="鶴の間の部屋画像"></div>
+                <div class="introduction__image-big-wrapper">
+                    <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuru-big-top.jpg" alt="鶴の間の部屋画像"></div>
+                </div>
                 <h3 class="introduction__room-name">鶴の間</h3>
                 <div class="introduction__image-wrapper introduction__image-wrapper-tsuru">
                     <div class="introduction__image-small"><img src="<?php echo get_template_directory_uri(); ?>/images/top/tsuru-small-top.jpg" alt="鶴の間の部屋画像2"></div>
@@ -176,13 +192,15 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 </p>
             </div>
             <div class="introduction__button-area introduction__button-area-tsuru">
-                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
+                <a href="<?php echo $roomtsuru ?>" class="introduction__button button">MORE</a>
             </div>
         </div>
         <!--introduction__each-wrapper  鶴の間-->
         <div class="introduction__each-wrapper introduction__each-wrapper-nizi">
             <div class="introduction__container introduction__container-even">
-                <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/nizi-big-top.jpg" alt="虹の間の部屋画像"></div>
+                <div class="introduction__image-big-wrapper">
+                    <div class="introduction__image-big"><img src="<?php echo get_template_directory_uri(); ?>/images/top/nizi-big-top.jpg" alt="虹の間の部屋画像"></div>
+                </div>
                 <h3 class="introduction__room-name">虹の間</h3>
                 <div class="introduction__image-wrapper">
                     <div class="introduction__image-small"><img src="<?php echo get_template_directory_uri(); ?>/images/top/nizi-small-top.jpg" alt="虹の間の部屋画像2"></div>
@@ -198,7 +216,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 </p>
             </div>
             <div class="introduction__button-area">
-                <a href="<?php echo $room ?>" class="introduction__button button">MORE</a>
+                <a href="<?php echo $roomnizi ?>" class="introduction__button button">MORE</a>
             </div>
             <!-- 背景４ -->
             <div class="introduction__background4"></div>
@@ -216,8 +234,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 <p class="box__left-title-en section-title__en">Restaurant</p>
             </div>
             <div class="box__button-area">
-                <!-- まだ -->
-                <a href="" class="box__button button">MORE</a>
+                <a href="<?php echo $bb ?>" class="box__button button">MORE</a>
             </div>
         </div>
         <div class="box__right">
@@ -226,8 +243,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 <p class="box__right-title-en section-title__en">Shared space</p>
             </div>
             <div class="box__button-area">
-                <!-- まだ -->
-                <a href="" class="box__button button">MORE</a>
+                <a href="<?php echo $facility ?>" class="box__button button">MORE</a>
             </div>
         </div>
     </div>
@@ -245,28 +261,28 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
         </div>
         <div class="blog-top__container">
 
-        <?php
-                $news_query = new WP_Query(
-                    array(
-                        'post_type'      => 'post',
-                        'posts_per_page' => 5,
-                    )
-                );
+            <?php
+            $news_query = new WP_Query(
+                array(
+                    'post_type'      => 'post',
+                    'posts_per_page' => 5,
+                )
+            );
             ?>
             <?php if ($news_query->have_posts()) : ?>
-            <?php while ($news_query->have_posts()) : ?>
-            <?php $news_query->the_post(); ?>
+                <?php while ($news_query->have_posts()) : ?>
+                    <?php $news_query->the_post(); ?>
 
-                <a href="<?php the_permalink(); ?>" class="blog-top__each-wrapper">
-                    <div class="blog-top__box">
-                        <div class="blog-top__new">NEW</div>
-                        <time class="blog-top__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y.m.d'); ?></time>
-                    </div>
-                    <p class="blog-top__title"><?php the_title(); ?></p>
-                </a>
-                <!--blog-top__each-wrapper-->
+                    <a href="<?php the_permalink(); ?>" class="blog-top__each-wrapper">
+                        <div class="blog-top__box">
+                            <div class="blog-top__new">NEW</div>
+                            <time class="blog-top__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y.m.d'); ?></time>
+                        </div>
+                        <p class="blog-top__title"><?php the_title(); ?></p>
+                    </a>
+                    <!--blog-top__each-wrapper-->
 
-            <?php endwhile; ?>
+                <?php endwhile; ?>
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
 
