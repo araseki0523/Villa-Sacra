@@ -499,6 +499,7 @@ select::-ms-expand {
 .amenitiesList__item {
   margin-left: 25px;
   margin-left: 1.5625rem;
+  width: 30%;
 }
 @media screen and (max-width: 768px) {
   .amenitiesList__item {
@@ -535,6 +536,10 @@ select::-ms-expand {
   font-family: "Yu Gothic", "YuGothic", sans-serif;
   margin-top: 9px;
   margin-top: 0.5625rem;
+}
+
+.amenitiesList__image {
+  width: 100%;
 }
 
 .amenitiesList__note {
