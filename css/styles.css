@@ -1210,6 +1210,11 @@ select::-ms-expand {
     padding-left: 20px;
   }
 }
+.contact__text {
+  padding-top: 50px;
+  padding-top: 3.125rem;
+}
+
 .contact__thanks {
   text-align: center;
 }

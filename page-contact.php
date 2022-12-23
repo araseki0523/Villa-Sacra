@@ -24,6 +24,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
 <section class="contact layout-contact">
   <div class="contact__inner">
     <div class="contact7__contents">
+      <p class="contact__text">お手数ですが、以下の必要事項を該当のフォームにご記入の上、「送信内容を確認する」ボタンを押してください。</p>
       <?php /*echo do_shortcode('[contact-form-7 id="98" title="お問合せフォーム"]');*/ ?>
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
