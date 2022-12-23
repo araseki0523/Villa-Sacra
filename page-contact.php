@@ -23,6 +23,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
 
 <section class="contact layout-contact">
   <div class="contact__inner">
+    <p class="contact__text">お手数ですが、以下の必要事項を該当のフォームにご記入の上、「送信内容を確認する」ボタンを押してください。</p>
     <div class="contact7__contents">
       <?php /*echo do_shortcode('[contact-form-7 id="98" title="お問合せフォーム"]');*/ ?>
       <?php if (have_posts()) : ?>
@@ -31,6 +32,12 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
     </div>
   <?php endwhile; ?>
 <?php endif; ?>
+<p class="contact__inquiry"><a href="">宿泊に関するお問合せ</a></p>
+<p class="contact__inquiry"><a href="">フリアコに関するお問合せ</a></p>
+<p class="contact__inquiry"><a href="">ボランティアに関するお問合せ</a></p>
+<p class="contact__inquiry"><a href="">求人に関するお問合せ</a></p>
+<p class="contact__inquiry"><a href="">マスコミ・取材その他
+</a></p>
   </div>
 </section>
 
