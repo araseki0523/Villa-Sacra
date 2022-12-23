@@ -35,3 +35,9 @@
     text-align: center;
     font-family: $sub-font-family;
 }
+
+.affiliated__title-area.section-title-sub::after {
+    @include mq('ll') {
+       right: -1%; 
+    }
+}

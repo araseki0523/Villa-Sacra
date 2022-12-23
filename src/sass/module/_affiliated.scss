@@ -11,7 +11,9 @@
         padding-left: $padding-pc;
         padding-right: $padding-pc;
     }
-    
+    @include mq('mm') {
+       max-width: rem(832); 
+    }
 }
 .affiliated__title-area {
 

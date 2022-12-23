@@ -241,42 +241,55 @@ select::-ms-expand {
   }
 }
 
-.access-sub__container {
+.access-sub__whole-box {
+  margin-top: 52px;
+  margin-top: 3.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.access-sub__wrapper {
-  margin-top: 52px;
-  margin-top: 3.25rem;
-}
-
-.access-sub__box {
-  margin-top: 57px;
-  margin-top: 3.5625rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
-  .access-sub__box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .access-sub__whole-box {
+    display: block;
   }
 }
 
-.access-sub__left {
-  margin-left: -70px;
-  margin-left: -4.375rem;
-  font-family: "Yu Gothic", "YuGothic", sans-serif;
+#wrapper-sub {
+  margin-left: 10px;
+  margin-left: 0.625rem;
+  position: relative;
+  width: 62%;
 }
 @media screen and (max-width: 768px) {
-  .access-sub__left {
-    border-right: none;
+  #wrapper-sub {
+    width: 100%;
   }
+}
+
+#wrapper-sub:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+#content-sub {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.access-sub__left {
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
 }
 
 .access-sub__nav:nth-child(n+1) {
@@ -291,8 +304,8 @@ select::-ms-expand {
 }
 
 .access-sub__right {
-  padding-left: 216px;
-  padding-left: 13.5rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 @media screen and (max-width: 768px) {
   .access-sub__right {
@@ -312,6 +325,14 @@ select::-ms-expand {
   height: 3.75rem;
   width: 200px;
   width: 12.5rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
+}
+@media screen and (max-width: 768px) {
+  .access-sub__container {
+    margin-top: 1.25rem;
+    padding-left: 0;
+  }
 }
 
 .access-sub__sub-text {
@@ -387,6 +408,11 @@ select::-ms-expand {
   .affiliated__inner {
     padding-left: 25px;
     padding-right: 25px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .affiliated__inner {
+    max-width: 52rem;
   }
 }
 
@@ -539,6 +565,8 @@ select::-ms-expand {
 }
 
 .amenitiesList__image {
+  margin-top: 9px;
+  margin-top: 0.5625rem;
   width: 100%;
 }
 
@@ -1218,6 +1246,11 @@ select::-ms-expand {
 .contact__text {
   padding-top: 50px;
   padding-top: 3.125rem;
+}
+
+.contact__inquiry {
+  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 
 .contact__thanks {
@@ -4961,6 +4994,12 @@ button.reservation__modal {
   font-size: 0.875rem;
   text-align: center;
   font-family: "SignPainter HouseScript";
+}
+
+@media screen and (max-width: 1280px) {
+  .affiliated__title-area.section-title-sub::after {
+    right: -1%;
+  }
 }
 
 .section-title {

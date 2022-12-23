@@ -181,6 +181,7 @@
                         <p class="amenitiesList__text">
                         洗面台に、ドライヤーが設置されております。ご自由にお使い下さい。
                         </p>
+                        <img class="amenitiesList__image" src="<?php echo get_template_directory_uri(); ?>/images/facility/dryer.jpg" alt="ドライヤー">
                     </div>
                 </div>
                 <div class="amenitiesList__items">
