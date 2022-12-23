@@ -241,6 +241,12 @@ select::-ms-expand {
   }
 }
 
+.access-sub__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .access-sub__wrapper {
   margin-top: 52px;
   margin-top: 3.25rem;
@@ -249,9 +255,6 @@ select::-ms-expand {
 .access-sub__box {
   margin-top: 57px;
   margin-top: 3.5625rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -268,7 +271,6 @@ select::-ms-expand {
 .access-sub__left {
   margin-left: -70px;
   margin-left: -4.375rem;
-  position: relative;
   font-family: "Yu Gothic", "YuGothic", sans-serif;
 }
 @media screen and (max-width: 768px) {
@@ -277,20 +279,9 @@ select::-ms-expand {
   }
 }
 
-.access-sub__left::after {
-  position: absolute;
-  content: "";
-  background-color: #fff;
-  width: 1px;
-  height: 77px;
-  right: -110px;
-  right: -6.875rem;
-  top: 0;
-}
-@media screen and (max-width: 768px) {
-  .access-sub__left::after {
-    display: none;
-  }
+.access-sub__nav:nth-child(n+1) {
+  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .access-sub__list-item {
@@ -387,8 +378,8 @@ select::-ms-expand {
 }
 
 .affiliated__inner {
-  max-width: 986px;
-  max-width: 61.625rem;
+  max-width: 550px;
+  max-width: 34.375rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -4428,11 +4419,29 @@ sp版（1280px以下）のモーダル内メニュー
   max-width: 67.375rem;
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 @media screen and (max-width: 1280px) {
   .recruit__bg-image {
     max-width: 64.25rem;
   }
+}
+
+.recruit__bg-image::before {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, .16);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1111;
+}
+
+.recruit__title-area {
+  position: relative;
+  z-index: 2222;
 }
 
 .recruit__title-area.section-title {
@@ -4450,12 +4459,16 @@ sp版（1280px以下）のモーダル内メニュー
   color: #fff;
   padding-top: 70px;
   padding-top: 4.375rem;
+  position: relative;
+  z-index: 2222;
 }
 
 .recruit__button-area {
   margin: 86px auto 0;
   margin: 5.375rem auto 0;
   text-align: center;
+  position: relative;
+  z-index: 2222;
 }
 @media screen and (max-width: 768px) {
   .recruit__button-area {
