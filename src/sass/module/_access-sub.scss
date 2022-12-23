@@ -23,47 +23,52 @@
 
 .access-sub__title img {}
 
-.access-sub__wrapper {
+.access-sub__whole-box {
     margin-top: rem(52);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+    @include mq('md') {
+       display: block; 
+    }
 }
-
 .access-sub__map-area {
     // #wrapperは_access.scss
 }
-
-.access-sub__box {
-    margin-top: rem(57);
-    display: flex;
-    justify-content: center;
+#wrapper-sub {
+    margin-left: rem(10);
+    position: relative;
+    width: 62%;
     @include mq('md') {
-       flex-direction: column; 
+       width: 100%; 
     }
+}
+#wrapper-sub:before {
+    content:"";
+    display: block;
+    padding-top: 100%; 
+}
+#content-sub {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .access-sub__left {
-    margin-left: rem(-70);
-    position: relative;
+    // margin-left: rem(-70);
     font-family: $yugothic;
-    @include mq('md') {
-       border-right: none; 
-    }
-}
-.access-sub__left::after {
-    position: absolute;
-    content: "";
-    background-color: $white;
-    width: 1px;
-    height: 77px;
-    right:rem(-110);
-    top: 0;
-    @include mq('md') {
-       display: none; 
-    }
 }
 
 .access-sub__address {}
 
 .access-sub__nav {}
+
+.access-sub__nav:nth-child(n+1) {
+    margin-top: rem(20);
+}
 
 .access-sub__list-item {
     font-family: $yugothic;
@@ -72,7 +77,7 @@
 }
 
 .access-sub__right {
-    padding-left: rem(216);
+    margin-top: rem(50);
     @include mq('md') {
         margin-top: rem(20);
        padding-left: 0; 
@@ -87,6 +92,11 @@
     align-items: center;
     height: rem(60);
     width: rem(200);
+    margin-top: rem(50);
+    @include mq('md') {
+        margin-top: rem(20);
+       padding-left: 0; 
+    }
 
 }
 

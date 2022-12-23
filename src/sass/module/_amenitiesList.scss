@@ -21,6 +21,7 @@
 
 .amenitiesList__item {
     margin-left: rem(25);
+    width:  30%;
     @include mq(md) {
         margin-left: rem(0);
     }
@@ -52,6 +53,10 @@
     margin-top: rem(9);
 }
 
+.amenitiesList__image {
+    margin-top: rem(9);
+    width:  100%;
+}
 .amenitiesList__note {
     font-size: rem(16);
     font-weight: 500;

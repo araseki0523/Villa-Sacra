@@ -241,56 +241,60 @@ select::-ms-expand {
   }
 }
 
-.access-sub__wrapper {
+.access-sub__whole-box {
   margin-top: 52px;
   margin-top: 3.25rem;
-}
-
-.access-sub__box {
-  margin-top: 57px;
-  margin-top: 3.5625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
-  .access-sub__box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .access-sub__whole-box {
+    display: block;
   }
+}
+
+#wrapper-sub {
+  margin-left: 10px;
+  margin-left: 0.625rem;
+  position: relative;
+  width: 62%;
+}
+@media screen and (max-width: 768px) {
+  #wrapper-sub {
+    width: 100%;
+  }
+}
+
+#wrapper-sub:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+#content-sub {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .access-sub__left {
-  margin-left: -70px;
-  margin-left: -4.375rem;
-  position: relative;
   font-family: "Yu Gothic", "YuGothic", sans-serif;
 }
-@media screen and (max-width: 768px) {
-  .access-sub__left {
-    border-right: none;
-  }
-}
 
-.access-sub__left::after {
-  position: absolute;
-  content: "";
-  background-color: #fff;
-  width: 1px;
-  height: 77px;
-  right: -110px;
-  right: -6.875rem;
-  top: 0;
-}
-@media screen and (max-width: 768px) {
-  .access-sub__left::after {
-    display: none;
-  }
+.access-sub__nav:nth-child(n+1) {
+  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .access-sub__list-item {
@@ -300,8 +304,8 @@ select::-ms-expand {
 }
 
 .access-sub__right {
-  padding-left: 216px;
-  padding-left: 13.5rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 @media screen and (max-width: 768px) {
   .access-sub__right {
@@ -321,6 +325,14 @@ select::-ms-expand {
   height: 3.75rem;
   width: 200px;
   width: 12.5rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
+}
+@media screen and (max-width: 768px) {
+  .access-sub__container {
+    margin-top: 1.25rem;
+    padding-left: 0;
+  }
 }
 
 .access-sub__sub-text {
@@ -387,8 +399,8 @@ select::-ms-expand {
 }
 
 .affiliated__inner {
-  max-width: 986px;
-  max-width: 61.625rem;
+  max-width: 550px;
+  max-width: 34.375rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -396,6 +408,11 @@ select::-ms-expand {
   .affiliated__inner {
     padding-left: 25px;
     padding-right: 25px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .affiliated__inner {
+    max-width: 52rem;
   }
 }
 
@@ -508,6 +525,7 @@ select::-ms-expand {
 .amenitiesList__item {
   margin-left: 25px;
   margin-left: 1.5625rem;
+  width: 30%;
 }
 @media screen and (max-width: 768px) {
   .amenitiesList__item {
@@ -544,6 +562,12 @@ select::-ms-expand {
   font-family: "Yu Gothic", "YuGothic", sans-serif;
   margin-top: 9px;
   margin-top: 0.5625rem;
+}
+
+.amenitiesList__image {
+  margin-top: 9px;
+  margin-top: 0.5625rem;
+  width: 100%;
 }
 
 .amenitiesList__note {
@@ -1219,6 +1243,16 @@ select::-ms-expand {
     padding-left: 20px;
   }
 }
+.contact__text {
+  padding-top: 50px;
+  padding-top: 3.125rem;
+}
+
+.contact__inquiry {
+  padding-top: 10px;
+  padding-top: 0.625rem;
+}
+
 .contact__thanks {
   text-align: center;
 }
@@ -4428,11 +4462,29 @@ sp版（1280px以下）のモーダル内メニュー
   max-width: 67.375rem;
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 @media screen and (max-width: 1280px) {
   .recruit__bg-image {
     max-width: 64.25rem;
   }
+}
+
+.recruit__bg-image::before {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, .16);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1111;
+}
+
+.recruit__title-area {
+  position: relative;
+  z-index: 2222;
 }
 
 .recruit__title-area.section-title {
@@ -4450,12 +4502,16 @@ sp版（1280px以下）のモーダル内メニュー
   color: #fff;
   padding-top: 70px;
   padding-top: 4.375rem;
+  position: relative;
+  z-index: 2222;
 }
 
 .recruit__button-area {
   margin: 86px auto 0;
   margin: 5.375rem auto 0;
   text-align: center;
+  position: relative;
+  z-index: 2222;
 }
 @media screen and (max-width: 768px) {
   .recruit__button-area {
@@ -4938,6 +4994,12 @@ button.reservation__modal {
   font-size: 0.875rem;
   text-align: center;
   font-family: "SignPainter HouseScript";
+}
+
+@media screen and (max-width: 1280px) {
+  .affiliated__title-area.section-title-sub::after {
+    right: -1%;
+  }
 }
 
 .section-title {

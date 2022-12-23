@@ -167,18 +167,21 @@
                         <p class="amenitiesList__text">
                         各お部屋にフェイスタオル1枚とバスタオル1枚が設置されています。
                         </p>
+                        <img class="amenitiesList__image" src="<?php echo get_template_directory_uri(); ?>/images/facility/towel.jpg" alt="タオル類">
                     </div>
                     <div class="amenitiesList__item">
                         <h3 class="amenitiesList__title">シャンプ・リンス・ボディソープ</h3>
                         <p class="amenitiesList__text">
                         浴室には、シャンプ・リンス・ボディソープが備え付けられています。
                         </p>
+                        <img class="amenitiesList__image" src="<?php echo get_template_directory_uri(); ?>/images/facility/shampoo.jpg" alt="シャンプー類">
                     </div>
                     <div class="amenitiesList__item">
                         <h3 class="amenitiesList__title">ドライヤー</h3>
                         <p class="amenitiesList__text">
                         洗面台に、ドライヤーが設置されております。ご自由にお使い下さい。
                         </p>
+                        <img class="amenitiesList__image" src="<?php echo get_template_directory_uri(); ?>/images/facility/dryer.jpg" alt="ドライヤー">
                     </div>
                 </div>
                 <div class="amenitiesList__items">
@@ -187,6 +190,7 @@
                         <p class="amenitiesList__text">
                         24時間使用可能な、洗濯機・乾燥機があります。ご自由にお使い下さい。
                         </p>
+                        <img class="amenitiesList__image" src="<?php echo get_template_directory_uri(); ?>/images/facility/laundry.jpg" alt="洗濯機と乾燥機">
                     </div>
                     <div class="amenitiesList__item">
                         <h3 class="amenitiesList__title">ひざ掛け</h3>
@@ -199,6 +203,7 @@
                         <p class="amenitiesList__text">
                         ラウンジのコーヒー・紅茶・ルイボスティー等は自由にお飲み頂けます。
                         </p>
+                        <img class="amenitiesList__image" src="<?php echo get_template_directory_uri(); ?>/images/facility/freedrink.jpg" alt="無料のドリンク">
                     </div>
                 </div>
                 <div class="amenitiesList__items">
@@ -213,12 +218,14 @@
                         <p class="amenitiesList__text">
                         ラウンジに備え付けられた電子レンジは自由にお使い頂けます。
                         </p>
+                        <img class="amenitiesList__image" src="<?php echo get_template_directory_uri(); ?>/images/facility/microwave.jpg" alt="電子レンジ">
                     </div>
                     <div class="amenitiesList__item">
                         <h3 class="amenitiesList__title">ケトル</h3>
                         <p class="amenitiesList__text">
                         ラウンジにあるケトルで自由にお湯を沸かして頂くことが出来ます。
                         </p>
+                        <img class="amenitiesList__image" src="<?php echo get_template_directory_uri(); ?>/images/facility/kettle.jpg" alt="電気ケトル">
                     </div>
                 </div>
             </div>
@@ -236,11 +243,7 @@
         <div class="notes__wrapper">
             <h3 class="notes__index">​チェックイン・チェックアウト</h3>
             <p class="notes__text">
-                原則的に、チェックインは16:00以降22:00くらいまで、チェックアウトは8：00以降11：00迄です。
-                チェックインが遅くなる場合は事前にお知らせください。 またチェックイン前、チェックアウト後の荷物のお預かりにつきましては、
-                フロントにご相談ください。鎌倉滞在＆観光をお気軽にお楽しみいただけますよう、出来る限り、対応させていただきます。
-                同様に、アーリーチェックイン、レイトチェックアウトにつきましても、場合により、やむを得ずお断りすることや時間外料金をいただくケースが
-                あるかもしれませんが、可能なかぎり、対応させていただきます。ご相談ください。
+            チェックインは16:00~22:00、チェックアウトは11：00迄となっております。 チェックインが遅くなる場合は事前にお知らせください。 またチェックイン前、チェックアウト後の荷物のお預かりにつきましては、 フロントにご相談ください。鎌倉滞在＆観光をお気軽にお楽しみ頂けますよう、出来る限り、対応させていただきます。 同様に、アーリーチェックイン、レイトチェックアウトにつきましては、別途料金が掛かります。詳しくはスタッフまでお問合せ下さい。
             </p>
         </div>
         <div class="notes__wrapper">
@@ -252,6 +255,17 @@
                 全６部屋の小さな宿ですので、さほど混み合うことはないと思われますが、皆様で便宜を図りつつ、
                 上手にご利用いただければ幸いです。
             </p>
+        </div>
+        <div class="notes__wrapper">
+            <h3 class="notes__index">館内の喫煙に関して</h3>
+            <p class="notes__text">
+            Villa Sacraは、全館・全室禁煙となっております。お煙草をお吸いの方は、建物外にて喫煙頂きますようによろしくお願い致します。
+            </p>
+        </div>
+        <div class="notes__wrapper">
+            <h3 class="notes__index">騒音に関して</h3>
+            <p class="notes__text">
+            Villa Sacraは、築80年の古民家を改築しておりますので、非常に音が響きやすい建物の構造になっております。また、周辺も非常に静かなエリアになりますので、夜間はお静かにお過ごし頂きますようにお願い致します。            </p>
         </div>
     </div>
 </section>
