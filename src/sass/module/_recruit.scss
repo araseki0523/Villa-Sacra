@@ -19,7 +19,7 @@
 .recruit__bg-image::before {
     content:"";
     display: block;
-    background-color: rgba(0,0,0,.16);
+    background-color: rgba(0,0,0,.6);
     position: absolute;
     top: 0;
     right: 0;
@@ -41,6 +41,7 @@
 .recruit__title-ja {
 }
 .recruit__title-en {
+    
 }
 
 .recruit__message {

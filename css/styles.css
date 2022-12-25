@@ -186,7 +186,6 @@ select {
 /* フォームリセット */
 input,
 button,
-select,
 textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -241,36 +240,21 @@ select::-ms-expand {
   }
 }
 
-.access-sub__whole-box {
-  margin-top: 52px;
-  margin-top: 3.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.access-sub__map-area {
   width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .access-sub__whole-box {
-    display: block;
-  }
 }
 
 #wrapper-sub {
-  margin-left: 10px;
-  margin-left: 0.625rem;
+  margin-top: 61px;
   position: relative;
-  width: 62%;
+  width: 100%;
+  height: 344px;
 }
 @media screen and (max-width: 768px) {
   #wrapper-sub {
+    margin-top: 3.125rem;
     width: 100%;
+    height: 21.5rem;
   }
 }
 
@@ -288,28 +272,69 @@ select::-ms-expand {
   height: 100%;
 }
 
-.access-sub__left {
-  font-family: "Yu Gothic", "YuGothic", sans-serif;
+.access-sub__wrapper {
+  max-width: 650px;
+  width: 100%;
+  margin: 64px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .access-sub__wrapper {
+    margin: 4rem auto 0;
+    display: block;
+    text-align: center;
+  }
 }
 
-.access-sub__nav:nth-child(n+1) {
-  margin-top: 20px;
-  margin-top: 1.25rem;
+.access-sub__left {
+  font-family: "Yu Gothic", "YuGothic", sans-serif;
+  padding-right: 97px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .access-sub__left {
+    padding-right: 0;
+  }
+}
+
+.access-sub__left::after {
+  position: absolute; /*--positionを追加--*/
+  top: 0;
+  left: 100%;
+  margin: 0 16px;
+  margin: 0 1rem;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .access-sub__left::after {
+    display: none;
+  }
 }
 
 .access-sub__list-item {
   font-family: "Yu Gothic", "YuGothic", sans-serif;
+  font-weight: 500;
   font-size: 21px;
-  font-size: 1.3125rem;
+}
+@media screen and (max-width: 768px) {
+  .access-sub__list-item {
+    font-size: 18px;
+  }
 }
 
 .access-sub__right {
-  margin-top: 50px;
-  margin-top: 3.125rem;
+  padding-left: 70px;
 }
 @media screen and (max-width: 768px) {
   .access-sub__right {
-    margin-top: 1.25rem;
     padding-left: 0;
   }
 }
@@ -325,13 +350,11 @@ select::-ms-expand {
   height: 3.75rem;
   width: 200px;
   width: 12.5rem;
-  margin-top: 50px;
-  margin-top: 3.125rem;
 }
 @media screen and (max-width: 768px) {
   .access-sub__container {
-    margin-top: 1.25rem;
     padding-left: 0;
+    margin: auto;
   }
 }
 
@@ -399,48 +422,71 @@ select::-ms-expand {
 }
 
 .affiliated__inner {
-  max-width: 550px;
-  max-width: 34.375rem;
+  max-width: 1366px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 140px;
 }
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1100px) {
   .affiliated__inner {
-    padding-left: 25px;
-    padding-right: 25px;
+    max-width: 85.375rem;
+    padding: 0 1.5625rem;
   }
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   .affiliated__inner {
-    max-width: 52rem;
+    padding: 0 1.25rem;
   }
 }
 
-.affiliated__title-ja {
-  font-size: 15px;
-  font-size: 0.9375rem;
+@media screen and (max-width: 768px) {
+  .affiliated__title-ja {
+    font-size: 15px;
+  }
 }
 
 .affiliated__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 56px;
   margin-top: 3.5rem;
+  padding-left: 4%;
+}
+@media screen and (max-width: 1100px) {
+  .affiliated__container {
+    display: block;
+  }
 }
 
-.affiliated__place {
-  background-color: #fff;
-  color: #000;
-  padding: 40px;
-  padding: 2.5rem;
+.affiliated__left {
+  width: 32%;
+}
+@media screen and (max-width: 1100px) {
+  .affiliated__left {
+    width: 100%;
+  }
 }
 
 .affiliated__place-title-ja {
   font-family: "Sawarabi Mincho", serif;
-  font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 27px;
+  line-height: 1.7;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .affiliated__place-title-ja {
-    font-size: 1.75rem;
+    font-size: 24px;
+  }
+}
+
+.affiliated__place-title-en {
+  font-family: "SignPainter";
+  font-size: 11px;
+  line-height: 1.181;
+}
+@media screen and (max-width: 768px) {
+  .affiliated__place-title-en {
+    font-size: 10px;
   }
 }
 
@@ -457,23 +503,104 @@ select::-ms-expand {
           justify-content: center;
 }
 
-.affiliated__address {
-  border: 1px solid #fff;
-  padding-bottom: 70px;
-  padding-bottom: 4.375rem;
-}
-
 .affiliated__text {
   margin-top: 50px;
-  margin-top: 3.125rem;
   text-align: center;
-  font-family: "Yu Gothic", "YuGothic", sans-serif;
+  font-family: "Sawarabi Mincho", serif;
+}
+@media screen and (max-width: 768px) {
+  .affiliated__text {
+    margin-top: 3.125rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .affiliated__lit-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .affiliated__lit-wrapper {
+    display: block;
+    text-align: center;
+  }
+}
+
+.affiliated__nav {
+  margin-top: 35px;
+}
+@media screen and (max-width: 768px) {
+  .affiliated__nav {
+    margin-top: 2.1875rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  ul.affiliated__nav:first-child {
+    padding-right: 4%;
+  }
+}
+@media screen and (max-width: 768px) {
+  ul.affiliated__nav:first-child {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .affiliated__right {
+    margin-top: 3.125rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .affiliated__text,
+  .affiliated__lit-item {
+    font-size: 14px;
+  }
+}
+
+.affiliated__map-area {
+  position: relative;
+  width: 100%;
+  height: 474px;
+  padding-left: 15%;
+}
+@media screen and (max-width: 1100px) {
+  .affiliated__map-area {
+    width: 100%;
+    height: 21.5rem;
+    padding-left: 0%;
+  }
+}
+
+.affiliated__map-area:before {
+  position: absolute;
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
 
 .affiliated__button-area {
   margin-top: 50px;
   margin-top: 3.125rem;
   text-align: center;
+}
+
+.affiliated__map-area iframe {
+  aspect-ratio: 16/9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.affiliated__button-area a {
+  font-family: "SignPainter";
 }
 
 .amenities__bg {
@@ -1244,8 +1371,17 @@ select::-ms-expand {
   }
 }
 .contact__text {
-  padding-top: 50px;
-  padding-top: 3.125rem;
+  padding-bottom: 79px;
+  font-family: "Sawarabi Mincho", serif;
+  font-size: 18px;
+  line-height: 1.72;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .contact__text {
+    padding-bottom: 4.9375rem;
+    font-size: 1.125rem;
+  }
 }
 
 .contact__inquiry {
@@ -1342,7 +1478,8 @@ select::-ms-expand {
 
 .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact7item,
 .wpcf7-form-control.wpcf7-text.contact7item,
-.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7item {
+.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7item,
+.wpcf7-form-control.wpcf7input-text-area {
   width: 155%;
   border-radius: 5px;
   color: #fff;
@@ -1351,14 +1488,16 @@ select::-ms-expand {
 @media screen and (max-width: 960px) {
   .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact7item,
   .wpcf7-form-control.wpcf7-text.contact7item,
-  .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7item {
+  .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7item,
+  .wpcf7-form-control.wpcf7input-text-area {
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
   .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact7item,
   .wpcf7-form-control.wpcf7-text.contact7item,
-  .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7item {
+  .wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7item,
+  .wpcf7-form-control.wpcf7input-text-area {
     margin-top: 1.25rem;
     width: 100%;
   }
@@ -1395,6 +1534,27 @@ input[type=checkbox] {
   font-weight: 500;
   font-family: "Yu Gothic", "YuGothic", sans-serif;
   line-height: 1.75;
+}
+
+/* セレクトボックスの矢印デザイン変更 */
+select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required.contact7item::before {
+  border-bottom: 4.5px solid #fff;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  content: "";
+  position: absolute;
+  right: 9px;
+  top: 10px;
+  width: 0;
+  color: #fff;
+}
+
+select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required.contact7item {
+  width: 200%;
+  border-radius: 5px;
+  padding: 7px 20px;
+  color: #757575;
+  background-color: transparent;
 }
 
 .convention__inner {
@@ -2882,8 +3042,17 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 3.625rem;
   text-align: center;
   font-size: 26px;
-  font-size: 1.625rem;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .introduction__person {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .introduction__person {
+    font-size: 14px;
+  }
 }
 
 .introduction__person::after {
@@ -2911,7 +3080,16 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 3rem;
   text-align: center;
   font-size: 20px;
-  font-size: 1.25rem;
+}
+@media screen and (max-width: 768px) {
+  .introduction__capacity {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .introduction__capacity {
+    font-size: 14px;
+  }
 }
 
 .introduction__breadth {
@@ -2920,6 +3098,16 @@ sp版（1280px以下）のモーダル内メニュー
   text-align: center;
   font-size: 20px;
   font-size: 1.25rem;
+}
+@media screen and (max-width: 768px) {
+  .introduction__breadth {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .introduction__breadth {
+    font-size: 12px;
+  }
 }
 
 .introduction__text-area {
@@ -2958,10 +3146,19 @@ sp版（1280px以下）のモーダル内メニュー
   padding: 46px 50px;
   padding: 2.875rem 3.125rem;
   font-size: 16px;
-  font-size: 1rem;
   font-weight: 500;
   font-family: "Yu Mincho", "YuMincho", sans-serif;
   line-height: 1.75;
+}
+@media screen and (max-width: 768px) {
+  .introduction__text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .introduction__text {
+    font-size: 12px;
+  }
 }
 
 .introduction__text-tora {
@@ -3308,8 +3505,8 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .layout-access-sub {
-  padding-top: 192px;
-  padding-top: 12rem;
+  padding-top: 114px;
+  padding-top: 7.125rem;
 }
 
 .layout-access {
@@ -3323,8 +3520,8 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .layout-affiliated {
-  margin-top: 246px;
-  margin-top: 15.375rem;
+  margin-top: 200px;
+  margin-top: 12.5rem;
 }
 
 .layout-amenities {
@@ -3485,6 +3682,11 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 13.4375rem;
 }
 
+.layout-gallery-recruit {
+  margin-top: 308px;
+  margin-top: 19.25rem;
+}
+
 .layout-gallery-single {
   margin-top: 320px;
   margin-top: 20rem;
@@ -3623,6 +3825,18 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 16.875rem;
 }
 
+.layout-recruit-sub {
+  margin-top: 156px;
+  margin-top: 9.75rem;
+}
+
+.layout-breadcrumb.layout-recruit-sub {
+  margin-top: 50px;
+  margin-top: 3.125rem;
+  margin-left: -48px;
+  margin-left: -3rem;
+}
+
 .layout-sub-room {
   margin-top: 430px;
   margin-top: 26.875rem;
@@ -3657,6 +3871,17 @@ sp版（1280px以下）のモーダル内メニュー
   font-size: 1.5rem;
   line-height: 2.4;
 }
+@media screen and (max-width: 768px) {
+  .message__container {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .message__container {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
 
 .message__text-area {
   font-family: "SignPainter HouseScript";
@@ -3671,6 +3896,17 @@ sp版（1280px以下）のモーダル内メニュー
   margin-top: 4.375rem;
   font-size: 24px;
   font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .message__text2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .message__text2 {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .message__button-area {
@@ -4451,6 +4687,90 @@ sp版（1280px以下）のモーダル内メニュー
           transform: translate(-50%, -50%) rotate(0deg);
 }
 
+.recruit-sub__inner {
+  max-width: 1366px;
+  max-width: 85.375rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10.619vw;
+  font-family: "Noto Serif JP", serif;
+}
+@media screen and (max-width: 768px) {
+  .recruit-sub__inner {
+    padding: 0 2vw;
+  }
+}
+
+.mv-sub__image.recruit-sub__mv-sub:before {
+  padding-top: 16%;
+}
+
+.mv-sub__title-ja.recruit-sub__title-ja,
+.mv-sub__title-en.recruit-sub__title-en {
+  color: #fff;
+}
+
+.mv-sub__title-en.recruit-sub__title-en {
+  top: 64%;
+}
+
+.recruit-sub__title {
+  font-size: 32px;
+  line-height: 1.6872;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .recruit-sub__title {
+    font-size: 1.75rem;
+    padding: 1.25rem 0;
+  }
+}
+
+.recruit-sub__text {
+  padding: 33px 48px;
+  font-size: 22px;
+  line-height: 1.68;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+@media screen and (max-width: 768px) {
+  .recruit-sub__text {
+    padding: 2.0625rem 3rem;
+    font-size: 1rem;
+  }
+}
+
+.recruit-sub__text-area-volunteer,
+.recruit-sub__text-area-parmanent {
+  margin-top: 400px;
+}
+@media screen and (max-width: 768px) {
+  .recruit-sub__text-area-volunteer,
+  .recruit-sub__text-area-parmanent {
+    margin-top: 12.5rem;
+  }
+}
+
+.recruit-sub__work-text,
+.recruit-sub__holiday-text,
+.recruit-sub__salary-text,
+.recruit-sub__time-text,
+.recruit-sub__license-text {
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .recruit-sub__work-text,
+  .recruit-sub__holiday-text,
+  .recruit-sub__salary-text,
+  .recruit-sub__time-text,
+  .recruit-sub__license-text {
+    padding-bottom: 1.875rem;
+  }
+}
+
 .recruit__bg-image {
   background-image: url("../images/top/staff.jpg");
   background-size: cover;
@@ -4473,7 +4793,7 @@ sp版（1280px以下）のモーダル内メニュー
 .recruit__bg-image::before {
   content: "";
   display: block;
-  background-color: rgba(0, 0, 0, .16);
+  background-color: rgba(0, 0, 0, .6);
   position: absolute;
   top: 0;
   right: 0;
@@ -5010,20 +5330,28 @@ button.reservation__modal {
     margin-top: 3.125rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .section-title {
+    margin-top: 1.5625rem;
+  }
+}
 
 .section-title__ja {
   font-size: 34px;
-  font-size: 2.125rem;
 }
 @media screen and (max-width: 768px) {
   .section-title__ja {
-    font-size: 2.125rem;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-title__ja {
+    font-size: 16px;
   }
 }
 
 .section-title__en {
   font-size: 12px;
-  font-size: 0.75rem;
   font-family: "SignPainter HouseScript";
 }
 
@@ -5404,6 +5732,60 @@ button.reservation__modal {
   .mySwiper-top.swiper-wrapper.swiper-slide,
   .mySwiper-top.swiper-wrapper.swiper-slide img {
     width: 100%;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border: solid 1px #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .table th,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+}
+
+.table th {
+  width: 24%;
+  font-size: 26px;
+  line-height: 1.69;
+}
+@media screen and (max-width: 768px) {
+  .table th {
+    width: 100%;
+    font-size: 1.625rem;
+  }
+}
+
+th.table-top {
+  padding-top: 45px;
+  vertical-align: top;
+}
+@media screen and (max-width: 768px) {
+  th.table-top {
+    padding: 1.125rem 0;
+  }
+}
+
+.table td {
+  font-size: 22px;
+  line-height: 1.68;
+  padding: 34px 27px 43px;
+}
+@media screen and (max-width: 768px) {
+  .table td {
+    font-size: 1.375rem;
+    line-height: 1.68;
+    padding: 2.125rem 1.6875rem 2.6875rem;
   }
 }
 

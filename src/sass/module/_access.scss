@@ -1,31 +1,27 @@
-@use 'global' as *;
+@use "global" as *;
 
 .access {
-
 }
 
 .access__inner {
     max-width: rem(1078);
     width: 100%;
     margin: 0 auto;
-    @include mq('ll') {
-       padding-left: $padding-sp;
-       padding-right: $padding-sp;
+    @include mq("ll") {
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
     }
 }
 
 .access__title-area {
-
 }
-.access__title-ja{
-
+.access__title-ja {
 }
 
 .access__title-en {
-
 }
 
-.access__map-area{
+.access__map-area {
     margin-top: rem(68);
 }
 
@@ -34,14 +30,14 @@
     width: 100%;
 }
 #wrapper:before {
-    content:"";
+    content: "";
     display: block;
-    padding-top: 32%; 
-    @include mq('md') {
-       padding-top: 45%;
+    padding-top: 32%;
+    @include mq("md") {
+        padding-top: 45%;
     }
-    @include mq('ss') {
-       padding-top: 70%; 
+    @include mq("ss") {
+        padding-top: 70%;
     }
 }
 #content {
@@ -57,5 +53,4 @@
     text-align: center;
 }
 .access__button {
-    
 }

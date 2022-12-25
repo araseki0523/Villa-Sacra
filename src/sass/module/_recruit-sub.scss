@@ -1,0 +1,74 @@
+@use "global" as *;
+
+.recruit-sub {
+}
+.recruit-sub__inner {
+    max-width: rem(1366);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10.619vw;
+    font-family: $notoserif;
+    @include mq(md) {
+        padding: 0 2vw;
+    }
+}
+
+.mv-sub__image.recruit-sub__mv-sub:before {
+    padding-top: 16%;
+}
+
+.mv-sub__title-ja.recruit-sub__title-ja, 
+.mv-sub__title-en.recruit-sub__title-en {
+    color: $white;
+}
+
+.mv-sub__title-en.recruit-sub__title-en {
+    top: 64%;
+}
+
+.recruit-sub__title-area {
+}
+
+.recruit-sub__title {
+    font-size: 32px;
+    line-height: 1.6872;
+    padding: 20px 0;
+    text-align: center;
+    background-color: $white;
+    color: $black;
+    @include mq(md) {
+        font-size: rem(28);
+        padding: rem(20) 0;
+    }
+}
+
+.recruit-sub__text {
+    padding: 33px 48px;
+    font-size: 22px;
+    line-height: 1.68;
+    border-left: 1px solid $white;
+    border-right: 1px solid $white;
+    @include mq(md) {
+        padding: rem(33) rem(48);
+        font-size: rem(16);
+    }
+}
+
+.recruit-sub__text-area-volunteer,
+.recruit-sub__text-area-parmanent {
+    margin-top: 400px;
+    @include mq(md) {
+        margin-top: rem(200);
+    }
+}
+
+.recruit-sub__work-text,
+.recruit-sub__holiday-text,
+.recruit-sub__salary-text,
+.recruit-sub__time-text,
+.recruit-sub__license-text {
+    padding-bottom: 30px;
+    @include mq(md) {
+        padding-bottom: rem(30);
+    }
+}

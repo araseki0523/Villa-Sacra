@@ -16,6 +16,7 @@ $access = esc_url(home_url('/access/'));
 $qa = esc_url(home_url('/qa/'));
 $contact = esc_url(home_url('/contact/'));
 $privacypolicy = esc_url(home_url('/privacypolicy/'));
+$recruit = esc_url(home_url('/recruit/'));
 ?>
 
 <?php get_header(); ?>
@@ -323,8 +324,7 @@ $privacypolicy = esc_url(home_url('/privacypolicy/'));
                 ボランティアスタッフ・フリーアコモデーションスタッフ・正社員・アルバイトを募集中です♪
             </p>
             <div class="recruit__button-area">
-                <!-- まだ -->
-                <a href="" class="recruit__button button">MORE</a>
+                <a href="<?php echo $recruit ?>" class="recruit__button button">MORE</a>
             </div>
         </div>
     </div>

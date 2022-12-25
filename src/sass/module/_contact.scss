@@ -18,7 +18,15 @@
 }
 
 .contact__text {
-    padding-top: rem(50);
+    padding-bottom: 79px;
+    font-family: $sawarabi;
+    font-size: 18px;
+    line-height: 1.72;
+    text-align: center;
+    @include mq(md) {
+        padding-bottom: rem(79);
+        font-size: rem(18);
+    }
 }
 
 .contact__inquiry {

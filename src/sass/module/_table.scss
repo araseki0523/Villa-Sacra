@@ -1,0 +1,45 @@
+@use "global" as *;
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.table th,
+.table td {
+    border: solid 1px $white;
+    box-sizing: border-box;
+    @include mq(md) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.table th {
+    width: 24%;
+    font-size: 26px;
+    line-height: 1.69;
+    @include mq(md) {
+        width: 100%;
+        font-size: rem(26);
+    }
+}
+
+th.table-top {
+    padding-top: 45px;
+    vertical-align: top;
+    @include mq(md) {
+        padding: rem(18) 0;
+    }
+}
+
+.table td {
+    font-size: 22px;
+    line-height: 1.68;
+    padding: 34px 27px 43px;
+    @include mq(md) {
+        font-size: rem(22);
+        line-height: 1.68;
+        padding: rem(34) rem(27) rem(43);
+    }
+}
+

@@ -5,17 +5,22 @@
     @include mq(md) {
         margin-top: rem(50)
     }
+    @include mq(ss) {
+        margin-top: rem(25)
+    }
 }
 
 .section-title__ja {
-    font-size: rem(34);
+    font-size: 34px;
     @include mq(md) {
-        font-size: rem(34);
+        font-size: 20px;
+    }
+    @include mq(ss) {
+        font-size: 16px;
     }
 }
 
 .section-title__en {
-    // padding-left: rem(38);
-    font-size: rem(12);
+    font-size: 12px;
     font-family: $sub-font-family;
 }

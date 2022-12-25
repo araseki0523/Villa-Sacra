@@ -1,14 +1,15 @@
-@use 'global' as *;
+@use "global" as *;
 
-.access-sub {}
+.access-sub {
+}
 
 .access-sub__inner {
     max-width: rem(1078);
     width: 100%;
     margin: 0 auto;
-    @include mq('ll') {
-       padding-right: $padding-pc;
-       padding-left: $padding-pc; 
+    @include mq("ll") {
+        padding-right: $padding-pc;
+        padding-left: $padding-pc;
     }
 }
 
@@ -16,38 +17,33 @@
 .access-sub__title {
     width: 158px;
     margin: 0 auto;
-    @include mq('md') {
-       width: 110px; 
+    @include mq("md") {
+        width: 110px;
     }
 }
 
-.access-sub__title img {}
-
-.access-sub__whole-box {
-    margin-top: rem(52);
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    width: 100%;
-    @include mq('md') {
-       display: block; 
-    }
+.access-sub__title img {
 }
+
 .access-sub__map-area {
     // #wrapperは_access.scss
+    width: 100%;
 }
 #wrapper-sub {
-    margin-left: rem(10);
+    margin-top: 61px;
     position: relative;
-    width: 62%;
-    @include mq('md') {
-       width: 100%; 
+    width: 100%;
+    height: 344px;
+    @include mq("md") {
+        margin-top: rem(50);
+        width: 100%;
+        height: rem(344);
     }
 }
 #wrapper-sub:before {
-    content:"";
+    content: "";
     display: block;
-    padding-top: 100%; 
+    padding-top: 100%;
 }
 #content-sub {
     position: absolute;
@@ -57,53 +53,83 @@
     height: 100%;
 }
 
-.access-sub__left {
-    // margin-left: rem(-70);
-    font-family: $yugothic;
+.access-sub__wrapper {
+    max-width: 650px;
+    width: 100%;
+    margin: 64px auto 0;
+    display: flex;
+    justify-content: space-between;
+    @include mq(md) {
+        margin: rem(64) auto 0;
+        display: block;
+        text-align: center;
+    }
 }
 
-.access-sub__address {}
+.access-sub__left {
+    font-family: $yugothic;
+    padding-right: 97px;
+    position: relative;
+    @include mq(md) {
+        padding-right: 0;
+    }
+}
 
-.access-sub__nav {}
+.access-sub__left::after {
+    position: absolute; /*--positionを追加--*/
+    top: 0;
+    left: 100%;
+    margin: 0 1rem;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: $white;
+    @include mq(md) {
+        display: none;
+    }
+}
 
-.access-sub__nav:nth-child(n+1) {
-    margin-top: rem(20);
+.access-sub__address {
+}
+
+.access-sub__nav {
 }
 
 .access-sub__list-item {
     font-family: $yugothic;
-    font-size: rem(21);
-
-}
-
-.access-sub__right {
-    margin-top: rem(50);
-    @include mq('md') {
-        margin-top: rem(20);
-       padding-left: 0; 
+    font-weight: 500;
+    font-size: 21px;
+    @include mq(md) {
+        font-size: 18px;
     }
 }
 
 // SNS
-.access-sub__sns {}
+.access-sub__right {
+    padding-left: 70px;
+    @include mq(md) {
+        padding-left: 0;
+    }
+}
+
+.access-sub__sns {
+}
 
 .access-sub__container {
     display: flex;
     align-items: center;
     height: rem(60);
     width: rem(200);
-    margin-top: rem(50);
-    @include mq('md') {
-        margin-top: rem(20);
-       padding-left: 0; 
+    @include mq("md") {
+        padding-left: 0;
+        margin: auto;
     }
-
 }
 
 .access-sub__sub-text {
     width: rem(42);
 }
 
-.access-sub__sub-text+.access-sub__sub-text {
+.access-sub__sub-text + .access-sub__sub-text {
     margin-left: rem(23);
 }

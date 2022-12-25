@@ -65,7 +65,8 @@
 }
 .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact7item,
 .wpcf7-form-control.wpcf7-text.contact7item,
-.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7item {
+.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email.contact7item,
+.wpcf7-form-control.wpcf7input-text-area {
     width: 155%;
     border-radius: 5px;
     color: $white;
@@ -105,3 +106,30 @@ input[type="checkbox"] {
     line-height: 1.75;
 }
 
+// select {
+//     -webkit-appearance: none;
+//     appearance: none; /* デフォルトの矢印を非表示 */
+// }
+// select::-ms-expand {
+//     display: none; /* デフォルトの矢印を非表示(IE用) */
+// }
+/* セレクトボックスの矢印デザイン変更 */
+select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required.contact7item::before {
+    border-bottom: 4.5px solid $white;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    content: "";
+    position: absolute;
+    right: 9px;
+    top: 10px;
+    width: 0;
+    color: $white;
+}
+
+select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required.contact7item {
+    width: 200%;
+    border-radius: 5px;
+    padding: 7px 20px;
+    color: #757575;
+    background-color: transparent;
+}
