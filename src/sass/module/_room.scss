@@ -11,11 +11,17 @@
 
 .room__title {
     position: relative;
-    font-size: rem(36);
+    font-size: 36px;
     font-family: $yumincho;
     font-weight: 500;
     line-height: 1.7;
     text-align: center;
+    @include mq(md) {
+        font-size: 18px;
+    }
+    @include mq(ss) {
+        font-size: 16px;
+    }
 }
 
 .room__title:before {
@@ -36,10 +42,16 @@
 .room__text-area {
     text-align: center;
     margin-top: rem(38);
-    font-size: rem(16);
+    font-size: 16px;
     font-family: $yugothic;
     font-weight: 500;
     line-height: 1.75;
+    @include mq(md) {
+        font-size: 14px;
+    }
+    @include mq(ss) {
+        font-size: 12px;
+    }
 }
 
 .room__text2 {

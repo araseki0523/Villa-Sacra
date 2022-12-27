@@ -11,10 +11,17 @@
 }
 
 .shared-space__title-ja {
-    font-size: rem(36);
+    font-size: 36px;
     font-weight: 500;
     line-height: 1.7;
     font-family: $yumincho;
+    font-size: 16px;
+    @include mq(md) {
+        font-size: 18px;
+    }
+    @include mq(ss) {
+        font-size: 16px;
+    }
 }
 
 .shared-space__title-en {
@@ -33,8 +40,14 @@
 }
 
 .shared-space__text {
-    font-size: rem(16);
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.75;
     font-family: $yumincho;
+    @include mq(md) {
+        font-size: 14px;
+    }
+    @include mq(ss) {
+        font-size: 12px;
+    }
 }

@@ -16,10 +16,16 @@ margin-top: rem(55);
     width: 100%;
     margin: auto;
     padding: rem(54) 0 rem(50);
-    font-size: rem(20);
+    font-size: 20px;
     font-family: $yumincho;
     font-weight: 500;
     line-height: 1.7;
+    @include mq(md) {
+        font-size: 16px;
+    }
+    @include mq(ss) {
+        font-size: 12px;
+    }
 }
 
 .plan__items {
@@ -28,6 +34,9 @@ margin-top: rem(55);
 
 .plan__item2 {
     margin-left: rem(100);
+    @include mq(md) {
+        margin-left: rem(50);
+    }
 }
 
 .plan__text1 {

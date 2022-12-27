@@ -38,10 +38,16 @@
 }
 
 .shared-swiper__title {
-    font-size: rem(16);
+    font-size: 16px;
     font-weight: $bold;
     font-family: $yugothic;
     text-align: center;
+    @include mq(md) {
+        font-size: 14px;
+    }
+    @include mq(ss) {
+        font-size: 12px;
+    }
 }
 
 .shared-swiper__text {
@@ -51,6 +57,7 @@
     margin-top: rem(20);
     @include mq(md) {
         text-align: center;
+        font-size: 12px;
     }
 }
 
@@ -97,9 +104,15 @@
     top: 55% !important;
     left: 0 !important;
     right: auto !important;
+    @include mq(md) {
+        top: 45% !important;
+    }
 }
 .swiper-button-next {
     top: 55% !important;
     right: 0 !important;
     left: auto !important;
+    @include mq(md) {
+        top: 45% !important;
+    }
 }

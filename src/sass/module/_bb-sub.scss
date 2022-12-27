@@ -12,16 +12,28 @@
 }
 
 .bb-sub__lead {
-    font-size: rem(26);
+    font-size: 26px;
     line-height: 1.7;
     font-family: Hiragino Kaku Gothic ProN;
+    @include mq(md) {
+        font-size: 18px;
+    }
+    @include mq(ss) {
+        font-size: 16px;
+    }
 }
 .bb-sub__text-area {
     margin-top: rem(45);
-    font-size: rem(18);
+    font-size: 18px;
     font-weight: 500;
     line-height: 1.5;
     font-family: $yugothic;
+    @include mq(md) {
+        font-size: 16px;
+    }
+    @include mq(ss) {
+        font-size: 14px;
+    }
 }
 
 .bb-sub__text2,

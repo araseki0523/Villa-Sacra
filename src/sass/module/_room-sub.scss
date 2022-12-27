@@ -8,10 +8,16 @@
 
 .room-sub__text-area {
     text-align: center;
-    font-size: rem(16);
     font-weight: 500;
     line-height: 1.75;
     font-family: $yugothic;
+    font-size: 16px;
+    @include mq(md) {
+        font-size: 14px;
+    }
+    @include mq(ss) {
+        font-size: 12px;
+    }
 }
 
 .room-sub__text2 {

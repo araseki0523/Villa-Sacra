@@ -1,4 +1,13 @@
 @use "global" as *;
+.facility__title-ja.mv-sub__title-ja {
+    @include mq(md) {
+        font-size: 17px;
+    }
+    @include mq(ss) {
+        font-size: 15px;
+    }
+}
+
 .facility__title-ja {
 	font-family: $yumincho;
 }
@@ -69,6 +78,9 @@
 	margin-right: 60px;
 	@include mq('mm') {
 		font-size: rem(32);
+	}
+	@include mq('ss') {
+		font-size: 12px;
 	}
 }
 

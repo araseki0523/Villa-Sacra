@@ -35,11 +35,15 @@
 }
 .footer__right {
     margin-left: 11%;
-    font-size: rem(20);
+    font-size: 20px;
     flex: 1;
     @include mq(md) {
         margin-left: 0;
         margin-top: rem(30);
+        font-size: 16px;
+    }
+    @include mq(ss) {
+        font-size: 14px;
     }
 }
 .footer__nav {
@@ -60,6 +64,10 @@
     padding-left: rem(50);
     @include mq('md') {
         padding-left: 0;
+        font-size: 14px;
+    }
+    @include mq(ss) {
+        font-size: 12px;
     }
 }
 

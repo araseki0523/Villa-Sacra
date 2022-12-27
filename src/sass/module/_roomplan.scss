@@ -71,14 +71,15 @@
 }
 
 .roomplan__title {
-    font-size: rem(28);
-    font-size:min(2vw, 28px);
+    font-size: 28px;
     font-weight: 500;
     font-family: $yumincho;
     line-height: 1.7;
     @include mq(md) {
-        font-size: rem(20);
-        font-size:max(2vw, 10px);
+        font-size: 18px;
+    }
+    @include mq(ss) {
+        font-size: 14px;
     }
 }
 

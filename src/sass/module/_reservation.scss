@@ -8,7 +8,7 @@
     width: 100%;
     margin: 0 auto;
     padding-left: $padding-pc;
-    padding-right: $padding-pc;    
+    padding-right: $padding-pc;
     @include mq(ll) {
         padding-left: $padding-sp;
         padding-right: $padding-sp;
@@ -21,16 +21,22 @@
     width: 100%;
     max-width: 749px;
     margin: 0 auto;
-    @media screen and (max-width:1365px) {
+    @media screen and (max-width: 1365px) {
         height: rem(177);
         max-width: rem(937);
-        }
+    }
 }
 
 .reservation__title-area {
     padding-top: rem(36);
     color: $black;
     text-align: center;
+    @include mq(md) {
+        padding-top: rem(18);
+    }
+    @include mq(ss) {
+        padding-top: rem(4);
+    }
 }
 
 .reservation__title--ja {
@@ -49,12 +55,11 @@
     font-family: $sub-font-family;
 }
 
-
 .reservation__icon {
     padding-top: rem(50);
-    background-image :url(../images/common/arrow.png);
-    background-position :center;
-    background-repeat :no-repeat;
+    background-image: url(../images/common/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
     width: rem(50);
     height: rem(30);
     margin: auto;
@@ -84,7 +89,7 @@
 }
 
 .search-panel-frame {
-z-index: 99;
+    z-index: 99;
 }
 
 button.reservation__modal {
@@ -124,8 +129,6 @@ button.reservation__modal {
 
 .directin-sp-form .directin-sp-form-submit-button button {
     @include mq(md) {
-        padding: 8px 12px!important;
+        padding: 8px 12px !important;
     }
 }
-
-

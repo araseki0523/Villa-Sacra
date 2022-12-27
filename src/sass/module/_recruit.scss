@@ -54,7 +54,12 @@
     padding-top: rem(70);
     position: relative;
     z-index: 2222;
-
+    @include mq(md) {
+        font-size: 14px;
+    }
+    @include mq(ss) {
+        font-size: 12px;
+    }
 }
 
 .recruit__button-area {

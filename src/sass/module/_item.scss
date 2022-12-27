@@ -5,11 +5,13 @@
     margin-top: rem(40);
     padding-left: $padding-pc;
     padding-right: $padding-pc;
-    @include mq(md) {
+    @media screen and (max-width:1000px) {
         margin-top: rem(80);
         width: 100%;
         display: block;
         margin: auto;
+        padding-left: 2vw;
+        padding-right: 2vw;
     }
 }
 
@@ -20,7 +22,7 @@
     margin-left: rem(16);
     flex-grow: 1;
     position: relative;
-    @include mq(md) {
+    @media screen and (max-width:1000px) {
         max-width: rem(600);
         width: 100%;
         margin: rem(80) auto 0;
@@ -29,7 +31,7 @@
 
 .item:first-child {
     margin-left: rem(0);
-    @include mq(md) {
+    @media screen and (max-width:1000px) {
         margin: auto;
     }
 }
@@ -38,18 +40,25 @@
     margin: 2em 0;
     padding: 0.5em 1em;
     border: solid 1px $white;
-    @include mq(md) {
-        font-size: max(2vw,12px);
-    }
 }
 
 .item-box__sub-title-ja {
-    font-size: rem(24);
+    display: inline-block;
+    font-size: 24px;
     font-weight: 500;
     font-family: $yumincho;
     line-height: 1.7;
     text-align: center;
     position: relative;
+    padding-right: 30px;
+    @include mq(md) {
+        font-size: 16px;
+        line-height: 1;
+    }
+    @include mq(ss) {
+        font-size: 14px;
+        padding-right: 5%;
+    }
 }
 
 .item-box__sub-title-ja::after {
@@ -57,8 +66,8 @@
     display: block;
     position: absolute;
     top: calc(50% - 5px);
-    right: -35px;
-    width: 24px;
+    right: 0;
+    width: rem(24);
     height: 4px;
     border: none;
     border-right: 2px solid #fff;
@@ -74,6 +83,16 @@
     text-align: center;
 }
 
+.item-box__text-box {
+    font-size: 16px;
+    @include mq(md) {
+        font-size: 14px;
+    }
+    @include mq(ss) {
+        font-size: 12px;
+    }
+}
+
 .item-box__head,
 .item-box__body {
     border: 1px solid $white;
@@ -81,23 +100,30 @@
 
 .item-box__body {
     position: relative;
-    padding: rem(70) rem(60) rem(40);
+    padding: 70px 0 40px 56px;
     margin-top: rem(52);
-    @include mq(md) {
+    @media screen and (max-width:1000px) {
         text-align: center;
+        padding: rem(70) 0 rem(56);
     }
 }
 .item-box__head {
     display: inline-block;
-    padding: rem(8) rem(47) rem(8) rem(52);
+    text-align: center;
+    max-width: rem(285);
+    width: 100%;
+    padding: rem(8) 0 rem(8);
     background: #000;
     position: absolute;
-    top: -13%;
-    left: 8%;
-    @include mq(md) {
-        left: 20%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width:1000px) {
+        max-width: 40rem;
+        padding: rem(10) 0;
     }
 }
+
 
 .item-box__info .card-box__text {
     font-size: rem(16);

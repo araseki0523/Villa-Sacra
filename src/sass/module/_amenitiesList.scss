@@ -24,6 +24,8 @@
     width:  30%;
     @include mq(md) {
         margin-left: rem(0);
+        width:  100%;
+        margin-top: 30px;
     }
 }
 
@@ -36,21 +38,25 @@
 }
 
 .amenitiesList__title {
-    font-size: rem(16);
+    font-size: 16px;
     font-weight: $bold;
     line-height: 1.75;
     font-family: $yugothic;
-    @include mq(md) {
+    @include mq(ss) {
         margin-top: rem(30);
+        font-size: 14px;
     }
 }
 
 .amenitiesList__text {
-    font-size: rem(14);
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.7;
     font-family: $yugothic;
     margin-top: rem(9);
+    @include mq(ss) {
+        font-size: 12px;
+    }
 }
 
 .amenitiesList__image {

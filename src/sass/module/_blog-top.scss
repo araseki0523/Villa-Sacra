@@ -36,13 +36,19 @@
     padding-top: rem(20);
     padding-bottom: rem(10);
     border-bottom: 2px dotted $white;
-    font-size: rem(16);
+    font-size: 16px;
     font-weight: 500;
     font-family: $yugothic;
     line-height: 1.7;
     @include mq('ll') {
        flex-direction: column; 
        align-items: baseline;
+    }
+    @include mq(md) {
+        font-size: 14px;
+    }
+    @include mq(ss) {
+        font-size: 12px;
     }
 }
 .blog-top__box {
@@ -52,7 +58,7 @@
 .blog-top__new {
     padding: rem(2) rem(6);
     border: 1px solid $white;
-    font-size: rem(12);
+    font-size: 12px;
     font-weight: 600;
     line-height: 1.7;
 }

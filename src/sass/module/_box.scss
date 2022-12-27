@@ -60,10 +60,16 @@
 }
 .box__button.button {
     border: 1px solid $black;
-    font-size: rem(16);
+    font-size: 16px;
     font-family: $sub-font-family;
     line-height: 2;
     padding: rem(7) rem(83);
+    @include mq(md) {
+        font-size: 14px;
+    }
+    @include mq(ss) {
+        font-size: 12px;
+    }
 }
 .box__button.button::after {
     border-right: 2px solid #107E14;

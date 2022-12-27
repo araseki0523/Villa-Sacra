@@ -46,6 +46,12 @@
     font-weight: 500;
     font-family: $yumincho;
     line-height: 1.7;
+    @include mq(md) {
+        font-size: 20px;
+    }
+    @include mq(ss) {
+        font-size: 18px;
+    }
 }
 
 .notes__wrapper {
@@ -57,18 +63,30 @@
 }
 
 .notes__index {
-    font-size: rem(24);
+    font-size: 24px;
     font-weight: $bold;
     font-family: $yugothic;
     line-height: 1.5;
+    @include mq(md) {
+        font-size: 16px;
+    }
+    @include mq(ss) {
+        font-size: 14px;
+    }
 }
 
 .notes__text {
-    font-size: rem(16);
+    font-size: 16px;
     font-weight: 500;
     font-family: $yugothic;
     line-height: 1.75;
     margin-top: rem(10);
+    @include mq(md) {
+        font-size: 14px;
+    }
+    @include mq(ss) {
+        font-size: 12px;
+    }
 }
 
 

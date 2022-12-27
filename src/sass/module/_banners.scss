@@ -51,10 +51,16 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: rem(20);
+    font-size: 20px;
     font-weight: 500;
     font-family: $yumincho;
     color: $black;
     white-space: nowrap;
     text-align: center;
+    @include mq(md) {
+        font-size: 16px;
+    }
+    @include mq(ss) {
+        font-size: 14px;
+    }
 }

@@ -19,6 +19,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    @include mq(md) {
+        font-size: 16px; 
+    }
 }
 
 .facility-box__left,
@@ -28,10 +31,6 @@
     width: calc(100% / 3 - rem(32));
     margin-left: rem(16);
     flex-grow: 1;
-    // width: 348px;
-    // width: 21.75rem;
-    // height: 90px;
-    // height: 5.625rem;
     padding-top: 18px;
     padding-top: 1.125rem;
 }
@@ -48,7 +47,9 @@
     background-repeat: no-repeat;
     width: 24px;
     width: 1.5rem;
-    height: 23px;
     height: 1.4375rem;
     margin: auto;
+    @include mq(md) {
+        height: 14px;
+    }
 }

@@ -26,8 +26,14 @@
     right: -10%;
 }
 .section-title-sub__ja {
-    font-size: rem(36);
+    font-size: 36px;
     text-align: center;
+    @include mq(md) {
+        font-size: 18px;
+    }
+    @include mq(ss) {
+        font-size: 16px;
+    }
 }
 .section-title-sub__en {
     font-size: rem(14);

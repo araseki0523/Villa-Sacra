@@ -9,13 +9,21 @@
 
 .page-numbers {
     display: inline-block;
-    font-size: rem(16);
+    font-size: 16px;
     font-weight: 500;
     font-family: $yugothic;
     border: 1px solid $white;
     border-radius: 10px;
-    padding: rem(9) rem(14);
+    padding: 9px 14px;
     margin-right: rem(8);
+    @include mq(md) {
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 4px 7px;
+    }
+    @include mq(ss) {
+        font-size: 12px;
+    }
 }
 
 /* ページネーション（共通）＞ 現在のページ番号 */
@@ -26,7 +34,10 @@
 
 .pagination .prev,
 .pagination .next {
-    padding: rem(7) rem(13) rem(8) rem(14);
+    padding: 7px 13px 8px 14px;
+    @include mq(md) {
+        padding: 3px 6px 4px 7px;
+    }
 }
 
 /* ページネーション（共通）＞ 前へ */

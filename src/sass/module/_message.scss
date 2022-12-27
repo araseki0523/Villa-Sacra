@@ -14,7 +14,7 @@
 
 .message__container {
     text-align: center;
-    font-size: rem(24);
+    font-size: 24px;
     line-height: 2.4;
     @include mq(md) {
         font-size: 20px;
@@ -35,7 +35,7 @@
 
 .message__text2 {
     margin-top: rem(70);
-    font-size: rem(24);
+    font-size: 24px;
     @include mq(md) {
         font-size: 20px;
     }

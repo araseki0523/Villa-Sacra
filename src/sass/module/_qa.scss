@@ -1,24 +1,23 @@
-@use 'global' as *;
+@use "global" as *;
 
 .qa {
-
 }
 
 .qa__inner {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width:1920px){
+    @media screen and (max-width: 1920px) {
         max-width: rem(1280);
     }
-    @include mq('comp') {
+    @include mq("comp") {
         max-width: rem(1076);
         margin-left: rem(145);
     }
-    @include mq('ll') {
-       margin-left: auto;
-       padding-left: $padding-sp;
-       padding-right: $padding-sp;
+    @include mq("ll") {
+        margin-left: auto;
+        padding-left: $padding-sp;
+        padding-right: $padding-sp;
     }
 }
 
@@ -30,15 +29,15 @@
 .qa__content > li {
     list-style: none;
     border: 1px solid $white;
-    @include mq('md') {
-       border: 1px solid $white; 
+    @include mq("md") {
+        border: 1px solid $white;
     }
 }
 
 .qa__content + .qa__content {
     // padding-top: rem(6);
 }
-.qa__label  {
+.qa__label {
     margin-top: rem(40);
     cursor: pointer;
     position: relative;
@@ -62,17 +61,17 @@
     top: 45%;
     transform: translateY(-50%);
     left: 26px;
-    @include mq('md') {
-       top: 40%;
-       height: 22px; 
+    @include mq("md") {
+        top: 40%;
+        height: 22px;
     }
-     @media screen and (max-width:600px){
+    @media screen and (max-width: 600px) {
         top: 42%;
         left: 15px;
         width: 15px;
         height: 15px;
-    } 
-    @media screen and (max-width:450px){
+    }
+    @media screen and (max-width: 450px) {
         left: 4px;
     }
 }
@@ -81,30 +80,37 @@
     padding-left: rem(72);
     padding-top: rem(0);
     padding-bottom: rem(0);
-    font-size: rem(16);
+    font-size: 16px;
     font-family: $yugothic;
-    padding-right: rem(60); 
-    @include mq('sm') {
-       padding-right: rem(80); 
+    padding-right: rem(60);
+    @include mq("sm") {
+        font-size: 14px;
+        padding-right: rem(80);
     }
-    @include mq('ss') {
-       padding-right: rem(70); 
+    @include mq("ss") {
+        font-size: 12px;
+        padding-right: rem(70);
     }
 }
-
 
 .qa__answer {
     display: none;
 }
 
 .qa__answer > p {
-    font-size: rem(16);
+    font-size: 16px;
     padding-left: rem(72);
     padding-top: rem(18);
     padding-bottom: rem(12);
     padding-right: rem(23);
     position: relative;
     font-family: $yugothic;
+    @include mq(md) {
+        font-size: 14px;
+    }
+    @include mq(ss) {
+        font-size: 12px;
+    }
 }
 
 .qa__answer > p::before {
@@ -116,18 +122,17 @@
     width: 20px;
     height: 24px;
     left: 29px;
-    @include mq('md') {
-       margin-top: -3px; 
+    @include mq("md") {
+        margin-top: -3px;
     }
-     @media screen and (max-width:600px){
+    @media screen and (max-width: 600px) {
         margin-top: 0;
         width: 15px;
         height: 15px;
-    } 
-    @media screen and (max-width:450px){
+    }
+    @media screen and (max-width: 450px) {
         left: 4px;
     }
-
 }
 /*======================================
 アイコン                                        
@@ -139,15 +144,14 @@
     transform: translateY(-50%);
     width: 38px;
     height: 38px;
-    @include mq('md') {
-       width: 28px;
-       height: 28px; 
+    @include mq("md") {
+        width: 28px;
+        height: 28px;
     }
-    @media screen and (max-width:600px){
+    @media screen and (max-width: 600px) {
         width: 20px;
         height: 20px;
-    } 
-
+    }
 }
 
 .icon {
@@ -155,10 +159,9 @@
     display: inline-block;
     width: 100%;
     height: 100%;
-
 }
-  /* プラスアイコン */
-  /* ２本の線を.icon-wrapの中央に並行に重ねる */
+/* プラスアイコン */
+/* ２本の線を.icon-wrapの中央に並行に重ねる */
 .icon:before,
 .icon:after {
     position: absolute;
@@ -171,16 +174,16 @@
     width: 50%;
     height: 2px;
     transform: translate(-50%, -50%);
-    @include mq('sm') {
+    @include mq("sm") {
         left: 140%;
     }
 }
 
-  /* そのうち1本を縦にする */
+/* そのうち1本を縦にする */
 .icon:before {
     transform: translate(-50%, -50%) rotate(90deg);
 }
-  
+
 /* プラスアイコンクリック後、マイナスにする */
 .icon.open:before {
     transform: translate(-50%, -50%) rotate(0deg);
